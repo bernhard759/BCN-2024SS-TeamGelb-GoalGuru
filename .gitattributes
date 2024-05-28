@@ -1,0 +1,43 @@
+* text=auto
+
+*.js text
+*.jsx text
+*.py text diff=python
+*.json text
+*.html text diff=html
+*.css text diff=css
+*.txt text
+*.yml text
+*.md text
+
+*.jpg binary
+*.png binary
+*.ico binary
+*.pdf binary
+
+*.exe binary
+*.pyc binary
+
+*.pkl binary
+*.pickle binary
+*.joblib binary
+
+*.tex text diff=tex
+
+*.csv text eol=crlf
+
+*.ipynb text eol=lf
+
+*.sh text eol=lf
+
+*.lock text -diff
+package-lock.json text -diff
+
+package.json text eol=lf
+
+*.yml merge=yaml
+*.md -whitespace
+
+*.*rc text
+*.*ignore text
+dist/* binary
