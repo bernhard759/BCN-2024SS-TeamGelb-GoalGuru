@@ -1,5 +1,7 @@
 # React frontend components overview
 
+### Components
+
 Our frontend consists of components for selecting the teams, showing the prediction result and for showing additional info on each team. All of the components are in the App component, which also handles the state for the selected teams so that all the other components can use this state to display the results of the prediction and information about each team.
 
 ```mermaid
@@ -17,6 +19,8 @@ graph TD
     App -- selectedTeams --> FormationInfoTeam
 
 ```
+
+### Data fetching
 
 The components for the prediction result and the team information use our backend api or a public soccer api to get the results and show them. The api requests should be made in a useEffect hook with the teams as dependency so that they only refetch when teh teams passed in as props change. Also we want to have information about the loading and error state for our request.
 
@@ -51,5 +55,9 @@ fetchPrediction();
 ```
 
 With React-Query this becomes much more easy by simply using the prop as query key and we also get the loading and error information fro free.
+
+### Icons 
+
+When working with Icons we use the React-Icons library that provides many icons and is easy to use.
 
 
