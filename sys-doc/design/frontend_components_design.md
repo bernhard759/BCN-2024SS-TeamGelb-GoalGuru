@@ -58,6 +58,6 @@ With React-Query this becomes much more easy by simply using the prop as query k
 
 ### Icons 
 
-When working with Icons we use the React-Icons library that provides many icons and is easy to use.
+When working with Icons we use the React-Icons library that provides many icons and is easy to use. The icons can be viewed here: https://react-icons.github.io/react-icons/.
 
 
