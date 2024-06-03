@@ -78,7 +78,7 @@ Information needed:
 * Team formation
 
 Possible APIs:
-* https://sportdataapi.com/football-soccer-api/#pricingSection
 * https://www.api-football.com/
+* https://www.openligadb.de/ (recommendation)
 
 
