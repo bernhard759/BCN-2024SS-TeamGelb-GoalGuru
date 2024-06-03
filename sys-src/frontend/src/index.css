@@ -1,0 +1,7 @@
+
+body {
+    background: var(--bs-gray-100) !important;
+}
+body[data-bs-theme="dark"] {
+    background: var(--bs-gray-700) !important;
+}
