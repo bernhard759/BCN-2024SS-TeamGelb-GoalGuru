@@ -6,19 +6,19 @@ We use this as a reference to build our prediction api in the backend and also f
 
 * Prediction
 ```
-GET /predict?home_team=<home_team>&away_team=<away_team>
+GET /api/predict?home_team=<home_team>&away_team=<away_team>
 ```
 
 * Last matches
 
 ```
-GET /matches?home_team=<home_team>&away_team=<away_team>&n=<number_of_matches>
+GET /api/matches?home_team=<home_team>&away_team=<away_team>&n=<number_of_matches>
 ```
 
 * Available teams to select from:
 
 ```
-GET /teams
+GET /api/teams
 ```
 
 
