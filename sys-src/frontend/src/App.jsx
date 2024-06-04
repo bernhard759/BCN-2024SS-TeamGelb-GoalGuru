@@ -38,6 +38,8 @@ function App() {
 
       <AppNavbar />
 
+      <div id="content">
+
       <div className="header my-5 d-flex justify-content-center align-items-center flex-column">
         <h1 className="display-1 fw-bold">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
         <h2 className="text-center">Predicting soccer games with AI</h2>
@@ -84,6 +86,8 @@ function App() {
         ) : (
           <h3 className="text-center m-5 text-secondary">Make your first prediction &#9917;</h3>
         )}
+
+      </div>
 
       </div>
     </div>

@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+#content {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 nav {
   background: var(--bs-gray-200);
   border-bottom: 3px solid var(--bs-gray-300);
