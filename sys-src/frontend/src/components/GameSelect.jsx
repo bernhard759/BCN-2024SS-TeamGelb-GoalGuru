@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form';
 
 function GameSelect({ onTeamSelection }) {
 
+  //TODO: add check function to prevent selection of the same team twice
+
   // State
   //----------------------------------------------------------------
   const [team1, setTeam1] = useState('');

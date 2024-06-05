@@ -4,6 +4,9 @@ import styles from "./GamePrediction.module.css";
 
 export default function GamePrediction({ teams }) {
 
+    //TODO: Implement the fetch request as soon as we have some dummy data on the backend (use Effect or react-query)
+    //TODO: Add react skeleton loading
+
     const mockResponse = {
         "prediction": "Team 1",
         "probabilities": {
