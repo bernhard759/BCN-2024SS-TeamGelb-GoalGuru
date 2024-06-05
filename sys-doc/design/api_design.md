@@ -7,6 +7,8 @@ We use this as a reference to build our prediction api in the backend and also f
 * Prediction
 ```
 GET /api/predict?home_team=<home_team>&away_team=<away_team>
+
+This is for predicting the outcome. The backend should use the parameters and then ask our ml-model to predict and the result should then be sent to the frontend as json (see example responses below).
 ```
 
 * Last matches
@@ -23,6 +25,8 @@ This request could also be made using public api (openligadb)
 GET /api/teams
 ```
 
+This is needed for the frontend to populate the select boxes
+
 
 ## JSON Responses
 
@@ -37,6 +41,8 @@ GET /api/teams
   }
 }
 ```
+
+For a draw we could use `None` for the prediction property or maybe we only send the probabilities.
 
 * Response for matches
 
