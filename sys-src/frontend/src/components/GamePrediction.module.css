@@ -1,18 +1,17 @@
 .probability-bar {
     display: flex;
     box-sizing: content-box;
-    height: 1.25em;
+    height: 2em;
     background-color: #f0f0f0;
-    border-radius: 12px;
+    border-radius: 2em;
     overflow-x: hidden;
     margin-top: 1em;
     border:2px solid var(--bs-gray-200);
   }
 
-  .probability-section {
-    position: relative;
-  }
-
+.probability-section {
+  position: relative;
+}
 
 .proba-bg-win {
 background: var(--bs-success-border-subtle);
