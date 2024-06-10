@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import time
+import pandas as pd
 
 #link to all the fixtures and results
 matchday_url = "https://www.transfermarkt.de/bundesliga/gesamtspielplan/wettbewerb/L1"
@@ -11,14 +12,17 @@ market_value_url = "https://www.transfermarkt.de/bundesliga/startseite/wettbewer
 #link to the bundesliga matchday table
 matchday_table_url = "https://www.transfermarkt.de/bundesliga/spieltagtabelle/wettbewerb/L1"
 
+base_url = "https://www.transfermarkt.de/vergleich/bilanzdetail/verein/{}/gegner_id/{}"
+
 #Request-Header
 header = {
 "User-Agent":
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
 }
 
+bundesliga_1 = {"Bayer": 15, "Bayern": 27, "Stuttgart": 79, "Leipzig": 23826, "Borussia": 18, "Eintracht": 24, "Freiburg": 60, "Augsburg": 167, "Hoffenheim": 533, "Heidenheim": 2036, "Werder": 86, "Wolfsburg": 82, "Union": 89, "Bochum": 80, "Mainz": 39, "Köln": 3, "Darmstadt": 105}
 
- 
+
 #Returns all available matchday-results [home, draw, away] for a given season
 #For the parameter "season", the year in which the season started should be specified (e.g., for the 2019-2020 season, "season" is equal to 2019) 
 def get_matchday_results(season):
@@ -109,8 +113,6 @@ def get_matchday_positions(season, spieltage = 34, delay=2):
         
         data = requests.get(url=url, headers=header)
 
-        
-
         soup = BeautifulSoup(data.text, 'html.parser')
         table = soup.find("table", attrs={"class":"items"})
         table_rows = table.find("tbody").find_all("tr")
@@ -134,18 +136,17 @@ def get_matchday_positions(season, spieltage = 34, delay=2):
 
     return matchday_tables
 
-#Returns a dataframe with a given number of last games between two selected teams
+#Returns list with the name of the winner from two selected teams of last 'n' games between them
 #Parameter n: number of games
 #Parameter team_a, team_b = names of the teams
 def find_n_last_games(team_a, team_b, n):
     try:
-        # changing with the values
         a = bundesliga_1[team_a]
         b = bundesliga_1[team_b]
 
         this_url = base_url.format(a, b)
 
-        response = requests.get(this_url, headers=headers)
+        response = requests.get(this_url, headers=header)
         response.raise_for_status()  # Raise an exception for bad status codes
         soup = BeautifulSoup(response.content, "html.parser")
     except requests.exceptions.RequestException as e:
@@ -168,15 +169,18 @@ def find_n_last_games(team_a, team_b, n):
     data = [row for row in data if len(row) >= 5]
     data = data[:n]
 
-    df = pd.DataFrame(data)
+    winners = []
+    for row in data:
+        result = row[7].split(':')
+        if int(result[0]) > int(result[1]):
+            winners.append(team_a)
+        elif int(result[0]) < int(result[1]):
+            winners.append(team_b)
+        else:
+            winners.append("Draw")
 
-    df.drop(df.columns[[0, 1, 2, 3, 6, 8]], axis=1, inplace=True)
-    df.rename(columns={4: 'H/A', 5: 'Date', 7: 'Result'}, inplace=True)
-    df[['home_team', 'away_team']] = df.apply(
-        lambda x: x['Result'].split(':')[::-1] if x['H/A'] == 'A' else x['Result'].split(':'), axis=1,
-        result_type='expand')
+    return winners
 
-    return df
 
 #TODO:
 #Create a dataframe out of the scraped data
