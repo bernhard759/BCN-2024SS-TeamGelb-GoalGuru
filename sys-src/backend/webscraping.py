@@ -134,6 +134,49 @@ def get_matchday_positions(season, spieltage = 34, delay=2):
 
     return matchday_tables
 
+#Returns a dataframe with a given number of last games between two selected teams
+#Parameter n: number of games
+#Parameter team_a, team_b = names of the teams
+def find_n_last_games(team_a, team_b, n):
+    try:
+        # changing with the values
+        a = bundesliga_1[team_a]
+        b = bundesliga_1[team_b]
+
+        this_url = base_url.format(a, b)
+
+        response = requests.get(this_url, headers=headers)
+        response.raise_for_status()  # Raise an exception for bad status codes
+        soup = BeautifulSoup(response.content, "html.parser")
+    except requests.exceptions.RequestException as e:
+        print("Error fetching data:", e)
+
+    # getting the table with the results between the teams
+    table = soup.select_one('table[class="items"]')
+    tr_elements = table.find_all('tr')
+    data = []
+
+    for tr in tr_elements:
+        td_elements = tr.find_all('td')
+        td_row = []
+        for td in td_elements:
+            td_row.append(td.text.strip())
+        data.append(td_row)
+
+    data = [[elem for elem in row if elem.strip()] for row in data]
+    data = data[1:]
+    data = [row for row in data if len(row) >= 5]
+    data = data[:n]
+
+    df = pd.DataFrame(data)
+
+    df.drop(df.columns[[0, 1, 2, 3, 6, 8]], axis=1, inplace=True)
+    df.rename(columns={4: 'H/A', 5: 'Date', 7: 'Result'}, inplace=True)
+    df[['home_team', 'away_team']] = df.apply(
+        lambda x: x['Result'].split(':')[::-1] if x['H/A'] == 'A' else x['Result'].split(':'), axis=1,
+        result_type='expand')
+
+    return df
 
 #TODO:
 #Create a dataframe out of the scraped data
