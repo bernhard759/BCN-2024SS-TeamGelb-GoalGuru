@@ -4,8 +4,13 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import styles from "./GamePrediction.module.css";
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 export default function GamePrediction({ teams }) {
+
+    // Translation
+    const { t } = useTranslation();
+
     // State
     //----------------------------------------------------------------
     const [isLoading, setIsLoading] = useState(true);
@@ -18,12 +23,22 @@ export default function GamePrediction({ teams }) {
     useEffect(() => {
         const fetchData = async () => {
             setIsLoading(true);
+            setError(null);
             try {
                 const homeTeam = teams[0];
                 const awayTeam = teams[1];
 
-                const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
-                setPrediction(response.data);
+                //const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                let mockData = {
+                    prediction: "Team A",
+                    probabilities: {
+                        win: 0.6,
+                        draw: 0.3,
+                        lose: 0.1
+                    }
+                };
+                //setPrediction(response.data);
+                setPrediction(mockData)
             } catch (error) {
                 setError(error);
             } finally {
@@ -71,11 +86,11 @@ export default function GamePrediction({ teams }) {
     function getPopupMessage(result, value) {
         switch (result) {
             case 'win':
-                return `${teams[0]} wins (${probaValuePercentageDisplay(value)})`;
+                return `${teams[0]} ${t("prediction.win")} (${probaValuePercentageDisplay(value)})`;
             case 'draw':
-                return `${teams[0]} and ${teams[1]} share points (${probaValuePercentageDisplay(value)})`;
+                return `${teams[0]} ${t("prediction.and")} ${teams[1]} ${t("prediction.share")} (${probaValuePercentageDisplay(value)})`;
             case 'lose':
-                return `${teams[0]} loses (${probaValuePercentageDisplay(value)})`;
+                return `${teams[0]} ${t("prediction.loses")} (${probaValuePercentageDisplay(value)})`;
             default:
                 return '';
         }
@@ -99,7 +114,7 @@ export default function GamePrediction({ teams }) {
 
     // Error markup
     if (error) {
-        return <h4 className="text-center m-5 text-secondary" data-testid="errortext">&#10060; There was a problem fetching the prediction form the backend. Please try again.</h4>;
+        return <h4 className="text-center m-5 text-secondary" data-testid="errortext">&#10060; {t("prediction.fetcherror")}</h4>;
     }
 
     // Component Markup
@@ -107,8 +122,8 @@ export default function GamePrediction({ teams }) {
         <>
             {/*Prediction text */}
             {!isLoading ? (
-                <p className="lead text-center display-6" data-testid="predictiontext">We are {probaValuePercentageDisplay(getMaxProba(prediction))} sure that {
-                    getMaxProbabilityKey(prediction) == "win" ? `${prediction.prediction} wins the game.` : getMaxProbabilityKey(prediction) == "lose" ? `${prediction.prediction} loses the game.` : "the game is a draw"}</p>
+                <p className="lead text-center" style={{fontSize: "1.5em"}} data-testid="predictiontext">{t("prediction.sentencewe")} {probaValuePercentageDisplay(getMaxProba(prediction))} {t("prediction.sentencesure")} {
+                    getMaxProbabilityKey(prediction) == "win" ? `${prediction.prediction} ${t("prediction.sentencewin")}` : getMaxProbabilityKey(prediction) == "lose" ? `${prediction.prediction} ${t("prediction.sentencelose")}` : `${t("prediction.sentencedraw")}`}</p>
             ) :
                 <div className="d-flex justify-content-center" data-testid="loadingskeleton1">
                     <Skeleton containerClassName="my-2" width={400} />

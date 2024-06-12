@@ -6,8 +6,12 @@ import { MdSportsSoccer } from "react-icons/md";
 import GameSelect from './components/GameSelect';
 import AppNavbar from './components/AppNavBar';
 import GamePrediction from './components/GamePrediction';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+
+  // Translation
+  const { t } = useTranslation();
 
   // State
   //----------------------------------------------------------------
@@ -33,7 +37,7 @@ function App() {
 
         <div className="header my-5 d-flex justify-content-center align-items-center flex-column">
           <h1 className="display-1 fw-bold" data-testid="header">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
-          <h2 className="text-center">Predicting soccer games with AI</h2>
+          <h2 className="text-center">{t("app.desctext")}</h2>
         </div>
 
         <div className="my-2 mx-5">
@@ -74,7 +78,7 @@ function App() {
 
             </div>
           ) : (
-            <h3 className="text-center m-5 text-secondary" data-testid="firstprediction">Make your first prediction &#9917;</h3>
+            <h3 className="text-center m-5 text-secondary" data-testid="firstprediction">{t("app.firstpred")} &#9917;</h3>
           )}
 
         </div>

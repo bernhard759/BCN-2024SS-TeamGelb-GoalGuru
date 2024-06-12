@@ -1,0 +1,24 @@
+{
+    "gameselect": {
+        "select": "Team auswählen",
+        "predict": "Vorhersagen"
+      },
+      "app":{
+        "desctext": "KI-basierte Fussballspielvorhersage",
+        "firstpred": "Mach deine erste Vorhersage"
+
+    },
+      "prediction": {
+        "sentencewe": "Wir sind zu",
+        "sentencesure": "sicher, dass ",
+        "sentencewin": "das Spiel gewinnt.",
+        "sentencelose": "das Spiel verliert.",
+        "sentencedraw": "das Spiel unentschieden endet.",
+        "win": "gewinnt",
+        "loses": "verliert",
+        "and": "und",
+        "share": "teilen sich Punkte",
+        "fetcherror": "Wir konnten keine Vorhersage machen. Bitte erneut versuchen."
+      }
+  }
+  

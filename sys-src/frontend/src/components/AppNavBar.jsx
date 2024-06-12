@@ -6,6 +6,10 @@ import Modal from 'react-bootstrap/Modal';
 import { MdSportsSoccer } from "react-icons/md";
 import { MdInfoOutline } from "react-icons/md";
 import { FaSun, FaMoon } from 'react-icons/fa';
+import { FaGlobe } from 'react-icons/fa';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import i18n from '../i18n';
 
 export default function AppNavbar() {
 
@@ -13,6 +17,7 @@ export default function AppNavbar() {
   //----------------------------------------------------------------
   const [showModal, setShowModal] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState('en');
   //----------------------------------------------------------------
 
   // Refs
@@ -60,8 +65,38 @@ export default function AppNavbar() {
             </Nav>
             <Nav>
               <div className="d-flex jsutify-content-center align-items-center gap-2">
+                {/* Language switcher */}
+                <DropdownButton
+                  id="language-dropdown"
+                  title={<FaGlobe />}
+                  variant="outline-secondary"
+                >
+                  <Dropdown.Item
+                    active={currentLanguage === 'en'}
+                    onClick={() => {
+                      setCurrentLanguage('en');
+                      i18n.changeLanguage('en');
+                    }}
+                  >
+                    EN
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    active={currentLanguage === 'de'}
+                    onClick={() => {
+                      setCurrentLanguage('de');
+                      i18n.changeLanguage('de');
+                    }}
+                  >
+                    DE
+                  </Dropdown.Item>
+                </DropdownButton>
+
                 {/*Theme picker*/}
-                <div className="icon-wrapper" onClick={toggleTheme}>
+                <div className="icon-wrapper" 
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Toggle theme"
+                  onClick={toggleTheme}>
                   {isDarkMode ? <FaSun className="text-secondary" /> : <FaMoon className="text-secondary" />}
                 </div>
                 {/*App info*/}

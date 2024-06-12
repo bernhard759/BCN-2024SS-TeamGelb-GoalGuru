@@ -2,8 +2,16 @@ import { useState, useEffect } from 'react';
 import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
+import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
+
+// Change language to German
+i18n.changeLanguage('de');
 
 function GameSelect({ onTeamSelection }) {
+
+  // Translation
+  const { t } = useTranslation();
 
   // State
   //----------------------------------------------------------------
@@ -54,7 +62,7 @@ function GameSelect({ onTeamSelection }) {
     <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap fs-5">
       {/*Team select*/}
       <Form.Select aria-label="Team1 selection" size="lg" className="form-select-lg max-width-select" value={team1} onChange={handleTeam1Change}>
-        <option value="">Select a team</option>
+        <option value="">{t("gameselect.select")}</option>
         {/* TODO: Remove hard coded options after we have dummy data */}
         <option value="Team1">One</option>
         <option value="Team2">Two</option>
@@ -66,7 +74,7 @@ function GameSelect({ onTeamSelection }) {
       <span className="mx-2">vs.</span>
       {/*Team select*/}
       <Form.Select aria-label="Team2 selection" size="lg" className="form-select-lg max-width-select" value={team2} onChange={handleTeam2Change}>
-        <option value="">Select a team</option>
+        <option value="">{t("gameselect.select")}</option>
         {/* TODO: Remove hard coded options after we have dummy data */}
         <option value="Team1">One</option>
         <option value="Team2">Two</option>
@@ -76,7 +84,7 @@ function GameSelect({ onTeamSelection }) {
         ))}
       </Form.Select>
       <Button variant="primary" size="lg" onClick={() => onTeamSelection(team1, team2)} 
-      disabled={buttonDisabled}>Predict</Button>
+      disabled={buttonDisabled}>{t("gameselect.predict")}</Button>
     </div>
   );
 }
