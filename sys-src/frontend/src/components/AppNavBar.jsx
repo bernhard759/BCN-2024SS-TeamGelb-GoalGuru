@@ -23,23 +23,6 @@ export default function AppNavbar() {
   // Effects
   //----------------------------------------------------------------
   useEffect(() => {
-    // Check if there is a browser preference
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialMode = prefersDarkMode ? 'dark' : 'light';
-
-    // Set the theme
-    document.body.setAttribute('data-bs-theme', initialMode);
-    setIsDarkMode(prefersDarkMode);
-
-    // Listen to changes in the browsers preferences
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-      document.body.setAttribute('data-bs-theme', event.matches ? 'dark' : 'light');
-      setIsDarkMode(event.matches);
-    });
-  }, []);
-
-
-  useEffect(() => {
     // Change the theme
     const body = document.body;
     body.setAttribute('data-bs-theme', isDarkMode ? 'dark' : 'light');
