@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
+import axios from 'axios';
 
 function GameSelect({ onTeamSelection }) {
 
@@ -9,26 +10,30 @@ function GameSelect({ onTeamSelection }) {
   const [team1, setTeam1] = useState('');
   const [team2, setTeam2] = useState('');
   const [teams, setTeams] = useState([]); // Used for the select options
+  const [buttonDisabled, setButtonDisabled] = useState(true);
   //----------------------------------------------------------------
 
   // Data fetching
   //----------------------------------------------------------------
   useEffect(() => {
     // Fetch teams from the backend API
-    fetch('/api/teams')
-      .then(response => response.json())
-      .then(data => setTeams(data.teams))
+    axios.get('/api/teams')
+      .then(response => setTeams(response.data.teams))
       .catch(error => console.error('Error fetching teams:', error));
   }, []);
+
+  useEffect(() => {
+    setButtonDisabled(team1 == team2 || team1 == '' || team2 == '')
+  }, [team1, team2])
   //----------------------------------------------------------------
 
   // Funcs
   //----------------------------------------------------------------
   /**
- * Handles the change event for the first team selection dropdown.
- *
- * @param {Object} event - The change event object.
- */
+   * Handles the change event for the first team selection dropdown.
+   *
+   * @param {Object} event - The change event object.
+   */
   const handleTeam1Change = (event) => {
     setTeam1(event.target.value);
   };
@@ -42,16 +47,7 @@ function GameSelect({ onTeamSelection }) {
     setTeam2(event.target.value);
   };
 
-  /**
-   * Checks if two different teams are selected.
-   *
-   * @returns {boolean} True if two different teams are selected and both selections are not empty, false otherwise.
-   */
-  const areDifferentTeamsSelected = () => {
-    return team1 !== team2 && team1 !== '' && team2 !== '';
-  };
   //----------------------------------------------------------------
-
 
   // Markup
   return (
@@ -79,9 +75,10 @@ function GameSelect({ onTeamSelection }) {
           <option key={index} value={team}>{team}</option>
         ))}
       </Form.Select>
-      <Button variant="primary" size="lg" onClick={() => onTeamSelection(team1, team2)} disabled={!areDifferentTeamsSelected}>Predict</Button>
+      <Button variant="primary" size="lg" onClick={() => onTeamSelection(team1, team2)} 
+      disabled={buttonDisabled}>Predict</Button>
     </div>
   );
 }
 
-export default GameSelect;
+export default GameSelect
