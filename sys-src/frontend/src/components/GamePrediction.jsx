@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import styles from "./GamePrediction.module.css";
+import axios from 'axios';
 
 export default function GamePrediction({ teams }) {
-
     // State
     //----------------------------------------------------------------
     const [isLoading, setIsLoading] = useState(true);
@@ -19,20 +19,11 @@ export default function GamePrediction({ teams }) {
         const fetchData = async () => {
             setIsLoading(true);
             try {
-                // Simulate a delay of 2 seconds
-                await new Promise(resolve => setTimeout(resolve, 2000));
-
                 const homeTeam = teams[0];
                 const awayTeam = teams[1];
 
-                const response = await fetch(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
-                const data = await response.json();
-
-                if (response.ok) {
-                    setPrediction(data);
-                } else {
-                    throw new Error(`Error fetching prediction: ${response.status}`);
-                }
+                const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                setPrediction(response.data);
             } catch (error) {
                 setError(error);
             } finally {
@@ -43,7 +34,6 @@ export default function GamePrediction({ teams }) {
         fetchData();
     }, [teams]);
     //----------------------------------------------------------------
-
 
     // Funcs
     //----------------------------------------------------------
@@ -70,7 +60,6 @@ export default function GamePrediction({ teams }) {
         const maxProba = getMaxProba(prediction);
         return Object.keys(prediction.probabilities).find(key => prediction.probabilities[key] === maxProba);
     }
-
 
     /**
      * Generates a message based on the result and probability value.
@@ -110,7 +99,7 @@ export default function GamePrediction({ teams }) {
 
     // Error markup
     if (error) {
-        return <h4 className="text-center m-5 text-secondary">&#10060; There was a problem fetching the prediction form the backend. Please try again.</h4>;
+        return <h4 className="text-center m-5 text-secondary" data-testid="errortext">&#10060; There was a problem fetching the prediction form the backend. Please try again.</h4>;
     }
 
     // Component Markup
@@ -118,10 +107,10 @@ export default function GamePrediction({ teams }) {
         <>
             {/*Prediction text */}
             {!isLoading ? (
-                <p className="lead text-center display-6">We are {probaValuePercentageDisplay(getMaxProba(prediction))} sure that {
+                <p className="lead text-center display-6" data-testid="predictiontext">We are {probaValuePercentageDisplay(getMaxProba(prediction))} sure that {
                     getMaxProbabilityKey(prediction) == "win" ? `${prediction.team} wins the game.` : getMaxProbabilityKey(prediction) == "lose" ? `${prediction.team} loses the game.` : "the game is a draw"}</p>
             ) :
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center" data-testid="loadingskeleton1">
                     <Skeleton containerClassName="my-2" width={400} />
                 </div>}
 
@@ -165,7 +154,7 @@ export default function GamePrediction({ teams }) {
                         </OverlayTrigger>
                     ))}
                 </div>
-            ) : <Skeleton height={40} />}
+            ) : <div data-testid="loadingskeleton2"><Skeleton height={40} /></div>}
 
         </>
     );
