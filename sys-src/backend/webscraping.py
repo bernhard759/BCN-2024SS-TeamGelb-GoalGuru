@@ -182,8 +182,53 @@ def find_n_last_games(team_a, team_b, n):
     return winners
 
 
-#TODO:
 #Create a dataframe out of the scraped data
 #Save the data as a csv
 def create_dataframe():
-    pass
+    all_data = []
+
+    for season in range(start_season, end_season + 1):
+        # Fetch data
+        matchday_results = get_matchday_results(season)
+        market_values = get_market_values(season)
+        matchday_positions = get_matchday_positions(season, 34, 2)
+
+        # Prepare data for the dataframe
+        data = []
+
+        for matchday, matches in matchday_results.items():
+            matchday_number = int(matchday.split('.')[0])
+            positions = matchday_positions[matchday_number - 1]
+
+            for match in matches:
+                home_team, away_team, result = match
+                home_market_value = market_values.get(home_team, 'NA')
+                away_market_value = market_values.get(away_team, 'NA')
+                home_position = positions.get(home_team, 'NA')
+                away_position = positions.get(away_team, 'NA')
+
+                data.append({
+                    'Matchday': matchday_number,
+                    'Home_Team': home_team,
+                    'Away_Team': away_team,
+                    'Result': result,
+                    'Home_Market_Value': home_market_value,
+                    'Away_Market_Value': away_market_value,
+                    'Home_Position': home_position,
+                    'Away_Position': away_position
+                })
+
+        # add teh current season to all seasons data
+        all_data += data
+
+    # Create DataFrame
+    df = pd.DataFrame(all_data)
+
+    # Save DataFrame as CSV
+    # df.to_csv(f'bundesliga_season_{season}.csv', index=False)
+
+    return df
+
+# TODO:
+# 1) create_dataframe is slow (get_matchday_positions)
+# 2) add more features: billanz, last results
