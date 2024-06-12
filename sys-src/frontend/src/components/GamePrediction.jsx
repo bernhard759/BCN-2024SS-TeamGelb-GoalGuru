@@ -108,7 +108,7 @@ export default function GamePrediction({ teams }) {
             {/*Prediction text */}
             {!isLoading ? (
                 <p className="lead text-center display-6" data-testid="predictiontext">We are {probaValuePercentageDisplay(getMaxProba(prediction))} sure that {
-                    getMaxProbabilityKey(prediction) == "win" ? `${prediction.team} wins the game.` : getMaxProbabilityKey(prediction) == "lose" ? `${prediction.team} loses the game.` : "the game is a draw"}</p>
+                    getMaxProbabilityKey(prediction) == "win" ? `${prediction.prediction} wins the game.` : getMaxProbabilityKey(prediction) == "lose" ? `${prediction.prediction} loses the game.` : "the game is a draw"}</p>
             ) :
                 <div className="d-flex justify-content-center" data-testid="loadingskeleton1">
                     <Skeleton containerClassName="my-2" width={400} />

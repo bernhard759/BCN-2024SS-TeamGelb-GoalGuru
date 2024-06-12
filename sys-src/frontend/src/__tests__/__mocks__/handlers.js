@@ -16,7 +16,7 @@ export const handlers = [
 
     // Return the mocked response with the provided probabilities
     return HttpResponse.json({
-        team: "Team A",
+        prediction: "Team A",
         probabilities: {
           win: 0.6,
           draw: 0.3,
