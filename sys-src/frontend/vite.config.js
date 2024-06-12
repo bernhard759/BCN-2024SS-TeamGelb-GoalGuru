@@ -10,7 +10,14 @@ export default defineConfig({
     setupFiles: './src/__tests__/setup.js',
     coverage: {
       provider: 'v8', // or 'istanbul'
+      include: ['src/**/*.{js,ts,jsx,tsx}'], // Include all source files
       reporter: ['text', 'html'], // Add 'html' reporter for UI coverage
+      thresholds: {
+        lines: 40,
+        functions: 40,
+        branches: 40,
+        statements: 40
+      }
     },
   },
   server: {

@@ -1,6 +1,4 @@
-import React from 'react';
 import { render, screen, waitFor, act } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
 import GameSelect from '../components/GameSelect';
 
 // GameSelect test suite
