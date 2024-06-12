@@ -1,26 +1,76 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import styles from "./GamePrediction.module.css";
 
 export default function GamePrediction({ teams }) {
 
-    //TODO: Implement the fetch request as soon as we have some dummy data on the backend (use Effect or react-query)
-    //TODO: Add react skeleton loading
+    // State
+    //----------------------------------------------------------------
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [prediction, setPrediction] = useState(null);
+    //----------------------------------------------------------------
 
-    const mockResponse = {
-        "prediction": "Team 1",
-        "probabilities": {
-            "win": 0.2520,
-            "draw": 0.64168,
-            "lose": 0.10001
-        }
-    };
+    // Fetching
+    //----------------------------------------------------------------
+    useEffect(() => {
+        const fetchData = async () => {
+            setIsLoading(true);
+            try {
+                // Simulate a delay of 2 seconds
+                await new Promise(resolve => setTimeout(resolve, 2000));
 
-    const maxProba = Math.max(...Object.values(mockResponse.probabilities));
-    const maxProbabilityKey = Object.keys(mockResponse.probabilities).find(key => mockResponse.probabilities[key] === maxProba);
+                const homeTeam = teams[0];
+                const awayTeam = teams[1];
+
+                const response = await fetch(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                const data = await response.json();
+
+                if (response.ok) {
+                    setPrediction(data);
+                } else {
+                    throw new Error(`Error fetching prediction: ${response.status}`);
+                }
+            } catch (error) {
+                setError(error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchData();
+    }, [teams]);
+    //----------------------------------------------------------------
+
 
     // Funcs
     //----------------------------------------------------------
+
+    /**
+     * Retrieves the maximum probability value from the prediction object.
+     *
+     * @param {Object} prediction - The prediction object containing probabilities.
+     * @returns {number|null} The maximum probability value, or null if the prediction object is falsy.
+     */
+    function getMaxProba(prediction) {
+        if (!prediction) return null;
+        return Math.max(...Object.values(prediction.probabilities));
+    }
+
+    /**
+     * Retrieves the key corresponding to the maximum probability value from the prediction object.
+     *
+     * @param {Object} prediction - The prediction object containing probabilities.
+     * @returns {string|null} The key corresponding to the maximum probability value, or null if the prediction object is falsy.
+     */
+    function getMaxProbabilityKey(prediction) {
+        if (!prediction) return null;
+        const maxProba = getMaxProba(prediction);
+        return Object.keys(prediction.probabilities).find(key => prediction.probabilities[key] === maxProba);
+    }
+
 
     /**
      * Generates a message based on the result and probability value.
@@ -58,29 +108,42 @@ export default function GamePrediction({ teams }) {
 
     //----------------------------------------------------------
 
-    // Markup
+    // Error markup
+    if (error) {
+        return <h4 className="text-center m-5 text-secondary">&#10060; There was a problem fetching the prediction form the backend. Please try again.</h4>;
+    }
+
+    // Component Markup
     return (
         <>
-            {mockResponse.probabilities && (
-                <>
-                    <p className="lead text-center">We are {probaValuePercentageDisplay(maxProba)} sure that {
-                        maxProbabilityKey == "win" ? `${mockResponse.prediction} wins the game.` : maxProbabilityKey == "lose" ? `${mockResponse.prediction} loses the game.` : "the game is a draw"}</p>
+            {/*Prediction text */}
+            {!isLoading ? (
+                <p className="lead text-center display-6">We are {probaValuePercentageDisplay(getMaxProba(prediction))} sure that {
+                    getMaxProbabilityKey(prediction) == "win" ? `${prediction.team} wins the game.` : getMaxProbabilityKey(prediction) == "lose" ? `${prediction.team} loses the game.` : "the game is a draw"}</p>
+            ) :
+                <div className="d-flex justify-content-center">
+                    <Skeleton containerClassName="my-2" width={400} />
+                </div>}
 
-                    <div className={styles["probability-bar"]}>
-                        {Object.entries(mockResponse.probabilities).map(([probability, value]) => (
-                            <OverlayTrigger
+            {/*Prediction proba bar*/}
+            {!isLoading ? (
+                <div className={styles["probability-bar"]}>
+                    {Object.entries(prediction.probabilities).map(([probability, value]) => (
+                        <OverlayTrigger
+                            key={probability}
+                            placement="top"
+                            overlay={
+                                <Tooltip id={`tooltip-${probability}`}>
+                                    {getPopupMessage(probability, value)}
+                                </Tooltip>
+                            }
+                        >
+                            {/*Percentage bar*/}
+                            <div
                                 key={probability}
-                                placement="top"
-                                overlay={
-                                    <Tooltip id={`tooltip-${probability}`}>
-                                        {getPopupMessage(probability, value)}
-                                    </Tooltip>
-                                }
-                            >
-
-                                <div
-                                    key={probability}
-                                    className={`${styles["probability-section"]} ${probability === maxProbabilityKey ? (
+                                className={`
+                                    ${styles["probability-section"]} 
+                                    ${probability === getMaxProbabilityKey(prediction) ? (
                                         `${probability === 'win'
                                             ? 'bg-success'
                                             : probability === 'draw'
@@ -92,18 +155,18 @@ export default function GamePrediction({ teams }) {
                                             : probability === 'draw'
                                                 ? styles["proba-bg-draw"]
                                                 : styles["proba-bg-lose"]
-                                        } text-secondary fw-normal`)}  d-flex justify-content-center align-items-center `}
-                                    style={{ width: `${value * 100}%` }}
-                                >
-                                    {(probaValuePercentageDisplay(value))}
-                                    <span className={styles.popup}></span>
-                                </div>
-                            </OverlayTrigger>
-                        ))}
-                    </div>
+                                        } text-secondary fw-normal`)}  
+                                     d-flex justify-content-center align-items-center`}
+                                style={{ width: `${value * 100}%` }}
+                            >
+                                {(probaValuePercentageDisplay(value))}
+                                <span className={styles.popup}></span>
+                            </div>
+                        </OverlayTrigger>
+                    ))}
+                </div>
+            ) : <Skeleton height={40} />}
 
-                </>
-            )}
         </>
     );
 }
