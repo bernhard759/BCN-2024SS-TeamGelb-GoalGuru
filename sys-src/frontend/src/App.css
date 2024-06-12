@@ -41,3 +41,8 @@ nav {
 .icon-wrapper:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
+
+.icon-wrapper:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color);
+}
