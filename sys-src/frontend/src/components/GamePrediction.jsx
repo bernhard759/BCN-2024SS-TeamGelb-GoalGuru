@@ -36,6 +36,7 @@ export default function GamePrediction({ teams }) {
                         lose: 0.1
                     }
                 };
+                //await new Promise(r => setTimeout(() => r(), 2000));
                 //setPrediction(mockData)
 
                 const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
