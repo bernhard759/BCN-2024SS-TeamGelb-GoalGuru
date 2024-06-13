@@ -181,10 +181,56 @@ def find_n_last_games(team_a, team_b, n):
 
     return winners
 
+#Returns dictionary with the final position of the teams from last season
+def get_last_season_positions(season):
+    url = last_season_tabelle_url.format(season)
+
+    data = requests.get(url=url, headers=header)
+    soup = BeautifulSoup(data.text, 'html.parser')
+    table = soup.find("table", attrs={"class": "items"})
+    table_rows = table.find("tbody").find_all("tr")
+
+    positions = {}
+
+    for row in table_rows:
+        team_name = row.find("td", attrs={"class": "no-border-links hauptlink"}).find("a", title=True).get("title")
+        team_position = row.find("td", attrs={"class": "rechts hauptlink"}).get_text(strip=True)
+        positions[team_name] = team_position
+
+    return positions
+
 
 #Create a dataframe out of the scraped data
 #Save the data as a csv
-def create_dataframe():
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
+header = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+}
+
+
+def get_last_season_positions(season):
+    last_season_tabelle_url = "https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1/saison_id/{}/plus/1"
+    url = last_season_tabelle_url.format(season)
+
+    data = requests.get(url=url, headers=header)
+    soup = BeautifulSoup(data.text, 'html.parser')
+    table = soup.find("table", attrs={"class": "items"})
+    table_rows = table.find("tbody").find_all("tr")
+
+    positions = {}
+
+    for row in table_rows:
+        team_name = row.find("td", attrs={"class": "no-border-links hauptlink"}).find("a", title=True).get("title")
+        team_position = row.find("td", attrs={"class": "rechts hauptlink"}).get_text(strip=True)
+        positions[team_name] = team_position
+
+    return positions
+
+
+def create_dataframe(start_season, end_season):
     all_data = []
 
     for season in range(start_season, end_season + 1):
@@ -192,8 +238,8 @@ def create_dataframe():
         matchday_results = get_matchday_results(season)
         market_values = get_market_values(season)
         matchday_positions = get_matchday_positions(season, 34, 2)
+        last_season_positions = get_last_season_positions(season - 1)
 
-        # Prepare data for the dataframe
         data = []
 
         for matchday, matches in matchday_results.items():
@@ -206,6 +252,8 @@ def create_dataframe():
                 away_market_value = market_values.get(away_team, 'NA')
                 home_position = positions.get(home_team, 'NA')
                 away_position = positions.get(away_team, 'NA')
+                home_position_last_season = last_season_positions.get(home_team, 'NA')
+                away_position_last_season = last_season_positions.get(away_team, 'NA')
 
                 data.append({
                     'Matchday': matchday_number,
@@ -215,10 +263,12 @@ def create_dataframe():
                     'Home_Market_Value': home_market_value,
                     'Away_Market_Value': away_market_value,
                     'Home_Position': home_position,
-                    'Away_Position': away_position
+                    'Away_Position': away_position,
+                    'Home_Position_Last_Season': home_position_last_season,
+                    'Away_Position_Last_Season': away_position_last_season
                 })
 
-        # add teh current season to all seasons data
+        # Add the current season to all seasons data
         all_data += data
 
     # Create DataFrame
@@ -232,3 +282,6 @@ def create_dataframe():
 # TODO:
 # 1) create_dataframe is slow (get_matchday_positions)
 # 2) add more features: billanz, last results
+
+# df = create_dataframe(2021, 2021)
+# print(df)
