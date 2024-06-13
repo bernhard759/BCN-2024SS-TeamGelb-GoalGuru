@@ -1,9 +1,9 @@
 import uvicorn
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import List, Dict, Optional
+from typing import List, Dict
 import logging
-import requests
+
 
 app = FastAPI()
 #Dummy data
@@ -31,15 +31,12 @@ async def get_teams():
     logging.info("Received request for teams")
     return {"teams": teams}
 
+#Endpoint for match data
 @app.get("/api/matches",  response_model=List[MatchesResponse])
 async def get_matches():
      logging.info("Received request for matches")
      return matches
 
-
-@app.get("/api")
-async def root():
-    return {"message": "Hello World"}
 
 if __name__ == "__main__":
    uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)
