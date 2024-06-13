@@ -10,6 +10,7 @@ import { FaGlobe } from 'react-icons/fa';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import i18n from '../i18n';
+import "./AppNavBar.css"
 
 export default function AppNavbar() {
 

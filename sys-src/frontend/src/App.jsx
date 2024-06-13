@@ -6,6 +6,7 @@ import AppNavbar from './components/AppNavBar';
 import GamePrediction from './components/GamePrediction';
 import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
+import i18n from './i18n';
 
 function App() {
 

@@ -24,7 +24,7 @@ describe('App', () => {
   it('renders the team selection component', () => {
     render(<App />);
 
-    const teamSelectionComponent = screen.getByLabelText('Team1 selection');
+    const teamSelectionComponent = screen.getByTestId('teamselect1');
     expect(teamSelectionComponent).toBeInTheDocument();
   });
   //----------------------------------------------------------------

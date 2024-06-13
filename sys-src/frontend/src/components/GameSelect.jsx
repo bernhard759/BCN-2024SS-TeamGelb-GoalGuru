@@ -61,7 +61,7 @@ function GameSelect({ onTeamSelection }) {
   return (
     <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap fs-5">
       {/*Team select*/}
-      <Form.Select aria-label="Team1 selection" size="lg" className="form-select-lg max-width-select" value={team1} onChange={handleTeam1Change}>
+      <Form.Select aria-label="Team1 selection" data-testid="teamselect1" size="lg" className="form-select-lg" style={{maxWidth: "400px"}} value={team1} onChange={handleTeam1Change}>
         <option value="">{t("gameselect.select")}</option>
         {/* TODO: Remove hard coded options after we have dummy data */}
         <option value="Team1">One</option>
@@ -73,7 +73,7 @@ function GameSelect({ onTeamSelection }) {
       </Form.Select>
       <span className="mx-2">vs.</span>
       {/*Team select*/}
-      <Form.Select aria-label="Team2 selection" size="lg" className="form-select-lg max-width-select" value={team2} onChange={handleTeam2Change}>
+      <Form.Select aria-label="Team2 selection" data-testid="teamselect2" size="lg" className="form-select-lg" style={{maxWidth: "400px"}} value={team2} onChange={handleTeam2Change}>
         <option value="">{t("gameselect.select")}</option>
         {/* TODO: Remove hard coded options after we have dummy data */}
         <option value="Team1">One</option>
@@ -83,7 +83,7 @@ function GameSelect({ onTeamSelection }) {
           <option key={index} value={team}>{team}</option>
         ))}
       </Form.Select>
-      <Button variant="primary" size="lg" onClick={() => onTeamSelection(team1, team2)} 
+      <Button variant="primary" data-testid="predictbtn"  size="lg" onClick={() => onTeamSelection(team1, team2)} 
       disabled={buttonDisabled}>{t("gameselect.predict")}</Button>
     </div>
   );

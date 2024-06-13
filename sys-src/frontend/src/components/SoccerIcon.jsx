@@ -19,9 +19,9 @@ const SoccerIcon = () => {
 
       if (iconElement) {
         // Calculate the new top position for the icon container
-        const newTop = 80 + (scrollPosition / pageHeight) * (window.innerHeight - 250);
+        const newTop = 100 + (scrollPosition / pageHeight) * (window.innerHeight - 250);
         // Calculate the new left position for the icon container
-        const newLeft = 40 + (scrollPosition / pageHeight) * (window.innerWidth - 250);
+        const newLeft = 50 + (scrollPosition / pageHeight) * (window.innerWidth - 250);
 
         // Update the top and left styles of the icon container
         iconElement.style.top = `${newTop}px`;
@@ -44,7 +44,7 @@ const SoccerIcon = () => {
   // Markup
   return (
     <div className="soccer-icon" ref={iconRef}>
-      <MdOutlineSportsSoccer />
+      <MdOutlineSportsSoccer data-testid="soccericon"/>
     </div>
   );
 };

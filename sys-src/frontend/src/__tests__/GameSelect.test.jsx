@@ -38,7 +38,7 @@ describe('GameSelect', () => {
       render(<GameSelect onTeamSelection={() => { }} />);
     });
 
-    expect(screen.getByRole('button', { name: 'Predict' })).toBeInTheDocument();
+    expect(screen.getByTestId("predictbtn")).toBeInTheDocument();
   });
 
   // Button disabled when same team selected
@@ -48,7 +48,7 @@ describe('GameSelect', () => {
     // Wait for the teams to be fetched and rendered
     await waitFor(() => screen.getAllByText('Team A'));
 
-    const predictButton = screen.getByRole('button', { name: 'Predict' });
+    const predictButton = screen.getByTestId("predictbtn");
 
     // Check if the "Predict" button is disabled
     expect(predictButton).toBeDisabled();

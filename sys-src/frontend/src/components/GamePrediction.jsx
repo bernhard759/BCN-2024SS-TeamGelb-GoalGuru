@@ -28,7 +28,6 @@ export default function GamePrediction({ teams }) {
                 const homeTeam = teams[0];
                 const awayTeam = teams[1];
 
-                //const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
                 let mockData = {
                     prediction: "Team A",
                     probabilities: {
@@ -37,8 +36,11 @@ export default function GamePrediction({ teams }) {
                         lose: 0.1
                     }
                 };
-                //setPrediction(response.data);
-                setPrediction(mockData)
+                //setPrediction(mockData)
+
+                const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                setPrediction(response.data);
+                
             } catch (error) {
                 setError(error);
             } finally {
