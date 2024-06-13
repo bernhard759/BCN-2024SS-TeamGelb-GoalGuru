@@ -4,6 +4,7 @@ import { MdSportsSoccer } from "react-icons/md";
 import GameSelect from './components/GameSelect';
 import AppNavbar from './components/AppNavBar';
 import GamePrediction from './components/GamePrediction';
+import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
 
 function App() {
@@ -33,9 +34,11 @@ function App() {
 
       <div id="content">
 
-        <div className="header my-5 d-flex justify-content-center align-items-center flex-column">
+      <SoccerIcon />
+
+        <div className="header d-flex justify-content-center align-items-center flex-column" style={{marginBlock: "5em"}}>
           <h1 className="display-1 fw-bold" data-testid="header">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
-          <h2 className="text-center">{t("app.desctext")}</h2>
+          <h2 className="text-center" data-testid="predicting">{t("app.desctext")}</h2>
         </div>
 
         <div className="my-2 mx-5">

@@ -14,7 +14,7 @@ describe('App', () => {
     expect(headerElement).toBeInTheDocument();   // Assert that the element is present in the document
 
 
-    const subheaderText = screen.getByText('Predicting soccer games with AI');
+    const subheaderText = screen.getByTestId('predicting');
     expect(subheaderText).toBeInTheDocument();
   });
   //----------------------------------------------------------------
