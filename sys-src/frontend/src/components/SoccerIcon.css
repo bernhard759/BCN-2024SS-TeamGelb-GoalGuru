@@ -1,0 +1,17 @@
+.soccer-icon {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    color: rgba(0,0,0,0.03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0s ease-out;
+    z-index: -1;
+}
+  
+.soccer-icon svg {
+    width: 150px;
+    height: 150px;
+}
+  
