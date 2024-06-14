@@ -1,0 +1,3061 @@
+,HT,AT,R,MV_HT,MV_AT,POS_HT,POS_AT
+0,FC Bayern München,VfL Wolfsburg,home,575.13,221.05,9,9
+1,TSG 1899 Hoffenheim,FC Augsburg,home,121.78,50.08,9,9
+2,Hannover 96,FC Schalke 04,home,76.65,212.00,9,9
+3,Hertha BSC,SV Werder Bremen,draw,66.00,67.53,9,9
+4,Eintracht Frankfurt,SC Freiburg,home,74.90,57.40,9,9
+5,1.FC Köln,Hamburger SV,draw,50.75,87.15,9,9
+6,Borussia Dortmund,Bayer 04 Leverkusen,away,319.50,177.10,9,9
+7,SC Paderborn 07,1.FSV Mainz 05,draw,28.50,88.00,9,9
+8,Borussia Mönchengladbach,VfB Stuttgart,draw,130.63,86.95,9,9
+9,FC Augsburg,Borussia Dortmund,away,50.08,319.50,18,17
+10,Bayer 04 Leverkusen,Hertha BSC,home,177.10,66.00,2,7
+11,VfL Wolfsburg,Eintracht Frankfurt,draw,221.05,74.90,15,5
+12,SV Werder Bremen,TSG 1899 Hoffenheim,draw,67.53,121.78,8,1
+13,VfB Stuttgart,1.FC Köln,away,86.95,50.75,11,13
+14,Hamburger SV,SC Paderborn 07,away,87.15,28.50,12,9
+15,FC Schalke 04,FC Bayern München,draw,212.00,575.13,14,3
+16,1.FSV Mainz 05,Hannover 96,draw,88.00,76.65,6,4
+17,SC Freiburg,Borussia Mönchengladbach,draw,57.40,130.63,16,10
+18,Bayer 04 Leverkusen,SV Werder Bremen,draw,177.10,67.53,1,9
+19,FC Bayern München,VfB Stuttgart,home,575.13,86.95,6,16
+20,Borussia Dortmund,SC Freiburg,home,319.50,57.40,8,14
+21,TSG 1899 Hoffenheim,VfL Wolfsburg,draw,121.78,221.05,3,12
+22,Hertha BSC,1.FSV Mainz 05,away,66.00,88.00,15,10
+23,SC Paderborn 07,1.FC Köln,draw,28.50,50.75,2,4
+24,Borussia Mönchengladbach,FC Schalke 04,home,130.63,212.00,11,13
+25,Eintracht Frankfurt,FC Augsburg,away,74.90,50.08,5,18
+26,Hannover 96,Hamburger SV,home,76.65,87.15,7,17
+27,SC Freiburg,Hertha BSC,draw,57.40,66.00,14,15
+28,FC Schalke 04,Eintracht Frankfurt,draw,212.00,74.90,16,10
+29,FC Augsburg,SV Werder Bremen,home,50.08,67.53,12,11
+30,Hamburger SV,FC Bayern München,draw,87.15,575.13,18,2
+31,VfB Stuttgart,TSG 1899 Hoffenheim,away,86.95,121.78,17,8
+32,SC Paderborn 07,Hannover 96,home,28.50,76.65,6,3
+33,1.FSV Mainz 05,Borussia Dortmund,home,88.00,319.50,7,4
+34,VfL Wolfsburg,Bayer 04 Leverkusen,home,221.05,177.10,13,1
+35,1.FC Köln,Borussia Mönchengladbach,draw,50.75,130.63,9,5
+36,FC Bayern München,SC Paderborn 07,home,575.13,28.50,4,1
+37,TSG 1899 Hoffenheim,SC Freiburg,draw,121.78,57.40,3,14
+38,SV Werder Bremen,FC Schalke 04,away,67.53,212.00,13,16
+39,Eintracht Frankfurt,1.FSV Mainz 05,draw,74.90,88.00,12,2
+40,Borussia Dortmund,VfB Stuttgart,draw,319.50,86.95,10,18
+41,Bayer 04 Leverkusen,FC Augsburg,home,177.10,50.08,5,9
+42,Borussia Mönchengladbach,Hamburger SV,home,130.63,87.15,7,17
+43,Hannover 96,1.FC Köln,home,76.65,50.75,6,8
+44,Hertha BSC,VfL Wolfsburg,home,66.00,221.05,15,11
+45,1.FSV Mainz 05,TSG 1899 Hoffenheim,draw,88.00,121.78,4,5
+46,SC Freiburg,Bayer 04 Leverkusen,draw,57.40,177.10,15,2
+47,VfB Stuttgart,Hannover 96,home,86.95,76.65,17,3
+48,1.FC Köln,FC Bayern München,away,50.75,575.13,9,1
+49,SC Paderborn 07,Borussia Mönchengladbach,away,28.50,130.63,7,6
+50,FC Schalke 04,Borussia Dortmund,home,212.00,319.50,13,8
+51,VfL Wolfsburg,SV Werder Bremen,home,221.05,67.53,12,16
+52,FC Augsburg,Hertha BSC,home,50.08,66.00,11,14
+53,Hamburger SV,Eintracht Frankfurt,away,87.15,74.90,18,10
+54,Hertha BSC,VfB Stuttgart,home,66.00,86.95,14,15
+55,FC Bayern München,Hannover 96,home,575.13,76.65,1,6
+56,Borussia Dortmund,Hamburger SV,away,319.50,87.15,12,18
+57,Bayer 04 Leverkusen,SC Paderborn 07,draw,177.10,28.50,3,11
+58,TSG 1899 Hoffenheim,FC Schalke 04,home,121.78,212.00,4,10
+59,SV Werder Bremen,SC Freiburg,draw,67.53,57.40,17,16
+60,Eintracht Frankfurt,1.FC Köln,home,74.90,50.75,7,13
+61,VfL Wolfsburg,FC Augsburg,home,221.05,50.08,9,8
+62,Borussia Mönchengladbach,1.FSV Mainz 05,draw,130.63,88.00,2,5
+63,FC Bayern München,SV Werder Bremen,home,575.13,67.53,1,18
+64,1.FSV Mainz 05,FC Augsburg,home,88.00,50.08,6,10
+65,Hannover 96,Borussia Mönchengladbach,away,76.65,130.63,8,3
+66,SC Freiburg,VfL Wolfsburg,away,57.40,221.05,15,7
+67,VfB Stuttgart,Bayer 04 Leverkusen,draw,86.95,177.10,16,4
+68,1.FC Köln,Borussia Dortmund,home,50.75,319.50,14,13
+69,FC Schalke 04,Hertha BSC,home,212.00,66.00,11,12
+70,Hamburger SV,TSG 1899 Hoffenheim,draw,87.15,121.78,17,2
+71,SC Paderborn 07,Eintracht Frankfurt,home,28.50,74.90,9,5
+72,SV Werder Bremen,1.FC Köln,away,67.53,50.75,18,11
+73,Borussia Dortmund,Hannover 96,away,319.50,76.65,14,10
+74,FC Augsburg,SC Freiburg,home,50.08,57.40,12,17
+75,TSG 1899 Hoffenheim,SC Paderborn 07,home,121.78,28.50,3,7
+76,Hertha BSC,Hamburger SV,home,66.00,87.15,13,16
+77,Eintracht Frankfurt,VfB Stuttgart,away,74.90,86.95,8,15
+78,Bayer 04 Leverkusen,FC Schalke 04,home,177.10,212.00,6,9
+79,VfL Wolfsburg,1.FSV Mainz 05,home,221.05,88.00,5,4
+80,Borussia Mönchengladbach,FC Bayern München,draw,130.63,575.13,2,1
+81,FC Schalke 04,FC Augsburg,home,212.00,50.08,12,9
+82,1.FSV Mainz 05,SV Werder Bremen,away,88.00,67.53,6,18
+83,Hannover 96,Eintracht Frankfurt,home,76.65,74.90,7,11
+84,VfB Stuttgart,VfL Wolfsburg,away,86.95,221.05,14,3
+85,Hamburger SV,Bayer 04 Leverkusen,home,87.15,177.10,16,5
+86,FC Bayern München,Borussia Dortmund,home,575.13,319.50,1,15
+87,Borussia Mönchengladbach,TSG 1899 Hoffenheim,home,130.63,121.78,2,4
+88,1.FC Köln,SC Freiburg,away,50.75,57.40,10,17
+89,SC Paderborn 07,Hertha BSC,home,28.50,66.00,8,13
+90,Hertha BSC,Hannover 96,away,66.00,76.65,13,6
+91,Bayer 04 Leverkusen,1.FSV Mainz 05,draw,177.10,88.00,5,9
+92,FC Augsburg,SC Paderborn 07,home,50.08,28.50,10,7
+93,TSG 1899 Hoffenheim,1.FC Köln,away,121.78,50.75,4,11
+94,Eintracht Frankfurt,FC Bayern München,away,74.90,575.13,12,1
+95,SC Freiburg,FC Schalke 04,home,57.40,212.00,16,8
+96,SV Werder Bremen,VfB Stuttgart,home,67.53,86.95,18,15
+97,VfL Wolfsburg,Hamburger SV,home,221.05,87.15,2,14
+98,Borussia Dortmund,Borussia Mönchengladbach,home,319.50,130.63,17,3
+99,FC Bayern München,TSG 1899 Hoffenheim,home,575.13,121.78,1,5
+100,FC Schalke 04,VfL Wolfsburg,home,212.00,221.05,11,2
+101,Borussia Mönchengladbach,Eintracht Frankfurt,away,130.63,74.90,3,12
+102,1.FSV Mainz 05,SC Freiburg,draw,88.00,57.40,8,13
+103,Hannover 96,Bayer 04 Leverkusen,away,76.65,177.10,4,6
+104,SC Paderborn 07,Borussia Dortmund,draw,28.50,319.50,9,15
+105,1.FC Köln,Hertha BSC,away,50.75,66.00,10,14
+106,Hamburger SV,SV Werder Bremen,home,87.15,67.53,17,16
+107,VfB Stuttgart,FC Augsburg,away,86.95,50.08,18,7
+108,SC Freiburg,VfB Stuttgart,away,57.40,86.95,14,18
+109,FC Schalke 04,1.FSV Mainz 05,home,212.00,88.00,7,9
+110,Bayer 04 Leverkusen,1.FC Köln,home,177.10,50.75,4,11
+111,FC Augsburg,Hamburger SV,home,50.08,87.15,6,15
+112,Hertha BSC,FC Bayern München,away,66.00,575.13,13,1
+113,SV Werder Bremen,SC Paderborn 07,home,67.53,28.50,17,10
+114,TSG 1899 Hoffenheim,Hannover 96,home,121.78,76.65,8,5
+115,VfL Wolfsburg,Borussia Mönchengladbach,home,221.05,130.63,2,3
+116,Eintracht Frankfurt,Borussia Dortmund,home,74.90,319.50,12,16
+117,Borussia Dortmund,TSG 1899 Hoffenheim,home,319.50,121.78,18,7
+118,Borussia Mönchengladbach,Hertha BSC,home,130.63,66.00,5,13
+119,Hannover 96,VfL Wolfsburg,away,76.65,221.05,8,2
+120,VfB Stuttgart,FC Schalke 04,away,86.95,212.00,16,6
+121,1.FC Köln,FC Augsburg,away,50.75,50.08,12,4
+122,SC Paderborn 07,SC Freiburg,draw,28.50,57.40,11,15
+123,FC Bayern München,Bayer 04 Leverkusen,home,575.13,177.10,1,3
+124,Hamburger SV,1.FSV Mainz 05,home,87.15,88.00,17,10
+125,Eintracht Frankfurt,SV Werder Bremen,home,74.90,67.53,9,14
+126,TSG 1899 Hoffenheim,Eintracht Frankfurt,home,121.78,74.90,8,7
+127,FC Schalke 04,1.FC Köln,away,212.00,50.75,5,12
+128,FC Augsburg,FC Bayern München,away,50.08,575.13,3,1
+129,Hertha BSC,Borussia Dortmund,home,66.00,319.50,15,14
+130,SV Werder Bremen,Hannover 96,draw,67.53,76.65,17,9
+131,SC Freiburg,Hamburger SV,draw,57.40,87.15,16,13
+132,1.FSV Mainz 05,VfB Stuttgart,draw,88.00,86.95,11,18
+133,Bayer 04 Leverkusen,Borussia Mönchengladbach,draw,177.10,130.63,4,6
+134,VfL Wolfsburg,SC Paderborn 07,draw,221.05,28.50,2,10
+135,FC Bayern München,SC Freiburg,home,575.13,57.40,1,15
+136,Hannover 96,FC Augsburg,home,76.65,50.08,9,5
+137,Hamburger SV,VfB Stuttgart,away,87.15,86.95,14,18
+138,1.FC Köln,1.FSV Mainz 05,draw,50.75,88.00,11,12
+139,Borussia Dortmund,VfL Wolfsburg,draw,319.50,221.05,16,2
+140,Borussia Mönchengladbach,SV Werder Bremen,home,130.63,67.53,4,17
+141,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,away,121.78,177.10,7,3
+142,Eintracht Frankfurt,Hertha BSC,draw,74.90,66.00,8,13
+143,SC Paderborn 07,FC Schalke 04,away,28.50,212.00,10,6
+144,1.FSV Mainz 05,FC Bayern München,away,88.00,575.13,11,1
+145,FC Schalke 04,Hamburger SV,draw,212.00,87.15,5,14
+146,Bayer 04 Leverkusen,Eintracht Frankfurt,draw,177.10,74.90,4,9
+147,FC Augsburg,Borussia Mönchengladbach,home,50.08,130.63,6,3
+148,SV Werder Bremen,Borussia Dortmund,home,67.53,319.50,18,16
+149,VfB Stuttgart,SC Paderborn 07,draw,86.95,28.50,15,12
+150,VfL Wolfsburg,1.FC Köln,home,221.05,50.75,2,10
+151,Hertha BSC,TSG 1899 Hoffenheim,away,66.00,121.78,13,7
+152,SC Freiburg,Hannover 96,draw,57.40,76.65,17,8
+153,VfL Wolfsburg,FC Bayern München,home,221.05,575.13,2,1
+154,FC Schalke 04,Hannover 96,home,212.00,76.65,5,8
+155,1.FSV Mainz 05,SC Paderborn 07,home,88.00,28.50,12,10
+156,SC Freiburg,Eintracht Frankfurt,home,57.40,74.90,18,9
+157,VfB Stuttgart,Borussia Mönchengladbach,away,86.95,130.63,15,4
+158,Hamburger SV,1.FC Köln,away,87.15,50.75,14,11
+159,Bayer 04 Leverkusen,Borussia Dortmund,draw,177.10,319.50,3,17
+160,SV Werder Bremen,Hertha BSC,home,67.53,66.00,16,13
+161,FC Augsburg,TSG 1899 Hoffenheim,home,50.08,121.78,6,7
+162,FC Bayern München,FC Schalke 04,draw,575.13,212.00,1,4
+163,Borussia Mönchengladbach,SC Freiburg,home,130.63,57.40,3,14
+164,Hannover 96,1.FSV Mainz 05,draw,76.65,88.00,8,11
+165,Eintracht Frankfurt,VfL Wolfsburg,draw,74.90,221.05,9,2
+166,Borussia Dortmund,FC Augsburg,away,319.50,50.08,18,5
+167,TSG 1899 Hoffenheim,SV Werder Bremen,away,121.78,67.53,7,12
+168,Hertha BSC,Bayer 04 Leverkusen,away,66.00,177.10,15,6
+169,1.FC Köln,VfB Stuttgart,draw,50.75,86.95,10,17
+170,SC Paderborn 07,Hamburger SV,away,28.50,87.15,13,16
+171,FC Schalke 04,Borussia Mönchengladbach,home,212.00,130.63,6,3
+172,VfL Wolfsburg,TSG 1899 Hoffenheim,home,221.05,121.78,2,7
+173,1.FSV Mainz 05,Hertha BSC,away,88.00,66.00,12,17
+174,SC Freiburg,Borussia Dortmund,away,57.40,319.50,15,18
+175,VfB Stuttgart,FC Bayern München,away,86.95,575.13,16,1
+176,1.FC Köln,SC Paderborn 07,draw,50.75,28.50,10,14
+177,Hamburger SV,Hannover 96,home,87.15,76.65,13,8
+178,SV Werder Bremen,Bayer 04 Leverkusen,home,67.53,177.10,11,5
+179,FC Augsburg,Eintracht Frankfurt,draw,50.08,74.90,4,9
+180,Borussia Dortmund,1.FSV Mainz 05,home,319.50,88.00,16,13
+181,FC Bayern München,Hamburger SV,home,575.13,87.15,1,12
+182,Bayer 04 Leverkusen,VfL Wolfsburg,away,177.10,221.05,6,2
+183,Borussia Mönchengladbach,1.FC Köln,home,130.63,50.75,5,11
+184,TSG 1899 Hoffenheim,VfB Stuttgart,home,121.78,86.95,7,18
+185,SV Werder Bremen,FC Augsburg,home,67.53,50.08,8,4
+186,Eintracht Frankfurt,FC Schalke 04,home,74.90,212.00,9,3
+187,Hertha BSC,SC Freiburg,away,66.00,57.40,14,17
+188,Hannover 96,SC Paderborn 07,away,76.65,28.50,10,15
+189,VfB Stuttgart,Borussia Dortmund,away,86.95,319.50,18,15
+190,FC Schalke 04,SV Werder Bremen,draw,212.00,67.53,4,8
+191,1.FSV Mainz 05,Eintracht Frankfurt,home,88.00,74.90,14,9
+192,FC Augsburg,Bayer 04 Leverkusen,draw,50.08,177.10,5,6
+193,SC Freiburg,TSG 1899 Hoffenheim,draw,57.40,121.78,16,7
+194,SC Paderborn 07,FC Bayern München,away,28.50,575.13,12,1
+195,1.FC Köln,Hannover 96,draw,50.75,76.65,11,10
+196,Hamburger SV,Borussia Mönchengladbach,draw,87.15,130.63,13,3
+197,VfL Wolfsburg,Hertha BSC,home,221.05,66.00,2,17
+198,FC Bayern München,1.FC Köln,home,575.13,50.75,1,13
+199,Borussia Dortmund,FC Schalke 04,home,319.50,212.00,12,4
+200,Bayer 04 Leverkusen,SC Freiburg,home,177.10,57.40,6,16
+201,TSG 1899 Hoffenheim,1.FSV Mainz 05,home,121.78,88.00,7,11
+202,Hannover 96,VfB Stuttgart,draw,76.65,86.95,10,18
+203,Hertha BSC,FC Augsburg,home,66.00,50.08,17,5
+204,Eintracht Frankfurt,Hamburger SV,home,74.90,87.15,9,14
+205,Borussia Mönchengladbach,SC Paderborn 07,home,130.63,28.50,3,15
+206,SV Werder Bremen,VfL Wolfsburg,away,67.53,221.05,8,2
+207,VfB Stuttgart,Hertha BSC,draw,86.95,66.00,18,14
+208,FC Schalke 04,TSG 1899 Hoffenheim,home,212.00,121.78,5,7
+209,FC Augsburg,VfL Wolfsburg,home,50.08,221.05,6,2
+210,Hannover 96,FC Bayern München,away,76.65,575.13,11,1
+211,SC Freiburg,SV Werder Bremen,away,57.40,67.53,17,9
+212,Hamburger SV,Borussia Dortmund,draw,87.15,319.50,15,10
+213,1.FSV Mainz 05,Borussia Mönchengladbach,draw,88.00,130.63,12,3
+214,1.FC Köln,Eintracht Frankfurt,home,50.75,74.90,13,8
+215,SC Paderborn 07,Bayer 04 Leverkusen,away,28.50,177.10,16,4
+216,Bayer 04 Leverkusen,VfB Stuttgart,home,177.10,86.95,4,18
+217,FC Augsburg,1.FSV Mainz 05,away,50.08,88.00,6,13
+218,TSG 1899 Hoffenheim,Hamburger SV,home,121.78,87.15,7,15
+219,Hertha BSC,FC Schalke 04,draw,66.00,212.00,14,5
+220,SV Werder Bremen,FC Bayern München,away,67.53,575.13,8,1
+221,Eintracht Frankfurt,SC Paderborn 07,home,74.90,28.50,9,16
+222,Borussia Dortmund,1.FC Köln,draw,319.50,50.75,10,11
+223,VfL Wolfsburg,SC Freiburg,home,221.05,57.40,2,17
+224,Borussia Mönchengladbach,Hannover 96,home,130.63,76.65,3,12
+225,Hamburger SV,Hertha BSC,away,87.15,66.00,15,14
+226,Hannover 96,Borussia Dortmund,away,76.65,319.50,13,10
+227,SC Freiburg,FC Augsburg,home,57.40,50.08,17,6
+228,VfB Stuttgart,Eintracht Frankfurt,home,86.95,74.90,18,8
+229,1.FC Köln,SV Werder Bremen,draw,50.75,67.53,12,9
+230,SC Paderborn 07,TSG 1899 Hoffenheim,draw,28.50,121.78,16,7
+231,FC Schalke 04,Bayer 04 Leverkusen,away,212.00,177.10,5,4
+232,1.FSV Mainz 05,VfL Wolfsburg,draw,88.00,221.05,11,2
+233,FC Bayern München,Borussia Mönchengladbach,away,575.13,130.63,1,3
+234,Bayer 04 Leverkusen,Hamburger SV,home,177.10,87.15,4,16
+235,VfL Wolfsburg,VfB Stuttgart,home,221.05,86.95,2,18
+236,TSG 1899 Hoffenheim,Borussia Mönchengladbach,away,121.78,130.63,7,3
+237,SV Werder Bremen,1.FSV Mainz 05,draw,67.53,88.00,9,11
+238,Eintracht Frankfurt,Hannover 96,draw,74.90,76.65,8,14
+239,SC Freiburg,1.FC Köln,home,57.40,50.75,15,12
+240,Borussia Dortmund,FC Bayern München,away,319.50,575.13,10,1
+241,FC Augsburg,FC Schalke 04,draw,50.08,212.00,6,5
+242,Hertha BSC,SC Paderborn 07,home,66.00,28.50,13,17
+243,Hannover 96,Hertha BSC,draw,76.65,66.00,15,11
+244,FC Bayern München,Eintracht Frankfurt,home,575.13,74.90,1,8
+245,FC Schalke 04,SC Freiburg,draw,212.00,57.40,5,14
+246,Borussia Mönchengladbach,Borussia Dortmund,home,130.63,319.50,3,10
+247,1.FSV Mainz 05,Bayer 04 Leverkusen,away,88.00,177.10,12,4
+248,SC Paderborn 07,FC Augsburg,home,28.50,50.08,17,6
+249,Hamburger SV,VfL Wolfsburg,away,87.15,221.05,16,2
+250,1.FC Köln,TSG 1899 Hoffenheim,home,50.75,121.78,13,7
+251,VfB Stuttgart,SV Werder Bremen,home,86.95,67.53,18,9
+252,Eintracht Frankfurt,Borussia Mönchengladbach,draw,74.90,130.63,8,3
+253,Borussia Dortmund,SC Paderborn 07,home,319.50,28.50,10,16
+254,Bayer 04 Leverkusen,Hannover 96,home,177.10,76.65,4,15
+255,TSG 1899 Hoffenheim,FC Bayern München,away,121.78,575.13,7,1
+256,Hertha BSC,1.FC Köln,draw,66.00,50.75,12,11
+257,SC Freiburg,1.FSV Mainz 05,away,57.40,88.00,14,13
+258,FC Augsburg,VfB Stuttgart,home,50.08,86.95,6,17
+259,SV Werder Bremen,Hamburger SV,home,67.53,87.15,9,18
+260,VfL Wolfsburg,FC Schalke 04,draw,221.05,212.00,2,5
+261,1.FSV Mainz 05,FC Schalke 04,home,88.00,212.00,11,5
+262,Borussia Dortmund,Eintracht Frankfurt,home,319.50,74.90,9,10
+263,Hannover 96,TSG 1899 Hoffenheim,away,76.65,121.78,15,8
+264,VfB Stuttgart,SC Freiburg,draw,86.95,57.40,17,14
+265,Hamburger SV,FC Augsburg,home,87.15,50.08,18,6
+266,1.FC Köln,Bayer 04 Leverkusen,draw,50.75,177.10,12,3
+267,FC Bayern München,Hertha BSC,home,575.13,66.00,1,13
+268,SC Paderborn 07,SV Werder Bremen,draw,28.50,67.53,16,7
+269,Borussia Mönchengladbach,VfL Wolfsburg,home,130.63,221.05,4,2
+270,FC Schalke 04,VfB Stuttgart,home,212.00,86.95,5,18
+271,VfL Wolfsburg,Hannover 96,draw,221.05,76.65,2,15
+272,FC Augsburg,1.FC Köln,draw,50.08,50.75,6,12
+273,TSG 1899 Hoffenheim,Borussia Dortmund,draw,121.78,319.50,7,8
+274,SV Werder Bremen,Eintracht Frankfurt,home,67.53,74.90,9,11
+275,SC Freiburg,SC Paderborn 07,away,57.40,28.50,14,17
+276,Bayer 04 Leverkusen,FC Bayern München,home,177.10,575.13,4,1
+277,1.FSV Mainz 05,Hamburger SV,away,88.00,87.15,10,16
+278,Hertha BSC,Borussia Mönchengladbach,away,66.00,130.63,13,3
+279,Hamburger SV,SC Freiburg,draw,87.15,57.40,14,16
+280,FC Bayern München,FC Augsburg,away,575.13,50.08,1,6
+281,Borussia Dortmund,Hertha BSC,home,319.50,66.00,9,13
+282,Borussia Mönchengladbach,Bayer 04 Leverkusen,home,130.63,177.10,3,4
+283,Hannover 96,SV Werder Bremen,draw,76.65,67.53,17,7
+284,Eintracht Frankfurt,TSG 1899 Hoffenheim,home,74.90,121.78,12,8
+285,VfB Stuttgart,1.FSV Mainz 05,home,86.95,88.00,18,10
+286,SC Paderborn 07,VfL Wolfsburg,away,28.50,221.05,15,2
+287,1.FC Köln,FC Schalke 04,home,50.75,212.00,11,5
+288,FC Schalke 04,SC Paderborn 07,home,212.00,28.50,6,17
+289,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,home,177.10,121.78,4,9
+290,VfL Wolfsburg,Borussia Dortmund,home,221.05,319.50,2,7
+291,1.FSV Mainz 05,1.FC Köln,home,88.00,50.75,12,10
+292,FC Augsburg,Hannover 96,away,50.08,76.65,5,16
+293,Hertha BSC,Eintracht Frankfurt,draw,66.00,74.90,13,11
+294,SC Freiburg,FC Bayern München,home,57.40,575.13,15,1
+295,VfB Stuttgart,Hamburger SV,home,86.95,87.15,18,14
+296,SV Werder Bremen,Borussia Mönchengladbach,away,67.53,130.63,8,3
+297,Eintracht Frankfurt,Bayer 04 Leverkusen,home,74.90,177.10,11,4
+298,Hamburger SV,FC Schalke 04,home,87.15,212.00,17,5
+299,1.FC Köln,VfL Wolfsburg,draw,50.75,221.05,12,2
+300,SC Paderborn 07,VfB Stuttgart,away,28.50,86.95,18,16
+301,FC Bayern München,1.FSV Mainz 05,home,575.13,88.00,1,10
+302,Borussia Dortmund,SV Werder Bremen,home,319.50,67.53,7,8
+303,Borussia Mönchengladbach,FC Augsburg,away,130.63,50.08,3,6
+304,TSG 1899 Hoffenheim,Hertha BSC,home,121.78,66.00,9,13
+305,Hannover 96,SC Freiburg,home,76.65,57.40,15,14
+306,FC Bayern München,Hamburger SV,home,596.05,63.20,9,9
+307,SV Werder Bremen,FC Schalke 04,away,64.68,225.20,9,9
+308,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,home,241.30,90.20,9,9
+309,SV Darmstadt 98,Hannover 96,draw,25.15,60.83,9,9
+310,1.FSV Mainz 05,FC Ingolstadt 04,away,85.15,35.65,9,9
+311,FC Augsburg,Hertha BSC,away,75.83,78.93,9,9
+312,Borussia Dortmund,Borussia Mönchengladbach,home,352.95,186.15,9,9
+313,VfL Wolfsburg,Eintracht Frankfurt,home,270.43,76.60,9,9
+314,VfB Stuttgart,1.FC Köln,away,81.18,68.63,9,9
+315,Hertha BSC,SV Werder Bremen,draw,78.93,64.68,7,16
+316,FC Schalke 04,SV Darmstadt 98,draw,225.20,25.15,3,9
+317,Eintracht Frankfurt,FC Augsburg,draw,76.60,75.83,11,14
+318,1.FC Köln,VfL Wolfsburg,draw,68.63,270.43,4,6
+319,Hannover 96,Bayer 04 Leverkusen,away,60.83,241.30,10,5
+320,TSG 1899 Hoffenheim,FC Bayern München,away,90.20,596.05,12,1
+321,Hamburger SV,VfB Stuttgart,home,63.20,81.18,18,15
+322,FC Ingolstadt 04,Borussia Dortmund,away,35.65,352.95,8,2
+323,Borussia Mönchengladbach,1.FSV Mainz 05,away,186.15,85.15,17,13
+324,VfL Wolfsburg,FC Schalke 04,home,270.43,225.20,6,4
+325,VfB Stuttgart,Eintracht Frankfurt,away,81.18,76.60,17,12
+326,1.FC Köln,Hamburger SV,home,68.63,63.20,5,10
+327,1.FSV Mainz 05,Hannover 96,home,85.15,60.83,8,13
+328,SV Darmstadt 98,TSG 1899 Hoffenheim,draw,25.15,90.20,11,16
+329,FC Augsburg,FC Ingolstadt 04,away,75.83,35.65,14,9
+330,FC Bayern München,Bayer 04 Leverkusen,home,596.05,241.30,2,3
+331,Borussia Dortmund,Hertha BSC,home,352.95,78.93,1,7
+332,SV Werder Bremen,Borussia Mönchengladbach,home,64.68,186.15,15,18
+333,Borussia Mönchengladbach,Hamburger SV,away,186.15,63.20,18,13
+334,FC Bayern München,FC Augsburg,home,596.05,75.83,2,15
+335,Bayer 04 Leverkusen,SV Darmstadt 98,away,241.30,25.15,6,12
+336,Hannover 96,Borussia Dortmund,away,60.83,352.95,16,1
+337,Hertha BSC,VfB Stuttgart,home,78.93,81.18,10,17
+338,FC Ingolstadt 04,VfL Wolfsburg,draw,35.65,270.43,7,3
+339,Eintracht Frankfurt,1.FC Köln,home,76.60,68.63,8,4
+340,TSG 1899 Hoffenheim,SV Werder Bremen,away,90.20,64.68,14,11
+341,FC Schalke 04,1.FSV Mainz 05,home,225.20,85.15,9,5
+342,1.FSV Mainz 05,TSG 1899 Hoffenheim,home,85.15,90.20,10,15
+343,VfL Wolfsburg,Hertha BSC,home,270.43,78.93,3,7
+344,Hamburger SV,Eintracht Frankfurt,draw,63.20,76.60,12,4
+345,SV Werder Bremen,FC Ingolstadt 04,away,64.68,35.65,6,9
+346,1.FC Köln,Borussia Mönchengladbach,home,68.63,186.15,8,18
+347,SV Darmstadt 98,FC Bayern München,away,25.15,596.05,11,2
+348,VfB Stuttgart,FC Schalke 04,away,81.18,225.20,17,5
+349,Borussia Dortmund,Bayer 04 Leverkusen,home,352.95,241.30,1,13
+350,FC Augsburg,Hannover 96,home,75.83,60.83,14,16
+351,FC Bayern München,VfL Wolfsburg,home,596.05,270.43,2,3
+352,Hertha BSC,1.FC Köln,home,78.93,68.63,11,5
+353,FC Ingolstadt 04,Hamburger SV,away,35.65,63.20,6,10
+354,SV Darmstadt 98,SV Werder Bremen,home,25.15,64.68,12,9
+355,FC Schalke 04,Eintracht Frankfurt,home,225.20,76.60,4,8
+356,Bayer 04 Leverkusen,1.FSV Mainz 05,home,241.30,85.15,13,7
+357,Borussia Mönchengladbach,FC Augsburg,home,186.15,75.83,18,14
+358,Hannover 96,VfB Stuttgart,away,60.83,81.18,16,17
+359,TSG 1899 Hoffenheim,Borussia Dortmund,draw,90.20,352.95,15,1
+360,1.FC Köln,FC Ingolstadt 04,draw,68.63,35.65,7,8
+361,VfL Wolfsburg,Hannover 96,draw,270.43,60.83,4,18
+362,VfB Stuttgart,Borussia Mönchengladbach,away,81.18,186.15,15,16
+363,FC Augsburg,TSG 1899 Hoffenheim,away,75.83,90.20,14,17
+364,SV Werder Bremen,Bayer 04 Leverkusen,away,64.68,241.30,13,11
+365,1.FSV Mainz 05,FC Bayern München,away,85.15,596.05,9,1
+366,Hamburger SV,FC Schalke 04,away,63.20,225.20,6,3
+367,Eintracht Frankfurt,Hertha BSC,draw,76.60,78.93,12,5
+368,Borussia Dortmund,SV Darmstadt 98,draw,352.95,25.15,2,10
+369,SV Darmstadt 98,1.FSV Mainz 05,away,25.15,85.15,9,12
+370,Borussia Mönchengladbach,VfL Wolfsburg,home,186.15,270.43,14,4
+371,Hannover 96,SV Werder Bremen,home,60.83,64.68,18,13
+372,Hertha BSC,Hamburger SV,home,78.93,63.20,6,10
+373,TSG 1899 Hoffenheim,VfB Stuttgart,draw,90.20,81.18,15,17
+374,FC Ingolstadt 04,Eintracht Frankfurt,home,35.65,76.60,8,11
+375,FC Schalke 04,1.FC Köln,away,225.20,68.63,3,7
+376,FC Bayern München,Borussia Dortmund,home,596.05,352.95,1,2
+377,Bayer 04 Leverkusen,FC Augsburg,draw,241.30,75.83,5,16
+378,1.FSV Mainz 05,Borussia Dortmund,away,85.15,352.95,8,2
+379,FC Schalke 04,Hertha BSC,home,225.20,78.93,3,4
+380,VfL Wolfsburg,TSG 1899 Hoffenheim,home,270.43,90.20,9,15
+381,Hamburger SV,Bayer 04 Leverkusen,draw,63.20,241.30,11,7
+382,FC Augsburg,SV Darmstadt 98,away,75.83,25.15,16,10
+383,SV Werder Bremen,FC Bayern München,away,64.68,596.05,14,1
+384,Eintracht Frankfurt,Borussia Mönchengladbach,away,76.60,186.15,12,13
+385,1.FC Köln,Hannover 96,away,68.63,60.83,5,17
+386,VfB Stuttgart,FC Ingolstadt 04,home,81.18,35.65,18,6
+387,TSG 1899 Hoffenheim,Hamburger SV,away,90.20,63.20,17,12
+388,FC Bayern München,1.FC Köln,home,596.05,68.63,1,6
+389,Bayer 04 Leverkusen,VfB Stuttgart,home,241.30,81.18,7,15
+390,Hannover 96,Eintracht Frankfurt,away,60.83,76.60,14,13
+391,1.FSV Mainz 05,SV Werder Bremen,away,85.15,64.68,11,16
+392,SV Darmstadt 98,VfL Wolfsburg,away,25.15,270.43,9,4
+393,FC Ingolstadt 04,Hertha BSC,away,35.65,78.93,8,5
+394,Borussia Dortmund,FC Augsburg,home,352.95,75.83,2,18
+395,Borussia Mönchengladbach,FC Schalke 04,home,186.15,225.20,10,3
+396,Eintracht Frankfurt,FC Bayern München,draw,76.60,596.05,12,1
+397,FC Schalke 04,FC Ingolstadt 04,draw,225.20,35.65,3,8
+398,FC Augsburg,1.FSV Mainz 05,draw,75.83,85.15,18,13
+399,SV Werder Bremen,Borussia Dortmund,away,64.68,352.95,14,2
+400,1.FC Köln,TSG 1899 Hoffenheim,draw,68.63,90.20,9,17
+401,Hertha BSC,Borussia Mönchengladbach,away,78.93,186.15,5,7
+402,VfL Wolfsburg,Bayer 04 Leverkusen,home,270.43,241.30,4,6
+403,VfB Stuttgart,SV Darmstadt 98,home,81.18,25.15,16,11
+404,Hamburger SV,Hannover 96,away,63.20,60.83,10,15
+405,Hannover 96,Hertha BSC,away,60.83,78.93,14,6
+406,FC Bayern München,VfB Stuttgart,home,596.05,81.18,1,15
+407,Bayer 04 Leverkusen,1.FC Köln,away,241.30,68.63,7,9
+408,Borussia Mönchengladbach,FC Ingolstadt 04,draw,186.15,35.65,5,8
+409,TSG 1899 Hoffenheim,Eintracht Frankfurt,draw,90.20,76.60,17,11
+410,1.FSV Mainz 05,VfL Wolfsburg,home,85.15,270.43,12,3
+411,SV Darmstadt 98,Hamburger SV,draw,25.15,63.20,13,10
+412,Borussia Dortmund,FC Schalke 04,home,352.95,225.20,2,4
+413,FC Augsburg,SV Werder Bremen,away,75.83,64.68,18,16
+414,Hamburger SV,Borussia Dortmund,home,63.20,352.95,11,2
+415,Borussia Mönchengladbach,Hannover 96,home,186.15,60.83,6,15
+416,VfL Wolfsburg,SV Werder Bremen,home,270.43,64.68,3,14
+417,Eintracht Frankfurt,Bayer 04 Leverkusen,away,76.60,241.30,12,8
+418,1.FC Köln,1.FSV Mainz 05,draw,68.63,85.15,7,9
+419,VfB Stuttgart,FC Augsburg,away,81.18,75.83,16,18
+420,FC Schalke 04,FC Bayern München,away,225.20,596.05,5,1
+421,Hertha BSC,TSG 1899 Hoffenheim,home,78.93,90.20,4,17
+422,FC Ingolstadt 04,SV Darmstadt 98,home,35.65,25.15,10,13
+423,SV Darmstadt 98,1.FC Köln,draw,25.15,68.63,13,9
+424,FC Bayern München,Hertha BSC,home,596.05,78.93,1,4
+425,SV Werder Bremen,Hamburger SV,away,64.68,63.20,14,10
+426,Hannover 96,FC Ingolstadt 04,home,60.83,35.65,15,8
+427,TSG 1899 Hoffenheim,Borussia Mönchengladbach,draw,90.20,186.15,18,5
+428,1.FSV Mainz 05,Eintracht Frankfurt,home,85.15,76.60,11,12
+429,Borussia Dortmund,VfB Stuttgart,home,352.95,81.18,2,16
+430,Bayer 04 Leverkusen,FC Schalke 04,draw,241.30,225.20,6,7
+431,FC Augsburg,VfL Wolfsburg,draw,75.83,270.43,17,3
+432,FC Schalke 04,Hannover 96,home,225.20,60.83,8,14
+433,Hertha BSC,Bayer 04 Leverkusen,home,78.93,241.30,5,6
+434,FC Ingolstadt 04,TSG 1899 Hoffenheim,draw,35.65,90.20,11,18
+435,Borussia Mönchengladbach,FC Bayern München,home,186.15,596.05,4,1
+436,Hamburger SV,1.FSV Mainz 05,away,63.20,85.15,7,9
+437,1.FC Köln,FC Augsburg,away,68.63,75.83,10,16
+438,VfL Wolfsburg,Borussia Dortmund,away,270.43,352.95,3,2
+439,VfB Stuttgart,SV Werder Bremen,draw,81.18,64.68,17,15
+440,Eintracht Frankfurt,SV Darmstadt 98,away,76.60,25.15,13,12
+441,1.FSV Mainz 05,VfB Stuttgart,draw,85.15,81.18,7,17
+442,FC Bayern München,FC Ingolstadt 04,home,596.05,35.65,1,11
+443,VfL Wolfsburg,Hamburger SV,draw,270.43,63.20,5,9
+444,SV Werder Bremen,1.FC Köln,draw,64.68,68.63,15,10
+445,TSG 1899 Hoffenheim,Hannover 96,home,90.20,60.83,18,14
+446,SV Darmstadt 98,Hertha BSC,away,25.15,78.93,12,4
+447,Bayer 04 Leverkusen,Borussia Mönchengladbach,home,241.30,186.15,8,3
+448,FC Augsburg,FC Schalke 04,home,75.83,225.20,16,6
+449,Borussia Dortmund,Eintracht Frankfurt,home,352.95,76.60,2,13
+450,FC Schalke 04,TSG 1899 Hoffenheim,home,225.20,90.20,8,17
+451,Hamburger SV,FC Augsburg,away,63.20,75.83,9,13
+452,Eintracht Frankfurt,SV Werder Bremen,home,76.60,64.68,15,14
+453,1.FC Köln,Borussia Dortmund,home,68.63,352.95,10,2
+454,Hannover 96,FC Bayern München,away,60.83,596.05,16,1
+455,FC Ingolstadt 04,Bayer 04 Leverkusen,away,35.65,241.30,11,6
+456,VfB Stuttgart,VfL Wolfsburg,home,81.18,270.43,18,4
+457,Hertha BSC,1.FSV Mainz 05,home,78.93,85.15,3,7
+458,Borussia Mönchengladbach,SV Darmstadt 98,home,186.15,25.15,5,12
+459,Hamburger SV,FC Bayern München,away,63.20,596.05,10,1
+460,1.FC Köln,VfB Stuttgart,away,68.63,81.18,9,15
+461,Hannover 96,SV Darmstadt 98,away,60.83,25.15,17,13
+462,Hertha BSC,FC Augsburg,draw,78.93,75.83,3,12
+463,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,draw,90.20,241.30,18,5
+464,FC Ingolstadt 04,1.FSV Mainz 05,home,35.65,85.15,11,8
+465,Borussia Mönchengladbach,Borussia Dortmund,away,186.15,352.95,4,2
+466,Eintracht Frankfurt,VfL Wolfsburg,home,76.60,270.43,14,7
+467,FC Schalke 04,SV Werder Bremen,away,225.20,64.68,6,16
+468,1.FSV Mainz 05,Borussia Mönchengladbach,home,85.15,186.15,8,4
+469,Borussia Dortmund,FC Ingolstadt 04,home,352.95,35.65,2,10
+470,Bayer 04 Leverkusen,Hannover 96,home,241.30,60.83,5,18
+471,FC Augsburg,Eintracht Frankfurt,draw,75.83,76.60,13,14
+472,SV Werder Bremen,Hertha BSC,draw,64.68,78.93,16,3
+473,SV Darmstadt 98,FC Schalke 04,away,25.15,225.20,12,6
+474,VfB Stuttgart,Hamburger SV,home,81.18,63.20,15,11
+475,VfL Wolfsburg,1.FC Köln,draw,270.43,68.63,7,9
+476,FC Bayern München,TSG 1899 Hoffenheim,home,596.05,90.20,1,17
+477,Borussia Mönchengladbach,SV Werder Bremen,home,186.15,64.68,6,16
+478,FC Schalke 04,VfL Wolfsburg,home,225.20,270.43,5,7
+479,Eintracht Frankfurt,VfB Stuttgart,away,76.60,81.18,13,15
+480,Hannover 96,1.FSV Mainz 05,away,60.83,85.15,18,8
+481,Hertha BSC,Borussia Dortmund,draw,78.93,352.95,3,2
+482,FC Ingolstadt 04,FC Augsburg,home,35.65,75.83,10,12
+483,Bayer 04 Leverkusen,FC Bayern München,draw,241.30,596.05,4,1
+484,Hamburger SV,1.FC Köln,draw,63.20,68.63,11,9
+485,TSG 1899 Hoffenheim,SV Darmstadt 98,away,90.20,25.15,17,14
+486,1.FSV Mainz 05,FC Schalke 04,home,85.15,225.20,7,4
+487,Borussia Dortmund,Hannover 96,home,352.95,60.83,2,18
+488,VfL Wolfsburg,FC Ingolstadt 04,home,270.43,35.65,8,10
+489,VfB Stuttgart,Hertha BSC,home,81.18,78.93,12,3
+490,SV Werder Bremen,TSG 1899 Hoffenheim,draw,64.68,90.20,16,17
+491,SV Darmstadt 98,Bayer 04 Leverkusen,away,25.15,241.30,11,5
+492,1.FC Köln,Eintracht Frankfurt,home,68.63,76.60,9,15
+493,Hamburger SV,Borussia Mönchengladbach,home,63.20,186.15,13,6
+494,FC Augsburg,FC Bayern München,away,75.83,596.05,14,1
+495,Eintracht Frankfurt,Hamburger SV,draw,76.60,63.20,15,11
+496,FC Bayern München,SV Darmstadt 98,home,596.05,25.15,1,13
+497,Borussia Mönchengladbach,1.FC Köln,home,186.15,68.63,7,9
+498,Hertha BSC,VfL Wolfsburg,draw,78.93,270.43,4,8
+499,TSG 1899 Hoffenheim,1.FSV Mainz 05,home,90.20,85.15,17,6
+500,FC Ingolstadt 04,SV Werder Bremen,home,35.65,64.68,12,16
+501,Bayer 04 Leverkusen,Borussia Dortmund,away,241.30,352.95,3,2
+502,FC Schalke 04,VfB Stuttgart,draw,225.20,81.18,5,10
+503,Hannover 96,FC Augsburg,away,60.83,75.83,18,14
+504,1.FC Köln,Hertha BSC,away,68.63,78.93,9,3
+505,VfL Wolfsburg,FC Bayern München,away,270.43,596.05,8,1
+506,Hamburger SV,FC Ingolstadt 04,draw,63.20,35.65,12,10
+507,VfB Stuttgart,Hannover 96,away,81.18,60.83,11,18
+508,SV Werder Bremen,SV Darmstadt 98,draw,64.68,25.15,16,14
+509,FC Augsburg,Borussia Mönchengladbach,draw,75.83,186.15,13,5
+510,Borussia Dortmund,TSG 1899 Hoffenheim,home,352.95,90.20,2,17
+511,1.FSV Mainz 05,Bayer 04 Leverkusen,home,85.15,241.30,7,4
+512,Eintracht Frankfurt,FC Schalke 04,draw,76.60,225.20,15,6
+513,Hannover 96,VfL Wolfsburg,away,60.83,270.43,18,8
+514,FC Ingolstadt 04,1.FC Köln,draw,35.65,68.63,9,10
+515,FC Bayern München,1.FSV Mainz 05,away,596.05,85.15,1,5
+516,FC Schalke 04,Hamburger SV,home,225.20,63.20,7,11
+517,Bayer 04 Leverkusen,SV Werder Bremen,away,241.30,64.68,6,16
+518,Borussia Mönchengladbach,VfB Stuttgart,home,186.15,81.18,4,12
+519,Hertha BSC,Eintracht Frankfurt,home,78.93,76.60,3,15
+520,TSG 1899 Hoffenheim,FC Augsburg,home,90.20,75.83,17,13
+521,SV Darmstadt 98,Borussia Dortmund,away,25.15,352.95,14,2
+522,VfL Wolfsburg,Borussia Mönchengladbach,home,270.43,186.15,8,4
+523,VfB Stuttgart,TSG 1899 Hoffenheim,home,81.18,90.20,12,17
+524,FC Augsburg,Bayer 04 Leverkusen,draw,75.83,241.30,13,7
+525,SV Werder Bremen,Hannover 96,home,64.68,60.83,15,18
+526,Eintracht Frankfurt,FC Ingolstadt 04,draw,76.60,35.65,16,9
+527,1.FC Köln,FC Schalke 04,away,68.63,225.20,10,6
+528,Borussia Dortmund,FC Bayern München,draw,352.95,596.05,2,1
+529,1.FSV Mainz 05,SV Darmstadt 98,draw,85.15,25.15,5,14
+530,Hamburger SV,Hertha BSC,home,63.20,78.93,11,3
+531,Hertha BSC,FC Schalke 04,home,78.93,225.20,3,4
+532,Borussia Mönchengladbach,Eintracht Frankfurt,home,186.15,76.60,6,16
+533,Hannover 96,1.FC Köln,away,60.83,68.63,18,12
+534,TSG 1899 Hoffenheim,VfL Wolfsburg,home,90.20,270.43,17,7
+535,FC Ingolstadt 04,VfB Stuttgart,draw,35.65,81.18,9,11
+536,SV Darmstadt 98,FC Augsburg,draw,25.15,75.83,15,14
+537,FC Bayern München,SV Werder Bremen,home,596.05,64.68,1,13
+538,Bayer 04 Leverkusen,Hamburger SV,home,241.30,63.20,8,10
+539,Borussia Dortmund,1.FSV Mainz 05,home,352.95,85.15,2,5
+540,FC Schalke 04,Borussia Mönchengladbach,home,225.20,186.15,5,4
+541,VfL Wolfsburg,SV Darmstadt 98,draw,270.43,25.15,8,14
+542,Hamburger SV,TSG 1899 Hoffenheim,away,63.20,90.20,12,17
+543,SV Werder Bremen,1.FSV Mainz 05,draw,64.68,85.15,15,6
+544,1.FC Köln,FC Bayern München,away,68.63,596.05,9,1
+545,Hertha BSC,FC Ingolstadt 04,home,78.93,35.65,3,10
+546,Eintracht Frankfurt,Hannover 96,home,76.60,60.83,16,18
+547,VfB Stuttgart,Bayer 04 Leverkusen,away,81.18,241.30,11,7
+548,FC Augsburg,Borussia Dortmund,away,75.83,352.95,13,2
+549,Bayer 04 Leverkusen,VfL Wolfsburg,home,241.30,270.43,6,8
+550,FC Bayern München,Eintracht Frankfurt,home,596.05,76.60,1,17
+551,Hannover 96,Hamburger SV,away,60.83,63.20,18,12
+552,1.FSV Mainz 05,FC Augsburg,home,85.15,75.83,7,15
+553,FC Ingolstadt 04,FC Schalke 04,home,35.65,225.20,10,4
+554,SV Darmstadt 98,VfB Stuttgart,draw,25.15,81.18,13,11
+555,Borussia Dortmund,SV Werder Bremen,home,352.95,64.68,2,14
+556,Borussia Mönchengladbach,Hertha BSC,home,186.15,78.93,5,3
+557,TSG 1899 Hoffenheim,1.FC Köln,draw,90.20,68.63,16,9
+558,Hertha BSC,Hannover 96,draw,78.93,60.83,3,18
+559,Hamburger SV,SV Darmstadt 98,away,63.20,25.15,10,13
+560,VfB Stuttgart,FC Bayern München,away,81.18,596.05,12,1
+561,SV Werder Bremen,FC Augsburg,away,64.68,75.83,15,16
+562,Eintracht Frankfurt,TSG 1899 Hoffenheim,away,76.60,90.20,17,14
+563,FC Ingolstadt 04,Borussia Mönchengladbach,home,35.65,186.15,9,4
+564,VfL Wolfsburg,1.FSV Mainz 05,draw,270.43,85.15,8,6
+565,FC Schalke 04,Borussia Dortmund,draw,225.20,352.95,7,2
+566,1.FC Köln,Bayer 04 Leverkusen,away,68.63,241.30,11,5
+567,Hannover 96,Borussia Mönchengladbach,home,60.83,186.15,18,5
+568,Bayer 04 Leverkusen,Eintracht Frankfurt,home,241.30,76.60,4,17
+569,FC Augsburg,VfB Stuttgart,home,75.83,81.18,15,12
+570,SV Werder Bremen,VfL Wolfsburg,home,64.68,270.43,16,8
+571,TSG 1899 Hoffenheim,Hertha BSC,home,90.20,78.93,14,3
+572,SV Darmstadt 98,FC Ingolstadt 04,home,25.15,35.65,13,9
+573,FC Bayern München,FC Schalke 04,home,596.05,225.20,1,7
+574,Borussia Dortmund,Hamburger SV,home,352.95,63.20,2,10
+575,1.FSV Mainz 05,1.FC Köln,away,85.15,68.63,6,11
+576,Hamburger SV,SV Werder Bremen,home,63.20,64.68,12,16
+577,VfL Wolfsburg,FC Augsburg,away,270.43,75.83,8,14
+578,VfB Stuttgart,Borussia Dortmund,away,81.18,352.95,15,2
+579,1.FC Köln,SV Darmstadt 98,home,68.63,25.15,10,11
+580,Hertha BSC,FC Bayern München,away,78.93,596.05,4,1
+581,FC Ingolstadt 04,Hannover 96,draw,35.65,60.83,9,18
+582,FC Schalke 04,Bayer 04 Leverkusen,away,225.20,241.30,7,3
+583,Borussia Mönchengladbach,TSG 1899 Hoffenheim,home,186.15,90.20,5,13
+584,Eintracht Frankfurt,1.FSV Mainz 05,home,76.60,85.15,17,6
+585,FC Augsburg,1.FC Köln,draw,75.83,68.63,12,8
+586,FC Bayern München,Borussia Mönchengladbach,draw,596.05,186.15,1,5
+587,Borussia Dortmund,VfL Wolfsburg,home,352.95,270.43,2,10
+588,Hannover 96,FC Schalke 04,away,60.83,225.20,18,7
+589,TSG 1899 Hoffenheim,FC Ingolstadt 04,home,90.20,35.65,14,9
+590,1.FSV Mainz 05,Hamburger SV,draw,85.15,63.20,6,11
+591,SV Darmstadt 98,Eintracht Frankfurt,away,25.15,76.60,13,17
+592,Bayer 04 Leverkusen,Hertha BSC,home,241.30,78.93,3,4
+593,SV Werder Bremen,VfB Stuttgart,home,64.68,81.18,16,15
+594,FC Schalke 04,FC Augsburg,draw,225.20,75.83,6,12
+595,Borussia Mönchengladbach,Bayer 04 Leverkusen,home,186.15,241.30,4,3
+596,Hamburger SV,VfL Wolfsburg,away,63.20,270.43,11,10
+597,VfB Stuttgart,1.FSV Mainz 05,away,81.18,85.15,17,7
+598,Eintracht Frankfurt,Borussia Dortmund,home,76.60,352.95,16,2
+599,1.FC Köln,SV Werder Bremen,draw,68.63,64.68,8,15
+600,Hannover 96,TSG 1899 Hoffenheim,home,60.83,90.20,18,13
+601,Hertha BSC,SV Darmstadt 98,away,78.93,25.15,5,14
+602,FC Ingolstadt 04,FC Bayern München,away,35.65,596.05,9,1
+603,FC Bayern München,Hannover 96,home,596.05,60.83,1,18
+604,Borussia Dortmund,1.FC Köln,draw,352.95,68.63,2,9
+605,Bayer 04 Leverkusen,FC Ingolstadt 04,home,241.30,35.65,3,10
+606,VfL Wolfsburg,VfB Stuttgart,home,270.43,81.18,8,17
+607,FC Augsburg,Hamburger SV,away,75.83,63.20,11,12
+608,SV Werder Bremen,Eintracht Frankfurt,home,64.68,76.60,16,15
+609,TSG 1899 Hoffenheim,FC Schalke 04,away,90.20,225.20,14,7
+610,1.FSV Mainz 05,Hertha BSC,draw,85.15,78.93,5,6
+611,SV Darmstadt 98,Borussia Mönchengladbach,away,25.15,186.15,13,4
+612,FC Bayern München,SV Werder Bremen,home,562.55,89.45,9,9
+613,Borussia Dortmund,1.FSV Mainz 05,home,390.65,96.73,9,9
+614,1.FC Köln,SV Darmstadt 98,home,116.15,25.98,9,9
+615,Hamburger SV,FC Ingolstadt 04,draw,80.48,38.63,9,9
+616,FC Augsburg,VfL Wolfsburg,away,65.85,203.08,9,9
+617,Eintracht Frankfurt,FC Schalke 04,home,72.25,217.25,9,9
+618,Borussia Mönchengladbach,Bayer 04 Leverkusen,home,162.18,265.03,9,9
+619,Hertha BSC,SC Freiburg,home,96.53,86.73,9,9
+620,TSG 1899 Hoffenheim,RasenBallsport Leipzig,draw,138.63,176.33,9,9
+621,FC Schalke 04,FC Bayern München,away,217.25,562.55,15,1
+622,Bayer 04 Leverkusen,Hamburger SV,home,265.03,80.48,13,10
+623,VfL Wolfsburg,1.FC Köln,draw,203.08,116.15,3,2
+624,FC Ingolstadt 04,Hertha BSC,away,38.63,96.53,11,4
+625,SV Darmstadt 98,Eintracht Frankfurt,home,25.98,72.25,16,7
+626,SC Freiburg,Borussia Mönchengladbach,home,86.73,162.18,14,5
+627,RasenBallsport Leipzig,Borussia Dortmund,home,176.33,390.65,9,6
+628,SV Werder Bremen,FC Augsburg,away,89.45,65.85,18,17
+629,1.FSV Mainz 05,TSG 1899 Hoffenheim,draw,96.73,138.63,12,8
+630,1.FC Köln,SC Freiburg,home,116.15,86.73,4,6
+631,FC Bayern München,FC Ingolstadt 04,home,562.55,38.63,1,16
+632,Borussia Dortmund,SV Darmstadt 98,home,390.65,25.98,8,12
+633,Hamburger SV,RasenBallsport Leipzig,away,80.48,176.33,15,5
+634,TSG 1899 Hoffenheim,VfL Wolfsburg,draw,138.63,203.08,13,3
+635,Eintracht Frankfurt,Bayer 04 Leverkusen,home,72.25,265.03,9,7
+636,Borussia Mönchengladbach,SV Werder Bremen,home,162.18,89.45,10,18
+637,FC Augsburg,1.FSV Mainz 05,away,65.85,96.73,11,14
+638,Hertha BSC,FC Schalke 04,home,96.53,217.25,2,17
+639,VfL Wolfsburg,Borussia Dortmund,away,203.08,390.65,8,5
+640,FC Ingolstadt 04,Eintracht Frankfurt,away,38.63,72.25,15,7
+641,SV Darmstadt 98,TSG 1899 Hoffenheim,draw,25.98,138.63,14,10
+642,SC Freiburg,Hamburger SV,home,86.73,80.48,12,16
+643,FC Bayern München,Hertha BSC,home,562.55,96.53,1,2
+644,Bayer 04 Leverkusen,FC Augsburg,draw,265.03,65.85,11,13
+645,FC Schalke 04,1.FC Köln,away,217.25,116.15,17,4
+646,SV Werder Bremen,1.FSV Mainz 05,away,89.45,96.73,18,9
+647,RasenBallsport Leipzig,Borussia Mönchengladbach,draw,176.33,162.18,3,6
+648,Borussia Dortmund,SC Freiburg,home,390.65,86.73,3,9
+649,Borussia Mönchengladbach,FC Ingolstadt 04,home,162.18,38.63,8,15
+650,1.FSV Mainz 05,Bayer 04 Leverkusen,away,96.73,265.03,7,12
+651,Hamburger SV,FC Bayern München,away,80.48,562.55,16,1
+652,FC Augsburg,SV Darmstadt 98,home,65.85,25.98,13,14
+653,Eintracht Frankfurt,Hertha BSC,draw,72.25,96.53,4,5
+654,SV Werder Bremen,VfL Wolfsburg,home,89.45,203.08,18,10
+655,TSG 1899 Hoffenheim,FC Schalke 04,home,138.63,217.25,11,17
+656,1.FC Köln,RasenBallsport Leipzig,draw,116.15,176.33,2,6
+657,RasenBallsport Leipzig,FC Augsburg,home,176.33,65.85,7,11
+658,FC Bayern München,1.FC Köln,draw,562.55,116.15,1,3
+659,Hertha BSC,Hamburger SV,home,96.53,80.48,6,16
+660,FC Ingolstadt 04,TSG 1899 Hoffenheim,away,38.63,138.63,17,9
+661,SV Darmstadt 98,SV Werder Bremen,draw,25.98,89.45,14,15
+662,SC Freiburg,Eintracht Frankfurt,home,86.73,72.25,12,5
+663,Bayer 04 Leverkusen,Borussia Dortmund,home,265.03,390.65,10,2
+664,VfL Wolfsburg,1.FSV Mainz 05,draw,203.08,96.73,13,8
+665,FC Schalke 04,Borussia Mönchengladbach,home,217.25,162.18,18,4
+666,Borussia Dortmund,Hertha BSC,draw,390.65,96.53,3,2
+667,Borussia Mönchengladbach,Hamburger SV,draw,162.18,80.48,9,18
+668,1.FC Köln,FC Ingolstadt 04,home,116.15,38.63,4,17
+669,FC Augsburg,FC Schalke 04,draw,65.85,217.25,12,16
+670,TSG 1899 Hoffenheim,SC Freiburg,home,138.63,86.73,7,10
+671,Eintracht Frankfurt,FC Bayern München,draw,72.25,562.55,8,1
+672,SV Werder Bremen,Bayer 04 Leverkusen,home,89.45,265.03,15,6
+673,1.FSV Mainz 05,SV Darmstadt 98,home,96.73,25.98,11,14
+674,VfL Wolfsburg,RasenBallsport Leipzig,away,203.08,176.33,13,5
+675,Hamburger SV,Eintracht Frankfurt,away,80.48,72.25,17,8
+676,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,away,265.03,138.63,10,6
+677,Hertha BSC,1.FC Köln,home,96.53,116.15,4,2
+678,FC Ingolstadt 04,Borussia Dortmund,draw,38.63,390.65,18,5
+679,SV Darmstadt 98,VfL Wolfsburg,home,25.98,203.08,15,14
+680,SC Freiburg,FC Augsburg,home,86.73,65.85,11,12
+681,FC Bayern München,Borussia Mönchengladbach,home,562.55,162.18,1,9
+682,RasenBallsport Leipzig,SV Werder Bremen,home,176.33,89.45,3,13
+683,FC Schalke 04,1.FSV Mainz 05,home,217.25,96.73,16,7
+684,Borussia Mönchengladbach,Eintracht Frankfurt,draw,162.18,72.25,10,7
+685,1.FSV Mainz 05,FC Ingolstadt 04,home,96.73,38.63,9,17
+686,VfL Wolfsburg,Bayer 04 Leverkusen,away,203.08,265.03,16,11
+687,FC Augsburg,FC Bayern München,away,65.85,562.55,12,1
+688,SV Werder Bremen,SC Freiburg,away,89.45,86.73,15,8
+689,SV Darmstadt 98,RasenBallsport Leipzig,away,25.98,176.33,13,2
+690,Borussia Dortmund,FC Schalke 04,draw,390.65,217.25,6,14
+691,TSG 1899 Hoffenheim,Hertha BSC,home,138.63,96.53,4,3
+692,1.FC Köln,Hamburger SV,home,116.15,80.48,5,18
+693,Hertha BSC,Borussia Mönchengladbach,home,96.53,162.18,5,11
+694,FC Bayern München,TSG 1899 Hoffenheim,draw,562.55,138.63,1,3
+695,Bayer 04 Leverkusen,SV Darmstadt 98,home,265.03,25.98,10,14
+696,Hamburger SV,Borussia Dortmund,away,80.48,390.65,18,6
+697,FC Ingolstadt 04,FC Augsburg,away,38.63,65.85,17,13
+698,SC Freiburg,VfL Wolfsburg,away,86.73,203.08,8,16
+699,Eintracht Frankfurt,1.FC Köln,home,72.25,116.15,7,4
+700,RasenBallsport Leipzig,1.FSV Mainz 05,home,176.33,96.73,2,9
+701,FC Schalke 04,SV Werder Bremen,home,217.25,89.45,12,15
+702,Bayer 04 Leverkusen,RasenBallsport Leipzig,away,265.03,176.33,8,2
+703,Borussia Mönchengladbach,1.FC Köln,away,162.18,116.15,11,6
+704,1.FSV Mainz 05,SC Freiburg,home,96.73,86.73,10,9
+705,VfL Wolfsburg,FC Schalke 04,away,203.08,217.25,14,12
+706,FC Augsburg,Hertha BSC,draw,65.85,96.53,13,4
+707,SV Darmstadt 98,FC Ingolstadt 04,away,25.98,38.63,15,17
+708,Borussia Dortmund,FC Bayern München,home,390.65,562.55,5,1
+709,TSG 1899 Hoffenheim,Hamburger SV,draw,138.63,80.48,3,18
+710,SV Werder Bremen,Eintracht Frankfurt,away,89.45,72.25,16,7
+711,SC Freiburg,RasenBallsport Leipzig,away,86.73,176.33,10,1
+712,Borussia Mönchengladbach,TSG 1899 Hoffenheim,draw,162.18,138.63,13,5
+713,1.FC Köln,FC Augsburg,draw,116.15,65.85,4,12
+714,Hamburger SV,SV Werder Bremen,draw,80.48,89.45,18,16
+715,FC Ingolstadt 04,VfL Wolfsburg,draw,38.63,203.08,17,14
+716,Eintracht Frankfurt,Borussia Dortmund,home,72.25,390.65,7,3
+717,FC Bayern München,Bayer 04 Leverkusen,home,562.55,265.03,2,9
+718,FC Schalke 04,SV Darmstadt 98,home,217.25,25.98,11,15
+719,Hertha BSC,1.FSV Mainz 05,home,96.53,96.73,6,8
+720,1.FSV Mainz 05,FC Bayern München,away,96.73,562.55,9,2
+721,Borussia Dortmund,Borussia Mönchengladbach,home,390.65,162.18,7,13
+722,Bayer 04 Leverkusen,SC Freiburg,draw,265.03,86.73,10,11
+723,VfL Wolfsburg,Hertha BSC,away,203.08,96.53,14,3
+724,TSG 1899 Hoffenheim,1.FC Köln,home,138.63,116.15,6,5
+725,SV Werder Bremen,FC Ingolstadt 04,home,89.45,38.63,16,17
+726,RasenBallsport Leipzig,FC Schalke 04,home,176.33,217.25,1,8
+727,SV Darmstadt 98,Hamburger SV,away,25.98,80.48,15,18
+728,FC Augsburg,Eintracht Frankfurt,draw,65.85,72.25,12,4
+729,Eintracht Frankfurt,TSG 1899 Hoffenheim,draw,72.25,138.63,5,4
+730,FC Bayern München,VfL Wolfsburg,home,562.55,203.08,2,15
+731,1.FC Köln,Borussia Dortmund,draw,116.15,390.65,7,6
+732,Hamburger SV,FC Augsburg,home,80.48,65.85,17,12
+733,FC Ingolstadt 04,RasenBallsport Leipzig,home,38.63,176.33,18,1
+734,SC Freiburg,SV Darmstadt 98,home,86.73,25.98,11,16
+735,Hertha BSC,SV Werder Bremen,away,96.53,89.45,3,14
+736,Borussia Mönchengladbach,1.FSV Mainz 05,home,162.18,96.73,13,10
+737,FC Schalke 04,Bayer 04 Leverkusen,away,217.25,265.03,8,9
+738,TSG 1899 Hoffenheim,Borussia Dortmund,draw,138.63,390.65,4,6
+739,FC Schalke 04,SC Freiburg,draw,217.25,86.73,10,9
+740,1.FSV Mainz 05,Hamburger SV,home,96.73,80.48,11,16
+741,FC Augsburg,Borussia Mönchengladbach,home,65.85,162.18,13,12
+742,SV Werder Bremen,1.FC Köln,draw,89.45,116.15,14,7
+743,RasenBallsport Leipzig,Hertha BSC,home,176.33,96.53,2,3
+744,VfL Wolfsburg,Eintracht Frankfurt,home,203.08,72.25,15,5
+745,SV Darmstadt 98,FC Bayern München,away,25.98,562.55,18,1
+746,Bayer 04 Leverkusen,FC Ingolstadt 04,away,265.03,38.63,8,17
+747,Borussia Dortmund,FC Augsburg,draw,390.65,65.85,5,12
+748,Borussia Mönchengladbach,VfL Wolfsburg,away,162.18,203.08,13,15
+749,Hamburger SV,FC Schalke 04,home,80.48,217.25,17,11
+750,Eintracht Frankfurt,1.FSV Mainz 05,home,72.25,96.73,6,8
+751,FC Bayern München,RasenBallsport Leipzig,home,562.55,176.33,1,2
+752,1.FC Köln,Bayer 04 Leverkusen,draw,116.15,265.03,7,9
+753,FC Ingolstadt 04,SC Freiburg,away,38.63,86.73,16,10
+754,TSG 1899 Hoffenheim,SV Werder Bremen,draw,138.63,89.45,3,14
+755,Hertha BSC,SV Darmstadt 98,home,96.53,25.98,4,18
+756,SC Freiburg,FC Bayern München,away,86.73,562.55,8,1
+757,FC Schalke 04,FC Ingolstadt 04,home,217.25,38.63,11,17
+758,VfL Wolfsburg,Hamburger SV,home,203.08,80.48,13,16
+759,FC Augsburg,TSG 1899 Hoffenheim,away,65.85,138.63,12,5
+760,SV Werder Bremen,Borussia Dortmund,away,89.45,390.65,15,6
+761,SV Darmstadt 98,Borussia Mönchengladbach,draw,25.98,162.18,18,14
+762,RasenBallsport Leipzig,Eintracht Frankfurt,home,176.33,72.25,2,4
+763,Bayer 04 Leverkusen,Hertha BSC,home,265.03,96.53,9,3
+764,1.FSV Mainz 05,1.FC Köln,draw,96.73,116.15,10,7
+765,FC Schalke 04,Eintracht Frankfurt,away,217.25,72.25,10,6
+766,VfL Wolfsburg,FC Augsburg,away,203.08,65.85,12,13
+767,FC Ingolstadt 04,Hamburger SV,home,38.63,80.48,17,16
+768,SV Werder Bremen,FC Bayern München,away,89.45,562.55,15,1
+769,SV Darmstadt 98,1.FC Köln,away,25.98,116.15,18,7
+770,RasenBallsport Leipzig,TSG 1899 Hoffenheim,home,176.33,138.63,2,3
+771,Bayer 04 Leverkusen,Borussia Mönchengladbach,away,265.03,162.18,8,14
+772,SC Freiburg,Hertha BSC,home,86.73,96.53,9,5
+773,1.FSV Mainz 05,Borussia Dortmund,draw,96.73,390.65,11,4
+774,Hamburger SV,Bayer 04 Leverkusen,home,80.48,265.03,17,9
+775,FC Bayern München,FC Schalke 04,draw,562.55,217.25,1,11
+776,Borussia Mönchengladbach,SC Freiburg,home,162.18,86.73,13,8
+777,Hertha BSC,FC Ingolstadt 04,home,96.53,38.63,6,16
+778,1.FC Köln,VfL Wolfsburg,home,116.15,203.08,7,14
+779,TSG 1899 Hoffenheim,1.FSV Mainz 05,home,138.63,96.73,5,10
+780,Borussia Dortmund,RasenBallsport Leipzig,home,390.65,176.33,4,2
+781,FC Augsburg,SV Werder Bremen,home,65.85,89.45,12,15
+782,Eintracht Frankfurt,SV Darmstadt 98,home,72.25,25.98,3,18
+783,1.FSV Mainz 05,FC Augsburg,home,96.73,65.85,13,10
+784,Bayer 04 Leverkusen,Eintracht Frankfurt,home,265.03,72.25,9,3
+785,FC Ingolstadt 04,FC Bayern München,away,38.63,562.55,17,1
+786,SV Werder Bremen,Borussia Mönchengladbach,away,89.45,162.18,15,11
+787,SV Darmstadt 98,Borussia Dortmund,home,25.98,390.65,18,4
+788,RasenBallsport Leipzig,Hamburger SV,away,176.33,80.48,2,16
+789,FC Schalke 04,Hertha BSC,home,217.25,96.53,12,6
+790,VfL Wolfsburg,TSG 1899 Hoffenheim,home,203.08,138.63,14,5
+791,SC Freiburg,1.FC Köln,home,86.73,116.15,8,7
+792,FC Augsburg,Bayer 04 Leverkusen,away,65.85,265.03,13,9
+793,Borussia Dortmund,VfL Wolfsburg,home,390.65,203.08,4,14
+794,1.FSV Mainz 05,SV Werder Bremen,away,96.73,89.45,12,16
+795,Hertha BSC,FC Bayern München,draw,96.53,562.55,6,1
+796,TSG 1899 Hoffenheim,SV Darmstadt 98,home,138.63,25.98,5,18
+797,Eintracht Frankfurt,FC Ingolstadt 04,away,72.25,38.63,3,17
+798,Hamburger SV,SC Freiburg,draw,80.48,86.73,15,8
+799,Borussia Mönchengladbach,RasenBallsport Leipzig,away,162.18,176.33,10,2
+800,1.FC Köln,FC Schalke 04,draw,116.15,217.25,7,11
+801,VfL Wolfsburg,SV Werder Bremen,away,203.08,89.45,14,16
+802,FC Bayern München,Hamburger SV,home,562.55,80.48,1,15
+803,Bayer 04 Leverkusen,1.FSV Mainz 05,away,265.03,96.73,8,12
+804,SV Darmstadt 98,FC Augsburg,away,25.98,65.85,18,13
+805,SC Freiburg,Borussia Dortmund,away,86.73,390.65,9,3
+806,RasenBallsport Leipzig,1.FC Köln,home,176.33,116.15,2,7
+807,Hertha BSC,Eintracht Frankfurt,home,96.53,72.25,6,5
+808,FC Ingolstadt 04,Borussia Mönchengladbach,away,38.63,162.18,17,11
+809,FC Schalke 04,TSG 1899 Hoffenheim,draw,217.25,138.63,10,4
+810,FC Augsburg,RasenBallsport Leipzig,draw,65.85,176.33,13,2
+811,Borussia Dortmund,Bayer 04 Leverkusen,home,390.65,265.03,3,8
+812,1.FSV Mainz 05,VfL Wolfsburg,draw,96.73,203.08,11,14
+813,1.FC Köln,FC Bayern München,away,116.15,562.55,7,1
+814,SV Werder Bremen,SV Darmstadt 98,home,89.45,25.98,15,18
+815,TSG 1899 Hoffenheim,FC Ingolstadt 04,home,138.63,38.63,4,17
+816,Borussia Mönchengladbach,FC Schalke 04,home,162.18,217.25,10,12
+817,Eintracht Frankfurt,SC Freiburg,away,72.25,86.73,6,9
+818,Hamburger SV,Hertha BSC,home,80.48,96.53,16,5
+819,Bayer 04 Leverkusen,SV Werder Bremen,draw,265.03,89.45,10,14
+820,FC Bayern München,Eintracht Frankfurt,home,562.55,72.25,1,6
+821,Hertha BSC,Borussia Dortmund,home,96.53,390.65,5,3
+822,SV Darmstadt 98,1.FSV Mainz 05,home,25.98,96.73,18,11
+823,SC Freiburg,TSG 1899 Hoffenheim,draw,86.73,138.63,8,4
+824,RasenBallsport Leipzig,VfL Wolfsburg,away,176.33,203.08,2,15
+825,FC Ingolstadt 04,1.FC Köln,draw,38.63,116.15,17,7
+826,FC Schalke 04,FC Augsburg,home,217.25,65.85,13,12
+827,Hamburger SV,Borussia Mönchengladbach,home,80.48,162.18,16,9
+828,Borussia Dortmund,FC Ingolstadt 04,home,390.65,38.63,3,17
+829,VfL Wolfsburg,SV Darmstadt 98,home,203.08,25.98,14,18
+830,1.FC Köln,Hertha BSC,home,116.15,96.53,7,5
+831,FC Augsburg,SC Freiburg,draw,65.85,86.73,13,8
+832,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,home,138.63,265.03,4,10
+833,SV Werder Bremen,RasenBallsport Leipzig,home,89.45,176.33,15,2
+834,Eintracht Frankfurt,Hamburger SV,draw,72.25,80.48,6,16
+835,1.FSV Mainz 05,FC Schalke 04,away,96.73,217.25,12,11
+836,Borussia Mönchengladbach,FC Bayern München,away,162.18,562.55,9,1
+837,Hertha BSC,TSG 1899 Hoffenheim,away,96.53,138.63,5,4
+838,FC Bayern München,FC Augsburg,home,562.55,65.85,1,14
+839,FC Schalke 04,Borussia Dortmund,draw,217.25,390.65,9,3
+840,Hamburger SV,1.FC Köln,home,80.48,116.15,16,6
+841,SC Freiburg,SV Werder Bremen,away,86.73,89.45,8,13
+842,RasenBallsport Leipzig,SV Darmstadt 98,home,176.33,25.98,2,18
+843,Eintracht Frankfurt,Borussia Mönchengladbach,draw,72.25,162.18,7,10
+844,FC Ingolstadt 04,1.FSV Mainz 05,home,38.63,96.73,17,12
+845,Bayer 04 Leverkusen,VfL Wolfsburg,draw,265.03,203.08,11,15
+846,Borussia Dortmund,Hamburger SV,home,390.65,80.48,4,14
+847,1.FC Köln,Eintracht Frankfurt,home,116.15,72.25,6,7
+848,TSG 1899 Hoffenheim,FC Bayern München,home,138.63,562.55,3,1
+849,SV Werder Bremen,FC Schalke 04,home,89.45,217.25,12,9
+850,Borussia Mönchengladbach,Hertha BSC,home,162.18,96.53,10,5
+851,1.FSV Mainz 05,RasenBallsport Leipzig,away,96.73,176.33,15,2
+852,VfL Wolfsburg,SC Freiburg,away,203.08,86.73,13,8
+853,FC Augsburg,FC Ingolstadt 04,away,65.85,38.63,16,17
+854,SV Darmstadt 98,Bayer 04 Leverkusen,away,25.98,265.03,18,11
+855,Eintracht Frankfurt,SV Werder Bremen,draw,72.25,89.45,8,11
+856,FC Schalke 04,VfL Wolfsburg,home,217.25,203.08,12,13
+857,1.FC Köln,Borussia Mönchengladbach,away,116.15,162.18,5,9
+858,Hamburger SV,TSG 1899 Hoffenheim,home,80.48,138.63,14,3
+859,SC Freiburg,1.FSV Mainz 05,home,86.73,96.73,7,15
+860,RasenBallsport Leipzig,Bayer 04 Leverkusen,home,176.33,265.03,2,10
+861,FC Bayern München,Borussia Dortmund,home,562.55,390.65,1,4
+862,Hertha BSC,FC Augsburg,home,96.53,65.85,6,16
+863,FC Ingolstadt 04,SV Darmstadt 98,home,38.63,25.98,17,18
+864,Borussia Dortmund,Eintracht Frankfurt,home,390.65,72.25,4,9
+865,1.FSV Mainz 05,Hertha BSC,home,96.73,96.53,15,5
+866,VfL Wolfsburg,FC Ingolstadt 04,home,203.08,38.63,14,17
+867,FC Augsburg,1.FC Köln,home,65.85,116.15,16,7
+868,TSG 1899 Hoffenheim,Borussia Mönchengladbach,home,138.63,162.18,3,8
+869,RasenBallsport Leipzig,SC Freiburg,home,176.33,86.73,2,6
+870,Bayer 04 Leverkusen,FC Bayern München,draw,265.03,562.55,12,1
+871,SV Werder Bremen,Hamburger SV,home,89.45,80.48,11,13
+872,SV Darmstadt 98,FC Schalke 04,home,25.98,217.25,18,10
+873,1.FC Köln,TSG 1899 Hoffenheim,draw,116.15,138.63,7,3
+874,FC Bayern München,1.FSV Mainz 05,draw,562.55,96.73,1,15
+875,Hertha BSC,VfL Wolfsburg,home,96.53,203.08,5,13
+876,Hamburger SV,SV Darmstadt 98,away,80.48,25.98,14,18
+877,FC Ingolstadt 04,SV Werder Bremen,away,38.63,89.45,17,8
+878,Eintracht Frankfurt,FC Augsburg,home,72.25,65.85,10,16
+879,Borussia Mönchengladbach,Borussia Dortmund,away,162.18,390.65,9,4
+880,SC Freiburg,Bayer 04 Leverkusen,home,86.73,265.03,6,12
+881,FC Schalke 04,RasenBallsport Leipzig,draw,217.25,176.33,11,2
+882,Bayer 04 Leverkusen,FC Schalke 04,away,265.03,217.25,12,11
+883,Borussia Dortmund,1.FC Köln,draw,390.65,116.15,3,8
+884,1.FSV Mainz 05,Borussia Mönchengladbach,away,96.73,162.18,13,10
+885,SV Werder Bremen,Hertha BSC,home,89.45,96.53,7,5
+886,SV Darmstadt 98,SC Freiburg,home,25.98,86.73,18,6
+887,RasenBallsport Leipzig,FC Ingolstadt 04,draw,176.33,38.63,2,17
+888,VfL Wolfsburg,FC Bayern München,away,203.08,562.55,14,1
+889,FC Augsburg,Hamburger SV,home,65.85,80.48,16,15
+890,TSG 1899 Hoffenheim,Eintracht Frankfurt,home,138.63,72.25,4,9
+891,1.FC Köln,SV Werder Bremen,home,116.15,89.45,8,6
+892,FC Bayern München,SV Darmstadt 98,home,562.55,25.98,1,18
+893,Borussia Dortmund,TSG 1899 Hoffenheim,home,390.65,138.63,4,3
+894,Borussia Mönchengladbach,FC Augsburg,draw,162.18,65.85,9,13
+895,FC Ingolstadt 04,Bayer 04 Leverkusen,draw,38.63,265.03,17,12
+896,Eintracht Frankfurt,VfL Wolfsburg,away,72.25,203.08,11,15
+897,Hertha BSC,RasenBallsport Leipzig,away,96.53,176.33,5,2
+898,Hamburger SV,1.FSV Mainz 05,draw,80.48,96.73,16,14
+899,SC Freiburg,FC Schalke 04,home,86.73,217.25,7,10
+900,Bayer 04 Leverkusen,1.FC Köln,draw,265.03,116.15,12,7
+901,FC Schalke 04,Hamburger SV,draw,217.25,80.48,10,16
+902,1.FSV Mainz 05,Eintracht Frankfurt,home,96.73,72.25,15,11
+903,VfL Wolfsburg,Borussia Mönchengladbach,draw,203.08,162.18,14,9
+904,FC Augsburg,Borussia Dortmund,draw,65.85,390.65,13,3
+905,SV Werder Bremen,TSG 1899 Hoffenheim,away,89.45,138.63,8,4
+906,SV Darmstadt 98,Hertha BSC,away,25.98,96.53,18,6
+907,SC Freiburg,FC Ingolstadt 04,draw,86.73,38.63,5,17
+908,RasenBallsport Leipzig,FC Bayern München,away,176.33,562.55,2,1
+909,FC Bayern München,SC Freiburg,home,562.55,86.73,1,6
+910,Borussia Dortmund,SV Werder Bremen,home,390.65,89.45,3,8
+911,Borussia Mönchengladbach,SV Darmstadt 98,draw,162.18,25.98,9,18
+912,Hertha BSC,Bayer 04 Leverkusen,away,96.53,265.03,5,12
+913,1.FC Köln,1.FSV Mainz 05,home,116.15,96.73,7,13
+914,Hamburger SV,VfL Wolfsburg,home,80.48,203.08,16,15
+915,FC Ingolstadt 04,FC Schalke 04,draw,38.63,217.25,17,10
+916,TSG 1899 Hoffenheim,FC Augsburg,draw,138.63,65.85,4,14
+917,Eintracht Frankfurt,RasenBallsport Leipzig,draw,72.25,176.33,11,2
+918,FC Bayern München,Bayer 04 Leverkusen,home,811.85,357.35,9,9
+919,TSG 1899 Hoffenheim,SV Werder Bremen,home,212.75,107.15,9,9
+920,Hamburger SV,FC Augsburg,home,62.40,100.45,9,9
+921,VfL Wolfsburg,Borussia Dortmund,away,143.60,574.20,9,9
+922,Hertha BSC,VfB Stuttgart,home,131.45,134.70,9,9
+923,1.FSV Mainz 05,Hannover 96,away,98.35,92.95,9,9
+924,FC Schalke 04,RasenBallsport Leipzig,home,274.35,373.30,9,9
+925,SC Freiburg,Eintracht Frankfurt,draw,100.60,126.15,9,9
+926,Borussia Mönchengladbach,1.FC Köln,home,193.25,91.73,9,9
+927,1.FC Köln,Hamburger SV,away,91.73,62.40,13,8
+928,SV Werder Bremen,FC Bayern München,away,107.15,811.85,11,2
+929,Eintracht Frankfurt,VfL Wolfsburg,away,126.15,143.60,9,18
+930,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,draw,357.35,212.75,15,7
+931,FC Augsburg,Borussia Mönchengladbach,draw,100.45,193.25,12,6
+932,VfB Stuttgart,1.FSV Mainz 05,home,134.70,98.35,16,14
+933,Borussia Dortmund,Hertha BSC,home,574.20,131.45,1,4
+934,RasenBallsport Leipzig,SC Freiburg,home,373.30,100.60,17,10
+935,Hannover 96,FC Schalke 04,home,92.95,274.35,5,3
+936,Hamburger SV,RasenBallsport Leipzig,away,62.40,373.30,3,7
+937,SC Freiburg,Borussia Dortmund,draw,100.60,574.20,15,1
+938,Borussia Mönchengladbach,Eintracht Frankfurt,away,193.25,126.15,5,13
+939,FC Augsburg,1.FC Köln,home,100.45,91.73,12,17
+940,1.FSV Mainz 05,Bayer 04 Leverkusen,home,98.35,357.35,16,14
+941,VfL Wolfsburg,Hannover 96,draw,143.60,92.95,11,4
+942,TSG 1899 Hoffenheim,FC Bayern München,home,212.75,811.85,6,2
+943,Hertha BSC,SV Werder Bremen,draw,131.45,107.15,9,18
+944,FC Schalke 04,VfB Stuttgart,home,274.35,134.70,8,10
+945,Hannover 96,Hamburger SV,home,92.95,62.40,3,7
+946,Eintracht Frankfurt,FC Augsburg,away,126.15,100.45,11,8
+947,VfB Stuttgart,VfL Wolfsburg,home,134.70,143.60,14,12
+948,FC Bayern München,1.FSV Mainz 05,home,811.85,98.35,6,13
+949,SV Werder Bremen,FC Schalke 04,away,107.15,274.35,16,5
+950,RasenBallsport Leipzig,Borussia Mönchengladbach,draw,373.30,193.25,4,10
+951,TSG 1899 Hoffenheim,Hertha BSC,draw,212.75,131.45,2,9
+952,Bayer 04 Leverkusen,SC Freiburg,home,357.35,100.60,17,15
+953,Borussia Dortmund,1.FC Köln,home,574.20,91.73,1,18
+954,Borussia Mönchengladbach,VfB Stuttgart,home,193.25,134.70,10,9
+955,FC Schalke 04,FC Bayern München,away,274.35,811.85,4,3
+956,FC Augsburg,RasenBallsport Leipzig,home,100.45,373.30,7,6
+957,VfL Wolfsburg,SV Werder Bremen,draw,143.60,107.15,14,17
+958,1.FC Köln,Eintracht Frankfurt,away,91.73,126.15,18,13
+959,SC Freiburg,Hannover 96,draw,100.60,92.95,16,2
+960,Hamburger SV,Borussia Dortmund,away,62.40,574.20,8,1
+961,Hertha BSC,Bayer 04 Leverkusen,home,131.45,357.35,11,12
+962,1.FSV Mainz 05,TSG 1899 Hoffenheim,away,98.35,212.75,15,5
+963,FC Bayern München,VfL Wolfsburg,draw,811.85,143.60,2,13
+964,RasenBallsport Leipzig,Eintracht Frankfurt,home,373.30,126.15,9,10
+965,TSG 1899 Hoffenheim,FC Schalke 04,home,212.75,274.35,3,6
+966,SV Werder Bremen,SC Freiburg,draw,107.15,100.60,17,16
+967,1.FSV Mainz 05,Hertha BSC,home,98.35,131.45,15,8
+968,VfB Stuttgart,FC Augsburg,draw,134.70,100.45,12,5
+969,Borussia Dortmund,Borussia Mönchengladbach,home,574.20,193.25,1,7
+970,Hannover 96,1.FC Köln,draw,92.95,91.73,4,18
+971,Bayer 04 Leverkusen,Hamburger SV,home,357.35,62.40,14,11
+972,FC Schalke 04,Bayer 04 Leverkusen,draw,274.35,357.35,7,10
+973,Eintracht Frankfurt,VfB Stuttgart,home,126.15,134.70,11,12
+974,FC Augsburg,Borussia Dortmund,away,100.45,574.20,5,1
+975,VfL Wolfsburg,1.FSV Mainz 05,draw,143.60,98.35,13,14
+976,Borussia Mönchengladbach,Hannover 96,home,193.25,92.95,9,4
+977,Hamburger SV,SV Werder Bremen,draw,62.40,107.15,15,17
+978,SC Freiburg,TSG 1899 Hoffenheim,home,100.60,212.75,16,2
+979,Hertha BSC,FC Bayern München,draw,131.45,811.85,8,3
+980,1.FC Köln,RasenBallsport Leipzig,away,91.73,373.30,18,6
+981,VfB Stuttgart,1.FC Köln,home,134.70,91.73,14,18
+982,FC Bayern München,SC Freiburg,home,811.85,100.60,2,15
+983,TSG 1899 Hoffenheim,FC Augsburg,draw,212.75,100.45,3,6
+984,Hertha BSC,FC Schalke 04,away,131.45,274.35,10,9
+985,1.FSV Mainz 05,Hamburger SV,home,98.35,62.40,13,16
+986,Hannover 96,Eintracht Frankfurt,away,92.95,126.15,5,8
+987,Borussia Dortmund,RasenBallsport Leipzig,away,574.20,373.30,1,4
+988,Bayer 04 Leverkusen,VfL Wolfsburg,draw,357.35,143.60,11,12
+989,SV Werder Bremen,Borussia Mönchengladbach,away,107.15,193.25,17,7
+990,FC Schalke 04,1.FSV Mainz 05,home,274.35,98.35,6,10
+991,RasenBallsport Leipzig,VfB Stuttgart,home,373.30,134.70,3,11
+992,Borussia Mönchengladbach,Bayer 04 Leverkusen,away,193.25,357.35,5,12
+993,FC Augsburg,Hannover 96,away,100.45,92.95,8,9
+994,Eintracht Frankfurt,Borussia Dortmund,draw,126.15,574.20,7,1
+995,Hamburger SV,FC Bayern München,away,62.40,811.85,15,2
+996,1.FC Köln,SV Werder Bremen,draw,91.73,107.15,18,17
+997,SC Freiburg,Hertha BSC,draw,100.60,131.45,16,13
+998,VfL Wolfsburg,TSG 1899 Hoffenheim,draw,143.60,212.75,14,4
+999,1.FSV Mainz 05,Eintracht Frankfurt,draw,98.35,126.15,12,7
+1000,TSG 1899 Hoffenheim,Borussia Mönchengladbach,away,212.75,193.25,4,8
+1001,Hertha BSC,Hamburger SV,home,131.45,62.40,11,16
+1002,FC Schalke 04,VfL Wolfsburg,draw,274.35,143.60,5,14
+1003,Bayer 04 Leverkusen,1.FC Köln,home,357.35,91.73,9,18
+1004,Hannover 96,Borussia Dortmund,home,92.95,574.20,6,1
+1005,FC Bayern München,RasenBallsport Leipzig,home,811.85,373.30,2,3
+1006,SV Werder Bremen,FC Augsburg,away,107.15,100.45,17,10
+1007,VfB Stuttgart,SC Freiburg,home,134.70,100.60,13,15
+1008,Eintracht Frankfurt,SV Werder Bremen,home,126.15,107.15,10,17
+1009,RasenBallsport Leipzig,Hannover 96,home,373.30,92.95,3,4
+1010,SC Freiburg,FC Schalke 04,away,100.60,274.35,15,5
+1011,FC Augsburg,Bayer 04 Leverkusen,draw,100.45,357.35,9,8
+1012,Hamburger SV,VfB Stuttgart,home,62.40,134.70,16,12
+1013,Borussia Mönchengladbach,1.FSV Mainz 05,draw,193.25,98.35,6,13
+1014,Borussia Dortmund,FC Bayern München,away,574.20,811.85,2,1
+1015,1.FC Köln,TSG 1899 Hoffenheim,away,91.73,212.75,18,7
+1016,VfL Wolfsburg,Hertha BSC,draw,143.60,131.45,14,11
+1017,VfB Stuttgart,Borussia Dortmund,home,134.70,574.20,12,3
+1018,FC Bayern München,FC Augsburg,home,811.85,100.45,1,10
+1019,TSG 1899 Hoffenheim,Eintracht Frankfurt,draw,212.75,126.15,5,7
+1020,Bayer 04 Leverkusen,RasenBallsport Leipzig,draw,357.35,373.30,9,2
+1021,1.FSV Mainz 05,1.FC Köln,home,98.35,91.73,13,18
+1022,VfL Wolfsburg,SC Freiburg,home,143.60,100.60,14,16
+1023,Hertha BSC,Borussia Mönchengladbach,away,131.45,193.25,11,8
+1024,FC Schalke 04,Hamburger SV,home,274.35,62.40,4,15
+1025,SV Werder Bremen,Hannover 96,home,107.15,92.95,17,6
+1026,Hannover 96,VfB Stuttgart,draw,92.95,134.70,8,11
+1027,Borussia Dortmund,FC Schalke 04,draw,574.20,274.35,5,2
+1028,RasenBallsport Leipzig,SV Werder Bremen,home,373.30,107.15,3,16
+1029,SC Freiburg,1.FSV Mainz 05,home,100.60,98.35,17,12
+1030,Eintracht Frankfurt,Bayer 04 Leverkusen,away,126.15,357.35,7,9
+1031,FC Augsburg,VfL Wolfsburg,home,100.45,143.60,10,13
+1032,Borussia Mönchengladbach,FC Bayern München,home,193.25,811.85,4,1
+1033,Hamburger SV,TSG 1899 Hoffenheim,home,62.40,212.75,15,6
+1034,1.FC Köln,Hertha BSC,away,91.73,131.45,18,14
+1035,SC Freiburg,Hamburger SV,draw,100.60,62.40,16,15
+1036,FC Bayern München,Hannover 96,home,811.85,92.95,1,10
+1037,TSG 1899 Hoffenheim,RasenBallsport Leipzig,home,212.75,373.30,7,2
+1038,Bayer 04 Leverkusen,Borussia Dortmund,draw,357.35,574.20,6,5
+1039,1.FSV Mainz 05,FC Augsburg,away,98.35,100.45,13,8
+1040,SV Werder Bremen,VfB Stuttgart,home,107.15,134.70,17,12
+1041,FC Schalke 04,1.FC Köln,draw,274.35,91.73,3,18
+1042,Hertha BSC,Eintracht Frankfurt,away,131.45,126.15,11,9
+1043,VfL Wolfsburg,Borussia Mönchengladbach,home,143.60,193.25,14,4
+1044,VfB Stuttgart,Bayer 04 Leverkusen,away,134.70,357.35,13,9
+1045,Borussia Dortmund,SV Werder Bremen,away,574.20,107.15,6,17
+1046,RasenBallsport Leipzig,1.FSV Mainz 05,draw,373.30,98.35,2,14
+1047,Eintracht Frankfurt,FC Bayern München,away,126.15,811.85,8,1
+1048,Hamburger SV,VfL Wolfsburg,draw,62.40,143.60,15,11
+1049,Borussia Mönchengladbach,FC Schalke 04,draw,193.25,274.35,4,3
+1050,1.FC Köln,SC Freiburg,away,91.73,100.60,18,16
+1051,Hannover 96,TSG 1899 Hoffenheim,home,92.95,212.75,10,5
+1052,FC Augsburg,Hertha BSC,draw,100.45,131.45,7,12
+1053,VfL Wolfsburg,RasenBallsport Leipzig,draw,143.60,373.30,11,2
+1054,Hamburger SV,Eintracht Frankfurt,away,62.40,126.15,15,9
+1055,1.FSV Mainz 05,Borussia Dortmund,away,98.35,574.20,14,8
+1056,SC Freiburg,Borussia Mönchengladbach,home,100.60,193.25,16,4
+1057,TSG 1899 Hoffenheim,VfB Stuttgart,home,212.75,134.70,6,13
+1058,FC Bayern München,1.FC Köln,home,811.85,91.73,1,18
+1059,Hertha BSC,Hannover 96,home,131.45,92.95,12,10
+1060,FC Schalke 04,FC Augsburg,home,274.35,100.45,3,7
+1061,Bayer 04 Leverkusen,SV Werder Bremen,home,357.35,107.15,5,17
+1062,Borussia Mönchengladbach,Hamburger SV,home,193.25,62.40,8,16
+1063,1.FC Köln,VfL Wolfsburg,home,91.73,143.60,18,12
+1064,SV Werder Bremen,1.FSV Mainz 05,draw,107.15,98.35,17,15
+1065,Eintracht Frankfurt,FC Schalke 04,draw,126.15,274.35,7,2
+1066,FC Augsburg,SC Freiburg,draw,100.45,100.60,9,13
+1067,VfB Stuttgart,FC Bayern München,away,134.70,811.85,14,1
+1068,Borussia Dortmund,TSG 1899 Hoffenheim,home,574.20,212.75,6,5
+1069,Hannover 96,Bayer 04 Leverkusen,draw,92.95,357.35,10,4
+1070,RasenBallsport Leipzig,Hertha BSC,away,373.30,131.45,3,11
+1071,Bayer 04 Leverkusen,FC Bayern München,away,357.35,811.85,4,1
+1072,SV Werder Bremen,TSG 1899 Hoffenheim,draw,107.15,212.75,16,7
+1073,Eintracht Frankfurt,SC Freiburg,draw,126.15,100.60,8,13
+1074,FC Augsburg,Hamburger SV,home,100.45,62.40,9,17
+1075,Hannover 96,1.FSV Mainz 05,home,92.95,98.35,11,15
+1076,VfB Stuttgart,Hertha BSC,home,134.70,131.45,14,10
+1077,RasenBallsport Leipzig,FC Schalke 04,home,373.30,274.35,5,2
+1078,1.FC Köln,Borussia Mönchengladbach,home,91.73,193.25,18,6
+1079,Borussia Dortmund,VfL Wolfsburg,draw,574.20,143.60,3,12
+1080,Hertha BSC,Borussia Dortmund,draw,131.45,574.20,11,4
+1081,1.FSV Mainz 05,VfB Stuttgart,home,98.35,134.70,15,13
+1082,SC Freiburg,RasenBallsport Leipzig,home,100.60,373.30,14,2
+1083,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,away,212.75,357.35,7,5
+1084,Borussia Mönchengladbach,FC Augsburg,home,193.25,100.45,6,8
+1085,VfL Wolfsburg,Eintracht Frankfurt,away,143.60,126.15,12,9
+1086,Hamburger SV,1.FC Köln,away,62.40,91.73,17,18
+1087,FC Bayern München,SV Werder Bremen,home,811.85,107.15,1,16
+1088,FC Schalke 04,Hannover 96,draw,274.35,92.95,3,10
+1089,Eintracht Frankfurt,Borussia Mönchengladbach,home,126.15,193.25,7,5
+1090,FC Bayern München,TSG 1899 Hoffenheim,home,811.85,212.75,1,9
+1091,Borussia Dortmund,SC Freiburg,draw,574.20,100.60,6,12
+1092,RasenBallsport Leipzig,Hamburger SV,draw,373.30,62.40,4,17
+1093,VfB Stuttgart,FC Schalke 04,away,134.70,274.35,14,3
+1094,1.FC Köln,FC Augsburg,draw,91.73,100.45,18,8
+1095,SV Werder Bremen,Hertha BSC,draw,107.15,131.45,16,11
+1096,Bayer 04 Leverkusen,1.FSV Mainz 05,home,357.35,98.35,2,15
+1097,Hannover 96,VfL Wolfsburg,away,92.95,143.60,10,13
+1098,1.FC Köln,Borussia Dortmund,away,91.73,574.20,18,6
+1099,Hertha BSC,TSG 1899 Hoffenheim,draw,131.45,212.75,11,9
+1100,SC Freiburg,Bayer 04 Leverkusen,draw,100.60,357.35,12,2
+1101,FC Schalke 04,SV Werder Bremen,away,274.35,107.15,3,16
+1102,1.FSV Mainz 05,FC Bayern München,away,98.35,811.85,15,1
+1103,VfL Wolfsburg,VfB Stuttgart,draw,143.60,134.70,13,14
+1104,Borussia Mönchengladbach,RasenBallsport Leipzig,away,193.25,373.30,7,5
+1105,FC Augsburg,Eintracht Frankfurt,home,100.45,126.15,8,4
+1106,Hamburger SV,Hannover 96,draw,62.40,92.95,17,10
+1107,RasenBallsport Leipzig,FC Augsburg,home,373.30,100.45,3,7
+1108,Borussia Dortmund,Hamburger SV,home,574.20,62.40,4,17
+1109,TSG 1899 Hoffenheim,1.FSV Mainz 05,home,212.75,98.35,9,16
+1110,Eintracht Frankfurt,1.FC Köln,home,126.15,91.73,6,18
+1111,Bayer 04 Leverkusen,Hertha BSC,away,357.35,131.45,2,11
+1112,Hannover 96,SC Freiburg,home,92.95,100.60,10,12
+1113,FC Bayern München,FC Schalke 04,home,811.85,274.35,1,5
+1114,VfB Stuttgart,Borussia Mönchengladbach,home,134.70,193.25,14,8
+1115,SV Werder Bremen,VfL Wolfsburg,home,107.15,143.60,15,13
+1116,Hertha BSC,1.FSV Mainz 05,away,131.45,98.35,11,16
+1117,1.FC Köln,Hannover 96,draw,91.73,92.95,18,9
+1118,SC Freiburg,SV Werder Bremen,home,100.60,107.15,12,15
+1119,Hamburger SV,Bayer 04 Leverkusen,away,62.40,357.35,17,5
+1120,VfL Wolfsburg,FC Bayern München,away,143.60,811.85,13,1
+1121,FC Schalke 04,TSG 1899 Hoffenheim,home,274.35,212.75,6,8
+1122,FC Augsburg,VfB Stuttgart,away,100.45,134.70,7,14
+1123,Borussia Mönchengladbach,Borussia Dortmund,away,193.25,574.20,10,3
+1124,Eintracht Frankfurt,RasenBallsport Leipzig,home,126.15,373.30,4,2
+1125,1.FSV Mainz 05,VfL Wolfsburg,draw,98.35,143.60,16,14
+1126,FC Bayern München,Hertha BSC,draw,811.85,131.45,1,11
+1127,TSG 1899 Hoffenheim,SC Freiburg,draw,212.75,100.60,9,12
+1128,Hannover 96,Borussia Mönchengladbach,away,92.95,193.25,7,10
+1129,VfB Stuttgart,Eintracht Frankfurt,home,134.70,126.15,13,3
+1130,SV Werder Bremen,Hamburger SV,home,107.15,62.40,15,17
+1131,Bayer 04 Leverkusen,FC Schalke 04,away,357.35,274.35,4,6
+1132,RasenBallsport Leipzig,1.FC Köln,away,373.30,91.73,5,18
+1133,Borussia Dortmund,FC Augsburg,draw,574.20,100.45,2,8
+1134,Borussia Mönchengladbach,SV Werder Bremen,draw,193.25,107.15,7,14
+1135,FC Schalke 04,Hertha BSC,home,274.35,131.45,3,11
+1136,Eintracht Frankfurt,Hannover 96,home,126.15,92.95,4,10
+1137,FC Augsburg,TSG 1899 Hoffenheim,away,100.45,212.75,8,9
+1138,Hamburger SV,1.FSV Mainz 05,draw,62.40,98.35,17,16
+1139,VfL Wolfsburg,Bayer 04 Leverkusen,away,143.60,357.35,15,5
+1140,RasenBallsport Leipzig,Borussia Dortmund,draw,373.30,574.20,6,2
+1141,1.FC Köln,VfB Stuttgart,away,91.73,134.70,18,12
+1142,SC Freiburg,FC Bayern München,away,100.60,811.85,13,1
+1143,1.FSV Mainz 05,FC Schalke 04,away,98.35,274.35,16,2
+1144,FC Bayern München,Hamburger SV,home,811.85,62.40,1,17
+1145,TSG 1899 Hoffenheim,VfL Wolfsburg,home,212.75,143.60,7,15
+1146,Hertha BSC,SC Freiburg,draw,131.45,100.60,12,13
+1147,Hannover 96,FC Augsburg,away,92.95,100.45,11,10
+1148,Bayer 04 Leverkusen,Borussia Mönchengladbach,home,357.35,193.25,5,8
+1149,VfB Stuttgart,RasenBallsport Leipzig,draw,134.70,373.30,9,6
+1150,Borussia Dortmund,Eintracht Frankfurt,home,574.20,126.15,3,4
+1151,SV Werder Bremen,1.FC Köln,home,107.15,91.73,14,18
+1152,SC Freiburg,VfB Stuttgart,away,100.60,134.70,14,10
+1153,Borussia Mönchengladbach,TSG 1899 Hoffenheim,draw,193.25,212.75,9,7
+1154,Eintracht Frankfurt,1.FSV Mainz 05,home,126.15,98.35,5,16
+1155,FC Augsburg,SV Werder Bremen,away,100.45,107.15,8,13
+1156,Hamburger SV,Hertha BSC,away,62.40,131.45,17,11
+1157,VfL Wolfsburg,FC Schalke 04,away,143.60,274.35,15,2
+1158,Borussia Dortmund,Hannover 96,home,574.20,92.95,3,12
+1159,1.FC Köln,Bayer 04 Leverkusen,home,91.73,357.35,18,4
+1160,RasenBallsport Leipzig,FC Bayern München,home,373.30,811.85,6,1
+1161,TSG 1899 Hoffenheim,1.FC Köln,home,212.75,91.73,7,17
+1162,FC Schalke 04,SC Freiburg,home,274.35,100.60,2,14
+1163,Bayer 04 Leverkusen,FC Augsburg,draw,357.35,100.45,5,10
+1164,Hannover 96,RasenBallsport Leipzig,away,92.95,373.30,13,6
+1165,VfB Stuttgart,Hamburger SV,draw,134.70,62.40,8,18
+1166,FC Bayern München,Borussia Dortmund,home,811.85,574.20,1,3
+1167,Hertha BSC,VfL Wolfsburg,draw,131.45,143.60,11,15
+1168,SV Werder Bremen,Eintracht Frankfurt,home,107.15,126.15,12,4
+1169,1.FSV Mainz 05,Borussia Mönchengladbach,draw,98.35,193.25,16,9
+1170,Hannover 96,SV Werder Bremen,home,92.95,107.15,13,12
+1171,1.FC Köln,1.FSV Mainz 05,draw,91.73,98.35,17,16
+1172,SC Freiburg,VfL Wolfsburg,away,100.60,143.60,14,15
+1173,Borussia Mönchengladbach,Hertha BSC,home,193.25,131.45,9,11
+1174,FC Augsburg,FC Bayern München,away,100.45,811.85,10,1
+1175,Hamburger SV,FC Schalke 04,home,62.40,274.35,18,2
+1176,Borussia Dortmund,VfB Stuttgart,home,574.20,134.70,3,8
+1177,Eintracht Frankfurt,TSG 1899 Hoffenheim,draw,126.15,212.75,6,7
+1178,RasenBallsport Leipzig,Bayer 04 Leverkusen,away,373.30,357.35,4,5
+1179,VfL Wolfsburg,FC Augsburg,draw,143.60,100.45,15,11
+1180,Bayer 04 Leverkusen,Eintracht Frankfurt,home,357.35,126.15,4,5
+1181,VfB Stuttgart,Hannover 96,draw,134.70,92.95,9,13
+1182,TSG 1899 Hoffenheim,Hamburger SV,home,212.75,62.40,7,17
+1183,Hertha BSC,1.FC Köln,home,131.45,91.73,10,18
+1184,FC Bayern München,Borussia Mönchengladbach,home,811.85,193.25,1,8
+1185,FC Schalke 04,Borussia Dortmund,home,274.35,574.20,2,3
+1186,SV Werder Bremen,RasenBallsport Leipzig,draw,107.15,373.30,12,6
+1187,1.FSV Mainz 05,SC Freiburg,home,98.35,100.60,16,14
+1188,Borussia Mönchengladbach,VfL Wolfsburg,home,193.25,143.60,8,14
+1189,RasenBallsport Leipzig,TSG 1899 Hoffenheim,away,373.30,212.75,5,6
+1190,Eintracht Frankfurt,Hertha BSC,away,126.15,131.45,7,9
+1191,Hamburger SV,SC Freiburg,home,62.40,100.60,17,16
+1192,VfB Stuttgart,SV Werder Bremen,home,134.70,107.15,10,12
+1193,Hannover 96,FC Bayern München,away,92.95,811.85,13,1
+1194,Borussia Dortmund,Bayer 04 Leverkusen,home,574.20,357.35,4,3
+1195,FC Augsburg,1.FSV Mainz 05,home,100.45,98.35,11,15
+1196,1.FC Köln,FC Schalke 04,draw,91.73,274.35,18,2
+1197,TSG 1899 Hoffenheim,Hannover 96,home,212.75,92.95,5,13
+1198,SC Freiburg,1.FC Köln,home,100.60,91.73,16,18
+1199,FC Schalke 04,Borussia Mönchengladbach,draw,274.35,193.25,2,8
+1200,VfL Wolfsburg,Hamburger SV,away,143.60,62.40,14,17
+1201,FC Bayern München,Eintracht Frankfurt,home,811.85,126.15,1,7
+1202,Hertha BSC,FC Augsburg,draw,131.45,100.45,9,11
+1203,Bayer 04 Leverkusen,VfB Stuttgart,away,357.35,134.70,4,10
+1204,1.FSV Mainz 05,RasenBallsport Leipzig,home,98.35,373.30,15,6
+1205,SV Werder Bremen,Borussia Dortmund,draw,107.15,574.20,12,3
+1206,Borussia Dortmund,1.FSV Mainz 05,away,574.20,98.35,3,14
+1207,RasenBallsport Leipzig,VfL Wolfsburg,home,373.30,143.60,6,16
+1208,1.FC Köln,FC Bayern München,away,91.73,811.85,18,1
+1209,SV Werder Bremen,Bayer 04 Leverkusen,draw,107.15,357.35,12,5
+1210,Borussia Mönchengladbach,SC Freiburg,home,193.25,100.60,9,15
+1211,FC Augsburg,FC Schalke 04,away,100.45,274.35,11,2
+1212,Hannover 96,Hertha BSC,home,92.95,131.45,13,10
+1213,VfB Stuttgart,TSG 1899 Hoffenheim,home,134.70,212.75,8,4
+1214,Eintracht Frankfurt,Hamburger SV,home,126.15,62.40,7,17
+1215,FC Bayern München,VfB Stuttgart,away,811.85,134.70,1,8
+1216,TSG 1899 Hoffenheim,Borussia Dortmund,home,212.75,574.20,4,3
+1217,Hertha BSC,RasenBallsport Leipzig,away,131.45,373.30,10,6
+1218,SC Freiburg,FC Augsburg,home,100.60,100.45,15,11
+1219,Bayer 04 Leverkusen,Hannover 96,home,357.35,92.95,5,13
+1220,Hamburger SV,Borussia Mönchengladbach,home,62.40,193.25,17,9
+1221,1.FSV Mainz 05,SV Werder Bremen,away,98.35,107.15,14,12
+1222,VfL Wolfsburg,1.FC Köln,home,143.60,91.73,16,18
+1223,FC Schalke 04,Eintracht Frankfurt,home,274.35,126.15,2,7
+1224,FC Bayern München,TSG 1899 Hoffenheim,home,784.88,336.25,9,9
+1225,Hertha BSC,1.FC Nürnberg,home,207.63,54.40,9,9
+1226,SV Werder Bremen,Hannover 96,draw,168.05,91.43,9,9
+1227,SC Freiburg,Eintracht Frankfurt,away,122.10,313.40,9,9
+1228,VfL Wolfsburg,FC Schalke 04,home,229.25,221.30,9,9
+1229,Fortuna Düsseldorf,FC Augsburg,away,94.90,139.25,9,9
+1230,Borussia Mönchengladbach,Bayer 04 Leverkusen,home,264.30,429.40,9,9
+1231,1.FSV Mainz 05,VfB Stuttgart,home,159.73,143.75,9,9
+1232,Borussia Dortmund,RasenBallsport Leipzig,home,643.25,479.00,9,9
+1233,Hannover 96,Borussia Dortmund,draw,91.43,643.25,9,1
+1234,1.FC Nürnberg,1.FSV Mainz 05,draw,54.40,159.73,13,7
+1235,TSG 1899 Hoffenheim,SC Freiburg,home,336.25,122.10,15,16
+1236,Bayer 04 Leverkusen,VfL Wolfsburg,away,429.40,229.25,17,5
+1237,Eintracht Frankfurt,SV Werder Bremen,away,313.40,168.05,4,10
+1238,FC Augsburg,Borussia Mönchengladbach,draw,139.25,264.30,6,3
+1239,VfB Stuttgart,FC Bayern München,away,143.75,784.88,14,2
+1240,RasenBallsport Leipzig,Fortuna Düsseldorf,draw,479.00,94.90,18,12
+1241,FC Schalke 04,Hertha BSC,away,221.30,207.63,11,8
+1242,Borussia Dortmund,Eintracht Frankfurt,home,643.25,313.40,4,9
+1243,FC Bayern München,Bayer 04 Leverkusen,home,784.88,429.40,1,16
+1244,RasenBallsport Leipzig,Hannover 96,home,479.00,91.43,14,11
+1245,1.FSV Mainz 05,FC Augsburg,home,159.73,139.25,8,6
+1246,VfL Wolfsburg,Hertha BSC,draw,229.25,207.63,2,3
+1247,Fortuna Düsseldorf,TSG 1899 Hoffenheim,home,94.90,336.25,12,10
+1248,Borussia Mönchengladbach,FC Schalke 04,home,264.30,221.30,5,15
+1249,SV Werder Bremen,1.FC Nürnberg,draw,168.05,54.40,7,13
+1250,SC Freiburg,VfB Stuttgart,draw,122.10,143.75,17,18
+1251,VfB Stuttgart,Fortuna Düsseldorf,draw,143.75,94.90,16,8
+1252,TSG 1899 Hoffenheim,Borussia Dortmund,draw,336.25,643.25,11,2
+1253,Hertha BSC,Borussia Mönchengladbach,home,207.63,264.30,5,4
+1254,FC Augsburg,SV Werder Bremen,away,139.25,168.05,9,7
+1255,VfL Wolfsburg,SC Freiburg,away,229.25,122.10,3,15
+1256,1.FC Nürnberg,Hannover 96,home,54.40,91.43,14,13
+1257,FC Schalke 04,FC Bayern München,away,221.30,784.88,17,1
+1258,Bayer 04 Leverkusen,1.FSV Mainz 05,home,429.40,159.73,18,6
+1259,Eintracht Frankfurt,RasenBallsport Leipzig,draw,313.40,479.00,12,10
+1260,SV Werder Bremen,Hertha BSC,home,168.05,207.63,4,2
+1261,FC Bayern München,FC Augsburg,draw,784.88,139.25,1,12
+1262,Hannover 96,TSG 1899 Hoffenheim,away,91.43,336.25,16,11
+1263,SC Freiburg,FC Schalke 04,home,122.10,221.30,14,18
+1264,Fortuna Düsseldorf,Bayer 04 Leverkusen,away,94.90,429.40,9,15
+1265,Borussia Dortmund,1.FC Nürnberg,home,643.25,54.40,3,8
+1266,RasenBallsport Leipzig,VfB Stuttgart,home,479.00,143.75,10,17
+1267,Borussia Mönchengladbach,Eintracht Frankfurt,home,264.30,313.40,6,13
+1268,1.FSV Mainz 05,VfL Wolfsburg,draw,159.73,229.25,7,5
+1269,Hertha BSC,FC Bayern München,home,207.63,784.88,5,1
+1270,FC Schalke 04,1.FSV Mainz 05,home,221.30,159.73,18,7
+1271,TSG 1899 Hoffenheim,RasenBallsport Leipzig,away,336.25,479.00,9,8
+1272,VfB Stuttgart,SV Werder Bremen,home,143.75,168.05,17,3
+1273,VfL Wolfsburg,Borussia Mönchengladbach,draw,229.25,264.30,6,4
+1274,1.FC Nürnberg,Fortuna Düsseldorf,home,54.40,94.90,14,13
+1275,Bayer 04 Leverkusen,Borussia Dortmund,away,429.40,643.25,11,2
+1276,Eintracht Frankfurt,Hannover 96,home,313.40,91.43,15,16
+1277,FC Augsburg,SC Freiburg,home,139.25,122.10,12,10
+1278,SV Werder Bremen,VfL Wolfsburg,home,168.05,229.25,5,7
+1279,Borussia Dortmund,FC Augsburg,home,643.25,139.25,1,8
+1280,Hannover 96,VfB Stuttgart,home,91.43,143.75,18,16
+1281,1.FSV Mainz 05,Hertha BSC,draw,159.73,207.63,9,3
+1282,Fortuna Düsseldorf,FC Schalke 04,away,94.90,221.30,15,17
+1283,FC Bayern München,Borussia Mönchengladbach,away,784.88,264.30,2,4
+1284,SC Freiburg,Bayer 04 Leverkusen,draw,122.10,429.40,13,14
+1285,TSG 1899 Hoffenheim,Eintracht Frankfurt,away,336.25,313.40,11,12
+1286,RasenBallsport Leipzig,1.FC Nürnberg,home,479.00,54.40,6,10
+1287,Eintracht Frankfurt,Fortuna Düsseldorf,home,313.40,94.90,7,17
+1288,Bayer 04 Leverkusen,Hannover 96,draw,429.40,91.43,14,16
+1289,VfB Stuttgart,Borussia Dortmund,away,143.75,643.25,18,1
+1290,FC Augsburg,RasenBallsport Leipzig,draw,139.25,479.00,10,2
+1291,VfL Wolfsburg,FC Bayern München,away,229.25,784.88,9,6
+1292,1.FC Nürnberg,TSG 1899 Hoffenheim,away,54.40,336.25,12,13
+1293,FC Schalke 04,SV Werder Bremen,away,221.30,168.05,15,4
+1294,Hertha BSC,SC Freiburg,draw,207.63,122.10,5,11
+1295,Borussia Mönchengladbach,1.FSV Mainz 05,home,264.30,159.73,3,8
+1296,SC Freiburg,Borussia Mönchengladbach,home,122.10,264.30,11,2
+1297,Borussia Dortmund,Hertha BSC,draw,643.25,207.63,1,6
+1298,Hannover 96,FC Augsburg,away,91.43,139.25,15,9
+1299,1.FSV Mainz 05,FC Bayern München,away,159.73,784.88,12,4
+1300,Fortuna Düsseldorf,VfL Wolfsburg,away,94.90,229.25,18,10
+1301,TSG 1899 Hoffenheim,VfB Stuttgart,home,336.25,143.75,8,17
+1302,1.FC Nürnberg,Eintracht Frankfurt,draw,54.40,313.40,14,7
+1303,RasenBallsport Leipzig,FC Schalke 04,draw,479.00,221.30,5,16
+1304,SV Werder Bremen,Bayer 04 Leverkusen,away,168.05,429.40,3,13
+1305,VfB Stuttgart,Eintracht Frankfurt,away,143.75,313.40,17,7
+1306,FC Bayern München,SC Freiburg,draw,784.88,122.10,2,11
+1307,FC Schalke 04,Hannover 96,home,221.30,91.43,15,16
+1308,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,away,429.40,336.25,12,8
+1309,FC Augsburg,1.FC Nürnberg,draw,139.25,54.40,9,14
+1310,VfL Wolfsburg,Borussia Dortmund,away,229.25,643.25,10,1
+1311,Hertha BSC,RasenBallsport Leipzig,away,207.63,479.00,6,5
+1312,Borussia Mönchengladbach,Fortuna Düsseldorf,home,264.30,94.90,3,18
+1313,1.FSV Mainz 05,SV Werder Bremen,home,159.73,168.05,13,4
+1314,Hannover 96,VfL Wolfsburg,home,91.43,229.25,16,11
+1315,TSG 1899 Hoffenheim,FC Augsburg,home,336.25,139.25,7,9
+1316,SV Werder Bremen,Borussia Mönchengladbach,away,168.05,264.30,6,2
+1317,SC Freiburg,1.FSV Mainz 05,away,122.10,159.73,10,12
+1318,Fortuna Düsseldorf,Hertha BSC,home,94.90,207.63,18,8
+1319,1.FC Nürnberg,VfB Stuttgart,away,54.40,143.75,15,17
+1320,Borussia Dortmund,FC Bayern München,home,643.25,784.88,1,3
+1321,RasenBallsport Leipzig,Bayer 04 Leverkusen,home,479.00,429.40,4,13
+1322,Eintracht Frankfurt,FC Schalke 04,home,313.40,221.30,5,14
+1323,Bayer 04 Leverkusen,VfB Stuttgart,home,429.40,143.75,13,18
+1324,FC Bayern München,Fortuna Düsseldorf,draw,784.88,94.90,5,17
+1325,Hertha BSC,TSG 1899 Hoffenheim,draw,207.63,336.25,8,6
+1326,FC Augsburg,Eintracht Frankfurt,away,139.25,313.40,10,4
+1327,1.FSV Mainz 05,Borussia Dortmund,away,159.73,643.25,9,1
+1328,VfL Wolfsburg,RasenBallsport Leipzig,home,229.25,479.00,12,3
+1329,FC Schalke 04,1.FC Nürnberg,home,221.30,54.40,14,15
+1330,SC Freiburg,SV Werder Bremen,draw,122.10,168.05,11,7
+1331,Borussia Mönchengladbach,Hannover 96,home,264.30,91.43,2,16
+1332,Fortuna Düsseldorf,1.FSV Mainz 05,away,94.90,159.73,17,10
+1333,Borussia Dortmund,SC Freiburg,home,643.25,122.10,1,11
+1334,VfB Stuttgart,FC Augsburg,home,143.75,139.25,18,13
+1335,SV Werder Bremen,FC Bayern München,away,168.05,784.88,7,5
+1336,Hannover 96,Hertha BSC,away,91.43,207.63,16,8
+1337,TSG 1899 Hoffenheim,FC Schalke 04,draw,336.25,221.30,6,14
+1338,RasenBallsport Leipzig,Borussia Mönchengladbach,home,479.00,264.30,4,2
+1339,Eintracht Frankfurt,VfL Wolfsburg,away,313.40,229.25,3,9
+1340,1.FC Nürnberg,Bayer 04 Leverkusen,draw,54.40,429.40,15,12
+1341,SV Werder Bremen,Fortuna Düsseldorf,home,168.05,94.90,9,18
+1342,FC Bayern München,1.FC Nürnberg,home,784.88,54.40,4,15
+1343,FC Schalke 04,Borussia Dortmund,away,221.30,643.25,12,1
+1344,Bayer 04 Leverkusen,FC Augsburg,home,429.40,139.25,11,14
+1345,SC Freiburg,RasenBallsport Leipzig,home,122.10,479.00,13,3
+1346,VfL Wolfsburg,TSG 1899 Hoffenheim,draw,229.25,336.25,8,6
+1347,Hertha BSC,Eintracht Frankfurt,home,207.63,313.40,7,5
+1348,1.FSV Mainz 05,Hannover 96,draw,159.73,91.43,10,17
+1349,Borussia Mönchengladbach,VfB Stuttgart,home,264.30,143.75,2,16
+1350,1.FC Nürnberg,VfL Wolfsburg,away,54.40,229.25,15,9
+1351,TSG 1899 Hoffenheim,Borussia Mönchengladbach,draw,336.25,264.30,7,2
+1352,VfB Stuttgart,Hertha BSC,home,143.75,207.63,16,6
+1353,FC Augsburg,FC Schalke 04,draw,139.25,221.30,14,13
+1354,Hannover 96,FC Bayern München,away,91.43,784.88,17,3
+1355,Fortuna Düsseldorf,SC Freiburg,home,94.90,122.10,18,12
+1356,Borussia Dortmund,SV Werder Bremen,home,643.25,168.05,1,8
+1357,RasenBallsport Leipzig,1.FSV Mainz 05,home,479.00,159.73,4,10
+1358,Eintracht Frankfurt,Bayer 04 Leverkusen,home,313.40,429.40,5,11
+1359,Borussia Mönchengladbach,1.FC Nürnberg,home,264.30,54.40,2,17
+1360,Hertha BSC,FC Augsburg,draw,207.63,139.25,7,14
+1361,VfL Wolfsburg,VfB Stuttgart,home,229.25,143.75,8,15
+1362,Fortuna Düsseldorf,Borussia Dortmund,home,94.90,643.25,16,1
+1363,FC Schalke 04,Bayer 04 Leverkusen,away,221.30,429.40,13,11
+1364,FC Bayern München,RasenBallsport Leipzig,home,784.88,479.00,3,4
+1365,SV Werder Bremen,TSG 1899 Hoffenheim,draw,168.05,336.25,9,6
+1366,SC Freiburg,Hannover 96,draw,122.10,91.43,12,18
+1367,1.FSV Mainz 05,Eintracht Frankfurt,draw,159.73,313.40,10,5
+1368,Borussia Dortmund,Borussia Mönchengladbach,home,643.25,264.30,1,2
+1369,Bayer 04 Leverkusen,Hertha BSC,home,429.40,207.63,10,8
+1370,RasenBallsport Leipzig,SV Werder Bremen,home,479.00,168.05,4,9
+1371,VfB Stuttgart,FC Schalke 04,away,143.75,221.30,16,14
+1372,Hannover 96,Fortuna Düsseldorf,away,91.43,94.90,17,15
+1373,1.FC Nürnberg,SC Freiburg,away,54.40,122.10,18,12
+1374,Eintracht Frankfurt,FC Bayern München,away,313.40,784.88,5,3
+1375,FC Augsburg,VfL Wolfsburg,away,139.25,229.25,13,6
+1376,TSG 1899 Hoffenheim,1.FSV Mainz 05,draw,336.25,159.73,7,11
+1377,TSG 1899 Hoffenheim,FC Bayern München,away,336.25,784.88,7,2
+1378,Bayer 04 Leverkusen,Borussia Mönchengladbach,away,429.40,264.30,9,3
+1379,VfB Stuttgart,1.FSV Mainz 05,away,143.75,159.73,16,12
+1380,Eintracht Frankfurt,SC Freiburg,home,313.40,122.10,6,11
+1381,FC Augsburg,Fortuna Düsseldorf,away,139.25,94.90,15,14
+1382,Hannover 96,SV Werder Bremen,away,91.43,168.05,17,10
+1383,RasenBallsport Leipzig,Borussia Dortmund,away,479.00,643.25,4,1
+1384,1.FC Nürnberg,Hertha BSC,away,54.40,207.63,18,8
+1385,FC Schalke 04,VfL Wolfsburg,home,221.30,229.25,13,5
+1386,Hertha BSC,FC Schalke 04,draw,207.63,221.30,7,12
+1387,VfL Wolfsburg,Bayer 04 Leverkusen,away,229.25,429.40,6,10
+1388,Borussia Dortmund,Hannover 96,home,643.25,91.43,1,17
+1389,Borussia Mönchengladbach,FC Augsburg,home,264.30,139.25,3,15
+1390,SC Freiburg,TSG 1899 Hoffenheim,away,122.10,336.25,13,8
+1391,1.FSV Mainz 05,1.FC Nürnberg,home,159.73,54.40,11,18
+1392,SV Werder Bremen,Eintracht Frankfurt,draw,168.05,313.40,9,5
+1393,FC Bayern München,VfB Stuttgart,home,784.88,143.75,2,16
+1394,Fortuna Düsseldorf,RasenBallsport Leipzig,away,94.90,479.00,14,4
+1395,Hannover 96,RasenBallsport Leipzig,away,91.43,479.00,17,4
+1396,TSG 1899 Hoffenheim,Fortuna Düsseldorf,draw,336.25,94.90,6,14
+1397,Bayer 04 Leverkusen,FC Bayern München,home,429.40,784.88,9,2
+1398,Eintracht Frankfurt,Borussia Dortmund,draw,313.40,643.25,5,1
+1399,Hertha BSC,VfL Wolfsburg,away,207.63,229.25,7,8
+1400,1.FC Nürnberg,SV Werder Bremen,draw,54.40,168.05,18,11
+1401,FC Schalke 04,Borussia Mönchengladbach,away,221.30,264.30,12,3
+1402,FC Augsburg,1.FSV Mainz 05,home,139.25,159.73,15,10
+1403,VfB Stuttgart,SC Freiburg,draw,143.75,122.10,16,13
+1404,1.FSV Mainz 05,Bayer 04 Leverkusen,away,159.73,429.40,11,7
+1405,Borussia Dortmund,TSG 1899 Hoffenheim,draw,643.25,336.25,1,8
+1406,RasenBallsport Leipzig,Eintracht Frankfurt,draw,479.00,313.40,4,5
+1407,Borussia Mönchengladbach,Hertha BSC,away,264.30,207.63,2,9
+1408,Hannover 96,1.FC Nürnberg,home,91.43,54.40,18,17
+1409,SC Freiburg,VfL Wolfsburg,draw,122.10,229.25,13,6
+1410,FC Bayern München,FC Schalke 04,home,784.88,221.30,3,12
+1411,SV Werder Bremen,FC Augsburg,home,168.05,139.25,10,15
+1412,Fortuna Düsseldorf,VfB Stuttgart,home,94.90,143.75,14,16
+1413,FC Augsburg,FC Bayern München,away,139.25,784.88,15,2
+1414,FC Schalke 04,SC Freiburg,draw,221.30,122.10,14,13
+1415,TSG 1899 Hoffenheim,Hannover 96,home,336.25,91.43,9,17
+1416,VfB Stuttgart,RasenBallsport Leipzig,away,143.75,479.00,16,4
+1417,VfL Wolfsburg,1.FSV Mainz 05,home,229.25,159.73,7,11
+1418,Hertha BSC,SV Werder Bremen,draw,207.63,168.05,8,10
+1419,Eintracht Frankfurt,Borussia Mönchengladbach,draw,313.40,264.30,5,3
+1420,Bayer 04 Leverkusen,Fortuna Düsseldorf,home,429.40,94.90,6,12
+1421,1.FC Nürnberg,Borussia Dortmund,draw,54.40,643.25,18,1
+1422,SV Werder Bremen,VfB Stuttgart,draw,168.05,143.75,10,16
+1423,FC Bayern München,Hertha BSC,home,784.88,207.63,2,9
+1424,Borussia Mönchengladbach,VfL Wolfsburg,away,264.30,229.25,3,6
+1425,SC Freiburg,FC Augsburg,home,122.10,139.25,13,15
+1426,1.FSV Mainz 05,FC Schalke 04,home,159.73,221.30,11,14
+1427,Fortuna Düsseldorf,1.FC Nürnberg,home,94.90,54.40,12,18
+1428,Hannover 96,Eintracht Frankfurt,away,91.43,313.40,17,7
+1429,Borussia Dortmund,Bayer 04 Leverkusen,home,643.25,429.40,1,5
+1430,RasenBallsport Leipzig,TSG 1899 Hoffenheim,draw,479.00,336.25,4,8
+1431,FC Augsburg,Borussia Dortmund,home,139.25,643.25,15,1
+1432,FC Schalke 04,Fortuna Düsseldorf,away,221.30,94.90,14,12
+1433,Bayer 04 Leverkusen,SC Freiburg,home,429.40,122.10,7,13
+1434,Eintracht Frankfurt,TSG 1899 Hoffenheim,home,313.40,336.25,6,8
+1435,Hertha BSC,1.FSV Mainz 05,home,207.63,159.73,10,11
+1436,1.FC Nürnberg,RasenBallsport Leipzig,away,54.40,479.00,18,4
+1437,Borussia Mönchengladbach,FC Bayern München,away,264.30,784.88,3,2
+1438,VfB Stuttgart,Hannover 96,home,143.75,91.43,16,17
+1439,VfL Wolfsburg,SV Werder Bremen,draw,229.25,168.05,5,9
+1440,SV Werder Bremen,FC Schalke 04,home,168.05,221.30,10,14
+1441,FC Bayern München,VfL Wolfsburg,home,784.88,229.25,2,7
+1442,Borussia Dortmund,VfB Stuttgart,home,643.25,143.75,1,16
+1443,RasenBallsport Leipzig,FC Augsburg,draw,479.00,139.25,3,15
+1444,SC Freiburg,Hertha BSC,home,122.10,207.63,13,8
+1445,1.FSV Mainz 05,Borussia Mönchengladbach,away,159.73,264.30,12,4
+1446,TSG 1899 Hoffenheim,1.FC Nürnberg,home,336.25,54.40,9,18
+1447,Hannover 96,Bayer 04 Leverkusen,away,91.43,429.40,17,6
+1448,Fortuna Düsseldorf,Eintracht Frankfurt,away,94.90,313.40,11,5
+1449,Borussia Mönchengladbach,SC Freiburg,draw,264.30,122.10,4,12
+1450,FC Schalke 04,RasenBallsport Leipzig,away,221.30,479.00,14,3
+1451,VfB Stuttgart,TSG 1899 Hoffenheim,draw,143.75,336.25,16,8
+1452,FC Augsburg,Hannover 96,home,139.25,91.43,15,17
+1453,VfL Wolfsburg,Fortuna Düsseldorf,home,229.25,94.90,7,11
+1454,Hertha BSC,Borussia Dortmund,away,207.63,643.25,10,2
+1455,Bayer 04 Leverkusen,SV Werder Bremen,away,429.40,168.05,6,9
+1456,Eintracht Frankfurt,1.FC Nürnberg,home,313.40,54.40,5,18
+1457,FC Bayern München,1.FSV Mainz 05,home,784.88,159.73,1,13
+1458,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,home,336.25,429.40,9,6
+1459,Borussia Dortmund,VfL Wolfsburg,home,643.25,229.25,2,7
+1460,SV Werder Bremen,1.FSV Mainz 05,home,168.05,159.73,8,13
+1461,SC Freiburg,FC Bayern München,draw,122.10,784.88,11,1
+1462,Fortuna Düsseldorf,Borussia Mönchengladbach,home,94.90,264.30,12,4
+1463,1.FC Nürnberg,FC Augsburg,home,54.40,139.25,18,14
+1464,RasenBallsport Leipzig,Hertha BSC,home,479.00,207.63,3,10
+1465,Hannover 96,FC Schalke 04,away,91.43,221.30,17,15
+1466,Eintracht Frankfurt,VfB Stuttgart,home,313.40,143.75,5,16
+1467,1.FSV Mainz 05,SC Freiburg,home,159.73,122.10,13,12
+1468,FC Schalke 04,Eintracht Frankfurt,away,221.30,313.40,14,4
+1469,Bayer 04 Leverkusen,RasenBallsport Leipzig,away,429.40,479.00,7,3
+1470,VfB Stuttgart,1.FC Nürnberg,draw,143.75,54.40,16,17
+1471,Hertha BSC,Fortuna Düsseldorf,away,207.63,94.90,10,11
+1472,VfL Wolfsburg,Hannover 96,home,229.25,91.43,8,18
+1473,FC Bayern München,Borussia Dortmund,home,784.88,643.25,2,1
+1474,FC Augsburg,TSG 1899 Hoffenheim,away,139.25,336.25,15,9
+1475,Borussia Mönchengladbach,SV Werder Bremen,draw,264.30,168.05,5,6
+1476,1.FC Nürnberg,FC Schalke 04,draw,54.40,221.30,17,14
+1477,RasenBallsport Leipzig,VfL Wolfsburg,home,479.00,229.25,3,6
+1478,VfB Stuttgart,Bayer 04 Leverkusen,away,143.75,429.40,16,9
+1479,SV Werder Bremen,SC Freiburg,home,168.05,122.10,8,13
+1480,Hannover 96,Borussia Mönchengladbach,away,91.43,264.30,18,5
+1481,Borussia Dortmund,1.FSV Mainz 05,home,643.25,159.73,2,12
+1482,TSG 1899 Hoffenheim,Hertha BSC,home,336.25,207.63,7,11
+1483,Fortuna Düsseldorf,FC Bayern München,away,94.90,784.88,10,1
+1484,Eintracht Frankfurt,FC Augsburg,away,313.40,139.25,4,15
+1485,FC Augsburg,VfB Stuttgart,home,139.25,143.75,14,16
+1486,1.FSV Mainz 05,Fortuna Düsseldorf,home,159.73,94.90,12,10
+1487,FC Bayern München,SV Werder Bremen,home,784.88,168.05,1,7
+1488,Bayer 04 Leverkusen,1.FC Nürnberg,home,429.40,54.40,8,17
+1489,Borussia Mönchengladbach,RasenBallsport Leipzig,away,264.30,479.00,5,3
+1490,FC Schalke 04,TSG 1899 Hoffenheim,away,221.30,336.25,15,6
+1491,SC Freiburg,Borussia Dortmund,away,122.10,643.25,13,2
+1492,Hertha BSC,Hannover 96,draw,207.63,91.43,11,18
+1493,VfL Wolfsburg,Eintracht Frankfurt,draw,229.25,313.40,9,4
+1494,FC Augsburg,Bayer 04 Leverkusen,away,139.25,429.40,14,7
+1495,Borussia Dortmund,FC Schalke 04,away,643.25,221.30,2,15
+1496,RasenBallsport Leipzig,SC Freiburg,home,479.00,122.10,3,13
+1497,Eintracht Frankfurt,Hertha BSC,draw,313.40,207.63,4,11
+1498,Hannover 96,1.FSV Mainz 05,home,91.43,159.73,18,12
+1499,Fortuna Düsseldorf,SV Werder Bremen,home,94.90,168.05,10,8
+1500,VfB Stuttgart,Borussia Mönchengladbach,home,143.75,264.30,16,5
+1501,TSG 1899 Hoffenheim,VfL Wolfsburg,away,336.25,229.25,6,9
+1502,1.FC Nürnberg,FC Bayern München,draw,54.40,784.88,17,1
+1503,1.FSV Mainz 05,RasenBallsport Leipzig,draw,159.73,479.00,12,3
+1504,FC Bayern München,Hannover 96,home,784.88,91.43,1,18
+1505,Borussia Mönchengladbach,TSG 1899 Hoffenheim,draw,264.30,336.25,5,7
+1506,Hertha BSC,VfB Stuttgart,home,207.63,143.75,11,16
+1507,VfL Wolfsburg,1.FC Nürnberg,home,229.25,54.40,8,17
+1508,SV Werder Bremen,Borussia Dortmund,draw,168.05,643.25,9,2
+1509,FC Schalke 04,FC Augsburg,draw,221.30,139.25,15,14
+1510,SC Freiburg,Fortuna Düsseldorf,draw,122.10,94.90,13,10
+1511,Bayer 04 Leverkusen,Eintracht Frankfurt,home,429.40,313.40,6,4
+1512,TSG 1899 Hoffenheim,SV Werder Bremen,away,336.25,168.05,8,9
+1513,Borussia Dortmund,Fortuna Düsseldorf,home,643.25,94.90,2,10
+1514,Bayer 04 Leverkusen,FC Schalke 04,draw,429.40,221.30,5,15
+1515,RasenBallsport Leipzig,FC Bayern München,draw,479.00,784.88,3,1
+1516,VfB Stuttgart,VfL Wolfsburg,home,143.75,229.25,16,7
+1517,FC Augsburg,Hertha BSC,away,139.25,207.63,14,11
+1518,Hannover 96,SC Freiburg,home,91.43,122.10,18,13
+1519,1.FC Nürnberg,Borussia Mönchengladbach,away,54.40,264.30,17,6
+1520,Eintracht Frankfurt,1.FSV Mainz 05,away,313.40,159.73,4,12
+1521,FC Bayern München,Eintracht Frankfurt,home,784.88,313.40,1,6
+1522,FC Schalke 04,VfB Stuttgart,draw,221.30,143.75,15,16
+1523,Borussia Mönchengladbach,Borussia Dortmund,away,264.30,643.25,4,2
+1524,Hertha BSC,Bayer 04 Leverkusen,away,207.63,429.40,10,5
+1525,SV Werder Bremen,RasenBallsport Leipzig,home,168.05,479.00,9,3
+1526,SC Freiburg,1.FC Nürnberg,home,122.10,54.40,13,18
+1527,1.FSV Mainz 05,TSG 1899 Hoffenheim,home,159.73,336.25,12,8
+1528,VfL Wolfsburg,FC Augsburg,home,229.25,139.25,7,14
+1529,Fortuna Düsseldorf,Hannover 96,home,94.90,91.43,11,17
+1530,FC Bayern München,Hertha BSC,draw,777.33,217.20,9,9
+1531,Borussia Dortmund,FC Augsburg,home,654.05,112.95,9,9
+1532,Bayer 04 Leverkusen,SC Paderborn 07,home,398.95,28.90,9,9
+1533,VfL Wolfsburg,1.FC Köln,home,207.60,98.48,9,9
+1534,SV Werder Bremen,Fortuna Düsseldorf,away,135.13,71.78,9,9
+1535,SC Freiburg,1.FSV Mainz 05,home,122.65,121.58,9,9
+1536,Borussia Mönchengladbach,FC Schalke 04,draw,254.70,221.58,9,9
+1537,Eintracht Frankfurt,TSG 1899 Hoffenheim,home,208.98,226.05,9,9
+1538,1.FC Union Berlin,RasenBallsport Leipzig,away,41.20,570.48,9,9
+1539,1.FC Köln,Borussia Dortmund,away,98.48,654.05,13,1
+1540,TSG 1899 Hoffenheim,SV Werder Bremen,home,226.05,135.13,14,15
+1541,Fortuna Düsseldorf,Bayer 04 Leverkusen,away,71.78,398.95,4,5
+1542,1.FSV Mainz 05,Borussia Mönchengladbach,away,121.58,254.70,16,11
+1543,FC Augsburg,1.FC Union Berlin,draw,112.95,41.20,17,18
+1544,SC Paderborn 07,SC Freiburg,away,28.90,122.65,12,3
+1545,FC Schalke 04,FC Bayern München,away,221.58,777.33,10,9
+1546,RasenBallsport Leipzig,Eintracht Frankfurt,home,570.48,208.98,2,7
+1547,Hertha BSC,VfL Wolfsburg,away,217.20,207.60,8,6
+1548,Borussia Mönchengladbach,RasenBallsport Leipzig,away,254.70,570.48,7,2
+1549,FC Bayern München,1.FSV Mainz 05,home,777.33,121.58,6,18
+1550,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,draw,398.95,226.05,5,9
+1551,VfL Wolfsburg,SC Paderborn 07,draw,207.60,28.90,4,16
+1552,SC Freiburg,1.FC Köln,away,122.65,98.48,3,17
+1553,FC Schalke 04,Hertha BSC,home,221.58,217.20,12,11
+1554,1.FC Union Berlin,Borussia Dortmund,home,41.20,654.05,14,1
+1555,SV Werder Bremen,FC Augsburg,home,135.13,112.95,15,13
+1556,Eintracht Frankfurt,Fortuna Düsseldorf,home,208.98,71.78,10,8
+1557,Fortuna Düsseldorf,VfL Wolfsburg,draw,71.78,207.60,12,3
+1558,Borussia Dortmund,Bayer 04 Leverkusen,home,654.05,398.95,5,4
+1559,1.FSV Mainz 05,Hertha BSC,home,121.58,217.20,18,17
+1560,FC Augsburg,Eintracht Frankfurt,home,112.95,208.98,16,7
+1561,1.FC Köln,Borussia Mönchengladbach,away,98.48,254.70,14,8
+1562,1.FC Union Berlin,SV Werder Bremen,away,41.20,135.13,11,13
+1563,RasenBallsport Leipzig,FC Bayern München,draw,570.48,777.33,1,2
+1564,TSG 1899 Hoffenheim,SC Freiburg,away,226.05,122.65,10,6
+1565,SC Paderborn 07,FC Schalke 04,away,28.90,221.58,15,9
+1566,FC Schalke 04,1.FSV Mainz 05,home,221.58,121.58,6,16
+1567,FC Bayern München,1.FC Köln,home,777.33,98.48,4,15
+1568,Bayer 04 Leverkusen,1.FC Union Berlin,home,398.95,41.20,8,12
+1569,Hertha BSC,SC Paderborn 07,home,217.20,28.90,18,17
+1570,SC Freiburg,FC Augsburg,draw,122.65,112.95,3,14
+1571,SV Werder Bremen,RasenBallsport Leipzig,away,135.13,570.48,10,1
+1572,Borussia Mönchengladbach,Fortuna Düsseldorf,home,254.70,71.78,7,11
+1573,Eintracht Frankfurt,Borussia Dortmund,draw,208.98,654.05,9,2
+1574,VfL Wolfsburg,TSG 1899 Hoffenheim,draw,207.60,226.05,5,13
+1575,1.FC Union Berlin,Eintracht Frankfurt,away,41.20,208.98,14,9
+1576,RasenBallsport Leipzig,FC Schalke 04,away,570.48,221.58,1,5
+1577,TSG 1899 Hoffenheim,Borussia Mönchengladbach,away,226.05,254.70,11,6
+1578,1.FSV Mainz 05,VfL Wolfsburg,away,121.58,207.60,17,8
+1579,FC Augsburg,Bayer 04 Leverkusen,away,112.95,398.95,12,7
+1580,SC Paderborn 07,FC Bayern München,away,28.90,777.33,18,2
+1581,Borussia Dortmund,SV Werder Bremen,draw,654.05,135.13,3,10
+1582,Fortuna Düsseldorf,SC Freiburg,away,71.78,122.65,13,4
+1583,1.FC Köln,Hertha BSC,away,98.48,217.20,16,15
+1584,Hertha BSC,Fortuna Düsseldorf,home,217.20,71.78,10,14
+1585,FC Bayern München,TSG 1899 Hoffenheim,away,777.33,226.05,1,12
+1586,Bayer 04 Leverkusen,RasenBallsport Leipzig,draw,398.95,570.48,6,2
+1587,SC Freiburg,Borussia Dortmund,draw,122.65,654.05,3,8
+1588,SC Paderborn 07,1.FSV Mainz 05,away,28.90,121.58,18,16
+1589,FC Schalke 04,1.FC Köln,draw,221.58,98.48,4,17
+1590,Borussia Mönchengladbach,FC Augsburg,home,254.70,112.95,5,13
+1591,VfL Wolfsburg,1.FC Union Berlin,home,207.60,41.20,7,15
+1592,Eintracht Frankfurt,SV Werder Bremen,draw,208.98,135.13,9,11
+1593,Eintracht Frankfurt,Bayer 04 Leverkusen,home,208.98,398.95,9,7
+1594,RasenBallsport Leipzig,VfL Wolfsburg,draw,570.48,207.60,4,2
+1595,SV Werder Bremen,Hertha BSC,draw,135.13,217.20,11,10
+1596,Fortuna Düsseldorf,1.FSV Mainz 05,home,71.78,121.58,15,13
+1597,FC Augsburg,FC Bayern München,draw,112.95,777.33,14,3
+1598,1.FC Union Berlin,SC Freiburg,home,41.20,122.65,16,5
+1599,Borussia Dortmund,Borussia Mönchengladbach,home,654.05,254.70,8,1
+1600,1.FC Köln,SC Paderborn 07,home,98.48,28.90,17,18
+1601,TSG 1899 Hoffenheim,FC Schalke 04,home,226.05,221.58,12,6
+1602,1.FSV Mainz 05,1.FC Köln,home,121.58,98.48,17,15
+1603,FC Bayern München,1.FC Union Berlin,home,777.33,41.20,3,14
+1604,Hertha BSC,TSG 1899 Hoffenheim,away,217.20,226.05,10,11
+1605,SC Freiburg,RasenBallsport Leipzig,home,122.65,570.48,6,5
+1606,FC Schalke 04,Borussia Dortmund,draw,221.58,654.05,7,4
+1607,SC Paderborn 07,Fortuna Düsseldorf,home,28.90,71.78,18,13
+1608,Bayer 04 Leverkusen,SV Werder Bremen,draw,398.95,135.13,9,12
+1609,VfL Wolfsburg,FC Augsburg,draw,207.60,112.95,2,16
+1610,Borussia Mönchengladbach,Eintracht Frankfurt,home,254.70,208.98,1,8
+1611,TSG 1899 Hoffenheim,SC Paderborn 07,home,226.05,28.90,10,18
+1612,Borussia Dortmund,VfL Wolfsburg,home,654.05,207.60,5,4
+1613,RasenBallsport Leipzig,1.FSV Mainz 05,home,570.48,121.58,6,13
+1614,Bayer 04 Leverkusen,Borussia Mönchengladbach,away,398.95,254.70,8,1
+1615,Eintracht Frankfurt,FC Bayern München,home,208.98,777.33,9,2
+1616,SV Werder Bremen,SC Freiburg,draw,135.13,122.65,12,3
+1617,1.FC Union Berlin,Hertha BSC,home,41.20,217.20,15,11
+1618,Fortuna Düsseldorf,1.FC Köln,home,71.78,98.48,14,16
+1619,FC Augsburg,FC Schalke 04,away,112.95,221.58,17,7
+1620,1.FC Köln,TSG 1899 Hoffenheim,away,98.48,226.05,17,9
+1621,Hertha BSC,RasenBallsport Leipzig,away,217.20,570.48,11,3
+1622,1.FSV Mainz 05,1.FC Union Berlin,away,121.58,41.20,15,14
+1623,FC Schalke 04,Fortuna Düsseldorf,draw,221.58,71.78,6,13
+1624,SC Paderborn 07,FC Augsburg,away,28.90,112.95,18,16
+1625,FC Bayern München,Borussia Dortmund,home,777.33,654.05,4,2
+1626,Borussia Mönchengladbach,SV Werder Bremen,home,254.70,135.13,1,12
+1627,VfL Wolfsburg,Bayer 04 Leverkusen,away,207.60,398.95,8,10
+1628,SC Freiburg,Eintracht Frankfurt,home,122.65,208.98,5,7
+1629,Borussia Dortmund,SC Paderborn 07,draw,654.05,28.90,6,18
+1630,Bayer 04 Leverkusen,SC Freiburg,draw,398.95,122.65,8,4
+1631,Eintracht Frankfurt,VfL Wolfsburg,away,208.98,207.60,9,10
+1632,SV Werder Bremen,FC Schalke 04,away,135.13,221.58,14,7
+1633,Fortuna Düsseldorf,FC Bayern München,away,71.78,777.33,13,3
+1634,1.FC Union Berlin,Borussia Mönchengladbach,home,41.20,254.70,11,1
+1635,RasenBallsport Leipzig,1.FC Köln,home,570.48,98.48,2,17
+1636,FC Augsburg,Hertha BSC,home,112.95,217.20,15,12
+1637,TSG 1899 Hoffenheim,1.FSV Mainz 05,away,226.05,121.58,5,16
+1638,FC Schalke 04,1.FC Union Berlin,home,221.58,41.20,5,11
+1639,TSG 1899 Hoffenheim,Fortuna Düsseldorf,draw,226.05,71.78,8,16
+1640,Hertha BSC,Borussia Dortmund,away,217.20,654.05,15,6
+1641,1.FC Köln,FC Augsburg,draw,98.48,112.95,17,12
+1642,SC Paderborn 07,RasenBallsport Leipzig,away,28.90,570.48,18,2
+1643,FC Bayern München,Bayer 04 Leverkusen,away,777.33,398.95,3,9
+1644,Borussia Mönchengladbach,SC Freiburg,home,254.70,122.65,1,4
+1645,VfL Wolfsburg,SV Werder Bremen,away,207.60,135.13,7,14
+1646,1.FSV Mainz 05,Eintracht Frankfurt,home,121.58,208.98,13,10
+1647,Eintracht Frankfurt,Hertha BSC,draw,208.98,217.20,10,16
+1648,Borussia Dortmund,Fortuna Düsseldorf,home,654.05,71.78,5,15
+1649,RasenBallsport Leipzig,TSG 1899 Hoffenheim,home,570.48,226.05,2,8
+1650,Borussia Mönchengladbach,FC Bayern München,home,254.70,777.33,1,4
+1651,SC Freiburg,VfL Wolfsburg,home,122.65,207.60,6,9
+1652,FC Augsburg,1.FSV Mainz 05,home,112.95,121.58,14,12
+1653,Bayer 04 Leverkusen,FC Schalke 04,home,398.95,221.58,7,3
+1654,1.FC Union Berlin,1.FC Köln,home,41.20,98.48,11,17
+1655,SV Werder Bremen,SC Paderborn 07,away,135.13,28.90,13,18
+1656,TSG 1899 Hoffenheim,FC Augsburg,away,226.05,112.95,8,12
+1657,FC Bayern München,SV Werder Bremen,home,777.33,135.13,7,14
+1658,Hertha BSC,SC Freiburg,home,217.20,122.65,15,5
+1659,1.FSV Mainz 05,Borussia Dortmund,away,121.58,654.05,13,3
+1660,1.FC Köln,Bayer 04 Leverkusen,home,98.48,398.95,18,6
+1661,SC Paderborn 07,1.FC Union Berlin,draw,28.90,41.20,17,10
+1662,Fortuna Düsseldorf,RasenBallsport Leipzig,away,71.78,570.48,16,2
+1663,VfL Wolfsburg,Borussia Mönchengladbach,home,207.60,254.70,9,1
+1664,FC Schalke 04,Eintracht Frankfurt,home,221.58,208.98,4,11
+1665,SV Werder Bremen,1.FSV Mainz 05,away,135.13,121.58,15,14
+1666,Borussia Dortmund,RasenBallsport Leipzig,draw,654.05,570.48,3,1
+1667,FC Augsburg,Fortuna Düsseldorf,home,112.95,71.78,11,16
+1668,1.FC Union Berlin,TSG 1899 Hoffenheim,away,41.20,226.05,10,9
+1669,Bayer 04 Leverkusen,Hertha BSC,away,398.95,217.20,7,13
+1670,Borussia Mönchengladbach,SC Paderborn 07,home,254.70,28.90,2,18
+1671,VfL Wolfsburg,FC Schalke 04,draw,207.60,221.58,8,4
+1672,Eintracht Frankfurt,1.FC Köln,away,208.98,98.48,12,17
+1673,SC Freiburg,FC Bayern München,away,122.65,777.33,6,5
+1674,TSG 1899 Hoffenheim,Borussia Dortmund,home,226.05,654.05,9,4
+1675,1.FC Köln,SV Werder Bremen,home,98.48,135.13,15,16
+1676,FC Bayern München,VfL Wolfsburg,home,777.33,207.60,3,8
+1677,RasenBallsport Leipzig,FC Augsburg,home,570.48,112.95,1,10
+1678,1.FSV Mainz 05,Bayer 04 Leverkusen,away,121.58,398.95,14,7
+1679,FC Schalke 04,SC Freiburg,draw,221.58,122.65,5,6
+1680,Hertha BSC,Borussia Mönchengladbach,draw,217.20,254.70,13,2
+1681,Fortuna Düsseldorf,1.FC Union Berlin,home,71.78,41.20,17,11
+1682,SC Paderborn 07,Eintracht Frankfurt,home,28.90,208.98,18,12
+1683,FC Schalke 04,Borussia Mönchengladbach,home,221.58,254.70,5,2
+1684,TSG 1899 Hoffenheim,Eintracht Frankfurt,away,226.05,208.98,7,13
+1685,Fortuna Düsseldorf,SV Werder Bremen,away,71.78,135.13,16,17
+1686,1.FSV Mainz 05,SC Freiburg,away,121.58,122.65,14,8
+1687,FC Augsburg,Borussia Dortmund,away,112.95,654.05,10,4
+1688,1.FC Köln,VfL Wolfsburg,home,98.48,207.60,15,9
+1689,RasenBallsport Leipzig,1.FC Union Berlin,home,570.48,41.20,1,11
+1690,Hertha BSC,FC Bayern München,away,217.20,777.33,12,3
+1691,SC Paderborn 07,Bayer 04 Leverkusen,away,28.90,398.95,18,6
+1692,Borussia Dortmund,1.FC Köln,home,654.05,98.48,4,13
+1693,Borussia Mönchengladbach,1.FSV Mainz 05,home,254.70,121.58,3,15
+1694,VfL Wolfsburg,Hertha BSC,away,207.60,217.20,9,14
+1695,Eintracht Frankfurt,RasenBallsport Leipzig,home,208.98,570.48,11,1
+1696,SC Freiburg,SC Paderborn 07,away,122.65,28.90,7,18
+1697,1.FC Union Berlin,FC Augsburg,home,41.20,112.95,12,10
+1698,FC Bayern München,FC Schalke 04,home,777.33,221.58,2,5
+1699,SV Werder Bremen,TSG 1899 Hoffenheim,away,135.13,226.05,16,8
+1700,Bayer 04 Leverkusen,Fortuna Düsseldorf,home,398.95,71.78,6,17
+1701,Hertha BSC,FC Schalke 04,draw,217.20,221.58,13,6
+1702,Borussia Dortmund,1.FC Union Berlin,home,654.05,41.20,4,11
+1703,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,home,226.05,398.95,7,5
+1704,Fortuna Düsseldorf,Eintracht Frankfurt,draw,71.78,208.98,18,9
+1705,1.FSV Mainz 05,FC Bayern München,away,121.58,777.33,15,2
+1706,FC Augsburg,SV Werder Bremen,home,112.95,135.13,12,16
+1707,RasenBallsport Leipzig,Borussia Mönchengladbach,draw,570.48,254.70,1,3
+1708,1.FC Köln,SC Freiburg,home,98.48,122.65,14,8
+1709,SC Paderborn 07,VfL Wolfsburg,away,28.90,207.60,17,10
+1710,Eintracht Frankfurt,FC Augsburg,home,208.98,112.95,11,10
+1711,VfL Wolfsburg,Fortuna Düsseldorf,draw,207.60,71.78,9,17
+1712,SV Werder Bremen,1.FC Union Berlin,away,135.13,41.20,16,12
+1713,Hertha BSC,1.FSV Mainz 05,away,217.20,121.58,13,15
+1714,SC Freiburg,TSG 1899 Hoffenheim,home,122.65,226.05,8,7
+1715,FC Schalke 04,SC Paderborn 07,draw,221.58,28.90,6,18
+1716,Bayer 04 Leverkusen,Borussia Dortmund,home,398.95,654.05,5,3
+1717,FC Bayern München,RasenBallsport Leipzig,draw,777.33,570.48,1,2
+1718,Borussia Mönchengladbach,1.FC Köln,home,254.70,98.48,4,14
+1719,Borussia Dortmund,Eintracht Frankfurt,home,654.05,208.98,4,9
+1720,RasenBallsport Leipzig,SV Werder Bremen,home,570.48,135.13,2,17
+1721,TSG 1899 Hoffenheim,VfL Wolfsburg,away,226.05,207.60,7,10
+1722,FC Augsburg,SC Freiburg,draw,112.95,122.65,12,8
+1723,SC Paderborn 07,Hertha BSC,away,28.90,217.20,18,14
+1724,1.FC Union Berlin,Bayer 04 Leverkusen,away,41.20,398.95,11,5
+1725,Fortuna Düsseldorf,Borussia Mönchengladbach,away,71.78,254.70,16,3
+1726,1.FC Köln,FC Bayern München,away,98.48,777.33,13,1
+1727,1.FSV Mainz 05,FC Schalke 04,draw,121.58,221.58,15,6
+1728,FC Bayern München,SC Paderborn 07,home,777.33,28.90,1,18
+1729,Borussia Mönchengladbach,TSG 1899 Hoffenheim,draw,254.70,226.05,3,8
+1730,SV Werder Bremen,Borussia Dortmund,away,135.13,654.05,17,4
+1731,Hertha BSC,1.FC Köln,away,217.20,98.48,13,14
+1732,SC Freiburg,Fortuna Düsseldorf,away,122.65,71.78,7,16
+1733,FC Schalke 04,RasenBallsport Leipzig,away,221.58,570.48,6,2
+1734,Bayer 04 Leverkusen,FC Augsburg,home,398.95,112.95,5,11
+1735,VfL Wolfsburg,1.FSV Mainz 05,home,207.60,121.58,9,15
+1736,Eintracht Frankfurt,1.FC Union Berlin,away,208.98,41.20,10,12
+1737,Fortuna Düsseldorf,Hertha BSC,draw,71.78,217.20,16,14
+1738,Borussia Dortmund,SC Freiburg,home,654.05,122.65,4,9
+1739,TSG 1899 Hoffenheim,FC Bayern München,away,226.05,777.33,8,1
+1740,1.FSV Mainz 05,SC Paderborn 07,home,121.58,28.90,15,18
+1741,FC Augsburg,Borussia Mönchengladbach,away,112.95,254.70,12,3
+1742,1.FC Köln,FC Schalke 04,home,98.48,221.58,13,6
+1743,1.FC Union Berlin,VfL Wolfsburg,draw,41.20,207.60,10,7
+1744,RasenBallsport Leipzig,Bayer 04 Leverkusen,draw,570.48,398.95,2,5
+1745,SV Werder Bremen,Eintracht Frankfurt,away,135.13,208.98,17,11
+1746,SC Paderborn 07,1.FC Köln,away,28.90,98.48,18,12
+1747,Bayer 04 Leverkusen,Eintracht Frankfurt,home,398.95,208.98,5,10
+1748,VfL Wolfsburg,RasenBallsport Leipzig,draw,207.60,570.48,7,2
+1749,Hertha BSC,SV Werder Bremen,draw,217.20,135.13,14,17
+1750,SC Freiburg,1.FC Union Berlin,home,122.65,41.20,9,11
+1751,FC Schalke 04,TSG 1899 Hoffenheim,draw,221.58,226.05,6,8
+1752,Borussia Mönchengladbach,Borussia Dortmund,away,254.70,654.05,3,4
+1753,FC Bayern München,FC Augsburg,home,777.33,112.95,1,13
+1754,1.FSV Mainz 05,Fortuna Düsseldorf,draw,121.58,71.78,15,16
+1755,Borussia Dortmund,FC Schalke 04,home,654.05,221.58,2,6
+1756,RasenBallsport Leipzig,SC Freiburg,draw,570.48,122.65,3,8
+1757,TSG 1899 Hoffenheim,Hertha BSC,away,226.05,217.20,9,13
+1758,Fortuna Düsseldorf,SC Paderborn 07,draw,71.78,28.90,16,18
+1759,FC Augsburg,VfL Wolfsburg,away,112.95,207.60,14,7
+1760,Eintracht Frankfurt,Borussia Mönchengladbach,away,208.98,254.70,11,4
+1761,1.FC Köln,1.FSV Mainz 05,draw,98.48,121.58,10,15
+1762,1.FC Union Berlin,FC Bayern München,away,41.20,777.33,12,1
+1763,SV Werder Bremen,Bayer 04 Leverkusen,away,135.13,398.95,17,5
+1764,Hertha BSC,1.FC Union Berlin,home,217.20,41.20,12,13
+1765,Borussia Mönchengladbach,Bayer 04 Leverkusen,away,254.70,398.95,3,5
+1766,VfL Wolfsburg,Borussia Dortmund,away,207.60,654.05,6,2
+1767,SC Freiburg,SV Werder Bremen,away,122.65,135.13,7,17
+1768,SC Paderborn 07,TSG 1899 Hoffenheim,draw,28.90,226.05,18,9
+1769,FC Bayern München,Eintracht Frankfurt,home,777.33,208.98,1,11
+1770,FC Schalke 04,FC Augsburg,away,221.58,112.95,8,14
+1771,1.FSV Mainz 05,RasenBallsport Leipzig,away,121.58,570.48,15,4
+1772,1.FC Köln,Fortuna Düsseldorf,draw,98.48,71.78,10,16
+1773,Borussia Dortmund,FC Bayern München,away,654.05,777.33,2,1
+1774,Bayer 04 Leverkusen,VfL Wolfsburg,away,398.95,207.60,4,6
+1775,Eintracht Frankfurt,SC Freiburg,draw,208.98,122.65,12,7
+1776,SV Werder Bremen,Borussia Mönchengladbach,draw,135.13,254.70,17,5
+1777,RasenBallsport Leipzig,Hertha BSC,draw,570.48,217.20,3,11
+1778,TSG 1899 Hoffenheim,1.FC Köln,home,226.05,98.48,9,10
+1779,Fortuna Düsseldorf,FC Schalke 04,home,71.78,221.58,16,8
+1780,FC Augsburg,SC Paderborn 07,draw,112.95,28.90,13,18
+1781,1.FC Union Berlin,1.FSV Mainz 05,draw,41.20,121.58,14,15
+1782,SC Freiburg,Bayer 04 Leverkusen,away,122.65,398.95,8,5
+1783,VfL Wolfsburg,Eintracht Frankfurt,away,207.60,208.98,6,12
+1784,Hertha BSC,FC Augsburg,home,217.20,112.95,10,13
+1785,1.FSV Mainz 05,TSG 1899 Hoffenheim,away,121.58,226.05,15,7
+1786,FC Schalke 04,SV Werder Bremen,away,221.58,135.13,9,17
+1787,FC Bayern München,Fortuna Düsseldorf,home,777.33,71.78,1,16
+1788,Borussia Mönchengladbach,1.FC Union Berlin,home,254.70,41.20,4,14
+1789,SC Paderborn 07,Borussia Dortmund,away,28.90,654.05,18,2
+1790,1.FC Köln,RasenBallsport Leipzig,away,98.48,570.48,11,3
+1791,SC Freiburg,Borussia Mönchengladbach,home,122.65,254.70,8,4
+1792,RasenBallsport Leipzig,SC Paderborn 07,draw,570.48,28.90,3,18
+1793,Bayer 04 Leverkusen,FC Bayern München,away,398.95,777.33,5,1
+1794,Eintracht Frankfurt,1.FSV Mainz 05,away,208.98,121.58,11,15
+1795,Fortuna Düsseldorf,TSG 1899 Hoffenheim,draw,71.78,226.05,16,7
+1796,Borussia Dortmund,Hertha BSC,home,654.05,217.20,2,9
+1797,SV Werder Bremen,VfL Wolfsburg,away,135.13,207.60,17,6
+1798,1.FC Union Berlin,FC Schalke 04,draw,41.20,221.58,14,10
+1799,FC Augsburg,1.FC Köln,draw,112.95,98.48,13,12
+1800,TSG 1899 Hoffenheim,RasenBallsport Leipzig,away,226.05,570.48,7,3
+1801,VfL Wolfsburg,SC Freiburg,draw,207.60,122.65,6,8
+1802,Fortuna Düsseldorf,Borussia Dortmund,away,71.78,654.05,16,2
+1803,Hertha BSC,Eintracht Frankfurt,away,217.20,208.98,9,11
+1804,1.FC Köln,1.FC Union Berlin,away,98.48,41.20,12,14
+1805,SC Paderborn 07,SV Werder Bremen,away,28.90,135.13,18,17
+1806,FC Bayern München,Borussia Mönchengladbach,home,777.33,254.70,1,4
+1807,1.FSV Mainz 05,FC Augsburg,away,121.58,112.95,15,13
+1808,FC Schalke 04,Bayer 04 Leverkusen,draw,221.58,398.95,10,5
+1809,Borussia Mönchengladbach,VfL Wolfsburg,home,254.70,207.60,5,6
+1810,SV Werder Bremen,FC Bayern München,away,135.13,777.33,17,1
+1811,SC Freiburg,Hertha BSC,home,122.65,217.20,8,11
+1812,1.FC Union Berlin,SC Paderborn 07,home,41.20,28.90,14,18
+1813,Eintracht Frankfurt,FC Schalke 04,home,208.98,221.58,10,9
+1814,Borussia Dortmund,1.FSV Mainz 05,away,654.05,121.58,2,15
+1815,RasenBallsport Leipzig,Fortuna Düsseldorf,draw,570.48,71.78,3,16
+1816,Bayer 04 Leverkusen,1.FC Köln,home,398.95,98.48,4,12
+1817,FC Augsburg,TSG 1899 Hoffenheim,away,112.95,226.05,13,7
+1818,FC Bayern München,SC Freiburg,home,777.33,122.65,1,8
+1819,RasenBallsport Leipzig,Borussia Dortmund,away,570.48,654.05,3,2
+1820,TSG 1899 Hoffenheim,1.FC Union Berlin,home,226.05,41.20,7,12
+1821,Fortuna Düsseldorf,FC Augsburg,draw,71.78,112.95,16,14
+1822,Hertha BSC,Bayer 04 Leverkusen,home,217.20,398.95,11,4
+1823,1.FSV Mainz 05,SV Werder Bremen,home,121.58,135.13,15,17
+1824,FC Schalke 04,VfL Wolfsburg,away,221.58,207.60,10,6
+1825,1.FC Köln,Eintracht Frankfurt,draw,98.48,208.98,13,9
+1826,SC Paderborn 07,Borussia Mönchengladbach,away,28.90,254.70,18,5
+1827,Borussia Dortmund,TSG 1899 Hoffenheim,away,654.05,226.05,2,7
+1828,Bayer 04 Leverkusen,1.FSV Mainz 05,home,398.95,121.58,5,13
+1829,Borussia Mönchengladbach,Hertha BSC,home,254.70,217.20,4,10
+1830,VfL Wolfsburg,FC Bayern München,away,207.60,777.33,6,1
+1831,Eintracht Frankfurt,SC Paderborn 07,home,208.98,28.90,9,18
+1832,SV Werder Bremen,1.FC Köln,home,135.13,98.48,17,14
+1833,SC Freiburg,FC Schalke 04,home,122.65,221.58,8,11
+1834,FC Augsburg,RasenBallsport Leipzig,away,112.95,570.48,15,3
+1835,1.FC Union Berlin,Fortuna Düsseldorf,home,41.20,71.78,12,16
+1836,FC Bayern München,FC Schalke 04,home,858.23,123.05,9,9
+1837,Eintracht Frankfurt,Arminia Bielefeld,draw,269.15,56.73,9,9
+1838,1.FC Union Berlin,FC Augsburg,away,82.05,93.05,9,9
+1839,1.FC Köln,TSG 1899 Hoffenheim,away,118.20,228.15,9,9
+1840,SV Werder Bremen,Hertha BSC,away,111.98,228.88,9,9
+1841,VfB Stuttgart,SC Freiburg,away,189.25,139.10,9,9
+1842,Borussia Dortmund,Borussia Mönchengladbach,home,628.40,300.75,9,9
+1843,RasenBallsport Leipzig,1.FSV Mainz 05,home,574.95,163.30,9,9
+1844,VfL Wolfsburg,Bayer 04 Leverkusen,draw,256.83,373.25,9,9
+1845,Hertha BSC,Eintracht Frankfurt,away,228.88,269.15,2,8
+1846,Borussia Mönchengladbach,1.FC Union Berlin,draw,300.75,82.05,17,15
+1847,Bayer 04 Leverkusen,RasenBallsport Leipzig,draw,373.25,574.95,11,5
+1848,1.FSV Mainz 05,VfB Stuttgart,away,163.30,189.25,14,12
+1849,FC Augsburg,Borussia Dortmund,home,93.05,628.40,4,3
+1850,Arminia Bielefeld,1.FC Köln,home,56.73,118.20,9,13
+1851,FC Schalke 04,SV Werder Bremen,away,123.05,111.98,18,16
+1852,TSG 1899 Hoffenheim,FC Bayern München,home,228.15,858.23,7,1
+1853,SC Freiburg,VfL Wolfsburg,draw,139.10,256.83,6,10
+1854,1.FC Union Berlin,1.FSV Mainz 05,home,82.05,163.30,14,17
+1855,Borussia Dortmund,SC Freiburg,home,628.40,139.10,10,5
+1856,Eintracht Frankfurt,TSG 1899 Hoffenheim,home,269.15,228.15,4,1
+1857,1.FC Köln,Borussia Mönchengladbach,away,118.20,300.75,16,15
+1858,SV Werder Bremen,Arminia Bielefeld,home,111.98,56.73,11,6
+1859,VfB Stuttgart,Bayer 04 Leverkusen,draw,189.25,373.25,8,13
+1860,RasenBallsport Leipzig,FC Schalke 04,home,574.95,123.05,3,18
+1861,VfL Wolfsburg,FC Augsburg,draw,256.83,93.05,12,2
+1862,FC Bayern München,Hertha BSC,home,858.23,228.88,7,9
+1863,TSG 1899 Hoffenheim,Borussia Dortmund,away,228.15,628.40,6,5
+1864,SC Freiburg,SV Werder Bremen,draw,139.10,111.98,12,7
+1865,Hertha BSC,VfB Stuttgart,away,228.88,189.25,13,8
+1866,1.FSV Mainz 05,Bayer 04 Leverkusen,away,163.30,373.25,17,14
+1867,FC Augsburg,RasenBallsport Leipzig,away,93.05,574.95,2,1
+1868,Arminia Bielefeld,FC Bayern München,away,56.73,858.23,10,4
+1869,Borussia Mönchengladbach,VfL Wolfsburg,draw,300.75,256.83,11,15
+1870,1.FC Köln,Eintracht Frankfurt,draw,118.20,269.15,16,3
+1871,FC Schalke 04,1.FC Union Berlin,draw,123.05,82.05,18,9
+1872,VfB Stuttgart,1.FC Köln,draw,189.25,118.20,5,16
+1873,FC Bayern München,Eintracht Frankfurt,home,858.23,269.15,2,4
+1874,RasenBallsport Leipzig,Hertha BSC,home,574.95,228.88,1,15
+1875,1.FC Union Berlin,SC Freiburg,draw,82.05,139.10,10,12
+1876,1.FSV Mainz 05,Borussia Mönchengladbach,away,163.30,300.75,18,11
+1877,Borussia Dortmund,FC Schalke 04,home,628.40,123.05,3,17
+1878,VfL Wolfsburg,Arminia Bielefeld,home,256.83,56.73,13,14
+1879,SV Werder Bremen,TSG 1899 Hoffenheim,draw,111.98,228.15,7,8
+1880,Bayer 04 Leverkusen,FC Augsburg,home,373.25,93.05,9,6
+1881,FC Schalke 04,VfB Stuttgart,draw,123.05,189.25,17,5
+1882,Eintracht Frankfurt,SV Werder Bremen,draw,269.15,111.98,8,7
+1883,1.FC Köln,FC Bayern München,away,118.20,858.23,16,2
+1884,FC Augsburg,1.FSV Mainz 05,home,93.05,163.30,11,18
+1885,Arminia Bielefeld,Borussia Dortmund,away,56.73,628.40,14,3
+1886,Borussia Mönchengladbach,RasenBallsport Leipzig,home,300.75,574.95,6,1
+1887,SC Freiburg,Bayer 04 Leverkusen,away,139.10,373.25,13,4
+1888,Hertha BSC,VfL Wolfsburg,draw,228.88,256.83,15,10
+1889,TSG 1899 Hoffenheim,1.FC Union Berlin,away,228.15,82.05,9,12
+1890,SV Werder Bremen,1.FC Köln,draw,111.98,118.20,9,16
+1891,RasenBallsport Leipzig,SC Freiburg,home,574.95,139.10,3,13
+1892,1.FC Union Berlin,Arminia Bielefeld,home,82.05,56.73,7,15
+1893,1.FSV Mainz 05,FC Schalke 04,draw,163.30,123.05,18,17
+1894,FC Augsburg,Hertha BSC,away,93.05,228.88,6,14
+1895,VfB Stuttgart,Eintracht Frankfurt,draw,189.25,269.15,8,10
+1896,Borussia Dortmund,FC Bayern München,away,628.40,858.23,2,1
+1897,VfL Wolfsburg,TSG 1899 Hoffenheim,home,256.83,228.15,11,12
+1898,Bayer 04 Leverkusen,Borussia Mönchengladbach,home,373.25,300.75,4,5
+1899,FC Bayern München,SV Werder Bremen,draw,858.23,111.98,1,9
+1900,Borussia Mönchengladbach,FC Augsburg,draw,300.75,93.05,7,10
+1901,TSG 1899 Hoffenheim,VfB Stuttgart,draw,228.15,189.25,13,8
+1902,FC Schalke 04,VfL Wolfsburg,away,123.05,256.83,17,6
+1903,Arminia Bielefeld,Bayer 04 Leverkusen,away,56.73,373.25,15,4
+1904,Eintracht Frankfurt,RasenBallsport Leipzig,draw,269.15,574.95,11,2
+1905,Hertha BSC,Borussia Dortmund,away,228.88,628.40,12,3
+1906,SC Freiburg,1.FSV Mainz 05,away,139.10,163.30,14,18
+1907,1.FC Köln,1.FC Union Berlin,away,118.20,82.05,16,5
+1908,VfL Wolfsburg,SV Werder Bremen,home,256.83,111.98,6,9
+1909,Borussia Dortmund,1.FC Köln,away,628.40,118.20,2,17
+1910,RasenBallsport Leipzig,Arminia Bielefeld,home,574.95,56.73,4,16
+1911,1.FC Union Berlin,Eintracht Frankfurt,draw,82.05,269.15,5,11
+1912,FC Augsburg,SC Freiburg,draw,93.05,139.10,10,14
+1913,VfB Stuttgart,FC Bayern München,away,189.25,858.23,8,1
+1914,Borussia Mönchengladbach,FC Schalke 04,home,300.75,123.05,7,18
+1915,Bayer 04 Leverkusen,Hertha BSC,draw,373.25,228.88,3,13
+1916,1.FSV Mainz 05,TSG 1899 Hoffenheim,draw,163.30,228.15,15,12
+1917,Hertha BSC,1.FC Union Berlin,home,228.88,82.05,13,6
+1918,SC Freiburg,Borussia Mönchengladbach,draw,139.10,300.75,14,7
+1919,Eintracht Frankfurt,Borussia Dortmund,draw,269.15,628.40,9,4
+1920,1.FC Köln,VfL Wolfsburg,draw,118.20,256.83,15,5
+1921,Arminia Bielefeld,1.FSV Mainz 05,home,56.73,163.30,17,16
+1922,FC Bayern München,RasenBallsport Leipzig,draw,858.23,574.95,1,2
+1923,SV Werder Bremen,VfB Stuttgart,away,111.98,189.25,11,10
+1924,FC Schalke 04,Bayer 04 Leverkusen,away,123.05,373.25,18,3
+1925,TSG 1899 Hoffenheim,FC Augsburg,home,228.15,93.05,12,8
+1926,VfL Wolfsburg,Eintracht Frankfurt,home,256.83,269.15,5,9
+1927,Borussia Dortmund,VfB Stuttgart,away,628.40,189.25,4,8
+1928,RasenBallsport Leipzig,SV Werder Bremen,home,574.95,111.98,3,13
+1929,Borussia Mönchengladbach,Hertha BSC,draw,300.75,228.88,7,12
+1930,SC Freiburg,Arminia Bielefeld,home,139.10,56.73,14,16
+1931,1.FSV Mainz 05,1.FC Köln,away,163.30,118.20,17,15
+1932,1.FC Union Berlin,FC Bayern München,draw,82.05,858.23,6,1
+1933,FC Augsburg,FC Schalke 04,draw,93.05,123.05,11,18
+1934,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,home,373.25,228.15,2,10
+1935,Eintracht Frankfurt,Borussia Mönchengladbach,draw,269.15,300.75,9,8
+1936,Hertha BSC,1.FSV Mainz 05,draw,228.88,163.30,11,17
+1937,SV Werder Bremen,Borussia Dortmund,away,111.98,628.40,13,5
+1938,VfB Stuttgart,1.FC Union Berlin,draw,189.25,82.05,7,6
+1939,FC Schalke 04,SC Freiburg,away,123.05,139.10,18,14
+1940,FC Bayern München,VfL Wolfsburg,home,858.23,256.83,2,4
+1941,TSG 1899 Hoffenheim,RasenBallsport Leipzig,away,228.15,574.95,12,3
+1942,1.FC Köln,Bayer 04 Leverkusen,away,118.20,373.25,15,1
+1943,Arminia Bielefeld,FC Augsburg,away,56.73,93.05,16,10
+1944,1.FC Union Berlin,Borussia Dortmund,home,82.05,628.40,6,4
+1945,RasenBallsport Leipzig,1.FC Köln,draw,574.95,118.20,3,15
+1946,Borussia Mönchengladbach,TSG 1899 Hoffenheim,away,300.75,228.15,8,13
+1947,FC Schalke 04,Arminia Bielefeld,away,123.05,56.73,18,16
+1948,1.FSV Mainz 05,SV Werder Bremen,away,163.30,111.98,17,14
+1949,FC Augsburg,Eintracht Frankfurt,away,93.05,269.15,9,10
+1950,Bayer 04 Leverkusen,FC Bayern München,away,373.25,858.23,1,2
+1951,SC Freiburg,Hertha BSC,home,139.10,228.88,11,12
+1952,VfL Wolfsburg,VfB Stuttgart,home,256.83,189.25,5,7
+1953,TSG 1899 Hoffenheim,SC Freiburg,away,228.15,139.10,12,10
+1954,Eintracht Frankfurt,Bayer 04 Leverkusen,home,269.15,373.25,9,2
+1955,1.FC Köln,FC Augsburg,away,118.20,93.05,15,11
+1956,SV Werder Bremen,1.FC Union Berlin,away,111.98,82.05,13,6
+1957,Arminia Bielefeld,Borussia Mönchengladbach,away,56.73,300.75,16,8
+1958,Hertha BSC,FC Schalke 04,home,228.88,123.05,14,18
+1959,VfB Stuttgart,RasenBallsport Leipzig,away,189.25,574.95,7,3
+1960,Borussia Dortmund,VfL Wolfsburg,home,628.40,256.83,5,4
+1961,FC Bayern München,1.FSV Mainz 05,home,858.23,163.30,1,17
+1962,Borussia Mönchengladbach,FC Bayern München,home,300.75,858.23,7,1
+1963,Bayer 04 Leverkusen,SV Werder Bremen,draw,373.25,111.98,3,14
+1964,SC Freiburg,1.FC Köln,home,139.10,118.20,9,15
+1965,1.FC Union Berlin,VfL Wolfsburg,draw,82.05,256.83,5,6
+1966,FC Schalke 04,TSG 1899 Hoffenheim,home,123.05,228.15,18,13
+1967,1.FSV Mainz 05,Eintracht Frankfurt,away,163.30,269.15,17,8
+1968,RasenBallsport Leipzig,Borussia Dortmund,away,574.95,628.40,2,4
+1969,FC Augsburg,VfB Stuttgart,away,93.05,189.25,10,11
+1970,Arminia Bielefeld,Hertha BSC,home,56.73,228.88,16,12
+1971,1.FC Union Berlin,Bayer 04 Leverkusen,home,82.05,373.25,5,3
+1972,Borussia Dortmund,1.FSV Mainz 05,draw,628.40,163.30,4,18
+1973,TSG 1899 Hoffenheim,Arminia Bielefeld,draw,228.15,56.73,14,15
+1974,VfL Wolfsburg,RasenBallsport Leipzig,draw,256.83,574.95,6,2
+1975,1.FC Köln,Hertha BSC,draw,118.20,228.88,16,12
+1976,SV Werder Bremen,FC Augsburg,home,111.98,93.05,13,11
+1977,VfB Stuttgart,Borussia Mönchengladbach,draw,189.25,300.75,10,7
+1978,FC Bayern München,SC Freiburg,home,858.23,139.10,1,8
+1979,Eintracht Frankfurt,FC Schalke 04,home,269.15,123.05,9,17
+1980,Borussia Mönchengladbach,SV Werder Bremen,home,300.75,111.98,8,12
+1981,Bayer 04 Leverkusen,Borussia Dortmund,home,373.25,628.40,3,4
+1982,Hertha BSC,TSG 1899 Hoffenheim,away,228.88,228.15,13,14
+1983,1.FSV Mainz 05,VfL Wolfsburg,away,163.30,256.83,17,6
+1984,FC Schalke 04,1.FC Köln,away,123.05,118.20,18,16
+1985,RasenBallsport Leipzig,1.FC Union Berlin,home,574.95,82.05,2,5
+1986,SC Freiburg,Eintracht Frankfurt,draw,139.10,269.15,9,7
+1987,FC Augsburg,FC Bayern München,away,93.05,858.23,11,1
+1988,Arminia Bielefeld,VfB Stuttgart,home,56.73,189.25,15,10
+1989,Borussia Mönchengladbach,Borussia Dortmund,home,300.75,628.40,7,4
+1990,Bayer 04 Leverkusen,VfL Wolfsburg,away,373.25,256.83,3,5
+1991,SC Freiburg,VfB Stuttgart,home,139.10,189.25,9,10
+1992,1.FSV Mainz 05,RasenBallsport Leipzig,home,163.30,574.95,17,2
+1993,FC Augsburg,1.FC Union Berlin,home,93.05,82.05,12,6
+1994,Arminia Bielefeld,Eintracht Frankfurt,away,56.73,269.15,15,8
+1995,Hertha BSC,SV Werder Bremen,away,228.88,111.98,14,13
+1996,FC Schalke 04,FC Bayern München,away,123.05,858.23,18,1
+1997,TSG 1899 Hoffenheim,1.FC Köln,home,228.15,118.20,11,16
+1998,VfB Stuttgart,1.FSV Mainz 05,home,189.25,163.30,10,17
+1999,FC Bayern München,TSG 1899 Hoffenheim,home,858.23,228.15,1,11
+2000,Borussia Dortmund,FC Augsburg,home,628.40,93.05,7,12
+2001,Eintracht Frankfurt,Hertha BSC,home,269.15,228.88,6,14
+2002,1.FC Union Berlin,Borussia Mönchengladbach,draw,82.05,300.75,8,5
+2003,SV Werder Bremen,FC Schalke 04,draw,111.98,123.05,13,18
+2004,RasenBallsport Leipzig,Bayer 04 Leverkusen,home,574.95,373.25,2,3
+2005,1.FC Köln,Arminia Bielefeld,home,118.20,56.73,16,15
+2006,VfL Wolfsburg,SC Freiburg,home,256.83,139.10,4,9
+2007,Hertha BSC,FC Bayern München,away,228.88,858.23,15,1
+2008,Bayer 04 Leverkusen,VfB Stuttgart,home,373.25,189.25,5,10
+2009,SC Freiburg,Borussia Dortmund,home,139.10,628.40,9,6
+2010,FC Schalke 04,RasenBallsport Leipzig,away,123.05,574.95,18,2
+2011,1.FSV Mainz 05,1.FC Union Berlin,home,163.30,82.05,17,8
+2012,FC Augsburg,VfL Wolfsburg,away,93.05,256.83,13,3
+2013,Borussia Mönchengladbach,1.FC Köln,away,300.75,118.20,7,14
+2014,TSG 1899 Hoffenheim,Eintracht Frankfurt,away,228.15,269.15,12,4
+2015,Arminia Bielefeld,SV Werder Bremen,away,56.73,111.98,16,11
+2016,RasenBallsport Leipzig,FC Augsburg,home,574.95,93.05,2,13
+2017,Borussia Dortmund,TSG 1899 Hoffenheim,draw,628.40,228.15,6,12
+2018,Bayer 04 Leverkusen,1.FSV Mainz 05,draw,373.25,163.30,5,17
+2019,SV Werder Bremen,SC Freiburg,draw,111.98,139.10,11,8
+2020,VfB Stuttgart,Hertha BSC,draw,189.25,228.88,10,15
+2021,1.FC Union Berlin,FC Schalke 04,draw,82.05,123.05,9,18
+2022,Eintracht Frankfurt,1.FC Köln,home,269.15,118.20,4,14
+2023,VfL Wolfsburg,Borussia Mönchengladbach,draw,256.83,300.75,3,7
+2024,FC Bayern München,Arminia Bielefeld,draw,858.23,56.73,1,16
+2025,Arminia Bielefeld,VfL Wolfsburg,away,56.73,256.83,16,4
+2026,Borussia Mönchengladbach,1.FSV Mainz 05,away,300.75,163.30,7,17
+2027,SC Freiburg,1.FC Union Berlin,away,139.10,82.05,8,9
+2028,Eintracht Frankfurt,FC Bayern München,home,269.15,858.23,3,1
+2029,1.FC Köln,VfB Stuttgart,away,118.20,189.25,14,10
+2030,FC Schalke 04,Borussia Dortmund,away,123.05,628.40,18,6
+2031,FC Augsburg,Bayer 04 Leverkusen,draw,93.05,373.25,13,5
+2032,Hertha BSC,RasenBallsport Leipzig,away,228.88,574.95,15,2
+2033,TSG 1899 Hoffenheim,SV Werder Bremen,home,228.15,111.98,12,11
+2034,SV Werder Bremen,Eintracht Frankfurt,home,111.98,269.15,12,4
+2035,FC Bayern München,1.FC Köln,home,858.23,118.20,1,14
+2036,Borussia Dortmund,Arminia Bielefeld,home,628.40,56.73,6,16
+2037,VfL Wolfsburg,Hertha BSC,home,256.83,228.88,3,15
+2038,VfB Stuttgart,FC Schalke 04,home,189.25,123.05,10,18
+2039,RasenBallsport Leipzig,Borussia Mönchengladbach,home,574.95,300.75,2,8
+2040,1.FC Union Berlin,TSG 1899 Hoffenheim,draw,82.05,228.15,7,11
+2041,1.FSV Mainz 05,FC Augsburg,away,163.30,93.05,17,13
+2042,Bayer 04 Leverkusen,SC Freiburg,away,373.25,139.10,5,9
+2043,FC Schalke 04,1.FSV Mainz 05,draw,123.05,163.30,18,17
+2044,Borussia Mönchengladbach,Bayer 04 Leverkusen,away,300.75,373.25,9,6
+2045,TSG 1899 Hoffenheim,VfL Wolfsburg,home,228.15,256.83,12,3
+2046,SC Freiburg,RasenBallsport Leipzig,away,139.10,574.95,8,2
+2047,Eintracht Frankfurt,VfB Stuttgart,draw,269.15,189.25,4,10
+2048,Hertha BSC,FC Augsburg,home,228.88,93.05,15,13
+2049,FC Bayern München,Borussia Dortmund,home,858.23,628.40,1,5
+2050,1.FC Köln,SV Werder Bremen,draw,118.20,111.98,14,11
+2051,Arminia Bielefeld,1.FC Union Berlin,draw,56.73,82.05,16,7
+2052,FC Augsburg,Borussia Mönchengladbach,home,93.05,300.75,13,10
+2053,VfL Wolfsburg,FC Schalke 04,home,256.83,123.05,3,18
+2054,1.FC Union Berlin,1.FC Köln,home,82.05,118.20,7,14
+2055,SV Werder Bremen,FC Bayern München,away,111.98,858.23,12,1
+2056,1.FSV Mainz 05,SC Freiburg,home,163.30,139.10,17,8
+2057,Borussia Dortmund,Hertha BSC,home,628.40,228.88,6,15
+2058,Bayer 04 Leverkusen,Arminia Bielefeld,away,373.25,56.73,5,16
+2059,RasenBallsport Leipzig,Eintracht Frankfurt,draw,574.95,269.15,2,4
+2060,VfB Stuttgart,TSG 1899 Hoffenheim,home,189.25,228.15,9,11
+2061,Arminia Bielefeld,RasenBallsport Leipzig,away,56.73,574.95,15,2
+2062,FC Bayern München,VfB Stuttgart,home,858.23,189.25,1,8
+2063,Eintracht Frankfurt,1.FC Union Berlin,home,269.15,82.05,4,7
+2064,1.FC Köln,Borussia Dortmund,draw,118.20,628.40,14,5
+2065,SV Werder Bremen,VfL Wolfsburg,away,111.98,256.83,12,3
+2066,FC Schalke 04,Borussia Mönchengladbach,away,123.05,300.75,18,10
+2067,TSG 1899 Hoffenheim,1.FSV Mainz 05,away,228.15,163.30,11,17
+2068,Hertha BSC,Bayer 04 Leverkusen,home,228.88,373.25,16,6
+2069,SC Freiburg,FC Augsburg,home,139.10,93.05,9,13
+2070,Borussia Dortmund,Eintracht Frankfurt,away,628.40,269.15,5,4
+2071,Bayer 04 Leverkusen,FC Schalke 04,home,373.25,123.05,6,18
+2072,VfL Wolfsburg,1.FC Köln,home,256.83,118.20,3,16
+2073,1.FSV Mainz 05,Arminia Bielefeld,draw,163.30,56.73,15,17
+2074,FC Augsburg,TSG 1899 Hoffenheim,home,93.05,228.15,13,11
+2075,RasenBallsport Leipzig,FC Bayern München,away,574.95,858.23,2,1
+2076,Borussia Mönchengladbach,SC Freiburg,home,300.75,139.10,10,8
+2077,VfB Stuttgart,SV Werder Bremen,home,189.25,111.98,9,12
+2078,1.FC Union Berlin,Hertha BSC,draw,82.05,228.88,7,14
+2079,Arminia Bielefeld,SC Freiburg,home,56.73,139.10,17,10
+2080,FC Bayern München,1.FC Union Berlin,draw,858.23,82.05,1,7
+2081,Eintracht Frankfurt,VfL Wolfsburg,home,269.15,256.83,4,3
+2082,Hertha BSC,Borussia Mönchengladbach,draw,228.88,300.75,14,9
+2083,SV Werder Bremen,RasenBallsport Leipzig,away,111.98,574.95,13,2
+2084,VfB Stuttgart,Borussia Dortmund,away,189.25,628.40,8,5
+2085,FC Schalke 04,FC Augsburg,home,123.05,93.05,18,11
+2086,1.FC Köln,1.FSV Mainz 05,away,118.20,163.30,16,15
+2087,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,draw,228.15,373.25,12,6
+2088,RasenBallsport Leipzig,TSG 1899 Hoffenheim,draw,574.95,228.15,2,12
+2089,Borussia Mönchengladbach,Eintracht Frankfurt,home,300.75,269.15,8,4
+2090,VfL Wolfsburg,FC Bayern München,away,256.83,858.23,3,1
+2091,SC Freiburg,FC Schalke 04,home,139.10,123.05,10,18
+2092,1.FC Union Berlin,VfB Stuttgart,home,82.05,189.25,7,9
+2093,FC Augsburg,Arminia Bielefeld,draw,93.05,56.73,11,16
+2094,Bayer 04 Leverkusen,1.FC Köln,home,373.25,118.20,6,17
+2095,Borussia Dortmund,SV Werder Bremen,home,628.40,111.98,5,13
+2096,1.FSV Mainz 05,Hertha BSC,draw,163.30,228.88,14,15
+2097,1.FC Köln,RasenBallsport Leipzig,home,118.20,574.95,17,2
+2098,FC Bayern München,Bayer 04 Leverkusen,home,858.23,373.25,1,6
+2099,Eintracht Frankfurt,FC Augsburg,home,269.15,93.05,4,11
+2100,Arminia Bielefeld,FC Schalke 04,home,56.73,123.05,16,18
+2101,Borussia Dortmund,1.FC Union Berlin,home,628.40,82.05,5,8
+2102,TSG 1899 Hoffenheim,Borussia Mönchengladbach,home,228.15,300.75,12,7
+2103,SV Werder Bremen,1.FSV Mainz 05,away,111.98,163.30,13,14
+2104,VfB Stuttgart,VfL Wolfsburg,away,189.25,256.83,10,3
+2105,Hertha BSC,SC Freiburg,home,228.88,139.10,15,9
+2106,FC Augsburg,1.FC Köln,away,93.05,118.20,12,17
+2107,VfL Wolfsburg,Borussia Dortmund,away,256.83,628.40,3,5
+2108,SC Freiburg,TSG 1899 Hoffenheim,draw,139.10,228.15,9,11
+2109,1.FC Union Berlin,SV Werder Bremen,home,82.05,111.98,8,15
+2110,1.FSV Mainz 05,FC Bayern München,home,163.30,858.23,13,1
+2111,Bayer 04 Leverkusen,Eintracht Frankfurt,home,373.25,269.15,6,4
+2112,RasenBallsport Leipzig,VfB Stuttgart,home,574.95,189.25,2,10
+2113,Borussia Mönchengladbach,Arminia Bielefeld,home,300.75,56.73,7,16
+2114,FC Schalke 04,Hertha BSC,away,123.05,228.88,18,14
+2115,VfB Stuttgart,FC Augsburg,home,189.25,93.05,10,14
+2116,Borussia Dortmund,RasenBallsport Leipzig,home,628.40,574.95,5,2
+2117,TSG 1899 Hoffenheim,FC Schalke 04,home,228.15,123.05,11,18
+2118,VfL Wolfsburg,1.FC Union Berlin,home,256.83,82.05,3,8
+2119,SV Werder Bremen,Bayer 04 Leverkusen,draw,111.98,373.25,15,6
+2120,FC Bayern München,Borussia Mönchengladbach,home,858.23,300.75,1,7
+2121,1.FC Köln,SC Freiburg,away,118.20,139.10,17,9
+2122,Eintracht Frankfurt,1.FSV Mainz 05,draw,269.15,163.30,4,12
+2123,Hertha BSC,Arminia Bielefeld,draw,228.88,56.73,13,16
+2124,Borussia Mönchengladbach,VfB Stuttgart,away,300.75,189.25,7,10
+2125,Bayer 04 Leverkusen,1.FC Union Berlin,draw,373.25,82.05,6,8
+2126,SC Freiburg,FC Bayern München,draw,139.10,858.23,9,1
+2127,Hertha BSC,1.FC Köln,draw,228.88,118.20,13,17
+2128,FC Schalke 04,Eintracht Frankfurt,home,123.05,269.15,18,5
+2129,FC Augsburg,SV Werder Bremen,home,93.05,111.98,14,15
+2130,Arminia Bielefeld,TSG 1899 Hoffenheim,draw,56.73,228.15,16,11
+2131,1.FSV Mainz 05,Borussia Dortmund,away,163.30,628.40,12,4
+2132,RasenBallsport Leipzig,VfL Wolfsburg,draw,574.95,256.83,2,3
+2133,FC Bayern München,FC Augsburg,home,858.23,93.05,1,12
+2134,Borussia Dortmund,Bayer 04 Leverkusen,home,628.40,373.25,3,6
+2135,TSG 1899 Hoffenheim,Hertha BSC,home,228.15,228.88,11,14
+2136,VfL Wolfsburg,1.FSV Mainz 05,away,256.83,163.30,4,13
+2137,Eintracht Frankfurt,SC Freiburg,home,269.15,139.10,5,10
+2138,1.FC Union Berlin,RasenBallsport Leipzig,home,82.05,574.95,7,2
+2139,1.FC Köln,FC Schalke 04,home,118.20,123.05,17,18
+2140,SV Werder Bremen,Borussia Mönchengladbach,away,111.98,300.75,16,8
+2141,VfB Stuttgart,Arminia Bielefeld,away,189.25,56.73,9,15
+2142,Borussia Mönchengladbach,FC Bayern München,draw,236.80,790.33,9,9
+2143,VfL Wolfsburg,VfL Bochum,home,269.30,52.25,9,9
+2144,1.FC Union Berlin,Bayer 04 Leverkusen,draw,115.90,455.05,9,9
+2145,VfB Stuttgart,SpVgg Greuther Fürth,home,174.23,36.95,9,9
+2146,FC Augsburg,TSG 1899 Hoffenheim,away,95.30,211.43,9,9
+2147,Arminia Bielefeld,SC Freiburg,draw,65.85,176.35,9,9
+2148,Borussia Dortmund,Eintracht Frankfurt,home,558.98,228.75,9,9
+2149,1.FSV Mainz 05,RasenBallsport Leipzig,home,131.03,498.95,9,9
+2150,1.FC Köln,Hertha BSC,home,99.28,155.78,9,9
+2151,RasenBallsport Leipzig,VfB Stuttgart,home,498.95,174.23,14,1
+2152,Eintracht Frankfurt,FC Augsburg,draw,228.75,95.30,16,18
+2153,SC Freiburg,Borussia Dortmund,home,176.35,558.98,11,3
+2154,Hertha BSC,VfL Wolfsburg,away,155.78,269.30,15,6
+2155,VfL Bochum,1.FSV Mainz 05,home,52.25,131.03,13,5
+2156,SpVgg Greuther Fürth,Arminia Bielefeld,draw,36.95,65.85,17,12
+2157,Bayer 04 Leverkusen,Borussia Mönchengladbach,home,455.05,236.80,7,9
+2158,TSG 1899 Hoffenheim,1.FC Union Berlin,draw,211.43,115.90,2,10
+2159,FC Bayern München,1.FC Köln,home,790.33,99.28,8,4
+2160,Borussia Dortmund,TSG 1899 Hoffenheim,home,558.98,211.43,7,2
+2161,VfB Stuttgart,SC Freiburg,away,174.23,176.35,10,5
+2162,1.FSV Mainz 05,SpVgg Greuther Fürth,home,131.03,36.95,11,15
+2163,FC Augsburg,Bayer 04 Leverkusen,away,95.30,455.05,17,3
+2164,Arminia Bielefeld,Eintracht Frankfurt,draw,65.85,228.75,13,14
+2165,1.FC Köln,VfL Bochum,home,99.28,52.25,8,9
+2166,FC Bayern München,Hertha BSC,home,790.33,155.78,4,18
+2167,1.FC Union Berlin,Borussia Mönchengladbach,home,115.90,236.80,12,16
+2168,VfL Wolfsburg,RasenBallsport Leipzig,home,269.30,498.95,1,6
+2169,Bayer 04 Leverkusen,Borussia Dortmund,away,455.05,558.98,2,5
+2170,1.FC Union Berlin,FC Augsburg,draw,115.90,95.30,8,17
+2171,SC Freiburg,1.FC Köln,draw,176.35,99.28,4,6
+2172,TSG 1899 Hoffenheim,1.FSV Mainz 05,away,211.43,131.03,9,7
+2173,SpVgg Greuther Fürth,VfL Wolfsburg,away,36.95,269.30,16,1
+2174,RasenBallsport Leipzig,FC Bayern München,away,498.95,790.33,10,3
+2175,Eintracht Frankfurt,VfB Stuttgart,draw,228.75,174.23,14,13
+2176,VfL Bochum,Hertha BSC,away,52.25,155.78,11,18
+2177,Borussia Mönchengladbach,Arminia Bielefeld,home,236.80,65.85,15,12
+2178,Hertha BSC,SpVgg Greuther Fürth,home,155.78,36.95,16,18
+2179,FC Bayern München,VfL Bochum,home,790.33,52.25,2,13
+2180,1.FSV Mainz 05,SC Freiburg,draw,131.03,176.35,4,5
+2181,FC Augsburg,Borussia Mönchengladbach,home,95.30,236.80,17,11
+2182,Arminia Bielefeld,TSG 1899 Hoffenheim,draw,65.85,211.43,14,9
+2183,1.FC Köln,RasenBallsport Leipzig,draw,99.28,498.95,7,12
+2184,VfB Stuttgart,Bayer 04 Leverkusen,away,174.23,455.05,10,6
+2185,Borussia Dortmund,1.FC Union Berlin,home,558.98,115.90,3,8
+2186,VfL Wolfsburg,Eintracht Frankfurt,draw,269.30,228.75,1,15
+2187,SpVgg Greuther Fürth,FC Bayern München,away,36.95,790.33,18,1
+2188,RasenBallsport Leipzig,Hertha BSC,home,498.95,155.78,12,9
+2189,Eintracht Frankfurt,1.FC Köln,draw,228.75,99.28,15,7
+2190,Bayer 04 Leverkusen,1.FSV Mainz 05,home,455.05,131.03,4,5
+2191,1.FC Union Berlin,Arminia Bielefeld,home,115.90,65.85,8,13
+2192,TSG 1899 Hoffenheim,VfL Wolfsburg,home,211.43,269.30,10,2
+2193,Borussia Mönchengladbach,Borussia Dortmund,home,236.80,558.98,16,3
+2194,VfL Bochum,VfB Stuttgart,draw,52.25,174.23,17,14
+2195,SC Freiburg,FC Augsburg,home,176.35,95.30,6,11
+2196,1.FC Köln,SpVgg Greuther Fürth,home,99.28,36.95,7,18
+2197,Borussia Dortmund,FC Augsburg,home,558.98,95.30,4,15
+2198,VfL Wolfsburg,Borussia Mönchengladbach,away,269.30,236.80,3,11
+2199,VfB Stuttgart,TSG 1899 Hoffenheim,home,174.23,211.43,13,9
+2200,Hertha BSC,SC Freiburg,away,155.78,176.35,12,5
+2201,RasenBallsport Leipzig,VfL Bochum,home,498.95,52.25,10,17
+2202,1.FSV Mainz 05,1.FC Union Berlin,away,131.03,115.90,6,8
+2203,FC Bayern München,Eintracht Frankfurt,away,790.33,228.75,1,14
+2204,Arminia Bielefeld,Bayer 04 Leverkusen,away,65.85,455.05,16,2
+2205,TSG 1899 Hoffenheim,1.FC Köln,home,211.43,99.28,11,6
+2206,Borussia Dortmund,1.FSV Mainz 05,home,558.98,131.03,3,9
+2207,Eintracht Frankfurt,Hertha BSC,away,228.75,155.78,13,14
+2208,1.FC Union Berlin,VfL Wolfsburg,home,115.90,269.30,7,5
+2209,SC Freiburg,RasenBallsport Leipzig,draw,176.35,498.95,4,8
+2210,SpVgg Greuther Fürth,VfL Bochum,away,36.95,52.25,18,17
+2211,Borussia Mönchengladbach,VfB Stuttgart,draw,236.80,174.23,10,12
+2212,Bayer 04 Leverkusen,FC Bayern München,away,455.05,790.33,2,1
+2213,FC Augsburg,Arminia Bielefeld,draw,95.30,65.85,15,16
+2214,1.FSV Mainz 05,FC Augsburg,home,131.03,95.30,11,16
+2215,FC Bayern München,TSG 1899 Hoffenheim,home,790.33,211.43,1,9
+2216,RasenBallsport Leipzig,SpVgg Greuther Fürth,home,498.95,36.95,8,18
+2217,VfL Wolfsburg,SC Freiburg,away,269.30,176.35,6,4
+2218,Arminia Bielefeld,Borussia Dortmund,away,65.85,558.98,17,2
+2219,Hertha BSC,Borussia Mönchengladbach,home,155.78,236.80,13,10
+2220,1.FC Köln,Bayer 04 Leverkusen,draw,99.28,455.05,7,3
+2221,VfB Stuttgart,1.FC Union Berlin,draw,174.23,115.90,12,5
+2222,VfL Bochum,Eintracht Frankfurt,home,52.25,228.75,15,14
+2223,TSG 1899 Hoffenheim,Hertha BSC,home,211.43,155.78,11,10
+2224,Borussia Dortmund,1.FC Köln,home,558.98,99.28,2,8
+2225,Bayer 04 Leverkusen,VfL Wolfsburg,away,455.05,269.30,4,9
+2226,1.FC Union Berlin,FC Bayern München,away,115.90,790.33,5,1
+2227,SC Freiburg,SpVgg Greuther Fürth,home,176.35,36.95,3,18
+2228,Arminia Bielefeld,1.FSV Mainz 05,away,65.85,131.03,17,7
+2229,Eintracht Frankfurt,RasenBallsport Leipzig,draw,228.75,498.95,15,6
+2230,FC Augsburg,VfB Stuttgart,home,95.30,174.23,16,13
+2231,Borussia Mönchengladbach,VfL Bochum,home,236.80,52.25,12,14
+2232,1.FSV Mainz 05,Borussia Mönchengladbach,draw,131.03,236.80,5,10
+2233,FC Bayern München,SC Freiburg,home,790.33,176.35,1,3
+2234,VfL Wolfsburg,FC Augsburg,home,269.30,95.30,7,16
+2235,VfB Stuttgart,Arminia Bielefeld,away,174.23,65.85,13,17
+2236,VfL Bochum,TSG 1899 Hoffenheim,home,52.25,211.43,14,9
+2237,RasenBallsport Leipzig,Borussia Dortmund,home,498.95,558.98,8,2
+2238,Hertha BSC,Bayer 04 Leverkusen,draw,155.78,455.05,12,4
+2239,1.FC Köln,1.FC Union Berlin,draw,99.28,115.90,11,6
+2240,SpVgg Greuther Fürth,Eintracht Frankfurt,away,36.95,228.75,18,15
+2241,FC Augsburg,FC Bayern München,home,95.30,790.33,16,1
+2242,Borussia Dortmund,VfB Stuttgart,home,558.98,174.23,2,15
+2243,Bayer 04 Leverkusen,VfL Bochum,home,455.05,52.25,6,12
+2244,Borussia Mönchengladbach,SpVgg Greuther Fürth,home,236.80,36.95,9,18
+2245,TSG 1899 Hoffenheim,RasenBallsport Leipzig,home,211.43,498.95,10,5
+2246,Arminia Bielefeld,VfL Wolfsburg,draw,65.85,269.30,17,4
+2247,1.FC Union Berlin,Hertha BSC,home,115.90,155.78,8,13
+2248,SC Freiburg,Eintracht Frankfurt,away,176.35,228.75,3,14
+2249,1.FSV Mainz 05,1.FC Köln,draw,131.03,99.28,7,11
+2250,VfB Stuttgart,1.FSV Mainz 05,home,174.23,131.03,16,8
+2251,VfL Wolfsburg,Borussia Dortmund,away,269.30,558.98,6,2
+2252,Hertha BSC,FC Augsburg,draw,155.78,95.30,14,15
+2253,1.FC Köln,Borussia Mönchengladbach,home,99.28,236.80,12,9
+2254,VfL Bochum,SC Freiburg,home,52.25,176.35,13,3
+2255,SpVgg Greuther Fürth,TSG 1899 Hoffenheim,away,36.95,211.43,18,10
+2256,FC Bayern München,Arminia Bielefeld,home,790.33,65.85,1,17
+2257,Eintracht Frankfurt,1.FC Union Berlin,home,228.75,115.90,11,5
+2258,RasenBallsport Leipzig,Bayer 04 Leverkusen,away,498.95,455.05,7,4
+2259,1.FC Union Berlin,RasenBallsport Leipzig,home,115.90,498.95,6,8
+2260,Bayer 04 Leverkusen,SpVgg Greuther Fürth,home,455.05,36.95,3,18
+2261,TSG 1899 Hoffenheim,Eintracht Frankfurt,home,211.43,228.75,5,12
+2262,1.FSV Mainz 05,VfL Wolfsburg,home,131.03,269.30,9,7
+2263,FC Augsburg,VfL Bochum,away,95.30,52.25,16,13
+2264,Arminia Bielefeld,1.FC Köln,draw,65.85,99.28,17,10
+2265,Borussia Dortmund,FC Bayern München,away,558.98,790.33,2,1
+2266,VfB Stuttgart,Hertha BSC,draw,174.23,155.78,15,14
+2267,Borussia Mönchengladbach,SC Freiburg,away,236.80,176.35,11,4
+2268,1.FC Köln,FC Augsburg,away,99.28,95.30,9,16
+2269,VfL Bochum,Borussia Dortmund,draw,52.25,558.98,10,2
+2270,FC Bayern München,1.FSV Mainz 05,home,790.33,131.03,1,7
+2271,RasenBallsport Leipzig,Borussia Mönchengladbach,home,498.95,236.80,11,13
+2272,SC Freiburg,TSG 1899 Hoffenheim,away,176.35,211.43,4,5
+2273,Hertha BSC,Arminia Bielefeld,home,155.78,65.85,14,17
+2274,VfL Wolfsburg,VfB Stuttgart,away,269.30,174.23,8,15
+2275,SpVgg Greuther Fürth,1.FC Union Berlin,home,36.95,115.90,18,6
+2276,Eintracht Frankfurt,Bayer 04 Leverkusen,home,228.75,455.05,12,3
+2277,VfB Stuttgart,FC Bayern München,away,174.23,790.33,15,1
+2278,VfL Wolfsburg,1.FC Köln,away,269.30,99.28,11,12
+2279,1.FSV Mainz 05,Hertha BSC,home,131.03,155.78,8,14
+2280,Arminia Bielefeld,VfL Bochum,home,65.85,52.25,17,10
+2281,Borussia Mönchengladbach,Eintracht Frankfurt,away,236.80,228.75,13,9
+2282,Borussia Dortmund,SpVgg Greuther Fürth,home,558.98,36.95,2,18
+2283,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,draw,455.05,211.43,3,4
+2284,1.FC Union Berlin,SC Freiburg,draw,115.90,176.35,6,5
+2285,FC Augsburg,RasenBallsport Leipzig,draw,95.30,498.95,16,7
+2286,FC Bayern München,VfL Wolfsburg,home,790.33,269.30,1,11
+2287,RasenBallsport Leipzig,Arminia Bielefeld,away,498.95,65.85,9,17
+2288,Eintracht Frankfurt,1.FSV Mainz 05,home,228.75,131.03,7,6
+2289,TSG 1899 Hoffenheim,Borussia Mönchengladbach,draw,211.43,236.80,4,13
+2290,VfL Bochum,1.FC Union Berlin,away,52.25,115.90,12,8
+2291,SpVgg Greuther Fürth,FC Augsburg,draw,36.95,95.30,18,16
+2292,Hertha BSC,Borussia Dortmund,home,155.78,558.98,14,2
+2293,SC Freiburg,Bayer 04 Leverkusen,home,176.35,455.05,5,3
+2294,1.FC Köln,VfB Stuttgart,home,99.28,174.23,10,15
+2295,FC Bayern München,Borussia Mönchengladbach,away,790.33,236.80,1,14
+2296,RasenBallsport Leipzig,1.FSV Mainz 05,home,498.95,131.03,10,9
+2297,Bayer 04 Leverkusen,1.FC Union Berlin,draw,455.05,115.90,4,7
+2298,SC Freiburg,Arminia Bielefeld,draw,176.35,65.85,3,17
+2299,TSG 1899 Hoffenheim,FC Augsburg,home,211.43,95.30,5,15
+2300,SpVgg Greuther Fürth,VfB Stuttgart,draw,36.95,174.23,18,16
+2301,Eintracht Frankfurt,Borussia Dortmund,away,228.75,558.98,6,2
+2302,Hertha BSC,1.FC Köln,away,155.78,99.28,11,8
+2303,VfL Bochum,VfL Wolfsburg,home,52.25,269.30,12,13
+2304,Borussia Dortmund,SC Freiburg,home,558.98,176.35,2,4
+2305,VfL Wolfsburg,Hertha BSC,draw,269.30,155.78,14,13
+2306,1.FC Union Berlin,TSG 1899 Hoffenheim,home,115.90,211.43,7,3
+2307,VfB Stuttgart,RasenBallsport Leipzig,away,174.23,498.95,15,9
+2308,1.FSV Mainz 05,VfL Bochum,home,131.03,52.25,10,11
+2309,1.FC Köln,FC Bayern München,away,99.28,790.33,6,1
+2310,Borussia Mönchengladbach,Bayer 04 Leverkusen,away,236.80,455.05,12,5
+2311,FC Augsburg,Eintracht Frankfurt,draw,95.30,228.75,16,8
+2312,Arminia Bielefeld,SpVgg Greuther Fürth,draw,65.85,36.95,17,18
+2313,Eintracht Frankfurt,Arminia Bielefeld,away,228.75,65.85,8,16
+2314,Bayer 04 Leverkusen,FC Augsburg,home,455.05,95.30,3,15
+2315,Borussia Mönchengladbach,1.FC Union Berlin,away,236.80,115.90,12,5
+2316,SC Freiburg,VfB Stuttgart,home,176.35,174.23,6,17
+2317,TSG 1899 Hoffenheim,Borussia Dortmund,away,211.43,558.98,4,2
+2318,SpVgg Greuther Fürth,1.FSV Mainz 05,home,36.95,131.03,18,10
+2319,VfL Bochum,1.FC Köln,draw,52.25,99.28,11,9
+2320,RasenBallsport Leipzig,VfL Wolfsburg,home,498.95,269.30,7,14
+2321,Hertha BSC,FC Bayern München,away,155.78,790.33,13,1
+2322,Hertha BSC,VfL Bochum,draw,155.78,52.25,13,11
+2323,VfB Stuttgart,Eintracht Frankfurt,away,174.23,228.75,17,9
+2324,1.FSV Mainz 05,TSG 1899 Hoffenheim,home,131.03,211.43,10,7
+2325,FC Augsburg,1.FC Union Berlin,home,95.30,115.90,16,4
+2326,Arminia Bielefeld,Borussia Mönchengladbach,draw,65.85,236.80,14,12
+2327,1.FC Köln,SC Freiburg,home,99.28,176.35,8,5
+2328,FC Bayern München,RasenBallsport Leipzig,home,790.33,498.95,1,6
+2329,Borussia Dortmund,Bayer 04 Leverkusen,away,558.98,455.05,2,3
+2330,VfL Wolfsburg,SpVgg Greuther Fürth,home,269.30,36.95,15,18
+2331,RasenBallsport Leipzig,1.FC Köln,home,498.95,99.28,7,6
+2332,Eintracht Frankfurt,VfL Wolfsburg,away,228.75,269.30,9,12
+2333,Borussia Mönchengladbach,FC Augsburg,home,236.80,95.30,13,16
+2334,SC Freiburg,1.FSV Mainz 05,draw,176.35,131.03,5,10
+2335,VfL Bochum,FC Bayern München,home,52.25,790.33,11,1
+2336,SpVgg Greuther Fürth,Hertha BSC,home,36.95,155.78,18,14
+2337,Bayer 04 Leverkusen,VfB Stuttgart,home,455.05,174.23,3,17
+2338,1.FC Union Berlin,Borussia Dortmund,away,115.90,558.98,4,2
+2339,TSG 1899 Hoffenheim,Arminia Bielefeld,home,211.43,65.85,8,15
+2340,1.FSV Mainz 05,Bayer 04 Leverkusen,home,131.03,455.05,9,3
+2341,VfL Wolfsburg,TSG 1899 Hoffenheim,away,269.30,211.43,12,5
+2342,VfB Stuttgart,VfL Bochum,draw,174.23,52.25,17,11
+2343,FC Augsburg,SC Freiburg,away,95.30,176.35,16,6
+2344,Arminia Bielefeld,1.FC Union Berlin,home,65.85,115.90,15,7
+2345,1.FC Köln,Eintracht Frankfurt,home,99.28,228.75,8,10
+2346,FC Bayern München,SpVgg Greuther Fürth,home,790.33,36.95,1,18
+2347,Borussia Dortmund,Borussia Mönchengladbach,home,558.98,236.80,2,13
+2348,Hertha BSC,RasenBallsport Leipzig,away,155.78,498.95,14,4
+2349,TSG 1899 Hoffenheim,VfB Stuttgart,home,211.43,174.23,5,17
+2350,Bayer 04 Leverkusen,Arminia Bielefeld,home,455.05,65.85,3,14
+2351,1.FC Union Berlin,1.FSV Mainz 05,home,115.90,131.03,9,8
+2352,Borussia Mönchengladbach,VfL Wolfsburg,draw,236.80,269.30,13,12
+2353,SC Freiburg,Hertha BSC,home,176.35,155.78,6,15
+2354,SpVgg Greuther Fürth,1.FC Köln,draw,36.95,99.28,18,7
+2355,Eintracht Frankfurt,FC Bayern München,away,228.75,790.33,10,1
+2356,VfL Bochum,RasenBallsport Leipzig,away,52.25,498.95,11,4
+2357,FC Augsburg,Borussia Dortmund,draw,95.30,558.98,16,2
+2358,Arminia Bielefeld,FC Augsburg,away,65.85,95.30,14,15
+2359,FC Bayern München,Bayer 04 Leverkusen,draw,790.33,455.05,1,3
+2360,RasenBallsport Leipzig,SC Freiburg,draw,498.95,176.35,4,5
+2361,VfL Wolfsburg,1.FC Union Berlin,home,269.30,115.90,12,7
+2362,Hertha BSC,Eintracht Frankfurt,away,155.78,228.75,16,10
+2363,VfL Bochum,SpVgg Greuther Fürth,home,52.25,36.95,11,18
+2364,VfB Stuttgart,Borussia Mönchengladbach,home,174.23,236.80,17,13
+2365,1.FC Köln,TSG 1899 Hoffenheim,away,99.28,211.43,8,6
+2366,1.FSV Mainz 05,Borussia Dortmund,away,131.03,558.98,9,2
+2367,1.FC Union Berlin,VfB Stuttgart,draw,115.90,174.23,7,17
+2368,SC Freiburg,VfL Wolfsburg,home,176.35,269.30,6,12
+2369,TSG 1899 Hoffenheim,FC Bayern München,draw,211.43,790.33,4,1
+2370,Borussia Mönchengladbach,Hertha BSC,home,236.80,155.78,13,16
+2371,Bayer 04 Leverkusen,1.FC Köln,away,455.05,99.28,3,8
+2372,Borussia Dortmund,Arminia Bielefeld,home,558.98,65.85,2,15
+2373,Eintracht Frankfurt,VfL Bochum,home,228.75,52.25,10,11
+2374,SpVgg Greuther Fürth,RasenBallsport Leipzig,away,36.95,498.95,18,5
+2375,FC Augsburg,1.FSV Mainz 05,home,95.30,131.03,14,9
+2376,VfL Bochum,Borussia Mönchengladbach,away,52.25,236.80,11,13
+2377,VfB Stuttgart,FC Augsburg,home,174.23,95.30,16,14
+2378,1.FSV Mainz 05,Arminia Bielefeld,home,131.03,65.85,10,15
+2379,Hertha BSC,TSG 1899 Hoffenheim,home,155.78,211.43,17,6
+2380,SpVgg Greuther Fürth,SC Freiburg,draw,36.95,176.35,18,5
+2381,FC Bayern München,1.FC Union Berlin,home,790.33,115.90,1,8
+2382,RasenBallsport Leipzig,Eintracht Frankfurt,draw,498.95,228.75,4,9
+2383,VfL Wolfsburg,Bayer 04 Leverkusen,away,269.30,455.05,12,3
+2384,1.FC Köln,Borussia Dortmund,draw,99.28,558.98,7,2
+2385,1.FC Union Berlin,1.FC Köln,home,115.90,99.28,9,7
+2386,Eintracht Frankfurt,SpVgg Greuther Fürth,draw,228.75,36.95,8,18
+2387,Bayer 04 Leverkusen,Hertha BSC,home,455.05,155.78,3,16
+2388,SC Freiburg,FC Bayern München,away,176.35,790.33,5,1
+2389,TSG 1899 Hoffenheim,VfL Bochum,away,211.43,52.25,6,12
+2390,Arminia Bielefeld,VfB Stuttgart,draw,65.85,174.23,17,15
+2391,Borussia Dortmund,RasenBallsport Leipzig,away,558.98,498.95,2,4
+2392,FC Augsburg,VfL Wolfsburg,home,95.30,269.30,14,13
+2393,Borussia Mönchengladbach,1.FSV Mainz 05,draw,236.80,131.03,11,10
+2394,VfB Stuttgart,Borussia Dortmund,away,174.23,558.98,15,2
+2395,FC Bayern München,FC Augsburg,home,790.33,95.30,1,13
+2396,VfL Wolfsburg,Arminia Bielefeld,home,269.30,65.85,14,16
+2397,1.FC Köln,1.FSV Mainz 05,home,99.28,131.03,8,10
+2398,SpVgg Greuther Fürth,Borussia Mönchengladbach,away,36.95,236.80,18,12
+2399,Hertha BSC,1.FC Union Berlin,away,155.78,115.90,17,7
+2400,VfL Bochum,Bayer 04 Leverkusen,draw,52.25,455.05,11,3
+2401,Eintracht Frankfurt,SC Freiburg,away,228.75,176.35,9,5
+2402,RasenBallsport Leipzig,TSG 1899 Hoffenheim,home,498.95,211.43,4,6
+2403,Borussia Dortmund,VfL Wolfsburg,home,558.98,269.30,2,13
+2404,SC Freiburg,VfL Bochum,home,176.35,52.25,5,12
+2405,1.FSV Mainz 05,VfB Stuttgart,draw,131.03,174.23,10,15
+2406,FC Augsburg,Hertha BSC,away,95.30,155.78,14,17
+2407,Borussia Mönchengladbach,1.FC Köln,away,236.80,99.28,11,8
+2408,Arminia Bielefeld,FC Bayern München,away,65.85,790.33,16,1
+2409,1.FC Union Berlin,Eintracht Frankfurt,home,115.90,228.75,7,9
+2410,TSG 1899 Hoffenheim,SpVgg Greuther Fürth,draw,211.43,36.95,6,18
+2411,Bayer 04 Leverkusen,RasenBallsport Leipzig,away,455.05,498.95,3,4
+2412,VfL Wolfsburg,1.FSV Mainz 05,home,269.30,131.03,13,9
+2413,RasenBallsport Leipzig,1.FC Union Berlin,away,498.95,115.90,3,6
+2414,Eintracht Frankfurt,TSG 1899 Hoffenheim,draw,228.75,211.43,10,8
+2415,SC Freiburg,Borussia Mönchengladbach,draw,176.35,236.80,5,11
+2416,1.FC Köln,Arminia Bielefeld,home,99.28,65.85,7,17
+2417,SpVgg Greuther Fürth,Bayer 04 Leverkusen,away,36.95,455.05,18,4
+2418,FC Bayern München,Borussia Dortmund,home,790.33,558.98,1,2
+2419,VfL Bochum,FC Augsburg,away,52.25,95.30,12,14
+2420,Hertha BSC,VfB Stuttgart,home,155.78,174.23,15,16
+2421,1.FC Union Berlin,SpVgg Greuther Fürth,draw,115.90,36.95,6,18
+2422,Borussia Dortmund,VfL Bochum,away,558.98,52.25,2,13
+2423,VfB Stuttgart,VfL Wolfsburg,draw,174.23,269.30,16,12
+2424,1.FSV Mainz 05,FC Bayern München,home,131.03,790.33,10,1
+2425,FC Augsburg,1.FC Köln,away,95.30,99.28,14,7
+2426,Arminia Bielefeld,Hertha BSC,draw,65.85,155.78,17,15
+2427,TSG 1899 Hoffenheim,SC Freiburg,away,211.43,176.35,8,5
+2428,Bayer 04 Leverkusen,Eintracht Frankfurt,home,455.05,228.75,3,9
+2429,Borussia Mönchengladbach,RasenBallsport Leipzig,home,236.80,498.95,11,4
+2430,VfL Bochum,Arminia Bielefeld,home,52.25,65.85,12,17
+2431,SC Freiburg,1.FC Union Berlin,away,176.35,115.90,4,7
+2432,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,away,211.43,455.05,8,3
+2433,1.FC Köln,VfL Wolfsburg,away,99.28,269.30,6,13
+2434,SpVgg Greuther Fürth,Borussia Dortmund,away,36.95,558.98,18,2
+2435,Hertha BSC,1.FSV Mainz 05,away,155.78,131.03,15,9
+2436,Eintracht Frankfurt,Borussia Mönchengladbach,draw,228.75,236.80,11,10
+2437,FC Bayern München,VfB Stuttgart,draw,790.33,174.23,1,16
+2438,RasenBallsport Leipzig,FC Augsburg,home,498.95,95.30,5,14
+2439,Borussia Dortmund,Hertha BSC,home,558.98,155.78,2,15
+2440,VfL Wolfsburg,FC Bayern München,draw,269.30,790.33,13,1
+2441,Bayer 04 Leverkusen,SC Freiburg,home,455.05,176.35,3,5
+2442,1.FC Union Berlin,VfL Bochum,home,115.90,52.25,6,11
+2443,Borussia Mönchengladbach,TSG 1899 Hoffenheim,home,236.80,211.43,10,8
+2444,VfB Stuttgart,1.FC Köln,home,174.23,99.28,16,7
+2445,1.FSV Mainz 05,Eintracht Frankfurt,draw,131.03,228.75,9,12
+2446,FC Augsburg,SpVgg Greuther Fürth,home,95.30,36.95,14,18
+2447,Arminia Bielefeld,RasenBallsport Leipzig,draw,65.85,498.95,17,4
+2448,Eintracht Frankfurt,FC Bayern München,away,324.55,948.95,9,9
+2449,1.FC Union Berlin,Hertha BSC,home,157.95,94.00,9,9
+2450,Borussia Mönchengladbach,TSG 1899 Hoffenheim,home,241.68,178.80,9,9
+2451,VfL Wolfsburg,SV Werder Bremen,draw,238.30,89.50,9,9
+2452,VfL Bochum,1.FSV Mainz 05,away,53.70,135.80,9,9
+2453,FC Augsburg,SC Freiburg,away,132.23,200.95,9,9
+2454,Borussia Dortmund,Bayer 04 Leverkusen,home,567.55,452.50,9,9
+2455,VfB Stuttgart,RasenBallsport Leipzig,draw,151.05,486.40,9,9
+2456,1.FC Köln,FC Schalke 04,home,115.65,87.78,9,9
+2457,SC Freiburg,Borussia Dortmund,away,200.95,567.55,2,7
+2458,Bayer 04 Leverkusen,FC Augsburg,away,452.50,132.23,13,17
+2459,RasenBallsport Leipzig,1.FC Köln,draw,486.40,115.65,10,4
+2460,TSG 1899 Hoffenheim,VfL Bochum,home,178.80,53.70,16,12
+2461,Hertha BSC,Eintracht Frankfurt,draw,94.00,324.55,15,18
+2462,SV Werder Bremen,VfB Stuttgart,draw,89.50,151.05,8,11
+2463,FC Schalke 04,Borussia Mönchengladbach,draw,87.78,241.68,14,5
+2464,1.FSV Mainz 05,1.FC Union Berlin,draw,135.80,157.95,6,3
+2465,FC Bayern München,VfL Wolfsburg,home,948.95,238.30,1,9
+2466,Borussia Mönchengladbach,Hertha BSC,home,241.68,94.00,4,14
+2467,Borussia Dortmund,SV Werder Bremen,away,567.55,89.50,2,10
+2468,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,away,452.50,178.80,18,8
+2469,VfL Wolfsburg,FC Schalke 04,draw,238.30,87.78,15,13
+2470,FC Augsburg,1.FSV Mainz 05,away,132.23,135.80,9,6
+2471,VfB Stuttgart,SC Freiburg,away,151.05,200.95,11,7
+2472,1.FC Union Berlin,RasenBallsport Leipzig,home,157.95,486.40,5,12
+2473,Eintracht Frankfurt,1.FC Köln,draw,324.55,115.65,16,3
+2474,VfL Bochum,FC Bayern München,away,53.70,948.95,17,1
+2475,SC Freiburg,VfL Bochum,home,200.95,53.70,5,18
+2476,RasenBallsport Leipzig,VfL Wolfsburg,home,486.40,238.30,11,14
+2477,1.FSV Mainz 05,Bayer 04 Leverkusen,away,135.80,452.50,4,17
+2478,TSG 1899 Hoffenheim,FC Augsburg,home,178.80,132.23,6,10
+2479,Hertha BSC,Borussia Dortmund,away,94.00,567.55,16,7
+2480,FC Schalke 04,1.FC Union Berlin,away,87.78,157.95,13,3
+2481,FC Bayern München,Borussia Mönchengladbach,draw,948.95,241.68,1,2
+2482,1.FC Köln,VfB Stuttgart,draw,115.65,151.05,8,12
+2483,SV Werder Bremen,Eintracht Frankfurt,away,89.50,324.55,9,15
+2484,Borussia Dortmund,TSG 1899 Hoffenheim,home,567.55,178.80,5,4
+2485,Bayer 04 Leverkusen,SC Freiburg,away,452.50,200.95,13,3
+2486,1.FC Union Berlin,FC Bayern München,draw,157.95,948.95,2,1
+2487,VfL Wolfsburg,1.FC Köln,away,238.30,115.65,15,8
+2488,VfL Bochum,SV Werder Bremen,away,53.70,89.50,18,10
+2489,VfB Stuttgart,FC Schalke 04,draw,151.05,87.78,12,16
+2490,Eintracht Frankfurt,RasenBallsport Leipzig,home,324.55,486.40,11,9
+2491,FC Augsburg,Hertha BSC,away,132.23,94.00,14,17
+2492,Borussia Mönchengladbach,1.FSV Mainz 05,away,241.68,135.80,6,7
+2493,SV Werder Bremen,FC Augsburg,away,89.50,132.23,8,16
+2494,FC Bayern München,VfB Stuttgart,draw,948.95,151.05,3,12
+2495,RasenBallsport Leipzig,Borussia Dortmund,home,486.40,567.55,11,2
+2496,TSG 1899 Hoffenheim,1.FSV Mainz 05,home,178.80,135.80,7,5
+2497,Eintracht Frankfurt,VfL Wolfsburg,away,324.55,238.30,10,17
+2498,Hertha BSC,Bayer 04 Leverkusen,draw,94.00,452.50,13,14
+2499,FC Schalke 04,VfL Bochum,home,87.78,53.70,15,18
+2500,1.FC Köln,1.FC Union Berlin,away,115.65,157.95,6,4
+2501,SC Freiburg,Borussia Mönchengladbach,draw,200.95,241.68,1,9
+2502,1.FSV Mainz 05,Hertha BSC,draw,135.80,94.00,6,15
+2503,Borussia Dortmund,FC Schalke 04,home,567.55,87.78,5,12
+2504,Bayer 04 Leverkusen,SV Werder Bremen,draw,452.50,89.50,17,9
+2505,FC Augsburg,FC Bayern München,home,132.23,948.95,13,3
+2506,VfB Stuttgart,Eintracht Frankfurt,away,151.05,324.55,14,11
+2507,Borussia Mönchengladbach,RasenBallsport Leipzig,home,241.68,486.40,8,10
+2508,1.FC Union Berlin,VfL Wolfsburg,home,157.95,238.30,1,16
+2509,VfL Bochum,1.FC Köln,draw,53.70,115.65,18,7
+2510,TSG 1899 Hoffenheim,SC Freiburg,draw,178.80,200.95,4,2
+2511,FC Bayern München,Bayer 04 Leverkusen,home,948.95,452.50,5,15
+2512,RasenBallsport Leipzig,VfL Bochum,home,486.40,53.70,12,18
+2513,SC Freiburg,1.FSV Mainz 05,home,200.95,135.80,3,8
+2514,1.FC Köln,Borussia Dortmund,home,115.65,567.55,9,2
+2515,Eintracht Frankfurt,1.FC Union Berlin,home,324.55,157.95,7,1
+2516,VfL Wolfsburg,VfB Stuttgart,home,238.30,151.05,17,16
+2517,SV Werder Bremen,Borussia Mönchengladbach,home,89.50,241.68,10,6
+2518,Hertha BSC,TSG 1899 Hoffenheim,draw,94.00,178.80,13,4
+2519,FC Schalke 04,FC Augsburg,away,87.78,132.23,14,11
+2520,TSG 1899 Hoffenheim,SV Werder Bremen,away,178.80,89.50,5,8
+2521,Bayer 04 Leverkusen,FC Schalke 04,home,452.50,87.78,17,15
+2522,1.FSV Mainz 05,RasenBallsport Leipzig,draw,135.80,486.40,12,11
+2523,VfL Bochum,Eintracht Frankfurt,home,53.70,324.55,18,6
+2524,FC Augsburg,VfL Wolfsburg,draw,132.23,238.30,10,13
+2525,Borussia Dortmund,FC Bayern München,draw,567.55,948.95,4,3
+2526,Borussia Mönchengladbach,1.FC Köln,home,241.68,115.65,9,7
+2527,Hertha BSC,SC Freiburg,draw,94.00,200.95,14,2
+2528,VfB Stuttgart,1.FC Union Berlin,away,151.05,157.95,16,1
+2529,FC Schalke 04,TSG 1899 Hoffenheim,away,87.78,178.80,16,7
+2530,Eintracht Frankfurt,Bayer 04 Leverkusen,home,324.55,452.50,8,15
+2531,VfL Wolfsburg,Borussia Mönchengladbach,draw,238.30,241.68,13,6
+2532,VfB Stuttgart,VfL Bochum,home,151.05,53.70,17,18
+2533,SV Werder Bremen,1.FSV Mainz 05,away,89.50,135.80,5,12
+2534,RasenBallsport Leipzig,Hertha BSC,home,486.40,94.00,11,14
+2535,1.FC Köln,FC Augsburg,home,115.65,132.23,9,10
+2536,1.FC Union Berlin,Borussia Dortmund,home,157.95,567.55,1,4
+2537,FC Bayern München,SC Freiburg,home,948.95,200.95,3,2
+2538,1.FSV Mainz 05,1.FC Köln,home,135.80,115.65,11,7
+2539,Borussia Dortmund,VfB Stuttgart,home,567.55,151.05,8,14
+2540,Bayer 04 Leverkusen,VfL Wolfsburg,draw,452.50,238.30,16,13
+2541,SC Freiburg,SV Werder Bremen,home,200.95,89.50,3,9
+2542,TSG 1899 Hoffenheim,FC Bayern München,away,178.80,948.95,4,2
+2543,FC Augsburg,RasenBallsport Leipzig,draw,132.23,486.40,12,10
+2544,Borussia Mönchengladbach,Eintracht Frankfurt,away,241.68,324.55,6,5
+2545,VfL Bochum,1.FC Union Berlin,home,53.70,157.95,18,1
+2546,Hertha BSC,FC Schalke 04,home,94.00,87.78,15,17
+2547,SV Werder Bremen,Hertha BSC,home,89.50,94.00,11,13
+2548,FC Bayern München,1.FSV Mainz 05,home,948.95,135.80,2,6
+2549,RasenBallsport Leipzig,Bayer 04 Leverkusen,home,486.40,452.50,8,15
+2550,VfL Wolfsburg,VfL Bochum,home,238.30,53.70,14,17
+2551,VfB Stuttgart,FC Augsburg,home,151.05,132.23,16,12
+2552,Eintracht Frankfurt,Borussia Dortmund,away,324.55,567.55,4,5
+2553,1.FC Union Berlin,Borussia Mönchengladbach,home,157.95,241.68,1,9
+2554,FC Schalke 04,SC Freiburg,away,87.78,200.95,18,3
+2555,1.FC Köln,TSG 1899 Hoffenheim,draw,115.65,178.80,10,7
+2556,Borussia Mönchengladbach,VfB Stuttgart,home,241.68,151.05,11,15
+2557,1.FSV Mainz 05,VfL Wolfsburg,away,135.80,238.30,9,12
+2558,TSG 1899 Hoffenheim,RasenBallsport Leipzig,away,178.80,486.40,7,6
+2559,FC Augsburg,Eintracht Frankfurt,away,132.23,324.55,13,5
+2560,Hertha BSC,FC Bayern München,away,94.00,948.95,14,2
+2561,Borussia Dortmund,VfL Bochum,home,567.55,53.70,4,17
+2562,SV Werder Bremen,FC Schalke 04,home,89.50,87.78,8,18
+2563,Bayer 04 Leverkusen,1.FC Union Berlin,home,452.50,157.95,16,1
+2564,SC Freiburg,1.FC Köln,home,200.95,115.65,3,10
+2565,VfL Wolfsburg,Borussia Dortmund,home,238.30,567.55,11,4
+2566,FC Bayern München,SV Werder Bremen,home,948.95,89.50,1,7
+2567,VfL Bochum,Borussia Mönchengladbach,home,53.70,241.68,17,8
+2568,VfB Stuttgart,Hertha BSC,home,151.05,94.00,16,15
+2569,1.FC Köln,Bayer 04 Leverkusen,away,115.65,452.50,12,14
+2570,RasenBallsport Leipzig,SC Freiburg,home,486.40,200.95,6,2
+2571,1.FC Union Berlin,FC Augsburg,draw,157.95,132.23,3,13
+2572,Eintracht Frankfurt,TSG 1899 Hoffenheim,home,324.55,178.80,5,9
+2573,FC Schalke 04,1.FSV Mainz 05,home,87.78,135.80,18,10
+2574,Borussia Mönchengladbach,Borussia Dortmund,home,241.68,567.55,9,6
+2575,Bayer 04 Leverkusen,VfB Stuttgart,home,452.50,151.05,13,15
+2576,TSG 1899 Hoffenheim,VfL Wolfsburg,away,178.80,238.30,10,8
+2577,FC Augsburg,VfL Bochum,away,132.23,53.70,14,17
+2578,Hertha BSC,1.FC Köln,home,94.00,115.65,16,12
+2579,SV Werder Bremen,RasenBallsport Leipzig,away,89.50,486.40,7,5
+2580,FC Schalke 04,FC Bayern München,away,87.78,948.95,18,1
+2581,1.FSV Mainz 05,Eintracht Frankfurt,draw,135.80,324.55,11,4
+2582,SC Freiburg,1.FC Union Berlin,home,200.95,157.95,3,2
+2583,RasenBallsport Leipzig,FC Bayern München,draw,486.40,948.95,3,1
+2584,1.FC Union Berlin,TSG 1899 Hoffenheim,home,157.95,178.80,5,11
+2585,Eintracht Frankfurt,FC Schalke 04,home,324.55,87.78,4,18
+2586,VfL Wolfsburg,SC Freiburg,home,238.30,200.95,7,2
+2587,VfL Bochum,Hertha BSC,home,53.70,94.00,17,15
+2588,VfB Stuttgart,1.FSV Mainz 05,draw,151.05,135.80,16,10
+2589,1.FC Köln,SV Werder Bremen,home,115.65,89.50,13,9
+2590,Borussia Dortmund,FC Augsburg,home,567.55,132.23,6,14
+2591,Borussia Mönchengladbach,Bayer 04 Leverkusen,away,241.68,452.50,8,12
+2592,FC Schalke 04,RasenBallsport Leipzig,away,87.78,486.40,18,5
+2593,FC Bayern München,1.FC Köln,draw,948.95,115.65,1,11
+2594,TSG 1899 Hoffenheim,VfB Stuttgart,draw,178.80,151.05,13,16
+2595,Hertha BSC,VfL Wolfsburg,away,94.00,238.30,17,7
+2596,1.FSV Mainz 05,Borussia Dortmund,away,135.80,567.55,12,6
+2597,Bayer 04 Leverkusen,VfL Bochum,home,452.50,53.70,9,14
+2598,SC Freiburg,Eintracht Frankfurt,draw,200.95,324.55,4,2
+2599,FC Augsburg,Borussia Mönchengladbach,home,132.23,241.68,15,8
+2600,SV Werder Bremen,1.FC Union Berlin,away,89.50,157.95,10,3
+2601,RasenBallsport Leipzig,VfB Stuttgart,home,486.40,151.05,3,15
+2602,SC Freiburg,FC Augsburg,home,200.95,132.23,6,14
+2603,1.FSV Mainz 05,VfL Bochum,home,135.80,53.70,12,16
+2604,TSG 1899 Hoffenheim,Borussia Mönchengladbach,away,178.80,241.68,13,9
+2605,Hertha BSC,1.FC Union Berlin,away,94.00,157.95,17,2
+2606,SV Werder Bremen,VfL Wolfsburg,home,89.50,238.30,11,7
+2607,FC Bayern München,Eintracht Frankfurt,draw,948.95,324.55,1,4
+2608,FC Schalke 04,1.FC Köln,draw,87.78,115.65,18,10
+2609,Bayer 04 Leverkusen,Borussia Dortmund,away,452.50,567.55,8,5
+2610,FC Augsburg,Bayer 04 Leverkusen,home,132.23,452.50,14,9
+2611,Borussia Dortmund,SC Freiburg,home,567.55,200.95,4,5
+2612,1.FC Union Berlin,1.FSV Mainz 05,home,157.95,135.80,2,11
+2613,1.FC Köln,RasenBallsport Leipzig,draw,115.65,486.40,12,3
+2614,Eintracht Frankfurt,Hertha BSC,home,324.55,94.00,6,17
+2615,VfL Bochum,TSG 1899 Hoffenheim,home,53.70,178.80,16,13
+2616,Borussia Mönchengladbach,FC Schalke 04,draw,241.68,87.78,8,18
+2617,VfB Stuttgart,SV Werder Bremen,away,151.05,89.50,15,10
+2618,VfL Wolfsburg,FC Bayern München,away,238.30,948.95,7,1
+2619,FC Schalke 04,VfL Wolfsburg,draw,87.78,238.30,18,7
+2620,FC Bayern München,VfL Bochum,home,948.95,53.70,1,15
+2621,SC Freiburg,VfB Stuttgart,home,200.95,151.05,6,16
+2622,1.FSV Mainz 05,FC Augsburg,home,135.80,132.23,12,13
+2623,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,away,178.80,452.50,14,10
+2624,SV Werder Bremen,Borussia Dortmund,away,89.50,567.55,8,3
+2625,RasenBallsport Leipzig,1.FC Union Berlin,away,486.40,157.95,4,2
+2626,Hertha BSC,Borussia Mönchengladbach,home,94.00,241.68,17,9
+2627,1.FC Köln,Eintracht Frankfurt,home,115.65,324.55,11,5
+2628,FC Augsburg,TSG 1899 Hoffenheim,home,132.23,178.80,13,14
+2629,Borussia Mönchengladbach,FC Bayern München,home,241.68,948.95,10,1
+2630,VfL Wolfsburg,RasenBallsport Leipzig,away,238.30,486.40,7,5
+2631,VfL Bochum,SC Freiburg,away,53.70,200.95,15,4
+2632,VfB Stuttgart,1.FC Köln,home,151.05,115.65,17,11
+2633,Eintracht Frankfurt,SV Werder Bremen,home,324.55,89.50,6,9
+2634,1.FC Union Berlin,FC Schalke 04,draw,157.95,87.78,2,18
+2635,Borussia Dortmund,Hertha BSC,home,567.55,94.00,3,16
+2636,Bayer 04 Leverkusen,1.FSV Mainz 05,away,452.50,135.80,8,12
+2637,1.FSV Mainz 05,Borussia Mönchengladbach,home,135.80,241.68,9,8
+2638,RasenBallsport Leipzig,Eintracht Frankfurt,home,486.40,324.55,5,6
+2639,1.FC Köln,VfL Wolfsburg,away,115.65,238.30,12,7
+2640,TSG 1899 Hoffenheim,Borussia Dortmund,away,178.80,567.55,15,2
+2641,Hertha BSC,FC Augsburg,home,94.00,132.23,17,13
+2642,SV Werder Bremen,VfL Bochum,home,89.50,53.70,11,16
+2643,FC Schalke 04,VfB Stuttgart,home,87.78,151.05,18,14
+2644,SC Freiburg,Bayer 04 Leverkusen,draw,200.95,452.50,4,10
+2645,FC Bayern München,1.FC Union Berlin,home,948.95,157.95,1,3
+2646,Borussia Dortmund,RasenBallsport Leipzig,home,567.55,486.40,2,4
+2647,1.FC Union Berlin,1.FC Köln,draw,157.95,115.65,3,12
+2648,1.FSV Mainz 05,TSG 1899 Hoffenheim,home,135.80,178.80,8,16
+2649,Borussia Mönchengladbach,SC Freiburg,draw,241.68,200.95,10,5
+2650,VfL Bochum,FC Schalke 04,away,53.70,87.78,17,18
+2651,FC Augsburg,SV Werder Bremen,home,132.23,89.50,13,9
+2652,VfB Stuttgart,FC Bayern München,away,151.05,948.95,15,1
+2653,Bayer 04 Leverkusen,Hertha BSC,home,452.50,94.00,11,14
+2654,VfL Wolfsburg,Eintracht Frankfurt,draw,238.30,324.55,7,6
+2655,1.FC Köln,VfL Bochum,away,115.65,53.70,12,18
+2656,FC Bayern München,FC Augsburg,home,948.95,132.23,1,13
+2657,RasenBallsport Leipzig,Borussia Mönchengladbach,home,486.40,241.68,4,10
+2658,Eintracht Frankfurt,VfB Stuttgart,draw,324.55,151.05,6,15
+2659,Hertha BSC,1.FSV Mainz 05,draw,94.00,135.80,14,7
+2660,FC Schalke 04,Borussia Dortmund,draw,87.78,567.55,17,2
+2661,SC Freiburg,TSG 1899 Hoffenheim,home,200.95,178.80,5,16
+2662,SV Werder Bremen,Bayer 04 Leverkusen,away,89.50,452.50,11,9
+2663,VfL Wolfsburg,1.FC Union Berlin,draw,238.30,157.95,8,3
+2664,Borussia Mönchengladbach,SV Werder Bremen,draw,241.68,89.50,10,11
+2665,TSG 1899 Hoffenheim,Hertha BSC,home,178.80,94.00,18,15
+2666,VfL Bochum,RasenBallsport Leipzig,home,53.70,486.40,14,3
+2667,FC Augsburg,FC Schalke 04,draw,132.23,87.78,13,17
+2668,VfB Stuttgart,VfL Wolfsburg,away,151.05,238.30,16,8
+2669,Borussia Dortmund,1.FC Köln,home,567.55,115.65,2,12
+2670,1.FC Union Berlin,Eintracht Frankfurt,home,157.95,324.55,4,6
+2671,Bayer 04 Leverkusen,FC Bayern München,home,452.50,948.95,9,1
+2672,1.FSV Mainz 05,SC Freiburg,draw,135.80,200.95,7,5
+2673,Eintracht Frankfurt,VfL Bochum,draw,324.55,53.70,6,14
+2674,RasenBallsport Leipzig,1.FSV Mainz 05,away,486.40,135.80,5,9
+2675,1.FC Union Berlin,VfB Stuttgart,home,157.95,151.05,3,18
+2676,SC Freiburg,Hertha BSC,draw,200.95,94.00,4,16
+2677,VfL Wolfsburg,FC Augsburg,draw,238.30,132.23,7,12
+2678,FC Schalke 04,Bayer 04 Leverkusen,away,87.78,452.50,17,8
+2679,FC Bayern München,Borussia Dortmund,home,948.95,567.55,2,1
+2680,1.FC Köln,Borussia Mönchengladbach,draw,115.65,241.68,13,10
+2681,SV Werder Bremen,TSG 1899 Hoffenheim,away,89.50,178.80,11,15
+2682,Borussia Dortmund,1.FC Union Berlin,home,567.55,157.95,2,3
+2683,Bayer 04 Leverkusen,Eintracht Frankfurt,home,452.50,324.55,7,6
+2684,SC Freiburg,FC Bayern München,away,200.95,948.95,4,1
+2685,1.FSV Mainz 05,SV Werder Bremen,draw,135.80,89.50,8,11
+2686,FC Augsburg,1.FC Köln,away,132.23,115.65,12,13
+2687,Hertha BSC,RasenBallsport Leipzig,away,94.00,486.40,16,5
+2688,Borussia Mönchengladbach,VfL Wolfsburg,home,241.68,238.30,10,9
+2689,VfL Bochum,VfB Stuttgart,away,53.70,151.05,14,18
+2690,TSG 1899 Hoffenheim,FC Schalke 04,home,178.80,87.78,15,17
+2691,FC Schalke 04,Hertha BSC,home,87.78,94.00,18,17
+2692,VfB Stuttgart,Borussia Dortmund,draw,151.05,567.55,16,2
+2693,FC Bayern München,TSG 1899 Hoffenheim,draw,948.95,178.80,1,14
+2694,RasenBallsport Leipzig,FC Augsburg,home,486.40,132.23,4,13
+2695,1.FC Köln,1.FSV Mainz 05,draw,115.65,135.80,12,8
+2696,Eintracht Frankfurt,Borussia Mönchengladbach,draw,324.55,241.68,7,10
+2697,SV Werder Bremen,SC Freiburg,away,89.50,200.95,11,5
+2698,1.FC Union Berlin,VfL Bochum,draw,157.95,53.70,3,15
+2699,VfL Wolfsburg,Bayer 04 Leverkusen,draw,238.30,452.50,9,6
+2700,FC Augsburg,VfB Stuttgart,draw,132.23,151.05,14,16
+2701,1.FSV Mainz 05,FC Bayern München,home,135.80,948.95,8,1
+2702,TSG 1899 Hoffenheim,1.FC Köln,away,178.80,115.65,13,11
+2703,VfL Bochum,VfL Wolfsburg,away,53.70,238.30,15,9
+2704,Hertha BSC,SV Werder Bremen,away,94.00,89.50,18,12
+2705,Borussia Dortmund,Eintracht Frankfurt,home,567.55,324.55,2,7
+2706,SC Freiburg,FC Schalke 04,home,200.95,87.78,5,17
+2707,Bayer 04 Leverkusen,RasenBallsport Leipzig,home,452.50,486.40,6,4
+2708,Borussia Mönchengladbach,1.FC Union Berlin,away,241.68,157.95,10,3
+2709,VfL Bochum,Borussia Dortmund,draw,53.70,567.55,15,1
+2710,RasenBallsport Leipzig,TSG 1899 Hoffenheim,home,486.40,178.80,5,14
+2711,1.FC Union Berlin,Bayer 04 Leverkusen,draw,157.95,452.50,3,6
+2712,1.FC Köln,SC Freiburg,away,115.65,200.95,11,4
+2713,Eintracht Frankfurt,FC Augsburg,draw,324.55,132.23,9,13
+2714,VfB Stuttgart,Borussia Mönchengladbach,home,151.05,241.68,16,10
+2715,FC Schalke 04,SV Werder Bremen,home,87.78,89.50,17,12
+2716,FC Bayern München,Hertha BSC,home,948.95,94.00,2,18
+2717,VfL Wolfsburg,1.FSV Mainz 05,home,238.30,135.80,8,7
+2718,Bayer 04 Leverkusen,1.FC Köln,away,452.50,115.65,6,11
+2719,1.FSV Mainz 05,FC Schalke 04,away,135.80,87.78,8,17
+2720,SC Freiburg,RasenBallsport Leipzig,away,200.95,486.40,4,5
+2721,TSG 1899 Hoffenheim,Eintracht Frankfurt,home,178.80,324.55,14,9
+2722,Borussia Mönchengladbach,VfL Bochum,home,241.68,53.70,10,16
+2723,FC Augsburg,1.FC Union Berlin,home,132.23,157.95,13,3
+2724,Hertha BSC,VfB Stuttgart,home,94.00,151.05,18,15
+2725,SV Werder Bremen,FC Bayern München,away,89.50,948.95,12,1
+2726,Borussia Dortmund,VfL Wolfsburg,home,567.55,238.30,2,7
+2727,1.FC Köln,Hertha BSC,home,115.65,94.00,11,18
+2728,FC Bayern München,FC Schalke 04,home,948.95,87.78,1,15
+2729,1.FC Union Berlin,SC Freiburg,home,157.95,200.95,4,5
+2730,Eintracht Frankfurt,1.FSV Mainz 05,home,324.55,135.80,9,8
+2731,VfL Wolfsburg,TSG 1899 Hoffenheim,home,238.30,178.80,7,14
+2732,VfL Bochum,FC Augsburg,home,53.70,132.23,17,13
+2733,Borussia Dortmund,Borussia Mönchengladbach,home,567.55,241.68,2,10
+2734,VfB Stuttgart,Bayer 04 Leverkusen,draw,151.05,452.50,16,6
+2735,RasenBallsport Leipzig,SV Werder Bremen,home,486.40,89.50,3,12
+2736,SC Freiburg,VfL Wolfsburg,home,200.95,238.30,5,6
+2737,TSG 1899 Hoffenheim,1.FC Union Berlin,home,178.80,157.95,14,4
+2738,Hertha BSC,VfL Bochum,draw,94.00,53.70,18,15
+2739,FC Schalke 04,Eintracht Frankfurt,draw,87.78,324.55,16,8
+2740,SV Werder Bremen,1.FC Köln,draw,89.50,115.65,12,10
+2741,FC Bayern München,RasenBallsport Leipzig,away,948.95,486.40,1,3
+2742,1.FSV Mainz 05,VfB Stuttgart,away,135.80,151.05,9,17
+2743,FC Augsburg,Borussia Dortmund,away,132.23,567.55,13,2
+2744,Bayer 04 Leverkusen,Borussia Mönchengladbach,draw,452.50,241.68,7,11
+2745,Borussia Dortmund,1.FSV Mainz 05,draw,567.55,135.80,1,9
+2746,RasenBallsport Leipzig,FC Schalke 04,home,486.40,87.78,3,17
+2747,1.FC Union Berlin,SV Werder Bremen,home,157.95,89.50,4,12
+2748,1.FC Köln,FC Bayern München,away,115.65,948.95,10,2
+2749,Borussia Mönchengladbach,FC Augsburg,home,241.68,132.23,11,14
+2750,Eintracht Frankfurt,SC Freiburg,home,324.55,200.95,8,5
+2751,VfL Wolfsburg,Hertha BSC,away,238.30,94.00,7,18
+2752,VfL Bochum,Bayer 04 Leverkusen,home,53.70,452.50,16,6
+2753,VfB Stuttgart,TSG 1899 Hoffenheim,draw,151.05,178.80,15,13
+2754,SV Werder Bremen,FC Bayern München,away,104.10,872.45,9,9
+2755,Bayer 04 Leverkusen,RasenBallsport Leipzig,home,648.35,503.90,9,9
+2756,VfL Wolfsburg,1.FC Heidenheim 1846,home,202.50,66.45,9,9
+2757,TSG 1899 Hoffenheim,SC Freiburg,away,145.70,171.30,9,9
+2758,VfB Stuttgart,VfL Bochum,home,302.90,63.20,9,9
+2759,FC Augsburg,Borussia Mönchengladbach,draw,119.35,162.23,9,9
+2760,Borussia Dortmund,1.FC Köln,home,465.40,77.65,9,9
+2761,1.FC Union Berlin,1.FSV Mainz 05,home,127.75,123.85,9,9
+2762,Eintracht Frankfurt,SV Darmstadt 98,home,239.75,37.35,9,9
+2763,RasenBallsport Leipzig,VfB Stuttgart,home,503.90,302.90,11,1
+2764,SC Freiburg,SV Werder Bremen,home,171.30,104.10,6,17
+2765,1.FC Köln,VfL Wolfsburg,away,77.65,202.50,13,4
+2766,VfL Bochum,Borussia Dortmund,draw,63.20,465.40,18,7
+2767,1.FC Heidenheim 1846,TSG 1899 Hoffenheim,away,66.45,145.70,15,12
+2768,SV Darmstadt 98,1.FC Union Berlin,away,37.35,127.75,14,3
+2769,Borussia Mönchengladbach,Bayer 04 Leverkusen,away,162.23,648.35,9,5
+2770,1.FSV Mainz 05,Eintracht Frankfurt,draw,123.85,239.75,16,8
+2771,FC Bayern München,FC Augsburg,home,872.45,119.35,2,10
+2772,Borussia Dortmund,1.FC Heidenheim 1846,draw,465.40,66.45,6,16
+2773,Bayer 04 Leverkusen,SV Darmstadt 98,home,648.35,37.35,3,17
+2774,TSG 1899 Hoffenheim,VfL Wolfsburg,home,145.70,202.50,10,4
+2775,SV Werder Bremen,1.FSV Mainz 05,home,104.10,123.85,18,13
+2776,FC Augsburg,VfL Bochum,draw,119.35,63.20,11,14
+2777,VfB Stuttgart,SC Freiburg,home,302.90,171.30,9,5
+2778,Borussia Mönchengladbach,FC Bayern München,away,162.23,872.45,12,2
+2779,Eintracht Frankfurt,1.FC Köln,draw,239.75,77.65,7,15
+2780,1.FC Union Berlin,RasenBallsport Leipzig,away,127.75,503.90,1,8
+2781,FC Bayern München,Bayer 04 Leverkusen,draw,872.45,648.35,2,1
+2782,RasenBallsport Leipzig,FC Augsburg,home,503.90,119.35,4,12
+2783,SC Freiburg,Borussia Dortmund,away,171.30,465.40,8,9
+2784,VfL Wolfsburg,1.FC Union Berlin,home,202.50,127.75,7,5
+2785,1.FSV Mainz 05,VfB Stuttgart,away,123.85,302.90,17,3
+2786,1.FC Köln,TSG 1899 Hoffenheim,away,77.65,145.70,14,6
+2787,VfL Bochum,Eintracht Frankfurt,draw,63.20,239.75,13,10
+2788,1.FC Heidenheim 1846,SV Werder Bremen,home,66.45,104.10,15,11
+2789,SV Darmstadt 98,Borussia Mönchengladbach,draw,37.35,162.23,18,16
+2790,VfB Stuttgart,SV Darmstadt 98,home,302.90,37.35,4,17
+2791,FC Bayern München,VfL Bochum,home,872.45,63.20,2,13
+2792,Borussia Dortmund,VfL Wolfsburg,home,465.40,202.50,7,6
+2793,1.FC Union Berlin,TSG 1899 Hoffenheim,away,127.75,145.70,8,5
+2794,Borussia Mönchengladbach,RasenBallsport Leipzig,away,162.23,503.90,14,3
+2795,FC Augsburg,1.FSV Mainz 05,home,119.35,123.85,15,18
+2796,SV Werder Bremen,1.FC Köln,home,104.10,77.65,12,16
+2797,Bayer 04 Leverkusen,1.FC Heidenheim 1846,home,648.35,66.45,1,11
+2798,Eintracht Frankfurt,SC Freiburg,draw,239.75,171.30,9,10
+2799,TSG 1899 Hoffenheim,Borussia Dortmund,away,145.70,465.40,5,6
+2800,VfL Wolfsburg,Eintracht Frankfurt,home,202.50,239.75,7,8
+2801,1.FSV Mainz 05,Bayer 04 Leverkusen,away,123.85,648.35,18,2
+2802,1.FC Köln,VfB Stuttgart,away,77.65,302.90,16,3
+2803,VfL Bochum,Borussia Mönchengladbach,away,63.20,162.23,14,15
+2804,1.FC Heidenheim 1846,1.FC Union Berlin,home,66.45,127.75,13,10
+2805,RasenBallsport Leipzig,FC Bayern München,draw,503.90,872.45,4,1
+2806,SV Darmstadt 98,SV Werder Bremen,home,37.35,104.10,17,11
+2807,SC Freiburg,FC Augsburg,home,171.30,119.35,9,12
+2808,Borussia Mönchengladbach,1.FSV Mainz 05,draw,162.23,123.85,13,18
+2809,Borussia Dortmund,1.FC Union Berlin,home,465.40,127.75,4,11
+2810,RasenBallsport Leipzig,VfL Bochum,draw,503.90,63.20,5,16
+2811,FC Augsburg,SV Darmstadt 98,away,119.35,37.35,14,15
+2812,VfB Stuttgart,VfL Wolfsburg,home,302.90,202.50,2,7
+2813,SV Werder Bremen,TSG 1899 Hoffenheim,away,104.10,145.70,12,6
+2814,Bayer 04 Leverkusen,1.FC Köln,home,648.35,77.65,1,17
+2815,FC Bayern München,SC Freiburg,home,872.45,171.30,3,8
+2816,Eintracht Frankfurt,1.FC Heidenheim 1846,home,239.75,66.45,9,10
+2817,Borussia Dortmund,SV Werder Bremen,home,465.40,104.10,4,14
+2818,1.FC Union Berlin,VfB Stuttgart,away,127.75,302.90,13,2
+2819,SC Freiburg,VfL Bochum,home,171.30,63.20,9,16
+2820,VfL Wolfsburg,Bayer 04 Leverkusen,away,202.50,648.35,7,1
+2821,TSG 1899 Hoffenheim,Eintracht Frankfurt,away,145.70,239.75,5,8
+2822,SV Darmstadt 98,RasenBallsport Leipzig,away,37.35,503.90,11,6
+2823,1.FSV Mainz 05,FC Bayern München,away,123.85,872.45,17,3
+2824,1.FC Köln,Borussia Mönchengladbach,home,77.65,162.23,18,12
+2825,1.FC Heidenheim 1846,FC Augsburg,away,66.45,119.35,10,15
+2826,VfL Bochum,1.FSV Mainz 05,draw,63.20,123.85,17,18
+2827,FC Bayern München,SV Darmstadt 98,home,872.45,37.35,3,12
+2828,Borussia Mönchengladbach,1.FC Heidenheim 1846,home,162.23,66.45,13,11
+2829,SV Werder Bremen,1.FC Union Berlin,home,104.10,127.75,14,15
+2830,FC Augsburg,VfL Wolfsburg,home,119.35,202.50,10,9
+2831,VfB Stuttgart,TSG 1899 Hoffenheim,away,302.90,145.70,2,6
+2832,RasenBallsport Leipzig,1.FC Köln,home,503.90,77.65,5,16
+2833,Eintracht Frankfurt,Borussia Dortmund,draw,239.75,465.40,7,4
+2834,Bayer 04 Leverkusen,SC Freiburg,home,648.35,171.30,1,8
+2835,SV Darmstadt 98,VfL Bochum,away,37.35,63.20,14,16
+2836,1.FC Union Berlin,Eintracht Frankfurt,away,127.75,239.75,15,7
+2837,SC Freiburg,Borussia Mönchengladbach,draw,171.30,162.23,8,11
+2838,1.FSV Mainz 05,RasenBallsport Leipzig,home,123.85,503.90,18,5
+2839,1.FC Köln,FC Augsburg,draw,77.65,119.35,17,10
+2840,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,away,145.70,648.35,6,1
+2841,Borussia Dortmund,FC Bayern München,away,465.40,872.45,4,2
+2842,VfL Wolfsburg,SV Werder Bremen,draw,202.50,104.10,9,12
+2843,1.FC Heidenheim 1846,VfB Stuttgart,home,66.45,302.90,13,3
+2844,Borussia Mönchengladbach,VfL Wolfsburg,home,162.23,202.50,11,9
+2845,FC Bayern München,1.FC Heidenheim 1846,home,872.45,66.45,2,13
+2846,FC Augsburg,TSG 1899 Hoffenheim,draw,119.35,145.70,10,6
+2847,VfB Stuttgart,Borussia Dortmund,home,302.90,465.40,3,4
+2848,SV Darmstadt 98,1.FSV Mainz 05,draw,37.35,123.85,15,17
+2849,VfL Bochum,1.FC Köln,draw,63.20,77.65,14,18
+2850,Bayer 04 Leverkusen,1.FC Union Berlin,home,648.35,127.75,1,16
+2851,SV Werder Bremen,Eintracht Frankfurt,draw,104.10,239.75,12,7
+2852,RasenBallsport Leipzig,SC Freiburg,home,503.90,171.30,5,8
+2853,1.FC Köln,FC Bayern München,away,77.65,872.45,17,2
+2854,Borussia Dortmund,Borussia Mönchengladbach,home,465.40,162.23,5,9
+2855,1.FC Union Berlin,FC Augsburg,draw,127.75,119.35,18,10
+2856,SC Freiburg,SV Darmstadt 98,draw,171.30,37.35,8,15
+2857,VfL Wolfsburg,RasenBallsport Leipzig,home,202.50,503.90,11,4
+2858,SV Werder Bremen,Bayer 04 Leverkusen,away,104.10,648.35,12,1
+2859,Eintracht Frankfurt,VfB Stuttgart,away,239.75,302.90,7,3
+2860,1.FC Heidenheim 1846,VfL Bochum,draw,66.45,63.20,13,14
+2861,TSG 1899 Hoffenheim,1.FSV Mainz 05,draw,145.70,123.85,6,16
+2862,SV Darmstadt 98,1.FC Köln,away,37.35,77.65,15,18
+2863,RasenBallsport Leipzig,1.FC Heidenheim 1846,home,503.90,66.45,5,13
+2864,Borussia Mönchengladbach,TSG 1899 Hoffenheim,home,162.23,145.70,11,6
+2865,VfL Bochum,VfL Wolfsburg,home,63.20,202.50,14,8
+2866,VfB Stuttgart,SV Werder Bremen,home,302.90,104.10,3,12
+2867,1.FSV Mainz 05,SC Freiburg,away,123.85,171.30,16,9
+2868,Bayer 04 Leverkusen,Borussia Dortmund,draw,648.35,465.40,1,4
+2869,FC Augsburg,Eintracht Frankfurt,home,119.35,239.75,10,7
+2870,FC Bayern München,1.FC Union Berlin,home,872.45,127.75,2,17
+2871,TSG 1899 Hoffenheim,VfL Bochum,home,145.70,63.20,6,12
+2872,1.FC Union Berlin,Borussia Mönchengladbach,home,127.75,162.23,18,10
+2873,Eintracht Frankfurt,FC Bayern München,home,239.75,872.45,7,1
+2874,VfL Wolfsburg,SC Freiburg,away,202.50,171.30,11,8
+2875,SV Werder Bremen,FC Augsburg,home,104.10,119.35,13,9
+2876,1.FC Heidenheim 1846,SV Darmstadt 98,home,66.45,37.35,14,16
+2877,Borussia Dortmund,RasenBallsport Leipzig,away,465.40,503.90,5,4
+2878,VfB Stuttgart,Bayer 04 Leverkusen,draw,302.90,648.35,3,2
+2879,1.FC Köln,1.FSV Mainz 05,draw,77.65,123.85,15,17
+2880,Borussia Mönchengladbach,SV Werder Bremen,draw,162.23,104.10,10,12
+2881,1.FSV Mainz 05,1.FC Heidenheim 1846,away,123.85,66.45,17,13
+2882,VfL Bochum,1.FC Union Berlin,home,63.20,127.75,14,15
+2883,FC Augsburg,Borussia Dortmund,draw,119.35,465.40,9,5
+2884,SV Darmstadt 98,VfL Wolfsburg,away,37.35,202.50,18,11
+2885,RasenBallsport Leipzig,TSG 1899 Hoffenheim,home,503.90,145.70,4,6
+2886,SC Freiburg,1.FC Köln,home,171.30,77.65,8,16
+2887,Bayer 04 Leverkusen,Eintracht Frankfurt,home,648.35,239.75,1,7
+2888,FC Bayern München,VfB Stuttgart,home,872.45,302.90,2,3
+2889,SV Werder Bremen,RasenBallsport Leipzig,draw,104.10,503.90,14,3
+2890,Borussia Dortmund,1.FSV Mainz 05,draw,465.40,123.85,5,17
+2891,TSG 1899 Hoffenheim,SV Darmstadt 98,draw,145.70,37.35,7,18
+2892,1.FC Union Berlin,1.FC Köln,home,127.75,77.65,16,15
+2893,Bayer 04 Leverkusen,VfL Bochum,home,648.35,63.20,1,13
+2894,Eintracht Frankfurt,Borussia Mönchengladbach,home,239.75,162.23,8,11
+2895,VfL Wolfsburg,FC Bayern München,away,202.50,872.45,9,2
+2896,VfB Stuttgart,FC Augsburg,home,302.90,119.35,4,10
+2897,1.FC Heidenheim 1846,SC Freiburg,home,66.45,171.30,12,6
+2898,FC Bayern München,TSG 1899 Hoffenheim,home,872.45,145.70,2,7
+2899,RasenBallsport Leipzig,Eintracht Frankfurt,away,503.90,239.75,4,6
+2900,SC Freiburg,1.FC Union Berlin,draw,171.30,127.75,8,15
+2901,1.FSV Mainz 05,VfL Wolfsburg,draw,123.85,202.50,16,10
+2902,1.FC Köln,1.FC Heidenheim 1846,draw,77.65,66.45,17,9
+2903,FC Augsburg,Bayer 04 Leverkusen,away,119.35,648.35,11,1
+2904,SV Darmstadt 98,Borussia Dortmund,away,37.35,465.40,18,5
+2905,VfL Bochum,SV Werder Bremen,draw,63.20,104.10,14,13
+2906,Borussia Mönchengladbach,VfB Stuttgart,home,162.23,302.90,12,3
+2907,1.FC Köln,Borussia Dortmund,away,77.65,465.40,17,5
+2908,SV Darmstadt 98,Eintracht Frankfurt,draw,37.35,239.75,18,6
+2909,1.FC Heidenheim 1846,VfL Wolfsburg,draw,66.45,202.50,9,11
+2910,SC Freiburg,TSG 1899 Hoffenheim,home,171.30,145.70,7,8
+2911,VfL Bochum,VfB Stuttgart,home,63.20,302.90,14,3
+2912,RasenBallsport Leipzig,Bayer 04 Leverkusen,away,503.90,648.35,4,1
+2913,FC Bayern München,SV Werder Bremen,away,872.45,104.10,2,13
+2914,Borussia Mönchengladbach,FC Augsburg,away,162.23,119.35,10,12
+2915,1.FSV Mainz 05,1.FC Union Berlin,draw,123.85,127.75,16,15
+2916,Eintracht Frankfurt,1.FSV Mainz 05,home,239.75,123.85,6,16
+2917,FC Augsburg,FC Bayern München,away,119.35,872.45,10,2
+2918,VfB Stuttgart,RasenBallsport Leipzig,home,302.90,503.90,3,4
+2919,SV Werder Bremen,SC Freiburg,home,104.10,171.30,13,7
+2920,VfL Wolfsburg,1.FC Köln,draw,202.50,77.65,11,17
+2921,TSG 1899 Hoffenheim,1.FC Heidenheim 1846,draw,145.70,66.45,8,9
+2922,Bayer 04 Leverkusen,Borussia Mönchengladbach,draw,648.35,162.23,1,12
+2923,1.FC Union Berlin,SV Darmstadt 98,home,127.75,37.35,15,18
+2924,Borussia Dortmund,VfL Bochum,home,465.40,63.20,5,14
+2925,1.FC Heidenheim 1846,Borussia Dortmund,draw,66.45,465.40,10,4
+2926,SV Darmstadt 98,Bayer 04 Leverkusen,away,37.35,648.35,18,1
+2927,FC Bayern München,Borussia Mönchengladbach,home,872.45,162.23,2,12
+2928,1.FSV Mainz 05,SV Werder Bremen,away,123.85,104.10,16,9
+2929,VfL Bochum,FC Augsburg,draw,63.20,119.35,14,13
+2930,SC Freiburg,VfB Stuttgart,away,171.30,302.90,7,3
+2931,1.FC Köln,Eintracht Frankfurt,home,77.65,239.75,17,6
+2932,VfL Wolfsburg,TSG 1899 Hoffenheim,draw,202.50,145.70,11,8
+2933,RasenBallsport Leipzig,1.FC Union Berlin,home,503.90,127.75,5,15
+2934,Borussia Dortmund,SC Freiburg,home,465.40,171.30,4,7
+2935,FC Augsburg,RasenBallsport Leipzig,draw,119.35,503.90,12,5
+2936,1.FC Union Berlin,VfL Wolfsburg,home,127.75,202.50,15,11
+2937,Eintracht Frankfurt,VfL Bochum,draw,239.75,63.20,6,14
+2938,SV Werder Bremen,1.FC Heidenheim 1846,away,104.10,66.45,9,10
+2939,Borussia Mönchengladbach,SV Darmstadt 98,draw,162.23,37.35,13,18
+2940,Bayer 04 Leverkusen,FC Bayern München,home,648.35,872.45,1,2
+2941,VfB Stuttgart,1.FSV Mainz 05,home,302.90,123.85,3,17
+2942,TSG 1899 Hoffenheim,1.FC Köln,draw,145.70,77.65,8,16
+2943,1.FC Köln,SV Werder Bremen,away,77.65,104.10,16,10
+2944,VfL Wolfsburg,Borussia Dortmund,draw,202.50,465.40,12,4
+2945,TSG 1899 Hoffenheim,1.FC Union Berlin,away,145.70,127.75,8,15
+2946,1.FC Heidenheim 1846,Bayer 04 Leverkusen,away,66.45,648.35,9,1
+2947,1.FSV Mainz 05,FC Augsburg,home,123.85,119.35,17,11
+2948,SV Darmstadt 98,VfB Stuttgart,away,37.35,302.90,18,3
+2949,RasenBallsport Leipzig,Borussia Mönchengladbach,home,503.90,162.23,5,13
+2950,SC Freiburg,Eintracht Frankfurt,draw,171.30,239.75,7,6
+2951,VfL Bochum,FC Bayern München,home,63.20,872.45,14,2
+2952,Bayer 04 Leverkusen,1.FSV Mainz 05,home,648.35,123.85,1,17
+2953,VfB Stuttgart,1.FC Köln,draw,302.90,77.65,3,16
+2954,Borussia Mönchengladbach,VfL Bochum,home,162.23,63.20,15,11
+2955,1.FC Union Berlin,1.FC Heidenheim 1846,draw,127.75,66.45,13,10
+2956,SV Werder Bremen,SV Darmstadt 98,draw,104.10,37.35,7,18
+2957,FC Bayern München,RasenBallsport Leipzig,home,872.45,503.90,2,5
+2958,Eintracht Frankfurt,VfL Wolfsburg,draw,239.75,202.50,6,12
+2959,Borussia Dortmund,TSG 1899 Hoffenheim,away,465.40,145.70,4,9
+2960,FC Augsburg,SC Freiburg,home,119.35,171.30,14,8
+2961,SC Freiburg,FC Bayern München,draw,171.30,872.45,9,2
+2962,1.FC Union Berlin,Borussia Dortmund,away,127.75,465.40,14,4
+2963,VfL Bochum,RasenBallsport Leipzig,away,63.20,503.90,15,5
+2964,1.FC Heidenheim 1846,Eintracht Frankfurt,away,66.45,239.75,10,6
+2965,1.FSV Mainz 05,Borussia Mönchengladbach,draw,123.85,162.23,17,12
+2966,SV Darmstadt 98,FC Augsburg,away,37.35,119.35,18,11
+2967,VfL Wolfsburg,VfB Stuttgart,away,202.50,302.90,13,3
+2968,1.FC Köln,Bayer 04 Leverkusen,away,77.65,648.35,16,1
+2969,TSG 1899 Hoffenheim,SV Werder Bremen,home,145.70,104.10,7,8
+2970,VfB Stuttgart,1.FC Union Berlin,home,302.90,127.75,3,14
+2971,FC Bayern München,1.FSV Mainz 05,home,872.45,123.85,2,17
+2972,Borussia Mönchengladbach,1.FC Köln,draw,162.23,77.65,12,16
+2973,FC Augsburg,1.FC Heidenheim 1846,home,119.35,66.45,10,11
+2974,RasenBallsport Leipzig,SV Darmstadt 98,home,503.90,37.35,5,18
+2975,SV Werder Bremen,Borussia Dortmund,away,104.10,465.40,8,4
+2976,VfL Bochum,SC Freiburg,away,63.20,171.30,15,9
+2977,Eintracht Frankfurt,TSG 1899 Hoffenheim,home,239.75,145.70,6,7
+2978,Bayer 04 Leverkusen,VfL Wolfsburg,home,648.35,202.50,1,13
+2979,1.FC Köln,RasenBallsport Leipzig,away,77.65,503.90,16,5
+2980,SV Darmstadt 98,FC Bayern München,away,37.35,872.45,18,2
+2981,1.FC Heidenheim 1846,Borussia Mönchengladbach,draw,66.45,162.23,11,12
+2982,1.FC Union Berlin,SV Werder Bremen,home,127.75,104.10,14,10
+2983,1.FSV Mainz 05,VfL Bochum,home,123.85,63.20,17,15
+2984,VfL Wolfsburg,FC Augsburg,away,202.50,119.35,13,9
+2985,TSG 1899 Hoffenheim,VfB Stuttgart,away,145.70,302.90,7,3
+2986,SC Freiburg,Bayer 04 Leverkusen,away,171.30,648.35,8,1
+2987,Borussia Dortmund,Eintracht Frankfurt,home,465.40,239.75,4,6
+2988,Eintracht Frankfurt,1.FC Union Berlin,draw,239.75,127.75,6,13
+2989,Borussia Mönchengladbach,SC Freiburg,away,162.23,171.30,12,9
+2990,SV Werder Bremen,VfL Wolfsburg,away,104.10,202.50,10,14
+2991,RasenBallsport Leipzig,1.FSV Mainz 05,draw,503.90,123.85,5,16
+2992,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,home,648.35,145.70,1,8
+2993,FC Bayern München,Borussia Dortmund,away,872.45,465.40,2,4
+2994,FC Augsburg,1.FC Köln,draw,119.35,77.65,7,17
+2995,VfB Stuttgart,1.FC Heidenheim 1846,draw,302.90,66.45,3,11
+2996,VfL Bochum,SV Darmstadt 98,draw,63.20,37.35,15,18
+2997,Eintracht Frankfurt,SV Werder Bremen,draw,239.75,104.10,6,10
+2998,1.FC Heidenheim 1846,FC Bayern München,home,66.45,872.45,11,2
+2999,SC Freiburg,RasenBallsport Leipzig,away,171.30,503.90,8,5
+3000,1.FC Union Berlin,Bayer 04 Leverkusen,away,127.75,648.35,12,1
+3001,1.FC Köln,VfL Bochum,home,77.65,63.20,17,15
+3002,1.FSV Mainz 05,SV Darmstadt 98,home,123.85,37.35,16,18
+3003,Borussia Dortmund,VfB Stuttgart,away,465.40,302.90,4,3
+3004,TSG 1899 Hoffenheim,FC Augsburg,home,145.70,119.35,9,7
+3005,VfL Wolfsburg,Borussia Mönchengladbach,away,202.50,162.23,14,13
+3006,FC Augsburg,1.FC Union Berlin,home,119.35,127.75,7,13
+3007,Borussia Mönchengladbach,Borussia Dortmund,away,162.23,465.40,11,5
+3008,RasenBallsport Leipzig,VfL Wolfsburg,home,503.90,202.50,4,14
+3009,FC Bayern München,1.FC Köln,home,872.45,77.65,2,17
+3010,1.FSV Mainz 05,TSG 1899 Hoffenheim,home,123.85,145.70,16,8
+3011,VfL Bochum,1.FC Heidenheim 1846,draw,63.20,66.45,15,10
+3012,VfB Stuttgart,Eintracht Frankfurt,home,302.90,239.75,3,6
+3013,SV Darmstadt 98,SC Freiburg,away,37.35,171.30,18,9
+3014,Bayer 04 Leverkusen,SV Werder Bremen,home,648.35,104.10,1,12
+3015,Eintracht Frankfurt,FC Augsburg,home,239.75,119.35,6,7
+3016,1.FC Heidenheim 1846,RasenBallsport Leipzig,away,66.45,503.90,10,4
+3017,TSG 1899 Hoffenheim,Borussia Mönchengladbach,home,145.70,162.23,9,11
+3018,VfL Wolfsburg,VfL Bochum,home,202.50,63.20,14,15
+3019,1.FC Köln,SV Darmstadt 98,away,77.65,37.35,17,18
+3020,1.FC Union Berlin,FC Bayern München,away,127.75,872.45,13,2
+3021,SV Werder Bremen,VfB Stuttgart,home,104.10,302.90,12,3
+3022,Borussia Dortmund,Bayer 04 Leverkusen,draw,465.40,648.35,5,1
+3023,SC Freiburg,1.FSV Mainz 05,draw,171.30,123.85,8,16
+3024,VfL Bochum,TSG 1899 Hoffenheim,home,63.20,145.70,16,9
+3025,RasenBallsport Leipzig,Borussia Dortmund,home,503.90,465.40,4,5
+3026,FC Bayern München,Eintracht Frankfurt,home,872.45,239.75,2,6
+3027,SC Freiburg,VfL Wolfsburg,away,171.30,202.50,7,13
+3028,FC Augsburg,SV Werder Bremen,away,119.35,104.10,8,11
+3029,Bayer 04 Leverkusen,VfB Stuttgart,draw,648.35,302.90,1,3
+3030,Borussia Mönchengladbach,1.FC Union Berlin,draw,162.23,127.75,12,14
+3031,1.FSV Mainz 05,1.FC Köln,draw,123.85,77.65,15,17
+3032,SV Darmstadt 98,1.FC Heidenheim 1846,away,37.35,66.45,18,10
+3033,TSG 1899 Hoffenheim,RasenBallsport Leipzig,draw,145.70,503.90,9,4
+3034,VfB Stuttgart,FC Bayern München,home,302.90,872.45,3,2
+3035,SV Werder Bremen,Borussia Mönchengladbach,draw,104.10,162.23,11,13
+3036,Borussia Dortmund,FC Augsburg,home,465.40,119.35,5,8
+3037,VfL Wolfsburg,SV Darmstadt 98,home,202.50,37.35,12,18
+3038,1.FC Köln,SC Freiburg,draw,77.65,171.30,17,7
+3039,1.FC Union Berlin,VfL Bochum,away,127.75,63.20,14,15
+3040,Eintracht Frankfurt,Bayer 04 Leverkusen,away,239.75,648.35,6,1
+3041,1.FC Heidenheim 1846,1.FSV Mainz 05,draw,66.45,123.85,10,16
+3042,FC Augsburg,VfB Stuttgart,away,119.35,302.90,9,3
+3043,1.FC Köln,1.FC Union Berlin,home,77.65,127.75,17,15
+3044,Borussia Mönchengladbach,Eintracht Frankfurt,draw,162.23,239.75,13,6
+3045,RasenBallsport Leipzig,SV Werder Bremen,draw,503.90,104.10,4,11
+3046,SC Freiburg,1.FC Heidenheim 1846,draw,171.30,66.45,7,10
+3047,1.FSV Mainz 05,Borussia Dortmund,home,123.85,465.40,16,5
+3048,SV Darmstadt 98,TSG 1899 Hoffenheim,away,37.35,145.70,18,8
+3049,FC Bayern München,VfL Wolfsburg,home,872.45,202.50,2,12
+3050,VfL Bochum,Bayer 04 Leverkusen,away,63.20,648.35,14,1
+3051,TSG 1899 Hoffenheim,FC Bayern München,home,145.70,872.45,7,2
+3052,Eintracht Frankfurt,RasenBallsport Leipzig,draw,239.75,503.90,6,4
+3053,1.FC Union Berlin,SC Freiburg,home,127.75,171.30,16,8
+3054,VfL Wolfsburg,1.FSV Mainz 05,away,202.50,123.85,12,15
+3055,VfB Stuttgart,Borussia Mönchengladbach,home,302.90,162.23,3,13
+3056,1.FC Heidenheim 1846,1.FC Köln,home,66.45,77.65,9,17
+3057,SV Werder Bremen,VfL Bochum,home,104.10,63.20,11,14
+3058,Bayer 04 Leverkusen,FC Augsburg,home,648.35,119.35,1,10
+3059,Borussia Dortmund,SV Darmstadt 98,home,465.40,37.35,5,18

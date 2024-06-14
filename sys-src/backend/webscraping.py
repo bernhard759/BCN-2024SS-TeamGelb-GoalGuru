@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import pandas as pd
+from datetime import datetime
 
 #link to all the fixtures and results
 matchday_url = "https://www.transfermarkt.de/bundesliga/gesamtspielplan/wettbewerb/L1"
@@ -183,35 +184,6 @@ def find_n_last_games(team_a, team_b, n):
 
 #Returns dictionary with the final position of the teams from last season
 def get_last_season_positions(season):
-    url = last_season_tabelle_url.format(season)
-
-    data = requests.get(url=url, headers=header)
-    soup = BeautifulSoup(data.text, 'html.parser')
-    table = soup.find("table", attrs={"class": "items"})
-    table_rows = table.find("tbody").find_all("tr")
-
-    positions = {}
-
-    for row in table_rows:
-        team_name = row.find("td", attrs={"class": "no-border-links hauptlink"}).find("a", title=True).get("title")
-        team_position = row.find("td", attrs={"class": "rechts hauptlink"}).get_text(strip=True)
-        positions[team_name] = team_position
-
-    return positions
-
-
-#Create a dataframe out of the scraped data
-#Save the data as a csv
-import pandas as pd
-import requests
-from bs4 import BeautifulSoup
-
-header = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-}
-
-
-def get_last_season_positions(season):
     last_season_tabelle_url = "https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1/saison_id/{}/plus/1"
     url = last_season_tabelle_url.format(season)
 
@@ -230,7 +202,133 @@ def get_last_season_positions(season):
     return positions
 
 
-def create_dataframe(start_season, end_season):
+#Get all games played with results and date of a season
+#Parameter "season" determines the year / season 
+def get_complete_matchday_data(season):
+
+    url = f"{matchday_url}?saison_id={season}"
+
+    data = requests.get(url=url, headers=header)
+
+    matches = []
+
+    if(data.status_code == 200):
+        soup = BeautifulSoup(data.text, 'html.parser')
+        tables = soup.find_all("div", attrs={"class":"box"})
+
+        for table in tables:
+            matchday = table.find("div", attrs={"class":"content-box-headline"})
+
+            if(matchday is None):
+                continue
+
+            #list of all tds for the home teams of a matchday
+            matchday_home = matchday.parent.find("tbody").find_all("td", attrs={"class":"text-right no-border-rechts hauptlink"})
+            #list of all tds for the results of a matchday
+            matchday_result = matchday.parent.find("tbody").find_all("td", attrs={"class":"zentriert hauptlink"})
+            #list of all tds for the away teams of a matchday
+            matchday_away = matchday.parent.find("tbody").find_all("td", attrs={"class":"no-border-links hauptlink"})
+            #list of all date tds
+            matchday_dates = matchday.parent.find("tbody").find_all("td", attrs={"class":"show-for-small", "colspan":"7"})
+
+            for i in range(len(matchday_home)):
+
+                home_team = matchday_home[i].find("a").get("title")
+                away_team = matchday_away[i].find("a").get("title")
+
+                game_result = matchday_result[i].find("a").get_text()
+
+                game_result = game_result.split(":")
+
+                date = matchday_dates[0].find("a").get_text()
+
+                matches.append([home_team, away_team, game_result[0], game_result[1], date])
+        return matches
+    else:
+        return f"Could not process request. Status Code {data.status_code}"
+
+
+
+#Get all games played within a given time range
+#Save the data into a csv file
+#Parameter season_range: range of seasons "a-b", a inclusive, b exclusive  (e.g "2017-2024")
+def generate_matchdata_csv(season_range):
+    try:
+        season_range = season_range.split("-")
+        if(len(season_range) != 2):
+            raise ValueError(f"Invalid param season_range {season_range}")
+        if(int(season_range[0]) < 2000):
+            raise ValueError(f"Invalid param season_range {season_range}. Do not enter values before the year 2000.")
+        if(int(season_range[1]) > datetime.now().year):
+            raise ValueError(f"Invalid param season_range {season_range}. Do not enter values after the year {datetime.now().year}.")
+
+    except Exception as e:
+        print(f"Exception thrown: {e}")
+        return
+
+    data = []
+
+    for i in range(int(season_range[0]), int(season_range[1])):
+        season_matches = get_complete_matchday_data(i)
+
+        for season_match in season_matches:
+            data.append(season_match)
+
+    df = pd.DataFrame(data,columns = ["Home_Team","Away_Team","Goals_Home","Goals_Away","Date"])
+    df["Date"] = pd.to_datetime(df['Date'])
+    df.to_csv(f"matchdata_{season_range[0]}-{season_range[1]}.csv")
+    return df
+
+
+#Create a dataframe out of all Bundesliga teams and their market values
+#Parameter "season" determines the year / season 
+def generate_mv_csv(season):
+    data = get_market_values(season)
+    df = pd.DataFrame(columns=["Teams","MarketValues"])
+    df["Teams"] = list(data.keys())
+    df["MarketValues"] = list(data.values())
+    df.to_csv('club_values.csv')
+    return df
+
+
+
+#Create a dataframe out of the scraped data for our first ml-model
+#Save the data as a csv
+def create_dataframe_model_one():
+    content = []
+    for season in range(2014,2024):
+        matches = get_matchday_results(season)
+        club_values = get_market_values(season)
+        matchday_positions = get_matchday_positions(season)
+
+
+        for key in matches.keys():
+            games_played = matches[key]
+
+            for game in games_played:
+
+                home_team = game[0]
+                away_team = game[1]
+                result = game[2]
+
+                mv_home_team = club_values[home_team]
+                mv_away_team = club_values[away_team]
+
+                matchday_index = int(str(key).split(".")[0])-1
+                pos_home_team = matchday_positions[matchday_index][home_team]
+                pos_away_team = matchday_positions[matchday_index][away_team]
+
+                content.append([home_team, away_team, result, mv_home_team, mv_away_team, pos_home_team, pos_away_team])
+
+    df = pd.DataFrame(content)
+    df.columns = ["HT","AT","R","MV_HT","MV_AT","POS_HT","POS_AT"]
+    df.to_csv('data_model_one.csv')
+    return df
+
+
+
+
+def create_dataframe_model_two(start_season, end_season):
     all_data = []
 
     for season in range(start_season, end_season + 1):
@@ -279,9 +377,15 @@ def create_dataframe(start_season, end_season):
 
     return df
 
+
+
+"""generate_matchdata_csv("2000-2024")
+generate_mv_csv(2023)
+create_dataframe_model_one()"""
+
 # TODO:
 # 1) create_dataframe is slow (get_matchday_positions)
 # 2) add more features: billanz, last results
 
-# df = create_dataframe(2021, 2021)
+# df = create_dataframe_model_two(2021, 2021)
 # print(df)
