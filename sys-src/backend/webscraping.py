@@ -322,6 +322,7 @@ def create_dataframe_model_one():
 
     df = pd.DataFrame(content)
     df.columns = ["HT","AT","R","MV_HT","MV_AT","POS_HT","POS_AT"]
+    df = pd.get_dummies(df, columns=["HT", "AT"])
     df.to_csv('data_model_one.csv')
     return df
 
