@@ -1,6 +1,49 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import joblib
+import requests
+import difflib
+
+
+"""
+Methods used in our ML models for receiving necessary input data
+"""
+
+#Returns the current table position of a given team
+#Fetching Data from openligadb-API
+def get_current_pos(team):
+
+    table_url = "https://api.openligadb.de/getbltable/bl1/2023"
+    response = requests.get(table_url)
+
+    if response.status_code == 200:
+        team_list = {}
+        response_data = response.json()
+
+        pos = 1
+        for element in response_data:
+            team_list[element["teamName"]] = pos
+            pos += 1
+
+        closest_team = difflib.get_close_matches(team, team_list.keys(), n=1, cutoff=0.0)
+
+        return team_list[closest_team[0]]
+    else:
+        print(f"Failed to retrieve data: {response.status_code}")
+        return None
+
+
+#Returns the market value of a given team
+def get_market_value(team):
+
+    data = pd.read_csv("club_values.csv")
+    df = pd.DataFrame(data)
+
+    closest_team = difflib.get_close_matches(team, df["Teams"], n=1, cutoff=0.0)
+    
+
+    value = df.loc[df['Teams'] == closest_team[0], 'MarketValues']
+    return value.iloc[0]
 
 
 #A very simple AI model that selects the team with the longer name. 
@@ -52,11 +95,17 @@ class ModelTwo:
         team_dict_home[f"HT_{home}"] = True
         team_dict_away[f"AT_{away}"] = True
 
-        #mv_ht = get_market_value(home)
-        #mv_at = get_market_value(away)
+        mv_ht = get_market_value(home)
+        mv_at = get_market_value(away)
 
-        #pos_ht = get_current_pos(home)
-        #pos_at = get_current_pos(away)
+        pos_ht = get_current_pos(home)
+        pos_at = get_current_pos(away)
+
+        X = {"MV_HT":mv_ht, "MV_AT":mv_at, "POS_HT":pos_ht, "POS_AT":pos_at}
+        X.update(team_dict_home)
+        X.update(team_dict_away)
+
+        X = pd.DataFrame(X, index=[0])
 
         return self.model.predict_proba(X)
 
@@ -94,10 +143,19 @@ class ModelThree:
 
 
 if __name__ == "__main__":
-    
+
+    #Create ModelOne
+    """
+    model_one = ModelOne()
+    model_one.predict("Bayern", "Dortmund")
+    """
+
+
+    #Create ModelTwo
+    """
     model_two = ModelTwo()
 
-    data = pd.read_csv("data_model_one.csv")
+    data = pd.read_csv("data_model_one.csv",index_col=0)
     df = pd.DataFrame(data)
 
     y = df["R"]
@@ -105,4 +163,12 @@ if __name__ == "__main__":
     
     model_two.train(X,y)
 
-    model_two.save()
+    model_two.save()"""
+    
+
+    #Load saved ModelTwo
+    """
+    model_two = ModelTwo()
+    model_two.load()
+    print(model_two.predict("1.FC Köln","Borussia Dortmund"))
+    """
