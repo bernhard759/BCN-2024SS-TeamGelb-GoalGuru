@@ -63,10 +63,6 @@ function GameSelect({ onTeamSelection }) {
       {/*Team select*/}
       <Form.Select aria-label="Team1 selection" data-testid="teamselect1" size="lg" className="form-select-lg" style={{maxWidth: "400px"}} value={team1} onChange={handleTeam1Change}>
         <option value="">{t("gameselect.select")}</option>
-        {/* TODO: Remove hard coded options after we have dummy data */}
-        <option value="Team1">One</option>
-        <option value="Team2">Two</option>
-        <option value="Team3">Three</option>
         {teams.map((team, index) => (
           <option key={index} value={team}>{team}</option>
         ))}
@@ -75,10 +71,6 @@ function GameSelect({ onTeamSelection }) {
       {/*Team select*/}
       <Form.Select aria-label="Team2 selection" data-testid="teamselect2" size="lg" className="form-select-lg" style={{maxWidth: "400px"}} value={team2} onChange={handleTeam2Change}>
         <option value="">{t("gameselect.select")}</option>
-        {/* TODO: Remove hard coded options after we have dummy data */}
-        <option value="Team1">One</option>
-        <option value="Team2">Two</option>
-        <option value="Team3">Three</option>
         {teams.map((team, index) => (
           <option key={index} value={team}>{team}</option>
         ))}
