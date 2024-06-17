@@ -78,7 +78,7 @@ async def predict(home_team: str, away_team: str):
     except Exception as e:
         logging.error(f"An error occurred in the /api/predict endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
-
+    
 # Mount the static files directory
 frontend_dir = os.getenv('FRONTEND_DIR', os.path.join(os.path.dirname(__file__), '..', 'frontend', 'dist'))
 app.mount("/", StaticFiles(directory=frontend_dir, html=True), name="static")
