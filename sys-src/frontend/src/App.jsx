@@ -37,9 +37,11 @@ function App() {
 
       <SoccerIcon />
 
-        <div className="header d-flex justify-content-center align-items-center flex-column" style={{marginBlock: "5em"}}>
+        {/* Header */}
+        <div className="header d-flex justify-content-center align-items-center flex-column" style={{marginTop: "4em", marginBottom: "3em"}}>
           <h1 className="display-1 fw-bold" data-testid="header">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
           <h2 className="text-center" data-testid="predicting">{t("app.desctext")}</h2>
+          <h5 style={{maxWidth: "800px"}} className="text-center my-2">{t("app.infotext")}</h5>
         </div>
 
         <div className="my-2 mx-5">

@@ -5,8 +5,8 @@
       },
       "app":{
         "desctext": "KI-basierte Fussballspielvorhersage",
-        "firstpred": "Mach deine erste Vorhersage"
-
+        "firstpred": "Mach deine erste Vorhersage",
+        "infotext": "Wähle dein Traumspiel aus und erhalte eine KI-gestützte Vorhersage mit zusätzlichen Informationen über die Form und den bisherigen Verlauf der Spiele beider Teams."
     },
       "prediction": {
         "sentencewe": "Wir sind zu",
