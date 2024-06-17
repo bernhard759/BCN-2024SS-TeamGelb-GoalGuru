@@ -1,6 +1,7 @@
 import requests
 import difflib
 import pandas as pd
+import models
 
 """
 Methods used in our ML models for receiving necessary input data and for our Fast-API Server
@@ -53,7 +54,28 @@ def get_last_matches(team_one, team_two, n_matches):
     pass
 
 
-#list all teams of the first bl (openligadb)
+#list all teams of the first bl from csv
 def get_all_teams():
-    pass
+    data = pd.read_csv("club_values.csv", index_col=0)
+    df = pd.DataFrame(data)
+    return df["Teams"].tolist()
 
+
+#list all teams of the first bl (transfermarkt)
+def get_all_teams_from_web(season = 2023):
+    url = f"https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1?saison_id={season}"
+    response = requests.get(url)
+
+    if response.status_code == 200:
+       #fetch the data
+       #return all bl teams as list
+       return [] 
+    else:
+        print(f"Failed to retrieve data: {response.status_code}")
+        return None
+
+
+#Predict a result between two teams
+def predict(home, away):
+    model = models.ModelOne()
+    return model.predict()
