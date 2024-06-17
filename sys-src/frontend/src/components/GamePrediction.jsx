@@ -29,18 +29,18 @@ export default function GamePrediction({ teams }) {
                 const awayTeam = teams[1];
 
                 let mockData = {
-                    prediction: "Team A",
+                    teams: ["Team A", "Team B"],
                     probabilities: {
-                        win: 0.6,
+                        home: 0.6,
                         draw: 0.3,
-                        lose: 0.1
+                        away: 0.1
                     }
                 };
-                //await new Promise(r => setTimeout(() => r(), 2000));
-                //setPrediction(mockData)
+                await new Promise(r => setTimeout(() => r(), 2000));
+                setPrediction(mockData)
 
-                const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
-                setPrediction(response.data);
+                //const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                //setPrediction(response.data);
                 
             } catch (error) {
                 setError(error);
@@ -88,11 +88,11 @@ export default function GamePrediction({ teams }) {
      */
     function getPopupMessage(result, value) {
         switch (result) {
-            case 'win':
+            case 'home':
                 return `${teams[0]} ${t("prediction.win")} (${probaValuePercentageDisplay(value)})`;
             case 'draw':
                 return `${teams[0]} ${t("prediction.and")} ${teams[1]} ${t("prediction.share")} (${probaValuePercentageDisplay(value)})`;
-            case 'lose':
+            case 'away':
                 return `${teams[0]} ${t("prediction.loses")} (${probaValuePercentageDisplay(value)})`;
             default:
                 return '';
@@ -126,7 +126,7 @@ export default function GamePrediction({ teams }) {
             {/*Prediction text */}
             {!isLoading ? (
                 <p className="lead text-center" style={{fontSize: "1.5em"}} data-testid="predictiontext">{t("prediction.sentencewe")} {probaValuePercentageDisplay(getMaxProba(prediction))} {t("prediction.sentencesure")} {
-                    getMaxProbabilityKey(prediction) == "win" ? `${prediction.prediction} ${t("prediction.sentencewin")}` : getMaxProbabilityKey(prediction) == "lose" ? `${prediction.prediction} ${t("prediction.sentencelose")}` : `${t("prediction.sentencedraw")}`}</p>
+                    getMaxProbabilityKey(prediction) == "home" ? `${prediction.teams[0]} ${t("prediction.sentencewin")}` : getMaxProbabilityKey(prediction) == "away" ? `${prediction.prediction} ${t("prediction.sentencelose")}` : `${t("prediction.sentencedraw")}`}</p>
             ) :
                 <div className="d-flex justify-content-center" data-testid="loadingskeleton1">
                     <Skeleton containerClassName="my-2" width={400} />
@@ -151,13 +151,13 @@ export default function GamePrediction({ teams }) {
                                 className={`
                                     ${styles["probability-section"]} 
                                     ${probability === getMaxProbabilityKey(prediction) ? (
-                                        `${probability === 'win'
+                                        `${probability === 'home'
                                             ? 'bg-success'
                                             : probability === 'draw'
                                                 ? 'bg-warning'
                                                 : 'bg-danger'
                                         } text-light fw-bolder`) : (
-                                        `${probability === 'win'
+                                        `${probability === 'home'
                                             ? styles["proba-bg-win"]
                                             : probability === 'draw'
                                                 ? styles["proba-bg-draw"]
