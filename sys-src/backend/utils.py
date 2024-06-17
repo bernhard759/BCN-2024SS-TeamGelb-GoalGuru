@@ -81,3 +81,5 @@ def get_all_teams_from_web(season = 2023):
 def predict(home, away):
     model = models.ModelOne()
     return model.predict()
+
+print(type(get_all_teams()))
