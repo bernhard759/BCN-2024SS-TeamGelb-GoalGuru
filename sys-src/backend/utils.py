@@ -50,6 +50,7 @@ def get_market_value_from_web(team):
 
 
 #Return last n_matches of two teams (transfermarkt)
+#[home, away, goal_home, goal_away, date]
 def get_last_matches(team_one, team_two, n_matches):
     pass
 
@@ -62,6 +63,7 @@ def get_all_teams():
 
 
 #list all teams of the first bl (transfermarkt)
+#[team_one, team_two, team_three ...]
 def get_all_teams_from_web(season = 2023):
     url = f"https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1?saison_id={season}"
     response = requests.get(url)
