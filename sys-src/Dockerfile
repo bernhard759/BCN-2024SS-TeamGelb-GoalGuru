@@ -1,14 +1,14 @@
 # Build the React frontend
 FROM node:14-alpine as frontend-build
 WORKDIR /app
-COPY ./sys-src/frontend .
+COPY ./frontend .
 RUN npm install
 RUN npm run build
 
 # Build the FastAPI backend
 FROM python:3.9-slim as backend-build
 WORKDIR /app
-COPY ./sys-src/backend .
+COPY ./backend .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the frontend build artifacts to the backend image
@@ -22,4 +22,4 @@ ENV FRONTEND_DIR=/app/frontend
 EXPOSE 8000
 
 # Start the FastAPI application and serve the frontend
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]
