@@ -34,11 +34,11 @@ This is needed for the frontend to populate the select boxes
 * Response for prediction
 ```json
 {
-  "prediction": "Team 1",
+  "teams": ["Team 1", "Team 2"],
   "probabilities": {
-    "win": 0.65,
+    "home": 0.65,
     "draw": 0.25,
-    "lose": 0.10
+    "away": 0.10
   }
 }
 ```
