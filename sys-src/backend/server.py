@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import List, Dict, Optional
+from typing import List
 import logging
 import os
 from fastapi.staticfiles import StaticFiles 
@@ -17,8 +17,14 @@ matches = [
 ]
 
 predictions = {
-    ("Team A", "Team B"): {"prediction": "Team A", "probabilities": {"win": 0.65, "draw": 0.25, "lose": 0.10}},
-    ("Team C", "Team D"): {"prediction": "Team D", "probabilities": {"win": 0.45, "draw": 0.25, "lose": 0.30}},
+    ("Team A", "Team B"): {
+        "teams": ["Team A", "Team B"],
+        "probabilities": {"home": 0.65, "draw": 0.25, "away": 0.10}
+    },
+    ("Team C", "Team D"): {
+        "teams": ["Team C", "Team D"],
+        "probabilities": {"home": 0.45, "draw": 0.25, "away": 0.30}
+    },
 }
 
 
@@ -33,9 +39,15 @@ class MatchesResponse(BaseModel):
     away_goals: int
     date: str
 
+class PredictionProbabilities(BaseModel):
+    home: float
+    draw: float
+    away: float
+
+
 class PredictionResponse(BaseModel):
-    prediction: Optional[str]
-    probabilities: Dict[str, float]
+    teams: List[str]
+    probabilities: PredictionProbabilities
 
 # Endpoint for available teams
 @app.get("/api/teams", response_model=TeamsResponse)
