@@ -49,7 +49,8 @@ async def get_matches():
      logging.info("Received request for matches")
      return matches
 
-# Endpoint for prediction results
+# Endpoint for prediction results 
+#http://127.0.0.1:8080/api/predict?home_team=Team%20A&away_team=Team%20B as example
 @app.get("/api/predict", response_model=PredictionResponse)
 async def predict(home_team: str, away_team: str):
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
