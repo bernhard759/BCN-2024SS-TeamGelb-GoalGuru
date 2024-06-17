@@ -36,11 +36,11 @@ export default function GamePrediction({ teams }) {
                         away: 0.1
                     }
                 };
-                await new Promise(r => setTimeout(() => r(), 2000));
-                setPrediction(mockData)
+                //await new Promise(r => setTimeout(() => r(), 2000));
+                //setPrediction(mockData)
 
-                //const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
-                //setPrediction(response.data);
+                const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                setPrediction(response.data);
                 
             } catch (error) {
                 setError(error);
