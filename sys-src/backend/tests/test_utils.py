@@ -74,9 +74,9 @@ def test_get_all_teams_from_web(season, expected):
         "FC Augsburg",
         "SV Werder Bremen",
         "1.FC Köln",
-        "1.FC Heidenheim",
+        "1.FC Heidenheim 1846",
         "VfL Bochum",
-        "SV Darmstadt"]))
+        "SV Darmstadt 98"]))
 ])
 def test_get_all_teams(expected):
     assert set(get_all_teams()) == expected
