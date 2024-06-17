@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { MdSportsSoccer } from "react-icons/md";
 import GameSelect from './components/GameSelect';
 import AppNavbar from './components/AppNavBar';
+import GamePrediction from './components/GamePrediction';
+import SoccerIcon from './components/SoccerIcon';
+import { useTranslation } from 'react-i18next';
+import i18n from './i18n';
 
 function App() {
+
+  // Translation
+  const { t } = useTranslation();
 
   // State
   //----------------------------------------------------------------
@@ -22,63 +27,67 @@ function App() {
   };
   //----------------------------------------------------------------
 
-  /*
-  // Testing api
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    fetch("/api")
-      .then((res) => { console.log(data); return res.json() })
-      .then((data) => setData(data.message));
-  }, []);*/
-
   // Markup
   return (
     <div id="app">
 
-      <AppNavbar/>
+      <AppNavbar />
 
-      <div className="header my-5 d-flex justify-content-center align-items-center flex-column">
-        <h1 className="display-1 fw-bold">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
-        <h2 className="text-center">Predicting soccer games with AI</h2>
-      </div>
+      <div id="content">
 
-      <div className="my-2 mx-5">
+      <SoccerIcon />
 
-      {/* Game Selection
-      - We pass down the state changer function and the selected teams as props
-      - The state changer function as prop is called from within this component to update the state on the app level here
-      */}
-      <GameSelect onTeamSelection={handleTeamSelection} />
-      {/*<p>{!data ? "Loading..." : data}</p>*/}
+        {/* Header */}
+        <div className="header d-flex justify-content-center align-items-center flex-column" style={{marginTop: "4em", marginBottom: "3em"}}>
+          <h1 className="display-1 fw-bold" data-testid="header">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
+          <h2 className="text-center" data-testid="predicting">{t("app.desctext")}</h2>
+          <h5 style={{maxWidth: "800px"}} className="text-center my-2">{t("app.infotext")}</h5>
+        </div>
 
+        <div className="my-2 mx-5">
 
-      {selectedTeams.every(team => team !== "") ? (
-        <div>
-          <h3 className="text-center m-5">{selectedTeams.join('  vs  ')}</h3>
-          {/* Game Prediction Result*/}
-          {/*<GamePrediction teams={selectedTeams}></GamePrediction>*/}
+          {/* Game Selection
+          - We pass down the state changer function and the selected teams as props
+          - The state changer function as prop is called from within this component to update the state on the app level here
+          */}
+          <GameSelect onTeamSelection={handleTeamSelection} />
 
-          {/* MatchInfo (previous matches of the two teams)*/}
-          {/*<MatchInfo teams={selectedTeams}></MatchInfo>*/}
+          {/* Render when both teams are selected*/}
+          {selectedTeams.every(team => team !== "") ? (
+            <div>
+              <div>
+                <div className="display-5 m-4 mt-5 mx-4 d-flex justify-content-between align-items-center">
+                  <p>{selectedTeams[0]}</p>
+                  <p>vs.</p>
+                  <p>{selectedTeams[1]}</p>
+                </div>
+                {/* Game Prediction Result*/}
+                <GamePrediction teams={selectedTeams}></GamePrediction>
+              </div>
 
-          {/* FormInfo Team 1*/}
-          {/*<FormInfo teams={selectedTeams[0]}></FormInfo>*/}
+              {/* MatchInfo (previous matches of the two teams)*/}
+              {/*<MatchInfo teams={selectedTeams}></MatchInfo>*/}
 
-          {/* FormInfo Team 2*/}
-          {/*<FormInfo team={selectedTeams[1]}></FormInfo>*/}
+              {/* FormInfo Team 1*/}
+              {/*<FormInfo teams={selectedTeams[0]}></FormInfo>*/}
 
-          {/* FormationInfo Team 1*/}
-          {/*<FormationInfo team={selectedTeams[0]}></FormationInfo>*/}
+              {/* FormInfo Team 2*/}
+              {/*<FormInfo team={selectedTeams[1]}></FormInfo>*/}
 
-          {/* FormationInfo Team 2*/}
-          {/*<FormationInfo team={selectedTeams[1]}></FormationInfo>*/}
+              {/* FormationInfo Team 1*/}
+              {/*<FormationInfo team={selectedTeams[0]}></FormationInfo>*/}
+
+              {/* FormationInfo Team 2*/}
+              {/*<FormationInfo team={selectedTeams[1]}></FormationInfo>*/}
+
+            </div>
+          ) : (
+            <h3 className="text-center m-5 text-secondary" data-testid="firstprediction">{t("app.firstpred")} &#9917;</h3>
+          )}
 
         </div>
-      ) : (
-        <h3 className="text-center m-5 text-secondary">Make your first prediction &#9917;</h3>
-      )}
 
-    </div>
+      </div>
     </div>
   )
 }
