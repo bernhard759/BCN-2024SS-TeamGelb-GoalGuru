@@ -18,7 +18,7 @@ export default function AppNavbar() {
   //----------------------------------------------------------------
   const [showModal, setShowModal] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState('en');
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
   //----------------------------------------------------------------
 
   // Refs
@@ -43,6 +43,7 @@ export default function AppNavbar() {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault(); // Prevent default behavior
       handleModalOpen();
     }
   };
@@ -73,7 +74,7 @@ export default function AppNavbar() {
                   variant="outline-secondary"
                 >
                   <Dropdown.Item
-                    active={currentLanguage === 'en'}
+                    active={currentLanguage === 'en'} // Highlight the active language
                     onClick={() => {
                       setCurrentLanguage('en');
                       i18n.changeLanguage('en');
@@ -91,9 +92,8 @@ export default function AppNavbar() {
                     DE
                   </Dropdown.Item>
                 </DropdownButton>
-
                 {/*Theme picker*/}
-                <div className="icon-wrapper" 
+                <div className="icon-wrapper"
                   role="button"
                   tabIndex={0}
                   aria-label="Toggle theme"
