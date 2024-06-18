@@ -6,7 +6,7 @@
 *.json text
 *.html text diff=html
 *.css text diff=css
-*.txt text
+*.txt text eol=lf
 *.yml text
 *.md text
 
