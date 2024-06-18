@@ -10,11 +10,6 @@ FROM python:3.9-slim as backend-build
 WORKDIR /app
 COPY ./backend .
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Final image
-FROM backend-build as final
-
-# Copy the frontend build artifacts from the frontend-build stage
 COPY --from=frontend-build /app/dist /app/frontend
 
 # Set the environment variable for the frontend directory
