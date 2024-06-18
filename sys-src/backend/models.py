@@ -3,7 +3,15 @@ from sklearn.linear_model import LogisticRegression
 import joblib
 import utils
 
-
+def create_prediction(home, away, results):
+    return {
+        "teams": [home, away],
+        "probabilities": {
+            "home": results[0],
+            "draw": results[1],
+            "away": results[2]
+        }
+    }
 
 #A very simple AI model that selects the team with the longer name. 
 class ModelOne:
@@ -14,11 +22,11 @@ class ModelOne:
     # away: The name of the away team.
     def predict(self, home, away):
         if len(home) > len(away):
-            return {"home":100, "draw":0, "away":0}
+            return create_prediction(home, away, [100,0,0])
         elif len(away) > len(home):
-            return {"home":0, "draw":0, "away":100}
+            return create_prediction(home, away, [0,0,100])
         else:
-            return {"home":0, "draw":100, "away":0}
+            return create_prediction(home, away, [0,100,0])
 
 
 
@@ -66,7 +74,9 @@ class ModelTwo:
 
         X = pd.DataFrame(X, index=[0])
 
-        return self.model.predict_proba(X)
+        result = self.model.predict_proba(X)
+        return create_prediction(home, away, [result[2], result[1], result[0]])
+
 
     def load(self, model_file_name = "model_two.joblib"):
         try:
