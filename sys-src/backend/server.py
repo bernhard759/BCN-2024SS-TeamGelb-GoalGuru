@@ -3,6 +3,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Optional
 import logging
+#import models
 
 
 app = FastAPI()
@@ -18,6 +19,8 @@ predictions = {
     ("Team A", "Team B"): {"prediction": "Team A", "probabilities": {"win": 0.65, "draw": 0.25, "lose": 0.10}},
     ("Team C", "Team D"): {"prediction": "Team D", "probabilities": {"win": 0.45, "draw": 0.25, "lose": 0.30}},
 }
+
+#model = models.ModelOne()
 
 
 #Define response models
@@ -53,6 +56,7 @@ async def predict(home_team: str, away_team: str):
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
     
     try:
+        #prediction = model.predict(home_team, away_team)
         prediction = predictions.get((home_team, away_team))
         if prediction:
             logging.info(f"Prediction found: {prediction}")
