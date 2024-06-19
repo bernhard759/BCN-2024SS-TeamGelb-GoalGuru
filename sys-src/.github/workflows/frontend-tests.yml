@@ -1,0 +1,33 @@
+name: Frontend Test Coverage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  test-coverage:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with: 
+        node-version: '20'
+        cache: 'npm'
+    - name: Install dependencies
+      run: |
+        cd frontend
+        npm install
+    - name: Run tests
+      run: |
+        cd frontend
+        npm run test:coverage
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4.0.1
+      with:
+       token: ${{ secrets.CODECOV_TOKEN }}
+       flags: frontend
