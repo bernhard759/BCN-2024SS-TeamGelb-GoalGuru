@@ -6,10 +6,10 @@ from bs4 import BeautifulSoup
 import models
 
 bundesliga_1 = {
-    "Bayer": 15, "Bayern": 27, "Stuttgart": 79, "Leipzig": 23826,
-    "Borussia": 18, "Eintracht": 24, "Freiburg": 60, "Augsburg": 167,
-    "Hoffenheim": 533, "Heidenheim": 2036, "Werder": 86, "Wolfsburg": 82,
-    "Union": 89, "Bochum": 80, "Mainz": 39, "Köln": 3, "Darmstadt": 105
+    "Bayer 04 Leverkusen": 15, "FC Bayern München": 27, "VfB Stuttgart": 79, "RasenBallsport Leipzig": 23826,
+    "Borussia Mönchengladbach": 18, "Eintracht Frankfurt": 24, "SC Freiburg": 60, "FC Augsburg": 167,
+    "TSG 1899 Hoffenheim": 533, "1.FC Heidenheim": 2036, "SV Werder Bremen": 86, "VfL Wolfsburg": 82,
+    "1.FC Union Berlin": 89, "VfL Bochum": 80, "1.FSV Mainz 05": 39, "1.FC Köln": 3, "SV Darmstadt": 105, "Borussia Dortmund":16
 }
 
 header = {
@@ -81,7 +81,7 @@ def get_market_value_web(team):
 
         if match:
             market_value = match.group(1).replace(',', '')
-            return market_value
+            return float(market_value)
         else:
             print("Market value not found")
 
@@ -145,25 +145,33 @@ def get_all_teams():
     return df["Teams"].tolist()
 
 
-#list all teams of the first bl (transfermarkt)
-#[team_one, team_two, team_three ...]
+#list all teams of the first bl (transfermarkt) as dict {teamName : teamID}
 def get_all_teams_from_web(season = 2023):
     url = f"https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1?saison_id={season}"
-    response = requests.get(url)
+    response = requests.get(url, headers=header)
+    teams = dict()
 
     if response.status_code == 200:
        #fetch the data
        #return all bl teams as list
-       return [] 
+        soup = BeautifulSoup(response.text, 'html.parser')
+        table = soup.find("table", attrs={"class":"items"})
+        tds = table.find_all("td", attrs={"class":"no-border-links hauptlink"})
+        
+
+        for td in tds:
+            team = td.find("a").get("title")
+            link = td.find("a").get("href")
+            id = int(str(link).split("verein/")[1].split("/")[0])
+            teams[team] = id
+
+        return teams
     else:
         print(f"Failed to retrieve data: {response.status_code}")
-        return None
+        return teams
 
 
 #Predict a result between two teams
 def predict(home, away):
     model = models.ModelOne()
     return model.predict()
-
-
-print(get_last_matches_web("Bayern", "Bayer", 10))

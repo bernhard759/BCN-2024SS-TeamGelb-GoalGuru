@@ -8,7 +8,7 @@ module_path = os.path.join(current_dir, '..')
 if module_path not in sys.path:
     sys.path.append(module_path)
 
-from utils import get_market_value, get_market_value_from_web, get_all_teams_from_web, get_all_teams
+from utils import get_market_value, get_market_value_web, get_all_teams_from_web, get_all_teams
 
 
 @pytest.mark.parametrize("a, expected", [
@@ -30,7 +30,7 @@ def test_get_market_value_typo_team(a, expected):
     ("FC Bayern München", 872.45)
 ])
 def test_get_market_value_from_web(a, expected):
-    assert get_market_value_from_web(a) == expected
+    assert get_market_value_web(a) == expected
 
 
 @pytest.mark.parametrize("season, expected", [
@@ -49,12 +49,12 @@ def test_get_market_value_from_web(a, expected):
         "FC Augsburg",
         "SV Werder Bremen",
         "1.FC Köln",
-        "1.FC Heidenheim",
+        "1.FC Heidenheim 1846",
         "VfL Bochum",
-        "SV Darmstadt"]))
+        "SV Darmstadt 98"]))
 ])
 def test_get_all_teams_from_web(season, expected):
-    assert set(get_all_teams_from_web(season)) == expected
+    assert set(get_all_teams_from_web(season).keys()) == expected
 
 
 
