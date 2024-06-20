@@ -3,7 +3,7 @@
 <hr>
 Frontend testing    
 
-[![codecov](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/graph/badge.svg?token=FAP45UOB0Y?flag=frontend)](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru)
+[![codecov](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/branch/main/graph/badge.svg?token=FAP45UOB0Y)](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru)
 
 CI/CD    
 
