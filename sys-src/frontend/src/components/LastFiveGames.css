@@ -1,0 +1,36 @@
+.last-five-and-head-to-head-games {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .games-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .games-table th,
+  .games-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .games-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .tables-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    flex: 1;
+    margin-right: 10px; /* Adjust spacing between tables */
+  }
+  
+  .table-container:last-child {
+    margin-right: 0; /* Remove margin for the last table */
+  }
+  
+  

@@ -7,6 +7,8 @@ import GamePrediction from './components/GamePrediction';
 import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
+import LastFiveGames from './components/LastFiveGames';
+import MatchInfo from './components/MatchInfo';
 
 function App() {
 
@@ -66,11 +68,15 @@ function App() {
               </div>
 
               {/* LastFiveGames */}
-              
+              <LastFiveGames team1={selectedTeam[0]} team2= {selectedTeam[1]}></LastFiveGames>
+
+
               {/* */}
 
 
               {/* MatchInfo */}
+
+              <MatchInfo team1={selectedTeam[0]} team2= {selectedTeam[1]}> </MatchInfo>
 
               {/* */}
               

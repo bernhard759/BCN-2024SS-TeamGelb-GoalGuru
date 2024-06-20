@@ -1,0 +1,46 @@
+/* MatchInfo.css */
+
+.team-info {
+    width: 300px;
+  }
+  
+  .last-games {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .last-games-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .last-games-circles {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .win {
+    background-color: green;
+  }
+  
+  .draw {
+    background-color: orange;
+  }
+  
+  .loss {
+    background-color: red;
+  }
+  
+  .formation-info {
+    margin-top: 20px;
+    text-align: center;
+  }
