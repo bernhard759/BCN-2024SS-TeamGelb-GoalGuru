@@ -298,19 +298,22 @@ def generate_matchdata_json(season_range):
         print(f"Exception thrown: {e}")
         return
 
-    data = []
+    data = {"_default":{
+        
+    }}
 
+    match_index = 1
     for i in range(int(season_range[0]), int(season_range[1])):
         season_matches = get_complete_matchday_data(i)
 
         for season_match in season_matches:
-            data.append({"Home":season_match[0], "Away":season_match[1], "Goals_Home":season_match[2], "Goals_Away":season_match[3], "Date":season_match[4]})
+            data["_default"][match_index] = {"Home":season_match[0], "Away":season_match[1], "Goals_Home":season_match[2], "Goals_Away":season_match[3], "Date":season_match[4]}
+            match_index += 1
 
     json_data = json.dumps(data, indent=4)
     with open(f"matchdata_{season_range[0]}-{season_range[1]}.json", 'w') as json_file:
         json_file.write(json_data)
     return json_data
-
 
 
 #Create a dataframe out of all Bundesliga teams and their market values
