@@ -1,12 +1,16 @@
 # GoalGuru BCN Project
 
 <hr>
+Frontend testing    
 
-Frontend testing [![codecov](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/graph/badge.svg?token=FAP45UOB0Y?flag=frontend)](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru)&nbsp;&nbsp;&nbsp;Backend testing [![codecov](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/graph/badge.svg?token=FAP45UOB0Y?flag=backend)](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru)
+[![codecov](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/graph/badge.svg?token=FAP45UOB0Y?flag=frontend)](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru)
+
+CI/CD    
 
 [![Workflow Status](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml/badge.svg?branch=prod)](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml)
  [![Docker Compose](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml/badge.svg?event=push&branch=prod&job=docker_compose)](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml)
 
+Project info    
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Node.js Version](https://img.shields.io/badge/node-20-green.svg)](https://nodejs.org/en/) [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 

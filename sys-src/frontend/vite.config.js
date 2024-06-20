@@ -12,7 +12,7 @@ export default defineConfig({
       provider: 'v8', // or 'istanbul'
       enabled: true,
       include: ['src/**/*.{js,ts,jsx,tsx}'], // Include all source files
-      reporter: ['text', 'html'], // Add 'html' reporter for UI coverage
+      reporter: ['text', 'html', 'json', 'lcov'], // Add 'html' reporter for UI coverage
       thresholds: {
         lines: 40,
         functions: 40,
