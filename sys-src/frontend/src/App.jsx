@@ -65,20 +65,15 @@ function App() {
                 <GamePrediction teams={selectedTeams}></GamePrediction>
               </div>
 
-              {/* MatchInfo (previous matches of the two teams)*/}
-              {/*<MatchInfo teams={selectedTeams}></MatchInfo>*/}
+              {/* LastFiveGames */}
+              
+              {/* */}
 
-              {/* FormInfo Team 1*/}
-              {/*<FormInfo teams={selectedTeams[0]}></FormInfo>*/}
 
-              {/* FormInfo Team 2*/}
-              {/*<FormInfo team={selectedTeams[1]}></FormInfo>*/}
+              {/* MatchInfo */}
 
-              {/* FormationInfo Team 1*/}
-              {/*<FormationInfo team={selectedTeams[0]}></FormationInfo>*/}
-
-              {/* FormationInfo Team 2*/}
-              {/*<FormationInfo team={selectedTeams[1]}></FormationInfo>*/}
+              {/* */}
+              
 
             </div>
           ) : (
