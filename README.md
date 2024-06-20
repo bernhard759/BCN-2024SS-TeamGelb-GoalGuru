@@ -3,12 +3,11 @@
 <hr>
 Frontend testing    
 
-[![codecov](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/graph/badge.svg?token=FAP45UOB0Y?flag=frontend)](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru)
+[![codecov](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/branch/main/graph/badge.svg?token=FAP45UOB0Y)](https://codecov.io/gh/bernhard759/BCN-2024SS-TeamGelb-GoalGuru)
 
 CI/CD    
 
-[![Workflow Status](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml/badge.svg?branch=prod)](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml)
- [![Docker Compose](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml/badge.svg?event=push&branch=prod&job=docker_compose)](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/ci-cd.yml)
+[![Build and Push Docker Image](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/docker.yml/badge.svg)](https://github.com/bernhard759/BCN-2024SS-TeamGelb-GoalGuru/actions/workflows/docker.yml)
 
 Project info    
 
