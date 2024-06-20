@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import pandas as pd
 from datetime import datetime
+import json
 
 #link to all the fixtures and results
 matchday_url = "https://www.transfermarkt.de/bundesliga/gesamtspielplan/wettbewerb/L1"
@@ -278,6 +279,38 @@ def generate_matchdata_csv(season_range):
     df["Date"] = pd.to_datetime(df['Date'])
     df.to_csv(f"matchdata_{season_range[0]}-{season_range[1]}.csv")
     return df
+
+
+#Get all games played within a given time range
+#Save the data into a json file
+#Parameter season_range: range of seasons "a-b", a inclusive, b exclusive  (e.g "2017-2024")
+def generate_matchdata_json(season_range):
+    try:
+        season_range = season_range.split("-")
+        if(len(season_range) != 2):
+            raise ValueError(f"Invalid param season_range {season_range}")
+        if(int(season_range[0]) < 2000):
+            raise ValueError(f"Invalid param season_range {season_range}. Do not enter values before the year 2000.")
+        if(int(season_range[1]) > datetime.now().year):
+            raise ValueError(f"Invalid param season_range {season_range}. Do not enter values after the year {datetime.now().year}.")
+
+    except Exception as e:
+        print(f"Exception thrown: {e}")
+        return
+
+    data = []
+
+    for i in range(int(season_range[0]), int(season_range[1])):
+        season_matches = get_complete_matchday_data(i)
+
+        for season_match in season_matches:
+            data.append({"Home":season_match[0], "Away":season_match[1], "Goals_Home":season_match[2], "Goals_Away":season_match[3], "Date":season_match[4]})
+
+    json_data = json.dumps(data, indent=4)
+    with open(f"matchdata_{season_range[0]}-{season_range[1]}.json", 'w') as json_file:
+        json_file.write(json_data)
+    return json_data
+
 
 
 #Create a dataframe out of all Bundesliga teams and their market values
