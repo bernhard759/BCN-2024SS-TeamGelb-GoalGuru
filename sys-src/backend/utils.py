@@ -181,6 +181,8 @@ def load_db(file_path = "matchdata_2000-2024.json"):
     db = TinyDB(file_path)
     return db
 
+"""
 db = load_db()
 User = Query()
 print(db.search(User.Home == 'FC Hansa Rostock'))
+"""
