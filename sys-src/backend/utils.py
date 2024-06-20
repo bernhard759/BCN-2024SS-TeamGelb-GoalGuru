@@ -4,6 +4,7 @@ import difflib
 import pandas as pd
 from bs4 import BeautifulSoup
 import models
+from tinydb import TinyDB, Query
 
 bundesliga_1 = {
     "Bayer 04 Leverkusen": 15, "FC Bayern München": 27, "VfB Stuttgart": 79, "RasenBallsport Leipzig": 23826,
@@ -175,3 +176,11 @@ def get_all_teams_from_web(season = 2023):
 def predict(home, away):
     model = models.ModelOne()
     return model.predict()
+
+def load_db(file_path = "matchdata_2000-2024.json"):
+    db = TinyDB(file_path)
+    return db
+
+db = load_db()
+User = Query()
+print(db.search(User.Home == 'FC Hansa Rostock'))
