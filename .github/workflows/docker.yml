@@ -32,7 +32,7 @@ jobs:
           IMAGE_TAG: latest
         run: |
           # Build Docker Compose image
-          docker compose up --build
+          docker compose build
 
           # Tag image
           docker tag goalguru:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
