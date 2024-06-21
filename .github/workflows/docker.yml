@@ -35,7 +35,7 @@ jobs:
           docker compose build
 
           # Tag image
-          docker tag goalguru:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker tag goalguruapp-app $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
           # Push image to ECR
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
