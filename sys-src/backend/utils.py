@@ -5,12 +5,13 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import models
 from tinydb import TinyDB, Query
+from datetime import datetime
 
 bundesliga_1 = {
     "Bayer 04 Leverkusen": 15, "FC Bayern München": 27, "VfB Stuttgart": 79, "RasenBallsport Leipzig": 23826,
     "Borussia Mönchengladbach": 18, "Eintracht Frankfurt": 24, "SC Freiburg": 60, "FC Augsburg": 167,
-    "TSG 1899 Hoffenheim": 533, "1.FC Heidenheim": 2036, "SV Werder Bremen": 86, "VfL Wolfsburg": 82,
-    "1.FC Union Berlin": 89, "VfL Bochum": 80, "1.FSV Mainz 05": 39, "1.FC Köln": 3, "SV Darmstadt": 105, "Borussia Dortmund":16
+    "TSG 1899 Hoffenheim": 533, "1.FC Heidenheim 1846": 2036, "SV Werder Bremen": 86, "VfL Wolfsburg": 82,
+    "1.FC Union Berlin": 89, "VfL Bochum": 80, "1.FSV Mainz 05": 39, "1.FC Köln": 3, "SV Darmstadt 98": 105, "Borussia Dortmund":16
 }
 
 header = {
@@ -20,6 +21,7 @@ header = {
         "Chrome/123.0.0.0 Safari/537.36"
     )
 }
+
 
 """
 Methods used in our ML models for receiving necessary input data and for our Fast-API Server
@@ -181,8 +183,36 @@ def load_db(file_path = "matchdata_2000-2024.json"):
     db = TinyDB(file_path)
     return db
 
+
+def parse_date(date_str):
+    return datetime.strptime(date_str, '%d.%m.%y')
+
+
+def query_games(team_one, team_two, n_games, db):
+    
+    Game = Query()
+    games = db.search((Game.Home == team_one) & (Game.Away == team_two) | (Game.Home == team_two) & (Game.Away == team_one))
+
+    games_sorted = sorted(games, key=lambda x: parse_date(x['Date']), reverse=True)
+
+
+    if(len(games_sorted) > n_games):
+        last_n_games = games_sorted[:n_games]
+        return last_n_games
+    
+    return games_sorted
+    
+
 """
 db = load_db()
 User = Query()
 print(db.search(User.Home == 'FC Hansa Rostock'))
 """
+
+"""
+db = load_db()
+print("------\n")
+print(query_games("1.FC Heidenheim 1846", "SC Freiburg", 10))
+print("\n------\n")
+"""
+
