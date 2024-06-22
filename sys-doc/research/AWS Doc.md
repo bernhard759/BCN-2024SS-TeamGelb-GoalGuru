@@ -20,6 +20,10 @@ Our ECR repository is set as a source, and the process of updating the service i
 The trigger is a new push in ECR. 
 Our domain from Route 53 has been added as a custom domain and the DNS configurations are done. The website is online. 
 
+## Possible future developments
+* Add CloudFront 
+* Add Kubernetes for better scalability 
+
 
 
 
