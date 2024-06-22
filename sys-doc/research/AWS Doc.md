@@ -10,6 +10,16 @@ Requested a SSL certificate with DNS configuration as a validation method, throu
 The SSL certificate has been isssued succesfully. 
 
 ## Amazon ECR service 
-A repository in the public registry has been successfully created. 
+A repository in the private registry has been successfully created. 
+We are using git actions in order to automate the process of pushing a new docker image into the repository. 
+
+## AWS App Runner service
+Created a new service with a public endpoint for the incoming traffic. 
+The exposed port is set to 8000.
+Our ECR repository is set as a source, and the process of updating the service in AppRunner is automatic. 
+The trigger is a new push in ECR. 
+Our domain from Route 53 has been added as a custom domain and the DNS configurations are done. The website is online. 
+
+
 
 
