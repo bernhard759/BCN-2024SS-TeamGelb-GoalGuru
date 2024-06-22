@@ -9,3 +9,4 @@ async def test_get_teams():
     assert response.status_code == 200
     assert response.json() == {"teams": ["Team A", "Team B", "Team C", "Team D"]}
 
+
