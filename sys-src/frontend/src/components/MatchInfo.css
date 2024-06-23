@@ -1,46 +1,52 @@
-/* MatchInfo.css */
+/* src/MatchInfo.css */
+.match-info {
+  text-align: center;
+  margin: 20px;
+}
 
-.team-info {
-    width: 300px;
-  }
-  
-  .last-games {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  .last-games-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .last-games-circles {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  .win {
-    background-color: green;
-  }
-  
-  .draw {
-    background-color: orange;
-  }
-  
-  .loss {
-    background-color: red;
-  }
-  
-  .formation-info {
-    margin-top: 20px;
-    text-align: center;
-  }
+.match-info .header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.match-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.match-info th, .match-info td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.match-info th {
+  background-color: #f4f4f4;
+}
+
+.match-info .team-logo {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.result-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.result-circle.green {
+  background-color: green;
+}
+
+.result-circle.orange {
+  background-color: orange;
+}
+
+.result-circle.red {
+  background-color: red;
+}

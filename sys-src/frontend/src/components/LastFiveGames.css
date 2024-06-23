@@ -1,36 +1,64 @@
-.last-five-and-head-to-head-games {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .games-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .games-table th,
-  .games-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .games-table th {
-    background-color: #f2f2f2;
-  }
-  
-  .tables-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .table-container {
-    flex: 1;
-    margin-right: 10px; /* Adjust spacing between tables */
-  }
-  
-  .table-container:last-child {
-    margin-right: 0; /* Remove margin for the last table */
-  }
-  
-  
+/* src/LastFiveGames.css */
+.last-five-games {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.tables-container {
+  display: flex;
+  flex-direction: row; /* Changed to row to align tables side by side */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.table-container {
+  margin: 20px;
+  width: 45%; /* Adjust the width to fit two tables side by side */
+}
+
+.games-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.games-table th, .games-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.games-table th {
+  background-color: #f4f4f4;
+}
+
+.result-circles {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.circle.green {
+  background-color: green;
+}
+
+.circle.orange {
+  background-color: orange;
+}
+
+.circle.red {
+  background-color: red;
+}
+
+h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

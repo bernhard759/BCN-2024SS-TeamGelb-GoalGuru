@@ -1,73 +1,69 @@
-import React, { useState, useEffect } from 'react';
+// src/MatchInfo.js
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './MatchInfo.css'; // Add a CSS file for styling
 
-const MatchInfo = ({ team1, team2 }) => {
-  const [team1Games, setTeam1Games] = useState([]);
-  const [team2Games, setTeam2Games] = useState([]);
+function MatchInfo({ team1, team2 }) {
+  const [matches, setMatches] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchLastFiveGames(team1, setTeam1Games);
-    fetchLastFiveGames(team2, setTeam2Games);
+    const fetchMatches = async () => {
+      try {
+        const response = await axios.get('http://127.0.0.1:8000/api/matches', {
+          params: {
+            home_team: team1,
+            away_team: team2
+          }
+        });
+        setMatches(response.data);
+      } catch (error) {
+        console.error('There was an error fetching the match data!', error);
+        setError(error);
+      } finally {
+        console.log('Checking teams: ', team1, team2)
+        setLoading(false);
+      }
+    };
+
+    fetchMatches();
   }, [team1, team2]);
 
-  const fetchLastFiveGames = async (teamId, setGames) => {
-    try {
-      const response = await axios.get(`https://api.openligadb.de/getmatchdata/bl1/2023`);
-      const teamGames = response.data.filter(game => game.team1.teamId == teamId || game.team2.teamId == teamId).slice(-5);
-      setGames(teamGames);
-    } catch (error) {
-      console.error('Error fetching last five games:', error);
-    }
-  };
-
-  const renderLastGamesHeader = (teamId) => {
-    return (
-      <div className="last-games-header">
-        <h5>Last 5 games for Team {teamId}</h5>
-        <div className="last-games-circles">
-          {/* Render win, draw, loss circles here */}
-        </div>
-      </div>
-    );
-  };
-
-  const renderLastGamesTable = (games) => {
-    return (
-      <table className="table table-bordered game-info-table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Opponent</th>
-            <th>Result</th>
-          </tr>
-        </thead>
-        <tbody>
-          {games.map((match) => (
-            <tr key={match.matchID}>
-              <td>{new Date(match.matchDateTimeUTC).toLocaleString()}</td>
-              <td>{match.team1.teamId === team1 ? match.team2.teamName : match.team1.teamName}</td>
-              <td>{match.matchResults[0].pointsTeam1} - {match.matchResults[0].pointsTeam2}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    );
-  };
-
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  
   return (
-    <div className="match-info-container d-flex justify-content-center align-items-center flex-column mt-4">
-      <div className="team-info-container d-flex justify-content-between mt-3">
-        <div className="team-info mx-3">
-          {renderLastGamesHeader(team1)}
-          {renderLastGamesTable(team1Games)}
-        </div>
-        <div className="team-info mx-3">
-          {renderLastGamesHeader(team2)}
-          {renderLastGamesTable(team2Games)}
-        </div>
-      </div>
+    <div className="match-info">
+      <h1>Last Five Matches Between {team1} and {team2}</h1>
+     
+        <table>
+          <thead>
+            <tr>
+              <th>Result</th>   
+            </tr>
+          </thead>
+          <tbody>
+            {matches.slice(-5).map((match, index) => (
+              <tr key={index}>
+                <td>
+                  <img src={`path/to/team/logos/${match.home_team}.png`} alt={match.home_team} className="team-logo" />
+                  {match.team1}
+                 </td>
+                <td>
+                  <img src={`path/to/team/logos/${match.away_team}.png`} alt={match.away_team} className="team-logo" />
+                  {match.team2}
+                </td>
+                <td>{match.home_goals}</td>
+                <td>{match.away_goals}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      
     </div>
   );
-};
+}
 
 export default MatchInfo;
