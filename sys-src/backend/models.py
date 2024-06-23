@@ -3,6 +3,8 @@ from sklearn.linear_model import LogisticRegression
 import joblib
 import utils
 
+
+#return the prediction in a correct format 
 def create_prediction(home, away, results):
     return {
         "teams": [home, away],
@@ -80,13 +82,13 @@ class ModelTwo:
 
     def load(self, model_file_name = "model_two.joblib"):
         try:
-            self.model = joblib.load(model_file_name)
+            self.model = joblib.load(f"models/{model_file_name}")
         except Exception as e:
             print(f"Exception thrown while loading the model. {e}")
     
     def save(self, model_file_name = "model_two.joblib"):
         try:
-            joblib.dump(self.model, model_file_name)
+            joblib.dump(self.model, f"models/{model_file_name}")
         except Exception as e:
             print(f"Exception thrown while saving the model. {e}")
 
@@ -103,10 +105,10 @@ class ModelThree:
     def predict(self, X):
         pass
     
-    def load(self, model_file_name = "model_two.joblib"):
+    def load(self, model_file_name = "model_three.joblib"):
         pass
 
-    def save(self, model_file_name = "model_two.joblib"):
+    def save(self, model_file_name = "model_three.joblib"):
         pass
 
 
@@ -124,7 +126,7 @@ if __name__ == "__main__":
     """
     model_two = ModelTwo()
 
-    data = pd.read_csv("data_model_one.csv",index_col=0)
+    data = pd.read_csv("csv-data/data_model_one.csv",index_col=0)
     df = pd.DataFrame(data)
 
     y = df["R"]

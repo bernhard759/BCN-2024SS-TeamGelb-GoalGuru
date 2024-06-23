@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import models
 from tinydb import TinyDB, Query
 from datetime import datetime
+import json
 
 bundesliga_1 = {
     "Bayer 04 Leverkusen": 15, "FC Bayern München": 27, "VfB Stuttgart": 79, "RasenBallsport Leipzig": 23826,
@@ -54,7 +55,7 @@ def get_current_pos(team):
 #Returns the market value of a given team from csv
 def get_market_value(team):
 
-    data = pd.read_csv("club_values.csv")
+    data = pd.read_csv("csv-data/club_values.csv")
     df = pd.DataFrame(data)
 
     closest_team = difflib.get_close_matches(team, df["Teams"], n=1, cutoff=0.0)
@@ -143,7 +144,7 @@ def get_last_matches_web(team_a, team_b,  n):
 
 #list all teams of the first bl from csv
 def get_all_teams():
-    data = pd.read_csv("club_values.csv", index_col=0)
+    data = pd.read_csv("csv-data/club_values.csv", index_col=0)
     df = pd.DataFrame(data)
     return df["Teams"].tolist()
 
@@ -179,19 +180,47 @@ def predict(home, away):
     model = models.ModelOne()
     return model.predict()
 
-def load_db(file_path = "matchdata_2000-2024.json"):
+"""
+#Load the tinydb for the matchdata
+def load_db(file_path = "json-data/matchdata_2000-2024.json"):
     db = TinyDB(file_path)
+    return db
+"""
+
+#Load the tinydb
+def load_db(file_paths = ["json-data/matchdata_2000-2024.json", "json-data/2023_teams.json"]):
+    db = TinyDB("database/tinydb.json")
+
+    with open(file_paths[0], 'r') as f:
+        matchdata = json.load(f)
+
+    with open(file_paths[1], 'r') as f:
+        teamdata = json.load(f)
+    
+     #Table for Matchdata
+    table1 = db.table("Matches")
+    table1.insert_multiple(matchdata)
+
+    #Table for Teamdata
+    table2 = db.table("Team")
+    table2.insert_multiple(teamdata)
+
     return db
 
 
+#parse string to datetime-object
 def parse_date(date_str):
     return datetime.strptime(date_str, '%d.%m.%y')
 
 
+#return the last n_games played between to teams
 def query_games(team_one, team_two, n_games, db):
     
+    matchdata_table = db.table("Matchdata")
+
     Game = Query()
-    games = db.search((Game.Home == team_one) & (Game.Away == team_two) | (Game.Home == team_two) & (Game.Away == team_one))
+    
+    games = matchdata_table.search((Game.Home == team_one) & (Game.Away == team_two) | (Game.Home == team_two) & (Game.Away == team_one))
 
     games_sorted = sorted(games, key=lambda x: parse_date(x['Date']), reverse=True)
 
@@ -203,11 +232,11 @@ def query_games(team_one, team_two, n_games, db):
     return games_sorted
     
 
-"""
+
 db = load_db()
 User = Query()
 print(db.search(User.Home == 'FC Hansa Rostock'))
-"""
+
 
 """
 db = load_db()
