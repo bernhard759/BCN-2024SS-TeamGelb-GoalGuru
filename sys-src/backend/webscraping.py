@@ -102,6 +102,30 @@ def get_market_values(season):
     return market_values
 
 
+
+#Returns the transfermarkt ids of all 18 Bundesliga Clubs in a given season (returend as a dict)
+#For the parameter "season", the year in which the season started should be specified (e.g., for the 2019-2020 season, "season" is equal to 2019) 
+def get_transfermarkt_ids(season):
+
+    url = f"{market_value_url}/plus/?saison_id={season}"
+
+    data = requests.get(url=url, headers=header)
+
+    ids = {}
+
+    soup = BeautifulSoup(data.text, 'html.parser')
+    table = soup.find("table", attrs={"class":"items"})
+    table_rows = table.find("tbody").find_all("tr")
+
+    for row in table_rows:
+        team = row.find("td", attrs={"class":"hauptlink no-border-links"}).find("a", title=True).get("title")
+        id = row.find("td", attrs={"class":"hauptlink no-border-links"}).find("a", title=True).get("href")
+        ids[team] = int(id.split("verein/")[1].split("/")[0])
+
+    return ids
+
+
+
 #Returns the position of each club BEFORE the given matchday takes place (returned in an array of dicts)
 #For the parameter "season", the year in which the season started should be specified (e.g., for the 2019-2020 season, "season" is equal to 2019)
 #The parameter "spieltag" determines the number of matchdays displayed.
@@ -327,6 +351,29 @@ def generate_mv_csv(season):
     return df
 
 
+#Create a json file including all Bundesliga teams, their market values, and their transfermarkt ids
+#Parameter "season" determines the year / season
+def generate_team_json(season):
+    mv_data = get_market_values(season)
+    id_data = get_transfermarkt_ids(season)
+
+    team_index = 1
+    data = {"_default":{
+        
+    }}
+
+    for key in mv_data.keys():
+        data["_default"][str(team_index)] = {"Team":key ,"Market_Value":mv_data[key], "ID": id_data[key]}
+        team_index += 1
+    
+
+    json_data = json.dumps(data, indent=4)
+    with open(f"{season}_teams.json", 'w') as json_file:
+        json_file.write(json_data)
+    return json_data
+
+
+
 
 #Create a dataframe out of the scraped data for our first ml-model
 #Save the data as a csv
@@ -419,6 +466,8 @@ def create_dataframe_model_two(start_season, end_season):
 """generate_matchdata_csv("2000-2024")
 generate_mv_csv(2023)
 create_dataframe_model_one()"""
+
+generate_team_json(2023)
 
 # TODO:
 # 1) create_dataframe is slow (get_matchday_positions)
