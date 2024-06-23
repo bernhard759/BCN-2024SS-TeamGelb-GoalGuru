@@ -162,6 +162,7 @@ def get_matchday_positions(season, spieltage = 34, delay=2):
 
     return matchday_tables
 
+
 #Returns list with the name of the winner from two selected teams of last 'n' games between them
 #Parameter n: number of games
 #Parameter team_a, team_b = names of the teams
@@ -301,7 +302,7 @@ def generate_matchdata_csv(season_range):
 
     df = pd.DataFrame(data,columns = ["Home_Team","Away_Team","Goals_Home","Goals_Away","Date"])
     df["Date"] = pd.to_datetime(df['Date'])
-    df.to_csv(f"matchdata_{season_range[0]}-{season_range[1]}.csv")
+    df.to_csv(f"csv-data/matchdata_{season_range[0]}-{season_range[1]}.csv")
     return df
 
 
@@ -322,20 +323,16 @@ def generate_matchdata_json(season_range):
         print(f"Exception thrown: {e}")
         return
 
-    data = {"_default":{
-        
-    }}
+    data = []
 
-    match_index = 1
     for i in range(int(season_range[0]), int(season_range[1])):
         season_matches = get_complete_matchday_data(i)
 
         for season_match in season_matches:
-            data["_default"][match_index] = {"Home":season_match[0], "Away":season_match[1], "Goals_Home":season_match[2], "Goals_Away":season_match[3], "Date":season_match[4]}
-            match_index += 1
+            data.append({"Home":season_match[0], "Away":season_match[1], "Goals_Home":season_match[2], "Goals_Away":season_match[3], "Date":season_match[4]})
 
     json_data = json.dumps(data, indent=4)
-    with open(f"matchdata_{season_range[0]}-{season_range[1]}.json", 'w') as json_file:
+    with open(f"json-data/matchdata_{season_range[0]}-{season_range[1]}.json", 'w') as json_file:
         json_file.write(json_data)
     return json_data
 
@@ -347,7 +344,7 @@ def generate_mv_csv(season):
     df = pd.DataFrame(columns=["Teams","MarketValues"])
     df["Teams"] = list(data.keys())
     df["MarketValues"] = list(data.values())
-    df.to_csv('club_values.csv')
+    df.to_csv('csv-data/club_values.csv')
     return df
 
 
@@ -357,18 +354,14 @@ def generate_team_json(season):
     mv_data = get_market_values(season)
     id_data = get_transfermarkt_ids(season)
 
-    team_index = 1
-    data = {"_default":{
-        
-    }}
+    data = []
 
     for key in mv_data.keys():
-        data["_default"][str(team_index)] = {"Team":key ,"Market_Value":mv_data[key], "ID": id_data[key]}
-        team_index += 1
+        data.append({"Team":key ,"Market_Value":mv_data[key], "ID": id_data[key]})
     
 
     json_data = json.dumps(data, indent=4)
-    with open(f"{season}_teams.json", 'w') as json_file:
+    with open(f"json-data/{season}_teams.json", 'w') as json_file:
         json_file.write(json_data)
     return json_data
 
@@ -406,7 +399,7 @@ def create_dataframe_model_one():
     df = pd.DataFrame(content)
     df.columns = ["HT","AT","R","MV_HT","MV_AT","POS_HT","POS_AT"]
     df = pd.get_dummies(df, columns=["HT", "AT"])
-    df.to_csv('data_model_one.csv')
+    df.to_csv('csv-data/data_model_one.csv')
     return df
 
 
@@ -467,6 +460,10 @@ def create_dataframe_model_two(start_season, end_season):
 generate_mv_csv(2023)
 create_dataframe_model_one()"""
 
+"""
+generate_matchdata_json("2000-2024")
+generate_team_json(2023)
+"""
 
 # TODO:
 # 1) create_dataframe is slow (get_matchday_positions)
