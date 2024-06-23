@@ -7,6 +7,7 @@ import models
 from tinydb import TinyDB, Query
 from datetime import datetime
 import json
+import os
 
 bundesliga_1 = {
     "Bayer 04 Leverkusen": 15, "FC Bayern München": 27, "VfB Stuttgart": 79, "RasenBallsport Leipzig": 23826,
@@ -180,30 +181,32 @@ def predict(home, away):
     model = models.ModelOne()
     return model.predict()
 
-"""
-#Load the tinydb for the matchdata
-def load_db(file_path = "json-data/matchdata_2000-2024.json"):
-    db = TinyDB(file_path)
-    return db
-"""
 
-#Load the tinydb
-def load_db(file_paths = ["json-data/matchdata_2000-2024.json", "json-data/2023_teams.json"]):
-    db = TinyDB("database/tinydb.json")
 
-    with open(file_paths[0], 'r') as f:
-        matchdata = json.load(f)
+#Load / Create the tinydb
+def load_db(file_paths = ["json-data/matchdata_2000-2024.json", "json-data/2023_teams.json"], db_path = "database/tinydb.json"):
 
-    with open(file_paths[1], 'r') as f:
-        teamdata = json.load(f)
-    
-     #Table for Matchdata
-    table1 = db.table("Matches")
-    table1.insert_multiple(matchdata)
+    #check if the db-file already exists
+    if(os.path.exists(db_path)):
 
-    #Table for Teamdata
-    table2 = db.table("Team")
-    table2.insert_multiple(teamdata)
+        db = TinyDB(db_path)
+
+    else:
+        db = TinyDB(db_path)
+
+        with open(file_paths[0], 'r') as f:
+            matchdata = json.load(f)
+
+        with open(file_paths[1], 'r') as f:
+            teamdata = json.load(f)
+        
+        #Table for Matchdata
+        table1 = db.table("Matches")
+        table1.insert_multiple(matchdata)
+
+        #Table for Teamdata
+        table2 = db.table("Team")
+        table2.insert_multiple(teamdata)
 
     return db
 
@@ -216,13 +219,20 @@ def parse_date(date_str):
 #return the last n_games played between to teams
 def query_games(team_one, team_two, n_games, db):
     
-    matchdata_table = db.table("Matchdata")
+    matchdata_table = db.table("Matches")
 
     Game = Query()
     
     games = matchdata_table.search((Game.Home == team_one) & (Game.Away == team_two) | (Game.Home == team_two) & (Game.Away == team_one))
 
-    games_sorted = sorted(games, key=lambda x: parse_date(x['Date']), reverse=True)
+    #remove duplicates from query
+    unique_games = {frozenset(game.items()) for game in games}
+    
+    #parse it back to list of dicts
+    unique_games = [dict(game) for game in unique_games]
+
+    #sort the games by date
+    games_sorted = sorted(unique_games, key=lambda x: parse_date(x['Date']), reverse=True)
 
 
     if(len(games_sorted) > n_games):
@@ -232,16 +242,29 @@ def query_games(team_one, team_two, n_games, db):
     return games_sorted
     
 
+#returns informations about the bundesliga-clubs
+def query_team_data(db):
 
-db = load_db()
-User = Query()
-print(db.search(User.Home == 'FC Hansa Rostock'))
+    team_table = db.table("Team")
+
+    team_data = team_table.all()
+
+    return team_data
 
 
 """
+#Test Query Matchdata
 db = load_db()
 print("------\n")
-print(query_games("1.FC Heidenheim 1846", "SC Freiburg", 10))
+print(query_games("1.FC Heidenheim 1846", "SC Freiburg", 10, db))
 print("\n------\n")
 """
 
+
+"""
+#Test Query Teamdata
+db = load_db()
+print("------\n")
+print(query_team_data(db))
+print("\n------\n")
+"""

@@ -1,94 +1,92 @@
-{
-    "_default": {
-        "1": {
-            "Team": "FC Bayern M\u00fcnchen",
-            "Market_Value": "872.45",
-            "ID": 27
-        },
-        "2": {
-            "Team": "Bayer 04 Leverkusen",
-            "Market_Value": "648.35",
-            "ID": 15
-        },
-        "3": {
-            "Team": "RasenBallsport Leipzig",
-            "Market_Value": "503.90",
-            "ID": 23826
-        },
-        "4": {
-            "Team": "Borussia Dortmund",
-            "Market_Value": "465.40",
-            "ID": 16
-        },
-        "5": {
-            "Team": "VfB Stuttgart",
-            "Market_Value": "302.90",
-            "ID": 79
-        },
-        "6": {
-            "Team": "Eintracht Frankfurt",
-            "Market_Value": "239.75",
-            "ID": 24
-        },
-        "7": {
-            "Team": "VfL Wolfsburg",
-            "Market_Value": "202.50",
-            "ID": 82
-        },
-        "8": {
-            "Team": "SC Freiburg",
-            "Market_Value": "171.30",
-            "ID": 60
-        },
-        "9": {
-            "Team": "Borussia M\u00f6nchengladbach",
-            "Market_Value": "162.23",
-            "ID": 18
-        },
-        "10": {
-            "Team": "TSG 1899 Hoffenheim",
-            "Market_Value": "145.70",
-            "ID": 533
-        },
-        "11": {
-            "Team": "1.FC Union Berlin",
-            "Market_Value": "127.75",
-            "ID": 89
-        },
-        "12": {
-            "Team": "1.FSV Mainz 05",
-            "Market_Value": "123.85",
-            "ID": 39
-        },
-        "13": {
-            "Team": "FC Augsburg",
-            "Market_Value": "119.35",
-            "ID": 167
-        },
-        "14": {
-            "Team": "SV Werder Bremen",
-            "Market_Value": "104.10",
-            "ID": 86
-        },
-        "15": {
-            "Team": "1.FC K\u00f6ln",
-            "Market_Value": "77.65",
-            "ID": 3
-        },
-        "16": {
-            "Team": "1.FC Heidenheim 1846",
-            "Market_Value": "66.45",
-            "ID": 2036
-        },
-        "17": {
-            "Team": "VfL Bochum",
-            "Market_Value": "63.20",
-            "ID": 80
-        },
-        "18": {
-            "Team": "SV Darmstadt 98",
-            "Market_Value": "37.35",
-            "ID": 105
-        }
+[
+    {
+        "Team": "FC Bayern M\u00fcnchen",
+        "Market_Value": "872.45",
+        "ID": 27
+    },
+    {
+        "Team": "Bayer 04 Leverkusen",
+        "Market_Value": "648.35",
+        "ID": 15
+    },
+    {
+        "Team": "RasenBallsport Leipzig",
+        "Market_Value": "503.90",
+        "ID": 23826
+    },
+    {
+        "Team": "Borussia Dortmund",
+        "Market_Value": "465.40",
+        "ID": 16
+    },
+    {
+        "Team": "VfB Stuttgart",
+        "Market_Value": "302.90",
+        "ID": 79
+    },
+    {
+        "Team": "Eintracht Frankfurt",
+        "Market_Value": "239.75",
+        "ID": 24
+    },
+    {
+        "Team": "VfL Wolfsburg",
+        "Market_Value": "202.50",
+        "ID": 82
+    },
+    {
+        "Team": "SC Freiburg",
+        "Market_Value": "171.30",
+        "ID": 60
+    },
+    {
+        "Team": "Borussia M\u00f6nchengladbach",
+        "Market_Value": "162.23",
+        "ID": 18
+    },
+    {
+        "Team": "TSG 1899 Hoffenheim",
+        "Market_Value": "145.70",
+        "ID": 533
+    },
+    {
+        "Team": "1.FC Union Berlin",
+        "Market_Value": "127.75",
+        "ID": 89
+    },
+    {
+        "Team": "1.FSV Mainz 05",
+        "Market_Value": "123.85",
+        "ID": 39
+    },
+    {
+        "Team": "FC Augsburg",
+        "Market_Value": "119.35",
+        "ID": 167
+    },
+    {
+        "Team": "SV Werder Bremen",
+        "Market_Value": "104.10",
+        "ID": 86
+    },
+    {
+        "Team": "1.FC K\u00f6ln",
+        "Market_Value": "77.65",
+        "ID": 3
+    },
+    {
+        "Team": "1.FC Heidenheim 1846",
+        "Market_Value": "66.45",
+        "ID": 2036
+    },
+    {
+        "Team": "VfL Bochum",
+        "Market_Value": "63.20",
+        "ID": 80
+    },
+    {
+        "Team": "SV Darmstadt 98",
+        "Market_Value": "37.35",
+        "ID": 105
     }
-}
+]
