@@ -467,7 +467,6 @@ def create_dataframe_model_two(start_season, end_season):
 generate_mv_csv(2023)
 create_dataframe_model_one()"""
 
-generate_team_json(2023)
 
 # TODO:
 # 1) create_dataframe is slow (get_matchday_positions)
