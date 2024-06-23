@@ -35,7 +35,7 @@ class ModelOne:
 #First ml-model trained with logistic Regression on our level one dataset ("data_model_one.csv")
 class ModelTwo:
 
-    def __init__(self, trainings_data = "data_model_one.csv"):
+    def __init__(self, trainings_data = "csv-data/data_model_one.csv"):
         self.model = LogisticRegression(solver="lbfgs",max_iter=1000)
 
         self.columns = pd.read_csv(trainings_data).columns
@@ -64,8 +64,10 @@ class ModelTwo:
         team_dict_home[f"HT_{home}"] = True
         team_dict_away[f"AT_{away}"] = True
 
-        mv_ht = utils.get_market_value(home)
-        mv_at = utils.get_market_value(away)
+        db = utils.load_db()
+        
+        mv_ht = utils.query_market_values(home, db)
+        mv_at = utils.query_market_values(away, db)
 
         pos_ht = utils.get_current_pos(home)
         pos_at = utils.get_current_pos(away)
@@ -77,7 +79,7 @@ class ModelTwo:
         X = pd.DataFrame(X, index=[0])
 
         result = self.model.predict_proba(X)
-        return create_prediction(home, away, [result[2], result[1], result[0]])
+        return create_prediction(home, away, [result[0][2], result[0][1], result[0][0]])
 
 
     def load(self, model_file_name = "model_two.joblib"):
@@ -121,9 +123,8 @@ if __name__ == "__main__":
     model_one.predict("Bayern", "Dortmund")
     """
 
-
-    #Create ModelTwo
     """
+    #Create ModelTwo
     model_two = ModelTwo()
 
     data = pd.read_csv("csv-data/data_model_one.csv",index_col=0)
@@ -134,12 +135,17 @@ if __name__ == "__main__":
     
     model_two.train(X,y)
 
-    model_two.save()"""
-    
+    model_two.save()
+    """
 
     #Load saved ModelTwo
+    #print some test predictions
     """
     model_two = ModelTwo()
     model_two.load()
-    print(model_two.predict("1.FC Köln","Borussia Dortmund"))
+    print(model_two.predict("1.FC K\u00f6ln","Borussia Dortmund"))
+    print(model_two.predict("Borussia Dortmund","1.FC Köln"))
+    print(model_two.predict("FC Bayern München","Borussia Mönchengladbach"))
+    print(model_two.predict("Bayer 04 Leverkusen","Borussia Mönchengladbach"))
+    print(model_two.predict("FC Bayern München","1.FC Union Berlin"))
     """

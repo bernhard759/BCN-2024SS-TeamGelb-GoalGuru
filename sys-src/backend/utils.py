@@ -252,19 +252,41 @@ def query_team_data(db):
     return team_data
 
 
-"""
-#Test Query Matchdata
-db = load_db()
-print("------\n")
-print(query_games("1.FC Heidenheim 1846", "SC Freiburg", 10, db))
-print("\n------\n")
-"""
+#returns the market_value of a bundesliga club from the db
+def query_market_values(team, db):
+
+    team_table = db.table("Team")
+    MV = Query()
+
+    data = team_table.search((MV.Team == team))
+
+    return float(data[0]["Market_Value"])
 
 
-"""
-#Test Query Teamdata
-db = load_db()
-print("------\n")
-print(query_team_data(db))
-print("\n------\n")
-"""
+
+if __name__ == "__main__":
+
+    """
+    #Test Query Matchdata
+    db = load_db()
+    print("------\n")
+    print(query_games("1.FC Heidenheim 1846", "SC Freiburg", 10, db))
+    print("\n------\n")
+    """
+
+
+    """
+    #Test Query Teamdata
+    db = load_db()
+    print("------\n")
+    print(query_team_data(db))
+    print("\n------\n")
+    """
+
+    """
+    #Test Query Teamdata
+    db = load_db()
+    print("------\n")
+    print(query_market_values("1.FC Köln",db))
+    print("\n------\n")
+    """
