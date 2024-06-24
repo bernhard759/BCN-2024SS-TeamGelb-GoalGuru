@@ -4,7 +4,8 @@ from pydantic import BaseModel
 from typing import List, Dict, Optional
 import logging
 import os
-from fastapi.staticfiles import StaticFiles 
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import JSONResponse 
 
 
 app = FastAPI()
@@ -69,7 +70,12 @@ async def predict(home_team: str, away_team: str):
 
 # Mount the static files directory
 frontend_dir = os.getenv('FRONTEND_DIR', os.path.join(os.path.dirname(__file__), '..', 'frontend', 'dist'))
-app.mount("/", StaticFiles(directory=frontend_dir, html=True), name="static")
+if os.path.exists(frontend_dir):
+    app.mount("/", StaticFiles(directory=frontend_dir, html=True), name="static")
+else:
+    @app.get("/")
+    async def read_root():
+        return JSONResponse(content={"message": "Frontend not available"}, status_code=404)
 
 if __name__ == "__main__":
    uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)
