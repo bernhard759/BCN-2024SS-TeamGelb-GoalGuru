@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; //for makinf HTTPS request
-import './LastFiveGames.css'; //CSS layout
-
-
-//functional component :- for last five games of each team.
+import axios from 'axios';
+import './TeamMatches.css';
 
 const LastFiveGames = ({ team1, team2 }) => {
   const [team1Games, setTeam1Games] = useState([]);
   const [team2Games, setTeam2Games] = useState([]);
   const team1Name = "Bayern";
   const team2Name = "Union Berlin";
-
-// UseEffect:-only chnage if team 1 or team 2 changes
 
   useEffect(() => {
     console.log("useEffect triggered:", team1Name, team2Name);
@@ -23,18 +18,17 @@ const LastFiveGames = ({ team1, team2 }) => {
     }
   }, [team1Name, team2Name]);
 
-  //getting request from api request from api.openligadb.de
-
   const fetchLastFiveGames = async (teamName, setGames) => {
     try {
       const response = await axios.get('https://api.openligadb.de/getmatchdata/bl1/2023');
       console.log(`API Response for ${teamName}:`, response.data);
-
-  //filter Names and no. of teams according to Api response in console.
+      
       const teamGames = response.data.filter(game => 
         game.team1.shortName.toLowerCase() === teamName.toLowerCase() || 
         game.team2.shortName.toLowerCase() === teamName.toLowerCase()
-      ).slice(-5);
+       ).slice(-5)
+       .sort((a, b) => new Date(b.matchDateTime) - new Date(a.matchDateTime))  ;
+      
       console.log(`Filtered games for team ${teamName}:`, teamGames);
       setGames(teamGames);
     } catch (error) {
@@ -43,25 +37,21 @@ const LastFiveGames = ({ team1, team2 }) => {
     }
   };
 
-
-  //change of circle color to display win,draw or loss.
-  const CircleColor = (game, teamName) => {
+  const getResultColor = (game, teamName) => {
     const result = game.matchResults.find(result => result.resultTypeID === 2);
     if (!result) {
-      return 'red'; // Default to loss if no result.
+      return 'bg-danger'; // Default to loss if no result is found.
     }
     const pointsTeam1 = result.pointsTeam1;
     const pointsTeam2 = result.pointsTeam2;
-    if (pointsTeam1 === pointsTeam2) return 'orange'; // Draw
+    if (pointsTeam1 === pointsTeam2) return 'bg-warning'; // Draw
     if ((game.team1.shortName.toLowerCase() === teamName.toLowerCase() && pointsTeam1 > pointsTeam2) ||
         (game.team2.shortName.toLowerCase() === teamName.toLowerCase() && pointsTeam2 > pointsTeam1)) {
-      return 'green'; // Win
+      return 'bg-success'; // Win.
     }
-    return 'red'; // Loss
+    return 'bg-danger'; // Loss.
   };
 
-  
-  //render table to display fast five games.
   const renderGamesTable = (games, teamName) => {
     console.log(`Rendering table for ${teamName}:`, games);
     if (!Array.isArray(games) || games.length === 0) {
@@ -70,14 +60,14 @@ const LastFiveGames = ({ team1, team2 }) => {
 
     return (
       <div className="table-container">
-        <h4>
-          Last Five Games for 
-          <span className="result-circles">
+        <h4>Last Five Games for {teamName}</h4>
+          <div className="result-circles d-flex justify-content-center align-item-center gap-1">
             {games.map((game, index) => (
-              <span key={index} className={`circle ${CircleColor(game, teamName)}`}></span>
-            ))}
-          </span> {teamName}
-        </h4>
+              <span key={index} className={`circle ${getResultColor(game, teamName)}`}></span>
+            )) 
+            }
+          </div> 
+        
         <table className="games-table">
           <thead>
             <tr>
@@ -88,9 +78,14 @@ const LastFiveGames = ({ team1, team2 }) => {
           </thead>
           <tbody>
             {games.map((match) => {
+
+              console.log("games", games);
               const result = match.matchResults.find(result => result.resultTypeID === 2);
               const pointsTeam1 = result ? result.pointsTeam1 : 'N/A';
               const pointsTeam2 = result ? result.pointsTeam2 : 'N/A';
+
+              
+            
 
               let opponent;
               if (match.team1.shortName.toLowerCase() === teamName.toLowerCase()) {
@@ -110,7 +105,7 @@ const LastFiveGames = ({ team1, team2 }) => {
                       {opponent.teamName}
                     </div>
                   </td>
-                  <td>{pointsTeam1} - {pointsTeam2}</td>
+                  <td>{opponent == match.team1 ?  <span>{pointsTeam2} : {pointsTeam1}</span>: <span>{pointsTeam1} : {pointsTeam2}</span>}</td>
                 </tr>
               );
             })}
@@ -120,7 +115,6 @@ const LastFiveGames = ({ team1, team2 }) => {
     );
   };
 
-  //return tables using renderGamesTable.
   return (
     <div className="last-five-games">
       <div className="tables-container">

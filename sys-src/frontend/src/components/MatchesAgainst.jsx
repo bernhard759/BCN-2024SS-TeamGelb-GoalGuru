@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './MatchInfo.css'; 
+import './MatchesAgainst.css'; 
 
 
 
@@ -20,7 +20,7 @@ function MatchInfo({ team1, team2 }) {
         });
         setMatches(response.data);
       } catch (error) {
-        console.error('There was an error fetching the match data!', error);
+        console.error('Error fetcing data!', error);
         setError(error);
       } finally {
         console.log('Checking teams: ', team1, team2);
@@ -41,15 +41,19 @@ function MatchInfo({ team1, team2 }) {
       <table>
         <thead>
           <tr>
-            <th>Result</th>
-            
+            <th>Date</th> 
+            <th>Team1</th>
+            <th>Team2</th>
           </tr>
         </thead>
         <tbody>
           {matches.slice(-5).map((match, index) => (
             <tr key={index}>
+
+              <td>{match.date}</td>
               <td>{match.home_goals}</td>
               <td>{match.away_goals}</td>
+
             </tr>
           ))}
         </tbody>

@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, waitFor, act } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import LastFiveGames from '../components/LastFiveGames';
+import LastFiveGames from '../components/TeamMatches';
 
 const mock = new MockAdapter(axios);
 
@@ -47,8 +47,8 @@ describe('LastFiveGames', () => {
     });
   });
 
-  // Test case: Handles API errors gracefully
-  it('handles API errors gracefully', async () => {
+  // Test case: Handles API errors.
+  it('handle API errors ', async () => {
     mock.onGet('https://api.openligadb.de/getmatchdata/bl1/2023').reply(500);
 
     await act(async () => {
@@ -65,6 +65,7 @@ describe('LastFiveGames', () => {
   it('displays correct result colors', async () => {
     const mockResponse = [
       {
+        //mock response with two match with bayern win
         matchID: 1,
         matchDateTimeUTC: '2023-06-24T15:00:00Z',
         team1: { shortName: 'Bayern', teamIconUrl: 'url-to-bayern-icon' },
@@ -83,7 +84,8 @@ describe('LastFiveGames', () => {
         ]
       }
     ];
-
+   
+    
     mock.onGet('https://api.openligadb.de/getmatchdata/bl1/2023').reply(200, mockResponse);
 
     await act(async () => {
@@ -91,11 +93,11 @@ describe('LastFiveGames', () => {
     });
 
     await waitFor(() => {
-      // Log the rendered output for debugging
+      // debug the render output
       console.log(document.body.innerHTML);
 
-      const greenCircles = screen.getAllByText('', { selector: '.green' });
-      console.log(greenCircles); // Log the found elements
+      const greenCircles = screen.getAllByText('', { selector: '.bg-success' });
+      console.log(greenCircles); // Log the win elements
       expect(greenCircles).toHaveLength(2); // Two games, both wins for Bayern
     });
   });
