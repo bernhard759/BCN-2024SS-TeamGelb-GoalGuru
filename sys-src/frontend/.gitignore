@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vitest
+coverage
+__snapshots__
+
+.env

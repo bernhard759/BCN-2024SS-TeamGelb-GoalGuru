@@ -3,35 +3,8 @@
   flex-direction: column;
 }
 
-nav {
-  background: var(--bs-gray-200);
-  border-bottom: 3px solid var(--bs-gray-300);
-}
-[data-bs-theme="dark"] nav {
-  background: var(--bs-gray-800);
-  border-bottom: 3px solid var(--bs-gray-600);
-}
-
-.max-width-select {
-  max-width: 400px;
-}
-
-.icon-wrapper {
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 100%;
-  width: 2em;
-  height: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-wrapper .clickable-icon {
-  width: 1.5em;
-  height: 1.5em;
-}
-
-.icon-wrapper:hover {
-  background-color: rgba(0, 0, 0, 0.15);
+#content {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
 }

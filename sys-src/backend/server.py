@@ -2,7 +2,10 @@ import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
+from typing import List
 import logging
+import os
+from fastapi.staticfiles import StaticFiles 
 import os
 from fastapi.staticfiles import StaticFiles 
 
@@ -45,6 +48,12 @@ class PredictionProbabilities(BaseModel):
     away: float
 
 
+class PredictionProbabilities(BaseModel):
+    home: float
+    draw: float
+    away: float
+
+
 class PredictionResponse(BaseModel):
     teams: List[str]
     probabilities: PredictionProbabilities
@@ -63,6 +72,8 @@ async def get_matches():
 
 # Endpoint for prediction results 
 #http://127.0.0.1:8080/api/predict?home_team=Team%20A&away_team=Team%20B as example
+# Endpoint for prediction results 
+#http://127.0.0.1:8080/api/predict?home_team=Team%20A&away_team=Team%20B as example
 @app.get("/api/predict", response_model=PredictionResponse)
 async def predict(home_team: str, away_team: str):
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
@@ -78,10 +89,10 @@ async def predict(home_team: str, away_team: str):
     except Exception as e:
         logging.error(f"An error occurred in the /api/predict endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
-'''
+    
 # Mount the static files directory
 frontend_dir = os.getenv('FRONTEND_DIR', os.path.join(os.path.dirname(__file__), '..', 'frontend', 'dist'))
 app.mount("/", StaticFiles(directory=frontend_dir, html=True), name="static")
-'''
+
 if __name__ == "__main__":
    uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)
