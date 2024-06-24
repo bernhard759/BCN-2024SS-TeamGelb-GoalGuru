@@ -65,21 +65,23 @@ function App() {
                 </div>
                 {/* Game Prediction Result*/}
                 <GamePrediction teams={selectedTeams}></GamePrediction>
+
+
+                 {/* LastFiveGames */}
+         <LastFiveGames team1={selectedTeams[0]} team2= {selectedTeams[1]}></LastFiveGames>
+
+
+{/* */}
+
+
+{/* MatchInfo */}
+
+<MatchInfo team1={selectedTeams[0]} team2= {selectedTeams[1]}> </MatchInfo>
+
+{/* */}
               </div>
 
-              {/* LastFiveGames */}
-              <LastFiveGames team1={selectedTeam[0]} team2= {selectedTeam[1]}></LastFiveGames>
-
-
-              {/* */}
-
-
-              {/* MatchInfo */}
-
-              <MatchInfo team1={selectedTeam[0]} team2= {selectedTeam[1]}> </MatchInfo>
-
-              {/* */}
-              
+             
 
             </div>
           ) : (
@@ -87,6 +89,9 @@ function App() {
           )}
 
         </div>
+
+        
+
 
       </div>
     </div>

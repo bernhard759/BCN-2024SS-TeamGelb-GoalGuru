@@ -5,6 +5,7 @@
 }
 
 .match-info .header h1 {
+ 
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -12,7 +13,7 @@
 .match-info table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 20px 5;
 }
 
 .match-info th, .match-info td {
@@ -22,31 +23,9 @@
 
 .match-info th {
   background-color: #f4f4f4;
+  
 }
 
-.match-info .team-logo {
-  width: 30px;
-  height: auto;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.result-circle {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-left: 10px;
-}
-
-.result-circle.green {
-  background-color: green;
-}
-
-.result-circle.orange {
-  background-color: orange;
-}
-
-.result-circle.red {
-  background-color: red;
+.match-info th.centered {
+  text-align: center;
 }

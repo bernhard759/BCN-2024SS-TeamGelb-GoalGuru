@@ -2,7 +2,7 @@
 .last-five-games {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 50px;
 }
 
 .tables-container {
@@ -13,8 +13,8 @@
 }
 
 .table-container {
-  margin: 20px;
-  width: 45%; /* Adjust the width to fit two tables side by side */
+  margin: 40px;
+  width: 45%;
 }
 
 .games-table {
