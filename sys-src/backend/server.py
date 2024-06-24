@@ -57,9 +57,16 @@ async def get_teams():
 
 #Endpoint for match data
 @app.get("/api/matches",  response_model=List[MatchesResponse])
-async def get_matches():
-     logging.info("Received request for matches")
-     return matches
+async def get_matches(home_team: str, away_team: str):
+    logging.info(f"Received request for matches with home_team={home_team} and away_team={away_team}")
+    filtered_matches = [
+        match for match in matches
+        if match['home_team'] == home_team and match['away_team'] == away_team
+    ]
+    if not filtered_matches:
+        logging.info("No matches found for the given teams")
+        raise HTTPException(status_code=404, detail="No matches found for the given teams")
+    return filtered_matches
 
 # Endpoint for prediction results 
 #http://127.0.0.1:8080/api/predict?home_team=Team%20A&away_team=Team%20B as example
