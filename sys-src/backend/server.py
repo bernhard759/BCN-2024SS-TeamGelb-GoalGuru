@@ -2,12 +2,9 @@ import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
-from typing import List
 import logging
 import os
 from fastapi.staticfiles import StaticFiles 
-import os
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse 
 
 
@@ -48,13 +45,6 @@ class PredictionProbabilities(BaseModel):
     draw: float
     away: float
 
-
-class PredictionProbabilities(BaseModel):
-    home: float
-    draw: float
-    away: float
-
-
 class PredictionResponse(BaseModel):
     teams: List[str]
     probabilities: PredictionProbabilities
@@ -71,8 +61,6 @@ async def get_matches():
      logging.info("Received request for matches")
      return matches
 
-# Endpoint for prediction results 
-#http://127.0.0.1:8080/api/predict?home_team=Team%20A&away_team=Team%20B as example
 # Endpoint for prediction results 
 #http://127.0.0.1:8080/api/predict?home_team=Team%20A&away_team=Team%20B as example
 @app.get("/api/predict", response_model=PredictionResponse)
