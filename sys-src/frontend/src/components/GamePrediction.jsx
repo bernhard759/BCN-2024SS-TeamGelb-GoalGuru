@@ -166,7 +166,7 @@ export default function GamePrediction({ teams }) {
                                      d-flex justify-content-center align-items-center`}
                                 style={{ width: `${value * 100}%` }}
                             >
-                                {(probaValuePercentageDisplay(value))}
+                                {value > 0.05 ? (probaValuePercentageDisplay(value)) : ""}
                                 <span className={styles.popup}></span>
                             </div>
                         </OverlayTrigger>
