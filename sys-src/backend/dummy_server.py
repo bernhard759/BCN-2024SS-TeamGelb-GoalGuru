@@ -3,9 +3,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
 import logging
-import os
-from fastapi.staticfiles import StaticFiles 
-from fastapi.responses import JSONResponse 
 
 app = FastAPI()
 #Dummy data
