@@ -87,10 +87,23 @@ class DummyPredictionResponse(BaseModel):
 #http://127.0.0.1:8080/api/dummy/teams - route
 @app.get("/api/dummy/teams", response_model=DummyTeamsResponse)
 async def get_teams():
-   try:
+    """
+    Retrieves a list of available teams from dummy data.
+    
+    This endpoint logs the incoming request, attempts to return the list of dummy data teams, 
+    and handles any exceptions by logging the error and returning an appropriate HTTP error response.
+    
+    Returns:
+        DummyTeamsResponse: JSON structure containing the list of team names.
+    
+    Raises:
+        HTTPException: If an internal error occurs during processing, 
+                        it returns a 500 Internal Server Error status with a detailed error message.
+    """
+    try:
         logging.info("Received request for teams")
         return {"teams": teams}
-   except Exception as e:
+    except Exception as e:
         logging.error(f"An error occurred in the /api/dummy/teams endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
@@ -99,6 +112,19 @@ async def get_teams():
 #http://127.0.0.1:8080/api/dummy/matches - route
 @app.get("/api/dummy/matches",  response_model=List[DummyMatchesResponse])
 async def get_matches():
+    """
+    Retrieves a list of matches from dummy data.
+    
+    This endpoint logs the request, returns match details, and handles exceptions by logging and returning 
+    an HTTP error response.
+    
+    Returns:
+        List[DummyMatchesResponse]: A list of match details encapsulated in response models.
+    
+    Raises:
+        HTTPException: If an internal error occurs, 
+                        it returns a 500 Internal Server Error status with a detailed error message.
+    """
     try:
         logging.info("Received request for matches")
         return matches
@@ -107,10 +133,28 @@ async def get_matches():
         raise HTTPException(status_code=500, detail="Internal Server Error")
  
  
-# Endpoint for prediction results 
+# Endpoint for dummy prediction results 
 #http://127.0.0.1:8080/api/dummy/predict?home_team=Team%20A&away_team=Team%20B as example
 @app.get("/api/dummy/predict", response_model=DummyPredictionResponse)
 async def predict(home_team: str, away_team: str):
+    """
+    Provides a dummy prediction for the outcome of a match between two specified dummy teams.
+    
+    Logs the request and tries to find a prediction for the provided home and away teams. 
+    If found, it returns the prediction; if not, it raises an HTTPException.
+    
+    Parameters:
+        home_team (str): The name of the home team.
+        away_team (str): The name of the away team.
+        
+    Returns:
+        DummyPredictionResponse: Prediction probabilities for the match if the prediction data exists.
+    
+    Raises:
+        HTTPException: If no prediction data is found (404 Not Found) or 
+                        if an invalid team name is provided (400 Bad Request), or
+                        if any other error occurs (500 Internal Server Error).
+    """
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
     
     try:
