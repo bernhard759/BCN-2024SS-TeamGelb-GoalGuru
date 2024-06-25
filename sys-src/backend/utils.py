@@ -280,6 +280,13 @@ def save_model_two(model : models.ModelTwo,  model_file_name = "model_two.joblib
 def create_model_one():
     return models.ModelOne()
 
+
+#Create an instance of model_one
+def create_model_two():
+    model = models.ModelTwo()
+    model.load()
+    return model
+
 if __name__ == "__main__":
 
     """

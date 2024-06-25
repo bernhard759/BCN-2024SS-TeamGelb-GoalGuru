@@ -29,7 +29,7 @@ predictions = {
     },
 }
 
-model = utils.create_model_one()
+model = utils.create_model_two()
 
 tiny_db = utils.load_db()
 
