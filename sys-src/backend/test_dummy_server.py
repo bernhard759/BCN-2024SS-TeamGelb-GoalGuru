@@ -1,19 +1,19 @@
 import pytest
 from httpx import AsyncClient
 from unittest.mock import patch
-from dummy_server import app
+from dummy_server import dummy_app
 
 
 @pytest.mark.asyncio
 async def test_get_teams_dummy():
-    async with AsyncClient(app=app, base_url="http://test") as ac:
+    async with AsyncClient(app=dummy_app, base_url="http://test") as ac:
         response = await ac.get("/api/dummy/teams")
     assert response.status_code == 200
     assert response.json() == {"teams": ["Team A", "Team B", "Team C", "Team D"]}
     
 @pytest.mark.asyncio
 async def test_get_matches_dummy():
-    async with AsyncClient(app=app, base_url="http://test") as ac:
+    async with AsyncClient(app=dummy_app, base_url="http://test") as ac:
         response = await ac.get("/api/dummy/matches")
     assert response.status_code == 200
     assert response.json() == [
@@ -22,7 +22,7 @@ async def test_get_matches_dummy():
     ]
 @pytest.mark.asyncio
 async def test_predict_success():
-    async with AsyncClient(app=app, base_url="http://test") as ac:
+    async with AsyncClient(app=dummy_app, base_url="http://test") as ac:
         response = await ac.get("/api/dummy/predict?home_team=Team A&away_team=Team B")
     assert response.status_code == 200
     assert "probabilities" in response.json()
@@ -30,7 +30,7 @@ async def test_predict_success():
         
 @pytest.mark.asyncio
 async def test_predict_valid_data():
-    async with AsyncClient(app=app, base_url="http://test") as ac:
+    async with AsyncClient(app=dummy_app, base_url="http://test") as ac:
         response = await ac.get("/api/dummy/predict?home_team=Team%20A&away_team=Team%20B")
         assert response.status_code == 200
         assert "probabilities" in response.json()
