@@ -152,25 +152,15 @@ async def predict(home_team: str, away_team: str):
     
     Raises:
         HTTPException: If no prediction data is found (404 Not Found) or 
-                        if an invalid team name is provided (400 Bad Request), or
                         if any other error occurs (500 Internal Server Error).
     """
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
-    
+
     try:
-        logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
         prediction = predictions.get((home_team, away_team))
-        if prediction:
-            logging.info(f"Prediction found: {prediction}")
-            return prediction
-        else:
-            logging.error("Prediction not found")
-            raise HTTPException(status_code=404, detail="Prediction not found for the given teams")
-    except KeyError:
-        logging.error("Invalid team name provided")
-        raise HTTPException(status_code=400, detail="Invalid team name provided")
+        return prediction
     except Exception as e:
-        logging.error(f"An error occurred in the /api/dummy/predict endpoint: {e}")
+        logging.error(f"An error occurred in the /api/dummy/predict endpoint: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
