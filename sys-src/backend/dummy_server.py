@@ -54,7 +54,7 @@ async def get_teams():
         logging.info("Received request for teams")
         return {"teams": teams}
    except Exception as e:
-        logging.error(f"An error occurred in the /api/teams endpoint: {e}")
+        logging.error(f"An error occurred in the /api/dummy/teams endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 #Endpoint for matches with dummy data
@@ -65,7 +65,7 @@ async def get_matches():
         logging.info("Received request for matches")
         return matches
     except Exception as e:
-        logging.error(f"An error occurred in the /api/matches endpoint: {e}")
+        logging.error(f"An error occurred in the /api/dummy/matches endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
  
 # Endpoint for prediction results 
@@ -87,7 +87,7 @@ async def predict(home_team: str, away_team: str):
         logging.error("Invalid team name provided")
         raise HTTPException(status_code=400, detail="Invalid team name provided")
     except Exception as e:
-        logging.error(f"An error occurred in the /api/predict endpoint: {e}")
+        logging.error(f"An error occurred in the /api/dummy/predict endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
