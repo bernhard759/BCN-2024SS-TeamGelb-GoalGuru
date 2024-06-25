@@ -8,44 +8,15 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse 
 import utils
 
-
 app = FastAPI()
-#Dummy data
-teams = ["Team A", "Team B", "Team C", "Team D"]
-
-matches = [
-    {"home_team": "Team A", "away_team": "Team B", "home_goals": 3, "away_goals": 1, "date": "2023-04-15"},
-    {"home_team": "Team A", "away_team": "Team C", "home_goals": 1, "away_goals": 1, "date": "2023-04-16"},
-]
-
-predictions = {
-    ("Team A", "Team B"): {
-        "teams": ["Team A", "Team B"],
-        "probabilities": {"home": 0.65, "draw": 0.25, "away": 0.10}
-    },
-    ("Team C", "Team D"): {
-        "teams": ["Team C", "Team D"],
-        "probabilities": {"home": 0.45, "draw": 0.25, "away": 0.30}
-    },
-}
-
 model = utils.create_model_two()
-
 tiny_db = utils.load_db()
-
 
 #Define response models
 class TeamsResponse(BaseModel):
     teams: List[str]
 
 class MatchesResponse(BaseModel):
-    '''
-    home_team: str
-    away_team: str
-    home_goals: int
-    away_goals: int
-    date: str
-    '''
     Home: str
     Away: str
     Goals_Home: int
@@ -68,9 +39,6 @@ async def get_teams():
     data = utils.query_team_data(tiny_db)
     team_data = {"teams": [team["Team"] for team in data]}
     return team_data
-    """
-    return {"teams": teams}
-    """
 
 #Endpoint for match data
 @app.get("/api/matches",  response_model=List[MatchesResponse])
@@ -81,16 +49,6 @@ async def get_matches(home_team: str, away_team: str):
     except Exception as e:
         logging.error(f"An error occurred in the /api/matches endpoint: {e}")
     return filtered_matches
-    """
-    filtered_matches = [
-        match for match in matches
-        if match['home_team'] == home_team and match['away_team'] == away_team
-    ]
-    if not filtered_matches:
-        logging.info("No matches found for the given teams")
-        raise HTTPException(status_code=404, detail="No matches found for the given teams")
-    return filtered_matches
-    """
 
 # Endpoint for prediction results 
 #http://127.0.0.1:8080/api/predict?home_team=Team%20A&away_team=Team%20B as example
@@ -100,15 +58,6 @@ async def predict(home_team: str, away_team: str):
     
     try:
         return model.predict(home_team, away_team)
-        """
-        prediction = predictions.get((home_team, away_team))
-        if prediction:
-            logging.info(f"Prediction found: {prediction}")
-            return prediction
-        else:
-            logging.error("Prediction not found")
-            raise HTTPException(status_code=404, detail="Prediction not found for the given teams")
-        """
     except Exception as e:
         logging.error(f"An error occurred in the /api/predict endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
