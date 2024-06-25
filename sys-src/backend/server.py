@@ -40,11 +40,18 @@ class TeamsResponse(BaseModel):
     teams: List[str]
 
 class MatchesResponse(BaseModel):
+    '''
     home_team: str
     away_team: str
     home_goals: int
     away_goals: int
     date: str
+    '''
+    Home: str
+    Away: str
+    Goals_Home: int
+    Goals_Away: int
+    Date: str
 
 class PredictionProbabilities(BaseModel):
     home: float
