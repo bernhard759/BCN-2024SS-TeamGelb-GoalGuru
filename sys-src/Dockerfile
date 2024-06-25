@@ -1,8 +1,10 @@
 # Build the React frontend
-FROM node:14-alpine as frontend-build
+FROM node:20-alpine as frontend-build
 WORKDIR /app
-COPY ./frontend .
+COPY ./frontend/package.json ./
 RUN npm install
+ENV PATH /app/node_modules/.bin:$PATH
+COPY ./frontend .
 RUN npm run build
 
 # Build the FastAPI backend
@@ -11,8 +13,10 @@ WORKDIR /app
 COPY ./backend .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the frontend build artifacts to the backend image
+# Final image
 FROM backend-build as final
+
+# Copy the frontend build artifacts from the frontend-build stage
 COPY --from=frontend-build /app/dist /app/frontend
 
 # Set the environment variable for the frontend directory
