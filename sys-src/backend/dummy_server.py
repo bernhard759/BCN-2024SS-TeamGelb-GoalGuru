@@ -50,15 +50,23 @@ class DummyPredictionResponse(BaseModel):
 #http://127.0.0.1:8080/api/dummy/teams - route
 @app.get("/api/dummy/teams", response_model=DummyTeamsResponse)
 async def get_teams():
-    logging.info("Received request for teams")
-    return {"teams": teams}
+   try:
+        logging.info("Received request for teams")
+        return {"teams": teams}
+   except Exception as e:
+        logging.error(f"An error occurred in the /api/teams endpoint: {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 #Endpoint for matches with dummy data
 #http://127.0.0.1:8080/api/dummy/matches - route
 @app.get("/api/dummy/matches",  response_model=List[DummyMatchesResponse])
 async def get_matches():
-     logging.info("Received request for matches")
-     return matches
+    try:
+        logging.info("Received request for matches")
+        return matches
+    except Exception as e:
+        logging.error(f"An error occurred in the /api/matches endpoint: {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
  
 # Endpoint for prediction results 
 #http://127.0.0.1:8080/api/dummy/predict?home_team=Team%20A&away_team=Team%20B as example
@@ -67,6 +75,7 @@ async def predict(home_team: str, away_team: str):
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
     
     try:
+        logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
         prediction = predictions.get((home_team, away_team))
         if prediction:
             logging.info(f"Prediction found: {prediction}")
@@ -74,6 +83,9 @@ async def predict(home_team: str, away_team: str):
         else:
             logging.error("Prediction not found")
             raise HTTPException(status_code=404, detail="Prediction not found for the given teams")
+    except KeyError:
+        logging.error("Invalid team name provided")
+        raise HTTPException(status_code=400, detail="Invalid team name provided")
     except Exception as e:
         logging.error(f"An error occurred in the /api/predict endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
