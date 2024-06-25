@@ -3,12 +3,16 @@ import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import i18n from '../i18n';
+import { useToasts } from 'react-bootstrap-toasts';
 import { useTranslation } from 'react-i18next';
 
 // Change language to German
 i18n.changeLanguage('de');
 
 function GameSelect({ onTeamSelection }) {
+
+  // Toasts
+  const toasts = useToasts();
 
   // Translation
   const { t } = useTranslation();
@@ -27,7 +31,26 @@ function GameSelect({ onTeamSelection }) {
     // Fetch teams from the backend API
     axios.get('/api/teams')
       .then(response => setTeams(response.data.teams))
-      .catch(error => console.error('Error fetching teams:', error));
+      .catch(error => {
+        console.error('Error fetching teams:', error);
+        toasts.show({
+          headerContent: 'Warning',
+          bodyContent: 'We cant get the teams to select from. Please try again.',
+          toastProps: {
+            autohide: true,
+            delay: 3000
+          },
+          containerProps: {
+            position: 'fixed',
+            className: 'p-3',
+            style: {
+              top: '5em',
+              right: '1em',
+              zIndex: 9999
+            }
+          }
+        });
+      });
   }, []);
 
   useEffect(() => {
@@ -61,7 +84,7 @@ function GameSelect({ onTeamSelection }) {
   return (
     <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap fs-5">
       {/*Team select*/}
-      <Form.Select aria-label="Team1 selection" data-testid="teamselect1" size="lg" className="form-select-lg" style={{maxWidth: "400px"}} value={team1} onChange={handleTeam1Change}>
+      <Form.Select aria-label="Team1 selection" data-testid="teamselect1" size="lg" className="form-select-lg" style={{ maxWidth: "400px" }} value={team1} onChange={handleTeam1Change}>
         <option value="">{t("gameselect.select")}</option>
         {teams.map((team, index) => (
           <option key={index} value={team}>{team}</option>
@@ -69,14 +92,14 @@ function GameSelect({ onTeamSelection }) {
       </Form.Select>
       <span className="mx-2">vs.</span>
       {/*Team select*/}
-      <Form.Select aria-label="Team2 selection" data-testid="teamselect2" size="lg" className="form-select-lg" style={{maxWidth: "400px"}} value={team2} onChange={handleTeam2Change}>
+      <Form.Select aria-label="Team2 selection" data-testid="teamselect2" size="lg" className="form-select-lg" style={{ maxWidth: "400px" }} value={team2} onChange={handleTeam2Change}>
         <option value="">{t("gameselect.select")}</option>
         {teams.map((team, index) => (
           <option key={index} value={team}>{team}</option>
         ))}
       </Form.Select>
-      <Button variant="primary" data-testid="predictbtn"  size="lg" onClick={() => onTeamSelection(team1, team2)} 
-      disabled={buttonDisabled}>{t("gameselect.predict")}</Button>
+      <Button variant="primary" data-testid="predictbtn" size="lg" onClick={() => onTeamSelection(team1, team2)}
+        disabled={buttonDisabled}>{t("gameselect.predict")}</Button>
     </div>
   );
 }

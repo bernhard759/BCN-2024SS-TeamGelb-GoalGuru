@@ -6,6 +6,7 @@ import AppNavbar from './components/AppNavBar';
 import GamePrediction from './components/GamePrediction';
 import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
+import { ToastsProvider } from 'react-bootstrap-toasts';
 import i18n from './i18n';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 
   // Markup
   return (
+    <ToastsProvider>
     <div id="app">
 
       <AppNavbar />
@@ -84,6 +86,7 @@ function App() {
 
       </div>
     </div>
+  </ToastsProvider>
   )
 }
 
