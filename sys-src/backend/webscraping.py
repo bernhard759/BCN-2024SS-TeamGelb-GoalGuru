@@ -369,8 +369,8 @@ def generate_team_json(season):
 
 
 #Create a dataframe out of the scraped data for our first ml-model
-#Save the data as a csv
-def create_dataframe_model_one():
+#Save the data as a csv (local or in s3-bucket)
+def create_dataframe_model_one(local:bool):
     content = []
     for season in range(2014,2024):
         matches = get_matchday_results(season)
@@ -399,10 +399,22 @@ def create_dataframe_model_one():
     df = pd.DataFrame(content)
     df.columns = ["HT","AT","R","MV_HT","MV_AT","POS_HT","POS_AT"]
     df = pd.get_dummies(df, columns=["HT", "AT"])
-    df.to_csv('csv-data/data_model_one.csv')
+    if(local):
+        save_df_to_csv(df)
+    else:
+        #save to s3 bucket
+        save_df_in_s3()
     return df
 
 
+#Save the dataframe to a csv file
+def save_df_to_csv(df, path = 'csv-data/data_model_one.csv'):
+    df.to_csv(path)
+
+
+#Save the dataframe as a csv in a s3-bucket
+def save_df_in_s3():
+    pass
 
 
 def create_dataframe_model_two(start_season, end_season):
@@ -455,19 +467,18 @@ def create_dataframe_model_two(start_season, end_season):
     return df
 
 
+if __name__ == "__main__":
+    """generate_matchdata_csv("2000-2024")
+    generate_mv_csv(2023)
+    create_dataframe_model_one(True)"""
 
-"""generate_matchdata_csv("2000-2024")
-generate_mv_csv(2023)
-create_dataframe_model_one()"""
+    """
+    generate_matchdata_json("2000-2024")
+    generate_team_json(2023)
+    """
 
-"""
-generate_matchdata_json("2000-2024")
-generate_team_json(2023)
-"""
 
-# TODO:
+# Mögliche Erweiterungen:
 # 1) create_dataframe is slow (get_matchday_positions)
 # 2) add more features: billanz, last results
 
-# df = create_dataframe_model_two(2021, 2021)
-# print(df)
