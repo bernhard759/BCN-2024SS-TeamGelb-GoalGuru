@@ -6,7 +6,6 @@ import logging
 import os
 from fastapi.staticfiles import StaticFiles 
 from fastapi.responses import JSONResponse 
-from models import ModelOne
 import utils
 
 
@@ -30,7 +29,7 @@ predictions = {
     },
 }
 
-model = ModelOne()
+model = utils.create_model_one()
 
 tiny_db = utils.load_db()
 
