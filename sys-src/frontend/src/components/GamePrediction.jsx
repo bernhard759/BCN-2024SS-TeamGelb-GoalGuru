@@ -4,13 +4,9 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import styles from "./GamePrediction.module.css";
 import axios from 'axios';
-import { useToasts } from 'react-bootstrap-toasts';
 import { useTranslation } from 'react-i18next';
 
 export default function GamePrediction({ teams }) {
-
-    // Toasts
-    const toasts = useToasts();
 
     // Translation
     const { t } = useTranslation();
@@ -48,14 +44,6 @@ export default function GamePrediction({ teams }) {
 
             } catch (error) {
                 setError(error);
-                toasts.show({
-                    headerContent: 'Warning',
-                    bodyContent: 'We couldnt make a prediction. Please try again.',
-                    toastProps: {
-                        autohide: true,
-                        delay: 3000
-                    }
-                });
             } finally {
                 setIsLoading(false);
             }
