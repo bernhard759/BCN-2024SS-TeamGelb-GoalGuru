@@ -39,15 +39,6 @@ function GameSelect({ onTeamSelection }) {
           toastProps: {
             autohide: true,
             delay: 3000
-          },
-          containerProps: {
-            position: 'fixed',
-            className: 'p-3',
-            style: {
-              top: '5em',
-              right: '1em',
-              zIndex: 9999
-            }
           }
         });
       });

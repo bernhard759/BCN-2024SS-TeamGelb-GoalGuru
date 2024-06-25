@@ -30,7 +30,11 @@ function App() {
 
   // Markup
   return (
-    <ToastsProvider>
+    <ToastsProvider  position="top-right"
+    style={{
+      top: '5em',
+      right: '1em',
+    }}>
     <div id="app">
 
       <AppNavbar />

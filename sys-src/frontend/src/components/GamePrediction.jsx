@@ -4,9 +4,13 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import styles from "./GamePrediction.module.css";
 import axios from 'axios';
+import { useToasts } from 'react-bootstrap-toasts';
 import { useTranslation } from 'react-i18next';
 
 export default function GamePrediction({ teams }) {
+
+    // Toasts
+    const toasts = useToasts();
 
     // Translation
     const { t } = useTranslation();
@@ -41,26 +45,17 @@ export default function GamePrediction({ teams }) {
 
                 const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
                 setPrediction(response.data);
-                
+
             } catch (error) {
                 setError(error);
                 toasts.show({
                     headerContent: 'Warning',
                     bodyContent: 'We couldnt make a prediction. Please try again.',
                     toastProps: {
-                      autohide: true,
-                      delay: 3000
-                    },
-                    containerProps: {
-                      position: 'fixed',
-                      className: 'p-3',
-                      style: {
-                        top: '5em',
-                        right: '1em',
-                        zIndex: 9999
-                      }
+                        autohide: true,
+                        delay: 3000
                     }
-                  });
+                });
             } finally {
                 setIsLoading(false);
             }
@@ -142,7 +137,7 @@ export default function GamePrediction({ teams }) {
         <>
             {/*Prediction text */}
             {!isLoading ? (
-                <p className="lead text-center" style={{fontSize: "1.5em"}} data-testid="predictiontext">{t("prediction.sentencewe")} {probaValuePercentageDisplay(getMaxProba(prediction))} {t("prediction.sentencesure")} {
+                <p className="lead text-center" style={{ fontSize: "1.5em" }} data-testid="predictiontext">{t("prediction.sentencewe")} {probaValuePercentageDisplay(getMaxProba(prediction))} {t("prediction.sentencesure")} {
                     getMaxProbabilityKey(prediction) == "home" ? `${prediction.teams[0]} ${t("prediction.sentencewin")}` : getMaxProbabilityKey(prediction) == "away" ? `${prediction.prediction} ${t("prediction.sentencelose")}` : `${t("prediction.sentencedraw")}`}</p>
             ) :
                 <div className="d-flex justify-content-center" data-testid="loadingskeleton1">
