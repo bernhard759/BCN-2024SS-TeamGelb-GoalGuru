@@ -6,11 +6,10 @@ import logging
 import os
 from fastapi.staticfiles import StaticFiles 
 from fastapi.responses import JSONResponse 
-from models import ModelOne
 import utils
 
 app = FastAPI()
-model = ModelOne()
+model = utils.create_model_two()
 tiny_db = utils.load_db()
 
 #Define response models
