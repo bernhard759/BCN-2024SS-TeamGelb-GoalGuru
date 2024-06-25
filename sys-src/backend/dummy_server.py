@@ -1,10 +1,18 @@
+"""
+This module defines a FastAPI application with dummy data for team and match management.
+It provides endpoints for retrieving teams, matches, and making predictions based on given teams.
+"""
+
+
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
 import logging
 
+
 app = FastAPI()
+
 #Dummy data
 teams = ["Team A", "Team B", "Team C", "Team D"]
 
@@ -26,10 +34,24 @@ predictions = {
 
 #Define response models
 class DummyTeamsResponse(BaseModel):
+    """
+    Response model for a list of dummy data teams.
+    Attributes:
+        teams (List[str]): List of team names.
+    """
     teams: List[str]
 
+
 class DummyMatchesResponse(BaseModel):
-    
+    """
+    Response model for dummy data matches.
+    Attributes:
+        home_team (str): The name of the home team.
+        away_team (str): The name of the away team.
+        home_goals (int): Number of goals scored by the home team.
+        away_goals (int): Number of goals scored by the away team.
+        date (str): Date of the match.
+    """
     home_team: str
     away_team: str
     home_goals: int
@@ -38,13 +60,28 @@ class DummyMatchesResponse(BaseModel):
     
 
 class DummyPredictionProbabilities(BaseModel):
+    """
+    Dummy prediction probabilities for a match.
+    Attributes:
+        home (float): Probability of the home team winning.
+        draw (float): Probability of a draw.
+        away (float): Probability of the away team winning.
+    """
     home: float
     draw: float
     away: float
+    
 
 class DummyPredictionResponse(BaseModel):
+    """
+    Response model for a dummy match prediction.
+    Attributes:
+        teams (List[str]): List of the two teams.
+        probabilities (DummyPredictionProbabilities): The win/draw probabilities for the match.
+    """
     teams: List[str]
     probabilities: DummyPredictionProbabilities
+    
     
 # Endpoint for available teams with dummy data
 #http://127.0.0.1:8080/api/dummy/teams - route
@@ -57,6 +94,7 @@ async def get_teams():
         logging.error(f"An error occurred in the /api/dummy/teams endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
+
 #Endpoint for matches with dummy data
 #http://127.0.0.1:8080/api/dummy/matches - route
 @app.get("/api/dummy/matches",  response_model=List[DummyMatchesResponse])
@@ -67,6 +105,7 @@ async def get_matches():
     except Exception as e:
         logging.error(f"An error occurred in the /api/dummy/matches endpoint: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
+ 
  
 # Endpoint for prediction results 
 #http://127.0.0.1:8080/api/dummy/predict?home_team=Team%20A&away_team=Team%20B as example
