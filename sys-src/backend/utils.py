@@ -176,12 +176,6 @@ def get_all_teams_from_web(season = 2023):
         return teams
 
 
-#Predict a result between two teams
-def predict(home, away):
-    model = models.ModelOne()
-    return model.predict()
-
-
 
 #Load / Create the tinydb
 def load_db(file_paths = ["json-data/matchdata_2000-2024.json", "json-data/2023_teams.json"], db_path = "database/tinydb.json"):
