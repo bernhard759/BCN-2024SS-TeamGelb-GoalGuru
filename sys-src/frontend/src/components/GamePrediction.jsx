@@ -126,7 +126,7 @@ export default function GamePrediction({ teams }) {
             {/*Prediction text */}
             {!isLoading ? (
                 <p className="lead text-center" style={{fontSize: "1.5em"}} data-testid="predictiontext">{t("prediction.sentencewe")} {probaValuePercentageDisplay(getMaxProba(prediction))} {t("prediction.sentencesure")} {
-                    getMaxProbabilityKey(prediction) == "home" ? `${prediction.teams[0]} ${t("prediction.sentencewin")}` : getMaxProbabilityKey(prediction) == "away" ? `${prediction.prediction} ${t("prediction.sentencelose")}` : `${t("prediction.sentencedraw")}`}</p>
+                    getMaxProbabilityKey(prediction) == "home" ? `${prediction.teams[0]} ${t("prediction.sentencewin")}` : getMaxProbabilityKey(prediction) == "away" ? `${prediction.teams[1]} ${t("prediction.sentencelose")}` : `${t("prediction.sentencedraw")}`}</p>
             ) :
                 <div className="d-flex justify-content-center" data-testid="loadingskeleton1">
                     <Skeleton containerClassName="my-2" width={400} />
