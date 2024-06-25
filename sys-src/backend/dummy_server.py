@@ -57,10 +57,12 @@ async def get_teams():
     return {"teams": teams}
 
 #Endpoint for matches with dummy data
+#http://127.0.0.1:8080/api/dummy/matches - route
 @app.get("/api/dummy/matches",  response_model=List[DummyMatchesResponse])
 async def get_matches():
      logging.info("Received request for matches")
      return matches
+
 
 if __name__ == "__main__":
     uvicorn.run("dummy_server:app", host="127.0.0.1", port=8080, reload=True)
