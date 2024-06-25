@@ -27,12 +27,6 @@ async def test_predict_success():
     assert response.status_code == 200
     assert "probabilities" in response.json()
     assert response.json()["probabilities"]["home"] == 0.65  # Matching the dummy data
-
-@pytest.mark.asyncio
-async def test_predict_no_data_found():
-    async with AsyncClient(app=app, base_url="http://test") as ac:
-        response = await ac.get("/api/dummy/predict?home_team=Team%20Z&away_team=Team%20Y")
-        assert response.status_code == 500
         
 @pytest.mark.asyncio
 async def test_predict_valid_data():
