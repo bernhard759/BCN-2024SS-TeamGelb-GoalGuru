@@ -6,4 +6,9 @@ describe('main', () => {
     const { container } = render(<App />);
     //expect(container).toMatchSnapshot();
   });
+
+  it('renders the App component', () => {
+    const { container } = render(<App />);
+    //expect(container).toMatchSnapshot();
+  });
 });

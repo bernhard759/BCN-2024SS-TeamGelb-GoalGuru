@@ -97,6 +97,7 @@ function GameSelect({ onTeamSelection }) {
       {/* Message toast warning */}
       <ToastContainer className="position-absolute top-0 end-0 mx-2" style={{maxWidth: "15em", marginTop: "5em"}}>
         <Toast
+          data-testid="error-toast"
           onClose={() => setShowToast(false)}
           show={showToast}
           delay={5000}

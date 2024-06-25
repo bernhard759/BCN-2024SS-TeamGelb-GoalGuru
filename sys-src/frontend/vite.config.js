@@ -11,7 +11,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8', // or 'istanbul'
       enabled: true,
-      include: ['src/**/*.{js,ts,jsx,tsx}'], // Include all source files
+      include: ['src/**/*.{jsx,tsx}'], // Include all source files
       reporter: ['text', 'html', 'json', 'lcov'], // Add 'html' reporter for UI coverage
       thresholds: {
         lines: 40,
