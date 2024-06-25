@@ -7,6 +7,7 @@ import os
 from fastapi.staticfiles import StaticFiles 
 from fastapi.responses import JSONResponse 
 
+app = FastAPI()
 #Dummy data
 teams = ["Team A", "Team B", "Team C", "Team D"]
 
@@ -47,3 +48,13 @@ class DummyPredictionProbabilities(BaseModel):
 class DummyPredictionResponse(BaseModel):
     teams: List[str]
     probabilities: DummyPredictionProbabilities
+    
+# Endpoint for available teams with dummy data
+#http://127.0.0.1:8080/api/dummy/teams - route
+@app.get("/api/dummy/teams", response_model=DummyTeamsResponse)
+async def get_teams():
+    logging.info("Received request for teams")
+    return {"teams": teams}
+
+if __name__ == "__main__":
+    uvicorn.run("dummy_server:app", host="127.0.0.1", port=8080, reload=True)
