@@ -25,3 +25,25 @@ predictions = {
         "probabilities": {"home": 0.45, "draw": 0.25, "away": 0.30}
     },
 }
+
+#Define response models
+class DummyTeamsResponse(BaseModel):
+    teams: List[str]
+
+class DummyMatchesResponse(BaseModel):
+    
+    home_team: str
+    away_team: str
+    home_goals: int
+    away_goals: int
+    date: str
+    
+
+class DummyPredictionProbabilities(BaseModel):
+    home: float
+    draw: float
+    away: float
+
+class DummyPredictionResponse(BaseModel):
+    teams: List[str]
+    probabilities: DummyPredictionProbabilities
