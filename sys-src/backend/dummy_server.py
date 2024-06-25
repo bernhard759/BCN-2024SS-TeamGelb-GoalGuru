@@ -62,6 +62,24 @@ async def get_teams():
 async def get_matches():
      logging.info("Received request for matches")
      return matches
+ 
+# Endpoint for prediction results 
+#http://127.0.0.1:8080/api/dummy/predict?home_team=Team%20A&away_team=Team%20B as example
+@app.get("/api/dummy/predict", response_model=DummyPredictionResponse)
+async def predict(home_team: str, away_team: str):
+    logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
+    
+    try:
+        prediction = predictions.get((home_team, away_team))
+        if prediction:
+            logging.info(f"Prediction found: {prediction}")
+            return prediction
+        else:
+            logging.error("Prediction not found")
+            raise HTTPException(status_code=404, detail="Prediction not found for the given teams")
+    except Exception as e:
+        logging.error(f"An error occurred in the /api/predict endpoint: {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 if __name__ == "__main__":
