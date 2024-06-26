@@ -8,7 +8,7 @@ COPY ./frontend .
 RUN npm run build
 
 # Build the FastAPI backend
-FROM python:3.9-slim as backend-build
+FROM python:3.10-slim as backend-build
 WORKDIR /app
 COPY ./backend .
 RUN pip install --no-cache-dir -r requirements.txt
