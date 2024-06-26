@@ -26,11 +26,11 @@ class ModelOne:
     # away: The name of the away team.
     def predict(self, home, away):
         if len(home) > len(away):
-            return create_prediction(home, away, [100,0,0])
+            return create_prediction(home, away, [1,0,0])
         elif len(away) > len(home):
-            return create_prediction(home, away, [0,0,100])
+            return create_prediction(home, away, [0,0,1])
         else:
-            return create_prediction(home, away, [0,100,0])
+            return create_prediction(home, away, [0,1,0])
 
 
 
