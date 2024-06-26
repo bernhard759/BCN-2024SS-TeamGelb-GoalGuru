@@ -125,6 +125,21 @@ def test_get_transfermarkt_ids_2020():
         assert expected_id in expected_ids
 
 #Tests for the get_matchday_positions function:
+def test_get_matchday_positions():
+    # Define the parameters
+    season = 2023  # Replace with an actual season you want to test
+    spieltage = 2  # Use a smaller number for a quicker test
+    delay = 1  # You can adjust the delay as needed
+
+    # Call the function
+    result = ws.get_matchday_positions(season=season, spieltage=spieltage, delay=delay)
+
+    # Check if result is a list
+    assert isinstance(result, list)
+
+    # Check if all elements in the list are dictionaries
+    for matchday_table in result:
+        assert isinstance(matchday_table, dict)
 
 #Tests for the find_n_last_games function:
 
