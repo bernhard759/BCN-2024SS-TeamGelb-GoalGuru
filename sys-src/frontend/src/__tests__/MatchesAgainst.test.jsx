@@ -22,7 +22,7 @@ describe('MatchInfo', () => {
   it('renders the MatchInfo component', async () => {
     render(<MatchInfo team1="Team A" team2="Team B" />);
     await waitFor(() => {
-      expect(screen.getByText(/Last Five Matches/i)).toBeInTheDocument();
+      expect(screen.getByText(/Last Matches Against Each Other/i)).toBeInTheDocument();
     });
   });
 

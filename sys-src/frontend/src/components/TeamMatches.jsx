@@ -22,10 +22,10 @@ const LastFiveGames = ({ team1, team2 }) => {
     }
   }, [team1Name, team2Name]);
 
-//function to retrieve the teams' latest five games.
+  //function to retrieve the teams' latest five games.
   const fetchLastFiveGames = async (teamName, setGames) => {
     teamName=CaptalizeFirstLetter(getLongestWord(teamName));
-    console.log(teamName)
+    console.log("TESTER", teamName)
     try {
       const response = await axios.get(`https://api.openligadb.de/getmatchdata/bl1/2023/${teamName}`);
       console.log(`API Response for ${teamName}:`, response.data);
@@ -47,7 +47,10 @@ const LastFiveGames = ({ team1, team2 }) => {
   }
 
   function getLongestWord(string){
-    const words = string.trim().split(" ");
+    const words = string.trim().split(" ").filter(word => word.length > 3);
+    if (words.length > 1) {
+      words.shift();
+    }
     return words.reduce((longest,current) => {
       return current.length > longest.length ? current : longest;
     },'');
@@ -83,7 +86,7 @@ const LastFiveGames = ({ team1, team2 }) => {
     return (
       <div className="table-container">
         <h4>Last Five Games for {teamName}</h4>
-          <div className="result-circles d-flex justify-content-center align-item-center gap-1">
+          <div className="result-circles d-flex justify-content-center align-item-center gap-1 my-3">
             {games.map((game, index) => (
               <span key={index} className={`circle ${getResultColor(game, teamName)}`}></span>
             )) 
@@ -123,7 +126,6 @@ const LastFiveGames = ({ team1, team2 }) => {
                   <td>{new Date(match.matchDateTimeUTC).toLocaleString()}</td>
                   <td>
                     <div>
-                      <img src={opponent.teamIconUrl} alt={opponent.teamName} width="30" />
                       {opponent.teamName}
                     </div>
                   </td>

@@ -3,6 +3,7 @@ nav {
     top: 0;
     width: 100%;
     background-color: var(--bs-primary-bg-subtle);
+    /*border-bottom: 2px solid var(--bs-dark-border-subtle);*/
   }
   
   .icon-wrapper {

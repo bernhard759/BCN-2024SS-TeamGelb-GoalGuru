@@ -19,6 +19,15 @@
         "and": "and",
         "share": "share points",
         "fetcherror": "There was a problem fetching the prediction form the backend. Please try again."
+      },
+      "lastgameday": {
+        "nodata": "No match data available.",
+        "nodataalert": "We could not get the matchday info. Make sure you are online and try again.",
+        "matchdayresults": "Latest Matchday Results",
+        "matchday": "Matchday",
+        "season": "Season",
+        "result": "Result",
+        "winner": "Winner"
       }
   }
   

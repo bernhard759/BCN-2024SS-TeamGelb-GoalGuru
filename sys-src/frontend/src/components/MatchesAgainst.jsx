@@ -46,13 +46,13 @@ function MatchInfo({ team1, team2 }) {
   //Render the information once loading is finished
   return (
     <div className="match-info">
-      <h1>Last Five Matches </h1>
+      <h3>Last Matches Against Each Other</h3>
       <table>
         <thead>
           <tr>
             <th>Date</th> 
-            <th>Team1</th>
-            <th>Team2</th>
+            <th>{team1}</th>
+            <th>{team2}</th>
           </tr>
         </thead>
         <tbody>

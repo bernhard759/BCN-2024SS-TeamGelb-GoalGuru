@@ -41,7 +41,7 @@ export default function GamePrediction({ teams }) {
 
                 const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
                 setPrediction(response.data);
-                
+
             } catch (error) {
                 setError(error);
             } finally {
