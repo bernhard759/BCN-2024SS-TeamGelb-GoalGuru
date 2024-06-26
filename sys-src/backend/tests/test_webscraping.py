@@ -80,12 +80,14 @@ def test_get_market_values_dict_length():
         print(f"Test Failed: The result does not have 18 keys. It has {len(result)} keys.")
         return
 
+
 def test_get_market_values_2020():
     season = '2020'
     result = ws.get_market_values(season)
     assert result["FC Bayern München"] == '858.23'
     assert result["Borussia Dortmund"] == '628.40'
     assert result["Bayer 04 Leverkusen"] == '373.25'
+
 
 #Tests for the get_transfermarkt_ids function:
 def test_get_transfermarkt_ids_response_time():
