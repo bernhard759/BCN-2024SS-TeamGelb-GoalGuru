@@ -9,6 +9,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { FaGlobe } from 'react-icons/fa';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import { Link } from 'react-router-dom';
 import i18n from '../i18n';
 import "./AppNavBar.css"
 
@@ -61,9 +62,8 @@ export default function AppNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              {/*<Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>*/}
+              <Nav.Link as={Link} to="/" className="nav-link-custom">Predict</Nav.Link>
+              <Nav.Link as={Link} to="/gameday" className="nav-link-custom">Gameday</Nav.Link>
             </Nav>
             <Nav>
               <div className="d-flex jsutify-content-center align-items-center gap-2">
@@ -118,7 +118,7 @@ export default function AppNavbar() {
         </Container>
       </Navbar>
 
-      <Modal show={showModal} onHide={handleModalClose}>
+      <Modal show={showModal} onHide={handleModalClose} size="lg" >
         <Modal.Header closeButton>
           <Modal.Title>Information</Modal.Title>
         </Modal.Header>

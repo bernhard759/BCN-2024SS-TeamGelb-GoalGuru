@@ -1,24 +1,32 @@
 {
-    "gameselect": {
-        "select": "Team auswählen",
-        "predict": "Vorhersagen"
-      },
-      "app":{
-        "desctext": "KI-basierte Fussballspielvorhersage",
-        "firstpred": "Mach deine erste Vorhersage",
-        "infotext": "Wähle dein Traumspiel aus und erhalte eine KI-gestützte Vorhersage mit zusätzlichen Informationen über die Form und den bisherigen Verlauf der Spiele beider Teams."
-    },
-      "prediction": {
-        "sentencewe": "Wir sind zu",
-        "sentencesure": "sicher, dass ",
-        "sentencewin": "das Spiel gewinnt.",
-        "sentencelose": "das Spiel verliert.",
-        "sentencedraw": "das Spiel unentschieden endet.",
-        "win": "gewinnt",
-        "loses": "verliert",
-        "and": "und",
-        "share": "teilen sich Punkte",
-        "fetcherror": "Wir konnten keine Vorhersage machen. Bitte erneut versuchen."
-      }
+  "gameselect": {
+    "select": "Team auswählen",
+    "predict": "Vorhersagen"
+  },
+  "app": {
+    "desctext": "KI-basierte Fussballspielvorhersage",
+    "firstpred": "Mach deine erste Vorhersage",
+    "infotext": "Wähle dein Traumspiel aus und erhalte eine KI-gestützte Vorhersage mit zusätzlichen Informationen über die Form und den bisherigen Verlauf der Spiele beider Teams."
+  },
+  "prediction": {
+    "sentencewe": "Wir sind zu",
+    "sentencesure": "sicher, dass ",
+    "sentencewin": "das Spiel gewinnt.",
+    "sentencelose": "das Spiel verliert.",
+    "sentencedraw": "das Spiel unentschieden endet.",
+    "win": "gewinnt",
+    "loses": "verliert",
+    "and": "und",
+    "share": "teilen sich Punkte",
+    "fetcherror": "Wir konnten keine Vorhersage machen. Bitte erneut versuchen."
+  },
+  "lastgameday": {
+    "nodata": "Keine Spieldaten verfügbar.",
+    "nodataalert": "Wir konnten die Spieltagsinformationen nicht abrufen. Stellen Sie sicher, dass Sie online sind und versuchen Sie es erneut.",
+    "matchdayresults": "Ergebnisse des letzten Spieltags",
+    "matchday": "Spieltag",
+    "season": "Saison",
+    "result": "Ergebnis",
+    "winner": "Gewinner"
   }
-  
+}
