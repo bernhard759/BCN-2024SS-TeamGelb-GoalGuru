@@ -2,13 +2,17 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './TeamMatches.css';
 
-const LastFiveGames = ({ team1, team2 }) => {
-  const [team1Games, setTeam1Games] = useState([]);
-  const [team2Games, setTeam2Games] = useState([]);
-  const team1Name = "Bayern";
-  const team2Name = "Union Berlin";
 
-  useEffect(() => {
+//components to show the two teams' last five games
+const LastFiveGames = ({ team1, team2 }) => {
+  //states to hold games data.
+ const [team1Games, setTeam1Games] = useState([]);
+  const [team2Games, setTeam2Games] = useState([]);
+  const team1Name = team1;
+  const team2Name = team2;
+
+ // When team names or props are changed, retrieve the data.
+    useEffect(() => {
     console.log("useEffect triggered:", team1Name, team2Name);
     if (team1Name) {
       fetchLastFiveGames(team1Name, setTeam1Games);
@@ -18,16 +22,16 @@ const LastFiveGames = ({ team1, team2 }) => {
     }
   }, [team1Name, team2Name]);
 
+//function to retrieve the teams' latest five games.
   const fetchLastFiveGames = async (teamName, setGames) => {
+    teamName=CaptalizeFirstLetter(getLongestWord(teamName));
+    console.log(teamName)
     try {
-      const response = await axios.get('https://api.openligadb.de/getmatchdata/bl1/2023');
+      const response = await axios.get(`https://api.openligadb.de/getmatchdata/bl1/2023/${teamName}`);
       console.log(`API Response for ${teamName}:`, response.data);
+
       
-      const teamGames = response.data.filter(game => 
-        game.team1.shortName.toLowerCase() === teamName.toLowerCase() || 
-        game.team2.shortName.toLowerCase() === teamName.toLowerCase()
-       ).slice(-5)
-       .sort((a, b) => new Date(b.matchDateTime) - new Date(a.matchDateTime))  ;
+      const teamGames = response.data.slice(-5).sort((a, b) => new Date(b.matchDateTime) - new Date(a.matchDateTime))  ;
       
       console.log(`Filtered games for team ${teamName}:`, teamGames);
       setGames(teamGames);
@@ -37,19 +41,36 @@ const LastFiveGames = ({ team1, team2 }) => {
     }
   };
 
+
+  function CaptalizeFirstLetter(string){
+    return string.charAt(0).toUpperCase() + string.slice(1)
+  }
+
+  function getLongestWord(string){
+    const words = string.trim().split(" ");
+    return words.reduce((longest,current) => {
+      return current.length > longest.length ? current : longest;
+    },'');
+  }
+
+
+  //use bootstrap to select the result color based on the game output.
   const getResultColor = (game, teamName) => {
+    teamName=CaptalizeFirstLetter(getLongestWord(teamName))
+    console.log("Game", game.team1, teamName)
+
     const result = game.matchResults.find(result => result.resultTypeID === 2);
     if (!result) {
-      return 'bg-danger'; // Default to loss if no result is found.
+      return 'bg-danger'; 
     }
     const pointsTeam1 = result.pointsTeam1;
     const pointsTeam2 = result.pointsTeam2;
     if (pointsTeam1 === pointsTeam2) return 'bg-warning'; // Draw
-    if ((game.team1.shortName.toLowerCase() === teamName.toLowerCase() && pointsTeam1 > pointsTeam2) ||
-        (game.team2.shortName.toLowerCase() === teamName.toLowerCase() && pointsTeam2 > pointsTeam1)) {
-      return 'bg-success'; // Win.
+    if ((game.team1.teamName.includes(teamName)  && pointsTeam1 > pointsTeam2) ||
+        (game.team2.teamName.includes(teamName) && pointsTeam2 > pointsTeam1)) {
+      return 'bg-success'; 
     }
-    return 'bg-danger'; // Loss.
+    return 'bg-danger'; 
   };
 
   const renderGamesTable = (games, teamName) => {
@@ -58,6 +79,7 @@ const LastFiveGames = ({ team1, team2 }) => {
       return <div>No games available for Team {teamName}</div>;
     }
 
+    //render the tables for the last five games of the teams
     return (
       <div className="table-container">
         <h4>Last Five Games for {teamName}</h4>
@@ -71,6 +93,7 @@ const LastFiveGames = ({ team1, team2 }) => {
         <table className="games-table">
           <thead>
             <tr>
+              {/*column names of the table*/}
               <th>Date</th>
               <th>Opponent</th>
               <th>Result</th>
@@ -84,13 +107,12 @@ const LastFiveGames = ({ team1, team2 }) => {
               const pointsTeam1 = result ? result.pointsTeam1 : 'N/A';
               const pointsTeam2 = result ? result.pointsTeam2 : 'N/A';
 
-              
-            
 
               let opponent;
-              if (match.team1.shortName.toLowerCase() === teamName.toLowerCase()) {
+              let theTeam = CaptalizeFirstLetter(getLongestWord(teamName))
+              if (match.team1.teamName.toLowerCase().includes(theTeam.toLowerCase())) {
                 opponent = match.team2;
-              } else if (match.team2.shortName.toLowerCase() === teamName.toLowerCase()) {
+              } else if (match.team2.teamName.toLowerCase().includes(theTeam.toLowerCase())) {
                 opponent = match.team1;
               } else {
                 opponent = { teamName: "Unknown", teamIconUrl: "" };
@@ -115,7 +137,9 @@ const LastFiveGames = ({ team1, team2 }) => {
     );
   };
 
+
   return (
+    //container for last five games.
     <div className="last-five-games">
       <div className="tables-container">
         {renderGamesTable(team1Games, team1Name)}

@@ -1,6 +1,5 @@
-/* src/LastFiveGames.css */
 
-/*layout foe element in class lastfivegames */
+/*layout for element in class lastfivegames */
 .last-five-games {
  margin-block: 2em;
 }
@@ -15,13 +14,6 @@
   align-items: flex-start;
 }
 
-/*
-
-.table-container {
-  margin: 40px;
-  width: 45%;
-}
-*/
 
 /* for element in games-tables */
 
@@ -57,8 +49,3 @@
 
 
 
-/*h4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
