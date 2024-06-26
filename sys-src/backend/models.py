@@ -100,8 +100,8 @@ class ModelTwo:
 #TODO:
 #Second ml-model trained on our level two dataset
 class ModelThree:
-    def __init__(self, trainings_data="csv-data/data_model_one.csv"):
-        self.model = DecisionTreeClassifier()
+    def __init__(self, trainings_data="csv-data/data_model_one.csv", max_depth=5):
+        self.model = DecisionTreeClassifier(max_depth=max_depth)
 
         self.columns = pd.read_csv(trainings_data).columns
         self.home_teams = []
@@ -165,8 +165,9 @@ if __name__ == "__main__":
     model_one.predict("Bayern", "Dortmund")
     """
 
-    """
+
     #Create ModelTwo
+    """
     model_two = ModelTwo()
 
     data = pd.read_csv("csv-data/data_model_one.csv",index_col=0)
@@ -204,4 +205,8 @@ if __name__ == "__main__":
     model_two = ModelThree()
     model_three.load()
     print(model_three.accuracy(X, y))
+    print(model_three.predict("Borussia Dortmund", "FC Bayern München"))
+    print(model_three.accuracy(X, y))
     """
+
+
