@@ -1,6 +1,14 @@
 import pytest
 from httpx import AsyncClient
 from unittest.mock import patch
+import sys
+import os
+
+current_dir = os.path.dirname(__file__)
+module_path = os.path.join(current_dir, '..')
+
+if module_path not in sys.path:
+    sys.path.append(module_path)
 from dummy_server import dummy_app
 
 
