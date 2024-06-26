@@ -12,7 +12,16 @@
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 2em;
+  margin-block: 4em;
 }
+
+@media (max-width: 1100px) {
+  .tables-container {
+    justify-content: center;
+  }
+}
+
 
 
 /* for element in games-tables */
