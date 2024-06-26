@@ -276,7 +276,6 @@ def train_model_two(path = "csv-data/data_model_one.csv"):
 def save_model_two(model : models.ModelTwo,  model_file_name = "model_two.joblib"):
     model.save(model_file_name)
 
-
 if __name__ == "__main__":
 
     """
