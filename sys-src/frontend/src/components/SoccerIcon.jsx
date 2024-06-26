@@ -50,7 +50,7 @@ const SoccerIcon = () => {
 
         // Update the top and left styles of the icon container
         iconElement.style.top = `${newTop}px`;
-        iconElement.style.left = `${newLeft}px`;
+        //iconElement.style.left = `${newLeft}px`;
 
         // Calculate the rotation angle based on the scroll position
         const rotation = (scrollPosition / pageHeight) * 360;
