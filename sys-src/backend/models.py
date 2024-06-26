@@ -4,17 +4,6 @@ import joblib
 import utils
 
 
-#return the prediction in a correct format 
-def create_prediction(home, away, results):
-    return {
-        "teams": [home, away],
-        "probabilities": {
-            "home": results[0],
-            "draw": results[1],
-            "away": results[2]
-        }
-    }
-
 #A very simple AI model that selects the team with the longer name. 
 class ModelOne:
 
@@ -24,11 +13,11 @@ class ModelOne:
     # away: The name of the away team.
     def predict(self, home, away):
         if len(home) > len(away):
-            return create_prediction(home, away, [1,0,0])
+            return utils.create_prediction(home, away, [1,0,0])
         elif len(away) > len(home):
-            return create_prediction(home, away, [0,0,1])
+            return utils.create_prediction(home, away, [0,0,1])
         else:
-            return create_prediction(home, away, [0,1,0])
+            return utils.create_prediction(home, away, [0,1,0])
 
 
 
@@ -79,7 +68,7 @@ class ModelTwo:
         X = pd.DataFrame(X, index=[0])
 
         result = self.model.predict_proba(X)
-        return create_prediction(home, away, [result[0][2], result[0][1], result[0][0]])
+        return utils.create_prediction(home, away, [result[0][2], result[0][1], result[0][0]])
 
 
     def load(self, model_file_name = "model_two.joblib"):
