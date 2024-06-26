@@ -1,0 +1,38 @@
+
+/*table layout for classname match-info*/
+.match-info {
+  text-align: center;
+  margin: 20px;
+}
+
+/*header aligenment inside classname*/
+.match-info .header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/*for element inside result table*/
+
+.match-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 5;
+}
+
+/*layout of table cell*/
+.match-info th, .match-info td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+/*Header color*/
+.match-info th {
+  background-color: #f4f4f4;
+  
+}
+
+/*Header centered*/
+.match-info th.centered {
+  text-align: center;
+}
