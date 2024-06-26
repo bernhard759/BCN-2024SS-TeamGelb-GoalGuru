@@ -11,7 +11,7 @@ from typing import List
 import logging
 
 
-app = FastAPI()
+dummy_app = FastAPI()
 
 #Dummy data
 teams = ["Team A", "Team B", "Team C", "Team D"]
@@ -85,7 +85,7 @@ class DummyPredictionResponse(BaseModel):
     
 # Endpoint for available teams with dummy data
 #http://127.0.0.1:8080/api/dummy/teams - route
-@app.get("/api/dummy/teams", response_model=DummyTeamsResponse)
+@dummy_app.get("/api/dummy/teams", response_model=DummyTeamsResponse)
 async def get_teams():
     """
     Retrieves a list of available teams from dummy data.
@@ -110,7 +110,7 @@ async def get_teams():
 
 #Endpoint for matches with dummy data
 #http://127.0.0.1:8080/api/dummy/matches - route
-@app.get("/api/dummy/matches",  response_model=List[DummyMatchesResponse])
+@dummy_app.get("/api/dummy/matches",  response_model=List[DummyMatchesResponse])
 async def get_matches():
     """
     Retrieves a list of matches from dummy data.
@@ -135,7 +135,7 @@ async def get_matches():
  
 # Endpoint for dummy prediction results 
 #http://127.0.0.1:8080/api/dummy/predict?home_team=Team%20A&away_team=Team%20B as example
-@app.get("/api/dummy/predict", response_model=DummyPredictionResponse)
+@dummy_app.get("/api/dummy/predict", response_model=DummyPredictionResponse)
 async def predict(home_team: str, away_team: str):
     """
     Provides a dummy prediction for the outcome of a match between two specified dummy teams.
@@ -152,27 +152,17 @@ async def predict(home_team: str, away_team: str):
     
     Raises:
         HTTPException: If no prediction data is found (404 Not Found) or 
-                        if an invalid team name is provided (400 Bad Request), or
                         if any other error occurs (500 Internal Server Error).
     """
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
-    
+
     try:
-        logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
         prediction = predictions.get((home_team, away_team))
-        if prediction:
-            logging.info(f"Prediction found: {prediction}")
-            return prediction
-        else:
-            logging.error("Prediction not found")
-            raise HTTPException(status_code=404, detail="Prediction not found for the given teams")
-    except KeyError:
-        logging.error("Invalid team name provided")
-        raise HTTPException(status_code=400, detail="Invalid team name provided")
+        return prediction
     except Exception as e:
-        logging.error(f"An error occurred in the /api/dummy/predict endpoint: {e}")
+        logging.error(f"An error occurred in the /api/dummy/predict endpoint: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 if __name__ == "__main__":
-    uvicorn.run("dummy_server:app", host="127.0.0.1", port=8080, reload=True)
+    uvicorn.run("dummy_server:dummy_app", host="127.0.0.1", port=8080, reload=True)

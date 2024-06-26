@@ -287,6 +287,18 @@ def create_model_two():
     model.load()
     return model
 
+#Create prediction 
+def create_prediction(home, away, results):
+    return {
+        "teams": [home, away],
+        "probabilities": {
+            "home": results[0],
+            "draw": results[1],
+            "away": results[2]
+        }
+    }
+
+
 if __name__ == "__main__":
 
     """
