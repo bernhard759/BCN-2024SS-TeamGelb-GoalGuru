@@ -5,25 +5,43 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "vitest",
+    "test:combo": "vitest --ui --coverage --watch",
+    "test:watch": "vitest --watch",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
+    "i18next": "^23.11.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.2.1"
+    "react-i18next": "^14.1.2",
+    "react-icons": "^5.2.1",
+    "react-loading-skeleton": "^3.4.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
+    "cross-fetch": "^4.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0"
+    "jsdom": "^24.1.0",
+    "msw": "^2.3.1",
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0"
   }
 }

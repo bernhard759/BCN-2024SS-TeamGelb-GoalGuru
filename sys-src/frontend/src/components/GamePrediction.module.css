@@ -1,0 +1,35 @@
+.probability-bar {
+    display: flex;
+    box-sizing: content-box;
+    height: 2em;
+    background-color: #f0f0f0;
+    border-radius: 2em;
+    overflow-x: hidden;
+    margin-top: 1em;
+    border:2px solid var(--bs-gray-200);
+  }
+
+.probability-section {
+  position: relative;
+}
+
+.proba-bg-win {
+background: var(--bs-success-border-subtle);
+}
+
+.proba-bg-draw {
+    background: var(--bs-warning-border-subtle);
+}
+
+.proba-bg-lose {
+    background: var(--bs-danger-border-subtle);
+}
+
+/* Theme stuff */
+body[data-bs-theme='dark'] .probability-section:not(.bg-success, .bg-warning, .bg-danger) {
+  color: var(--bs-light) !important;
+}
+
+body[data-bs-theme='dark'] .probability-bar {
+  border:2px solid var(--bs-gray-600);
+}

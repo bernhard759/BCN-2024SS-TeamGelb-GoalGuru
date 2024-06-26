@@ -276,6 +276,29 @@ def train_model_two(path = "csv-data/data_model_one.csv"):
 def save_model_two(model : models.ModelTwo,  model_file_name = "model_two.joblib"):
     model.save(model_file_name)
 
+#Create an instance of model_one
+def create_model_one():
+    return models.ModelOne()
+
+
+#Create an instance of model_one
+def create_model_two():
+    model = models.ModelTwo()
+    model.load()
+    return model
+
+#Create prediction 
+def create_prediction(home, away, results):
+    return {
+        "teams": [home, away],
+        "probabilities": {
+            "home": results[0],
+            "draw": results[1],
+            "away": results[2]
+        }
+    }
+
+
 if __name__ == "__main__":
 
     """

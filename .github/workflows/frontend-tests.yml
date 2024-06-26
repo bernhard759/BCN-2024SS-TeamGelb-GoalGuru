@@ -1,0 +1,37 @@
+name: Frontend Test Coverage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  test-coverage:
+  
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./sys-src/frontend/
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: './sys-src/frontend/package-lock.json'
+    - name: Install dependencies
+      run: npm install
+    - name: Run tests
+      run: npm run test:coverage
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+       verbose: true
+       token: ${{ secrets.CODECOV_TOKEN }}
+       files: ./coverage/coverage-final.json
+       flags: frontend
+       fail_ci_if_error: true

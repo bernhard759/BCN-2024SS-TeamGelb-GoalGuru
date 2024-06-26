@@ -1,0 +1,26 @@
+# Use Bitnami Node.js image as the base
+FROM bitnami/node:20 as node-base
+
+# Install Python
+RUN install_packages python3 python3-pip
+
+# Set up frontend
+WORKDIR /app/frontend
+COPY ./frontend/package.json ./frontend/package-lock.json ./
+RUN npm install
+ENV PATH /app/frontend/node_modules/.bin:$PATH
+
+# Set up backend
+WORKDIR /app/backend
+COPY ./backend/requirements.txt ./
+RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install uvicorn
+
+# Set the working directory for the final stage
+WORKDIR /app
+
+# Expose the ports for the FastAPI and Vite applications
+EXPOSE 8000 5173
+
+# Start both frontend and backend in development mode
+CMD ["sh", "-c", "cd /app/frontend && npm run dev -- --host 0.0.0.0 & cd /app/backend && python3 -m uvicorn server:app --host 0.0.0.0 --port 8000 --reload"]
