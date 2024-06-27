@@ -18,7 +18,13 @@
     "loses": "verliert",
     "and": "und",
     "share": "teilen sich Punkte",
-    "fetcherror": "Wir konnten keine Vorhersage machen. Bitte erneut versuchen."
+    "fetcherror": "Wir konnten keine Vorhersage machen. Bitte erneut versuchen.",
+    "correct": "Die Vorhersage war korrekt!",
+    "incorrect": "Die Vorhersage war falsch.",
+    "predictedwinner": "Vorhergesagtes Ergebnis",
+    "actualwinner": "Tatsächliches Ergebnis",
+    "result": "Vorhersageergebnis",
+    "probabilities": "Vorhersagewahrscheinlichkeiten"
   },
   "lastgameday": {
     "nodata": "Keine Spieldaten verfügbar.",
@@ -28,5 +34,21 @@
     "season": "Saison",
     "result": "Ergebnis",
     "winner": "Gewinner"
+  },
+  "matchdetails": {
+    "loading": "Lade Spieldetails...",
+    "error": "Fehler beim Abrufen der Spieldetails.",
+    "nomatch": "Keine Spieldetails verfügbar.",
+    "date": "Datum",
+    "result": "Ergebnis",
+    "location": "Ort",
+    "unknown": "Unbekannt",
+    "league": "Liga",
+    "season": "Saison",
+    "back": "Zurück zu den Spielergebnissen"
+  },
+  "nav": {
+    "predict": "Vorhersagen",
+    "gameday": "Letzter Spieltag"
   }
 }

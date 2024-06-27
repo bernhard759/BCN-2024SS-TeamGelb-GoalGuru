@@ -12,6 +12,7 @@ import GamedayInfos from "./components/GamedayInfos"
 import i18n from './i18n';
 import TeamMatches from './components/TeamMatches';
 import MatchesAgainst from './components/MatchesAgainst';
+import MatchDetails from './components/MatchDetails';
 
 function App() {
 
@@ -96,6 +97,7 @@ function App() {
 
         } />
         <Route path="/gameday" element={<GamedayInfos />} />
+        <Route path="/match/:matchId" element={<MatchDetails />} />
         </Routes>
 
 

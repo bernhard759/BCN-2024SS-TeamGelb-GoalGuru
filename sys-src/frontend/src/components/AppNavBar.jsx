@@ -10,10 +10,14 @@ import { FaGlobe } from 'react-icons/fa';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import i18n from '../i18n';
 import "./AppNavBar.css"
 
 export default function AppNavbar() {
+
+  // Translation
+  const { t } = useTranslation();
 
   // State
   //----------------------------------------------------------------
@@ -58,12 +62,12 @@ export default function AppNavbar() {
     <>
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="#"><b>G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></b></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/"><b>G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></b></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/" className="nav-link-custom">Predict</Nav.Link>
-              <Nav.Link as={Link} to="/gameday" className="nav-link-custom">Gameday</Nav.Link>
+              <Nav.Link as={Link} to="/" className="nav-link-custom">{t('nav.predict')}</Nav.Link>
+              <Nav.Link as={Link} to="/gameday" className="nav-link-custom">{t('nav.gameday')}</Nav.Link>
             </Nav>
             <Nav>
               <div className="d-flex jsutify-content-center align-items-center gap-2">

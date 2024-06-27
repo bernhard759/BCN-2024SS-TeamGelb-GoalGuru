@@ -4,7 +4,7 @@ import './TeamMatches.css';
 
 
 //components to show the two teams' last five games
-const LastFiveGames = ({ team1, team2 }) => {
+const TeamMatches = ({ team1, team2 }) => {
   //states to hold games data.
  const [team1Games, setTeam1Games] = useState([]);
   const [team2Games, setTeam2Games] = useState([]);
@@ -25,7 +25,6 @@ const LastFiveGames = ({ team1, team2 }) => {
   //function to retrieve the teams' latest five games.
   const fetchLastFiveGames = async (teamName, setGames) => {
     teamName=CaptalizeFirstLetter(getLongestWord(teamName));
-    console.log("TESTER", teamName)
     try {
       const response = await axios.get(`https://api.openligadb.de/getmatchdata/bl1/2023/${teamName}`);
       console.log(`API Response for ${teamName}:`, response.data);
@@ -151,4 +150,4 @@ const LastFiveGames = ({ team1, team2 }) => {
   );
 };
 
-export default LastFiveGames;
+export default TeamMatches;

@@ -4,6 +4,7 @@ import { Container, Row, Col, Card, Alert } from 'react-bootstrap';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const GamedayInfos = () => {
     const { t } = useTranslation();
@@ -15,6 +16,7 @@ const GamedayInfos = () => {
     const [error, setError] = useState(null);
 
     // Effects
+    //----------------------------------------------------------------
     useEffect(() => {
         const fetchMatches = async () => {
             try {
@@ -45,8 +47,14 @@ const GamedayInfos = () => {
         };
 
         fetchMatches();
-    }, [t]);
+    }, []);
+    //----------------------------------------------------------------
 
+    /**
+     * Get the winner of the match or draw.
+     * @param {*} match 
+     * @returns 
+     */
     const getWinner = (match) => {
         const team1Score = match.matchResults.find(result => result.resultTypeID === 2).pointsTeam1;
         const team2Score = match.matchResults.find(result => result.resultTypeID === 2).pointsTeam2;
@@ -58,7 +66,7 @@ const GamedayInfos = () => {
 
     const SkeletonCard = () => (
         <Col>
-            <Card className="skeleton-card border-0 h-100" style={{ backgroundImage: "var(--bs-gradient)", backgroundColor: "var(--bs-secondary-bg-subtle)" }}>
+            <Card data-testid="skeleton-card" className="skeleton-card border-0 h-100" style={{ backgroundImage: "var(--bs-gradient)", backgroundColor: "var(--bs-secondary-bg-subtle)" }}>
                 <Card.Body>
                     <Skeleton height={24} width="80%" />
                     <Skeleton height={20} width="60%" />
@@ -72,20 +80,6 @@ const GamedayInfos = () => {
     return (
         <Container>
             <h2 className="my-5 text-center">{t('lastgameday.matchdayresults')}</h2>
-
-            {error && (
-                <div className="text-center mb-4 text-danger">
-                    {t('lastgameday.nodataalert')}
-                </div>
-            )}
-
-            {!error && loading ? (
-                <p className="lead text-center"><Skeleton width={300} /></p>
-            ) : gamedayInfo && (
-                <p className="lead text-center mb-4">
-                    {t('lastgameday.matchday')} {gamedayInfo.number} | {gamedayInfo.date} | {t('lastgameday.season')} {gamedayInfo.season}
-                </p>
-            )}
 
             <Row xs={1} md={2} lg={3} className="g-4">
                 {loading ? (
@@ -104,17 +98,19 @@ const GamedayInfos = () => {
                 ) : (
                     matches.map((match) => (
                         <Col key={match.matchID}>
-                            <Card className="border-0 h-100" style={{ backgroundImage: "var(--bs-gradient)", backgroundColor: "var(--bs-secondary-bg-subtle)" }}>
-                                <Card.Body>
-                                    <Card.Title className="match-title">{match.team1.teamName} vs {match.team2.teamName}</Card.Title>
-                                    <Card.Text className="match-result">
-                                        {t('lastgameday.result')}: {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam1} - {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam2}
-                                    </Card.Text>
-                                    <Card.Text className="match-winner">
-                                        {t('lastgameday.winner')}: {getWinner(match)}
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <Link to={`/match/${match.matchID}`} style={{ textDecoration: 'none' }}>
+                                <Card className="border-0 h-100 clickable-card" style={{ backgroundImage: "var(--bs-gradient)", backgroundColor: "var(--bs-secondary-bg-subtle)" }}>
+                                    <Card.Body>
+                                        <Card.Title className="match-title">{match.team1.teamName} vs {match.team2.teamName}</Card.Title>
+                                        <Card.Text className="match-result">
+                                            {t('lastgameday.result')}: {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam1} - {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam2}
+                                        </Card.Text>
+                                        <Card.Text className="match-winner">
+                                            {t('lastgameday.winner')}: {getWinner(match)}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Link>
                         </Col>
                     ))
                 )}
