@@ -4,7 +4,7 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import { describe, it, expect, beforeEach } from 'vitest';
-import MatchDetails from '../components/MatchDetails';
+import MatchDetails from '../components/gameday/MatchDetails';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../i18n'; // Adjust the path to your i18n configuration
 
@@ -22,20 +22,13 @@ const mockMatchData = {
   leagueSeason: '2023'
 };
 
-const mockPredictionData = {
-  teams: ['Team A', 'Team B'],
-  probabilities: {
-    home: 0.6,
-    draw: 0.3,
-    away: 0.1
-  }
-};
 
 describe('MatchDetails', () => {
   beforeEach(() => {
     mock.reset();
   });
 
+  // Render match details and prediction
   it('renders match details and prediction correctly', async () => {
     mock.onGet('https://api.openligadb.de/getmatchdata/1').reply(200, mockMatchData);
 
@@ -55,7 +48,6 @@ describe('MatchDetails', () => {
       expect(screen.getByText(/Team A vs Team B/i)).toBeInTheDocument();
       expect(screen.getByText(/Date:/i)).toBeInTheDocument();
       expect(screen.getByText(/Result:/i)).toBeInTheDocument();
-      expect(screen.getByText(/Location:/i)).toBeInTheDocument();
       expect(screen.getByText(/League:/i)).toBeInTheDocument();
       expect(screen.getByText(/Season:/i)).toBeInTheDocument();
     });

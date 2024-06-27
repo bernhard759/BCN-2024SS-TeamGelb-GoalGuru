@@ -8,11 +8,11 @@ import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
 import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import GamedayInfos from "./components/GamedayInfos"
+import GamedayInfos from "./components/gameday/GamedayInfos"
 import i18n from './i18n';
 import TeamMatches from './components/TeamMatches';
 import MatchesAgainst from './components/MatchesAgainst';
-import MatchDetails from './components/MatchDetails';
+import MatchDetails from './components/gameday/MatchDetails';
 
 function App() {
 

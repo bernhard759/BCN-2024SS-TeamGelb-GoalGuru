@@ -3,25 +3,13 @@ import { render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { describe, it, expect, beforeEach, vi } from 'vitest';
-import GamedayInfos from '../components/GamedayInfos';
+import { describe, it, expect, beforeEach } from 'vitest';
+import GamedayInfos from '../components/gameday/GamedayInfos';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../i18n'; // Adjust the path to your i18n configuration
 
 // Mock axios
 const mockAxios = new MockAdapter(axios);
-
-// Mock translation function
-vi.mock('react-i18next', async () => {
-  const actual = await vi.importActual('react-i18next');
-  return {
-    ...actual,
-    useTranslation: () => ({
-      t: (key) => key,
-      i18n: { changeLanguage: vi.fn() },
-    }),
-  };
-});
 
 describe('GamedayInfos', () => {
   beforeEach(() => {
@@ -68,8 +56,9 @@ describe('GamedayInfos', () => {
 
     await waitFor(() => {
       expect(screen.getByText('Team A vs Team B')).toBeInTheDocument();
-      expect(screen.getByText('lastgameday.result: 2 - 1')).toBeInTheDocument();
-      expect(screen.getByText('lastgameday.winner: Team A')).toBeInTheDocument();
+      // Use the actual translated text here instead of keys
+      expect(screen.getByText(/Result: 2 - 1/)).toBeInTheDocument();
+      expect(screen.getByText(/Winner: Team A/)).toBeInTheDocument();
     });
   });
 
@@ -86,7 +75,8 @@ describe('GamedayInfos', () => {
     );
 
     await waitFor(() => {
-      expect(screen.getByText('lastgameday.nodata')).toBeInTheDocument();
+      // Use the actual translated text for the error message
+      expect(screen.getByText(/No match data available/)).toBeInTheDocument();
     });
   });
 });

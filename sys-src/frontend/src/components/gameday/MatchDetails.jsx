@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, ListGroup, Alert, Badge, Table, Button } from 'react-bootstrap';
 import Skeleton from 'react-loading-skeleton';
 import { useTranslation } from 'react-i18next';
 import 'react-loading-skeleton/dist/skeleton.css';
@@ -62,14 +62,11 @@ const MatchDetails = () => {
                         }
                     };
 
-                    // const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
-                    // setPrediction(response.data);
-                    //await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
-
-
-                    // Using mock data for now
+                    await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
                     setPrediction(mockData);
                     console.log("setting prediction")
+                    // const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                    // setPrediction(response.data);
                 }
             } catch (error) {
                 console.error('Error fetching prediction:', error);
@@ -159,78 +156,71 @@ const MatchDetails = () => {
 
     // Markup
     return (
-        <Container className="my-5 text-center">
-            {/* The match */}
-            <h2 className="text-center mb-4">{match.team1.teamName} vs {match.team2.teamName}</h2>
-            <Row className="mb-3">
-                <Col><strong>{t('matchdetails.date')}:</strong> {new Date(match.matchDateTime).toLocaleString()}</Col>
-            </Row>
-            <Row className="mb-3">
-                <Col><strong>{t('matchdetails.result')}:</strong> {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam1} - {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam2}</Col>
-            </Row>
-            <Row className="mb-3">
-                <Col><strong>{t('matchdetails.location')}:</strong> {match.location?.locationCity || t('matchdetails.unknown')}</Col>
-            </Row>
-            <Row className="mb-3">
-                <Col><strong>{t('matchdetails.league')}:</strong> {match.leagueName}</Col>
-            </Row>
-            <Row className="mb-3">
-                <Col><strong>{t('matchdetails.season')}:</strong> {match.leagueSeason}</Col>
-            </Row>
+        <Container className="my-5">
 
-            {/* Prediction */}
-            <div className="mt-5">
-                {predictionError ? (
-                    <h4 className="text-center m-5 text-danger" data-testid="errortext">{t("prediction.fetcherror")}</h4>
-                ) : (
-                    <>
-                        {prediction ? (
-                            <>
-                                {/* Prediction bar */}
-                                <Row className="mb-3">
-                                    <Col>
-                                        <div className="mb-2">
-                                            <strong>{t('prediction.probabilities')}:</strong>
-                                        </div>
-                                        {console.warn("Pred", prediction)}
-                                        {renderPredictionBar(prediction, getMatchResult(match))}
-                                    </Col>
-                                </Row>
-                                {/* Predicted winner */}
-                                <Row className="mb-3">
-                                    <Col><strong>{t('prediction.predictedwinner')}:</strong> {getMatchResult(match) == "draw" ? "" : getWinnerName(getMaxProbabilityKey(prediction), match) + " wins"}</Col>
-                                </Row>
-                                {/* Actual winner */}
-                                <Row className="mb-3">
-                                    <Col><strong>{t('prediction.actualwinner')}:</strong> {getMatchResult(match) == "draw" ? "" : getWinnerName(getMatchResult(match), match) + " wins" }</Col>
-                                </Row>
-                                <Row className="mb-3" style={{fontSize: "1.5rem"}}>
-                                    <Col>
-                                        {isPredictionCorrect(prediction, match) ? (
-                                            <span className="text-success fw-bold">{t("prediction.correct")}</span>
-                                        ) : (
-                                            <span className="text-danger fw-bold">{t("prediction.incorrect")}</span>
-                                        )}
-                                    </Col>
-                                </Row>
+            <Card className="mb-4 border-0">
+                <Card.Body>
+                    <Card.Title as="h2" className="mb-4 text-center">{match.team1.teamName} vs {match.team2.teamName}</Card.Title>
+                    <ListGroup variant="flush">
+                        <ListGroup.Item><strong>{t('matchdetails.date')}:</strong> {new Date(match.matchDateTime).toLocaleString()}</ListGroup.Item>
+                        <ListGroup.Item><strong>{t('matchdetails.result')}:</strong> {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam1} - {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam2}</ListGroup.Item>
+                        <ListGroup.Item><strong>{t('matchdetails.league')}:</strong> {match.leagueName}</ListGroup.Item>
+                        <ListGroup.Item><strong>{t('matchdetails.season')}:</strong> {match.leagueSeason}</ListGroup.Item>
+                    </ListGroup>
+                </Card.Body>
+            </Card>
 
-                            </>
-                        ) : (
-                            <div className="d-flex justify-content-center flex-column" data-testid="loadingskeleton1">
-                                <Skeleton count={1} height={40} className="mb-2" style={{width: "100%"}}/>
-                                <Skeleton count={3} height={20} style={{width: "50%"}}/>
-                            </div>
-                        )}
-                    </>
-                )}
-            </div>
+            {predictionError && (
+                <Alert variant="danger" className="my-4">
+                    <Alert.Heading>{t("prediction.fetcherror")}</Alert.Heading>
+                </Alert>
+            )}
 
-            {/* Back button */}
+            {!prediction ? (
+                <Card className="mb-4 border-0 p-3 text-center">
+                    <div data-testid="loadingskeleton1">
+                    <Skeleton className="mb-2" count={1} height={15} style={{ width: "30%" }} />
+                    <Skeleton className="mb-2" count={1} height={50}  style={{ width: "100%" }} />
+                    <Skeleton count={2} height={25} style={{ width: "100%" }} />
+                    <Skeleton className="my-2" count={1} height={20} style={{ width: "15%" }} />
+                    </div>
+                </Card>
+            ) : (
+                <>
+                    <Card className="my-4 border-0 p-3">
+                        <Card.Body>
+                            <Card.Title className="text-center">{t('prediction.probabilities')}</Card.Title>
+                            {renderPredictionBar(prediction, getMatchResult(match))}
+                        </Card.Body>
+
+                        <Table bordered striped>
+                            <tbody>
+                                <tr>
+                                    <td><strong>{t('prediction.predictedwinner')}</strong></td>
+                                    <td>{getMaxProbabilityKey(prediction) == "draw" ? t("matchdetails.draw") : getWinnerName(getMaxProbabilityKey(prediction), match) + " " + t("matchdetails.wins")}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>{t('prediction.actualwinner')}</strong></td>
+                                    <td>{getMatchResult(match) == "draw" ? t("matchdetails.draw") : getWinnerName(getMatchResult(match), match) + " " + t("matchdetails.wins")}</td>
+                                </tr>
+                            </tbody>
+                        </Table>
+
+                        <div className="text-center my-4">
+                            <Badge bg={isPredictionCorrect(prediction, match) ? "success" : "danger"} className="p-2">
+                                {isPredictionCorrect(prediction, match) ? t("prediction.correct") : t("prediction.incorrect")}
+                            </Badge>
+                        </div>
+                    </Card>
+                </>
+            )}
+
             <div className="text-center" style={{ marginBlock: "4em" }}>
                 <Link to="/gameday">
                     <Button variant="secondary">{t('matchdetails.back')}</Button>
                 </Link>
             </div>
+
         </Container>
     );
 };

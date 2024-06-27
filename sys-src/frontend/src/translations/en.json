@@ -45,7 +45,9 @@
     "unknown": "Unknown",
     "league": "League",
     "season": "Season",
-    "back": "Back to Matchday Results"
+    "back": "Back to Matchday Results",
+    "wins": "is the winner",
+    "draw": "Draw"
   },
   "nav": {
     "predict": "Predict",

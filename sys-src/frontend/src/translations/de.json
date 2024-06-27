@@ -45,7 +45,9 @@
     "unknown": "Unbekannt",
     "league": "Liga",
     "season": "Saison",
-    "back": "Zurück zu den Spielergebnissen"
+    "back": "Zurück zu den Spielergebnissen",
+    "wins": "gewinnt",
+    "draw": "Unentschieden"
   },
   "nav": {
     "predict": "Vorhersagen",
