@@ -102,8 +102,8 @@ const MatchDetails = () => {
 
     /**
      * Get the name of the winning team or draw.
-     * @param {*} result 
-     * @param {*} match 
+     * @param {string} result 
+     * @param {Object} match 
      * @returns 
      */
     const getWinnerName = (result, match) => {
