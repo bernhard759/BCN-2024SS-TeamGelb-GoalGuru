@@ -40,7 +40,7 @@ function App() {
 
       <AppNavbar />
 
-      <div id="content" style={{minHeight: "100vh"}}>
+      <div id="content" style={{minHeight: "100vh", paddingBottom: "3em"}}>
 
       <Routes>
           <Route path="/" element={
