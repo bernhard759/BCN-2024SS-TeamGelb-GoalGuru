@@ -84,12 +84,9 @@ const GamedayInfos = () => {
             <Row xs={1} md={2} lg={3} className="g-4">
                 {loading ? (
                     <>
-                        <SkeletonCard />
-                        <SkeletonCard />
-                        <SkeletonCard />
-                        <SkeletonCard />
-                        <SkeletonCard />
-                        <SkeletonCard />
+                        {Array.from({ length: 9 }).map((_, index) => (
+                            <SkeletonCard key={index} />
+                        ))}
                     </>
                 ) : error ? (
                     <Col>

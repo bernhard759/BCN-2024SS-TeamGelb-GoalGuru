@@ -27,7 +27,7 @@ describe('GamedayInfos', () => {
     );
 
     const skeletons = screen.getAllByTestId('skeleton-card');
-    expect(skeletons).toHaveLength(6);
+    expect(skeletons).toHaveLength(9);
   });
 
   // Match data rendering
