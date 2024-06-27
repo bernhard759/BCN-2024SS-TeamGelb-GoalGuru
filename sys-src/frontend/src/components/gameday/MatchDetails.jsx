@@ -112,6 +112,26 @@ const MatchDetails = () => {
         return t('matchdetails.draw');
     };
 
+    /**
+     * Formats a probability value as a percentage string.
+     *
+     * @param {number} value - The probability value to be formatted.
+     * @returns {string} The formatted percentage string.
+     */
+    function probaValuePercentageDisplay(value) {
+        return Number(value).toLocaleString(undefined, {
+            style: 'percent',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 2
+        });
+    }
+
+    /**
+     * Render the prediction bar
+     * @param {Object} prediction 
+     * @param {string} actualResult 
+     * @returns 
+     */
     function renderPredictionBar(prediction, actualResult) {
         console.log("Prediction: ", prediction);
         const barStyle = {
@@ -135,9 +155,9 @@ const MatchDetails = () => {
 
         return (
             <div style={barStyle} className="opacity-75">
-                <div style={segmentStyle('home')}>{`${(prediction.probabilities.home * 100).toFixed(1)}%`}</div>
-                <div style={segmentStyle('draw')}>{`${(prediction.probabilities.draw * 100).toFixed(1)}%`}</div>
-                <div style={segmentStyle('away')}>{`${(prediction.probabilities.away * 100).toFixed(1)}%`}</div>
+                <div style={segmentStyle('home')}>{probaValuePercentageDisplay(prediction.probabilities.home)}</div>
+                <div style={segmentStyle('draw')}>{probaValuePercentageDisplay(prediction.probabilities.draw)}</div>
+                <div style={segmentStyle('away')}>{probaValuePercentageDisplay(prediction.probabilities.away)}</div>
             </div>
         );
     };
