@@ -19,7 +19,6 @@ const MatchDetails = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [prediction, setPrediction] = useState(null);
-    const [isLoadingPrediction, setIsLoadingPrediction] = useState(true);
     const [predictionError, setPredictionError] = useState(null);
 
     // Effects
@@ -43,7 +42,6 @@ const MatchDetails = () => {
 
     useEffect(() => {
         const fetchPrediction = async () => {
-            setIsLoadingPrediction(true);
             setPredictionError(null);
             try {
                 if (match) {
@@ -71,8 +69,6 @@ const MatchDetails = () => {
             } catch (error) {
                 console.error('Error fetching prediction:', error);
                 setPredictionError(t('prediction.fetcherror'));
-            } finally {
-                setIsLoadingPrediction(false);
             }
         };
 
