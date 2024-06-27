@@ -6,7 +6,7 @@
     border-radius: 2em;
     overflow-x: hidden;
     margin-top: 1em;
-    border:2px solid var(--bs-gray-200);
+    /*border:2px solid var(--bs-gray-200);*/
   }
 
 .probability-section {

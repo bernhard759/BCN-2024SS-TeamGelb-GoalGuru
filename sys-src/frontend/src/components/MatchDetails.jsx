@@ -125,7 +125,7 @@ const MatchDetails = () => {
             display: 'flex',
             height: '25px',
             width: '100%',
-            border: '1px solid var(--bs-secondary-bg-subtle)',
+            /*border: '1px solid var(--bs-secondary-bg-subtle)',*/
             borderRadius: '10px',
             overflow: 'hidden'
         };
