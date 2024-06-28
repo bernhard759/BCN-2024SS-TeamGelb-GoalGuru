@@ -299,7 +299,9 @@ def create_prediction(home, away, results):
         }
     }
 
+# Snyc club names to model names
 def sync_club_name(club, db):
+
     team_data = query_team_data(db)
     team_list = [team["Team"] for team in team_data]
 
