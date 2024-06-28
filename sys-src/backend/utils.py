@@ -283,10 +283,26 @@ def create_model_one():
 
 
 #Create an instance of model_one
-def create_model_two():
+def load_model_two():
     model = models.ModelTwo()
     model.load()
     return model
+
+
+#Generate, train and save a new ModelTwo
+def init_model_two(path = "csv-data/data_model_one.csv"):
+    data = pd.read_csv(path, index_col=0)
+    df = pd.DataFrame(data)
+
+    # Aufteilen in Merkmale und Zielvariable
+    y = df['R']
+    X = df.drop('R', axis=1)
+
+    # Instanzieren und Trainieren des Modells
+    model = models.ModelTwo(path)
+    model.train(X,y)
+    model.save()
+
 
 #Create prediction 
 def create_prediction(home, away, results):

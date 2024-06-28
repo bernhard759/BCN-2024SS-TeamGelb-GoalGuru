@@ -14,7 +14,7 @@ from fastapi.responses import JSONResponse
 import utils
 
 app = FastAPI()
-model = utils.create_model_two()
+model = utils.load_model_two()
 tiny_db = utils.load_db()
 
 #Define response models
