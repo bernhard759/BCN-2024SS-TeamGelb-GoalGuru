@@ -5,6 +5,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import "./GamedayInfos.css";
 
 const GamedayInfos = () => {
     const { t } = useTranslation();

@@ -9,4 +9,4 @@ body[data-bs-theme="dark"] {
 body[data-bs-theme="dark"] span.react-loading-skeleton {
     --base-color: var(--bs-gray-600) !important;
     --highlight-color: var(--bs-gray-500) !important;
-  }
+}

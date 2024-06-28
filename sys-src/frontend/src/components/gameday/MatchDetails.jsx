@@ -177,9 +177,13 @@ const MatchDetails = () => {
             <Card className="mb-4 border-0">
                 <Card.Body>
                     <Card.Title as="h2" className="mb-4 text-center">{match.team1.teamName} vs {match.team2.teamName}</Card.Title>
+                    <div className="d-flex justify-content-center mb-3">
+                        <Badge pill bg="secondary" style={{ fontSize: "1.25em", maxWidth: "10em" }}>
+                            {t('matchdetails.result')}: {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam1} - {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam2}
+                        </Badge>
+                    </div>
                     <ListGroup variant="flush">
                         <ListGroup.Item><strong>{t('matchdetails.date')}:</strong> {new Date(match.matchDateTime).toLocaleString()}</ListGroup.Item>
-                        <ListGroup.Item><strong>{t('matchdetails.result')}:</strong> {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam1} - {match.matchResults.find(result => result.resultTypeID === 2).pointsTeam2}</ListGroup.Item>
                         <ListGroup.Item><strong>{t('matchdetails.league')}:</strong> {match.leagueName}</ListGroup.Item>
                         <ListGroup.Item><strong>{t('matchdetails.season')}:</strong> {match.leagueSeason}</ListGroup.Item>
                     </ListGroup>
@@ -195,10 +199,10 @@ const MatchDetails = () => {
             {!prediction ? (
                 <Card className="mb-4 border-0 p-3 text-center">
                     <div data-testid="loadingskeleton1">
-                    <Skeleton className="mb-2" count={1} height={15} style={{ width: "30%" }} />
-                    <Skeleton className="mb-2" count={1} height={50}  style={{ width: "100%" }} />
-                    <Skeleton count={2} height={25} style={{ width: "100%" }} />
-                    <Skeleton className="my-2" count={1} height={20} style={{ width: "15%" }} />
+                        <Skeleton className="mb-2" count={1} height={15} style={{ width: "30%" }} />
+                        <Skeleton className="mb-2" count={1} height={50} style={{ width: "100%" }} />
+                        <Skeleton count={2} height={25} style={{ width: "100%" }} />
+                        <Skeleton className="my-2" count={1} height={20} style={{ width: "15%" }} />
                     </div>
                 </Card>
             ) : (
@@ -222,8 +226,8 @@ const MatchDetails = () => {
                             </tbody>
                         </Table>
 
-                        <div className="text-center my-4">
-                            <Badge bg={isPredictionCorrect(prediction, match) ? "success" : "danger"} className="p-2">
+                        <div className="text-center my-4" style={{ fontSize: "1.15em" }}>
+                            <Badge pill bg={isPredictionCorrect(prediction, match) ? "success" : "danger"} className="p-2">
                                 {isPredictionCorrect(prediction, match) ? t("prediction.correct") : t("prediction.incorrect")}
                             </Badge>
                         </div>

@@ -2,7 +2,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--bs-primary-bg-subtle);
+    background-color: var(--bs-secondary-bg);
     /*border-bottom: 2px solid var(--bs-dark-border-subtle);*/
   }
   
