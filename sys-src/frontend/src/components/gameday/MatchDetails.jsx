@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import { Container, Row, Col, Card, ListGroup, Alert, Badge, Table, Button } from 'react-bootstrap';
+import { Container, Card, ListGroup, Badge, Table, Button } from 'react-bootstrap';
 import Skeleton from 'react-loading-skeleton';
 import { useTranslation } from 'react-i18next';
 import 'react-loading-skeleton/dist/skeleton.css';
@@ -19,6 +19,7 @@ const MatchDetails = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [prediction, setPrediction] = useState(null);
+    const [predictionLoading, setPredictionLoading] = useState(true);
     const [predictionError, setPredictionError] = useState(null);
 
     // Effects
@@ -43,6 +44,7 @@ const MatchDetails = () => {
     useEffect(() => {
         const fetchPrediction = async () => {
             setPredictionError(null);
+            setPredictionLoading(true);
             try {
                 if (match) {
                     const homeTeam = match.team1.teamName;
@@ -66,6 +68,8 @@ const MatchDetails = () => {
             } catch (error) {
                 console.error('Error fetching prediction:', error);
                 setPredictionError(t('prediction.fetcherror'));
+            } finally {
+                setPredictionLoading(false);
             }
         };
 
@@ -186,51 +190,51 @@ const MatchDetails = () => {
                     </ListGroup>
                 </Card.Body>
             </Card>
-
-            {predictionError && (
-                <Alert variant="danger" className="my-4">
-                    <Alert.Heading>{t("prediction.fetcherror")}</Alert.Heading>
-                </Alert>
-            )}
-
-            {!prediction ? (
+            {/* Prediction error, loading and success */}
+            {predictionError ? (
                 <Card className="mb-4 border-0 p-3 text-center">
+                    <div role="alert" className="text-danger text-center my-4">
+                        {t("prediction.fetcherror")}
+                    </div>
+                </Card>
+            ) : (predictionLoading) ?
+                (<Card className="mb-4 border-0 p-3 text-center">
                     <div data-testid="loadingskeleton1">
                         <Skeleton className="mb-2" count={1} height={15} style={{ width: "30%" }} />
                         <Skeleton className="mb-2" count={1} height={50} style={{ width: "100%" }} />
                         <Skeleton count={2} height={25} style={{ width: "100%" }} />
                         <Skeleton className="my-2" count={1} height={20} style={{ width: "15%" }} />
                     </div>
-                </Card>
-            ) : (
-                <>
-                    <Card className="my-4 border-0 p-3">
-                        <Card.Body>
-                            <Card.Title className="text-center">{t('prediction.probabilities')}</Card.Title>
-                            {renderPredictionBar(prediction, getMatchResult(match))}
-                        </Card.Body>
+                </Card>) : (prediction) ? (
+                    <>
+                        <Card className="my-4 border-0 p-3">
+                            <Card.Body>
+                                <Card.Title className="text-center">{t('prediction.probabilities')}</Card.Title>
+                                {renderPredictionBar(prediction, getMatchResult(match))}
+                            </Card.Body>
 
-                        <Table bordered striped>
-                            <tbody>
-                                <tr>
-                                    <td><strong>{t('prediction.predictedwinner')}</strong></td>
-                                    <td>{getMaxProbabilityKey(prediction) == "draw" ? t("matchdetails.draw") : getWinnerName(getMaxProbabilityKey(prediction), match) + " " + t("matchdetails.wins")}</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>{t('prediction.actualwinner')}</strong></td>
-                                    <td>{getMatchResult(match) == "draw" ? t("matchdetails.draw") : getWinnerName(getMatchResult(match), match) + " " + t("matchdetails.wins")}</td>
-                                </tr>
-                            </tbody>
-                        </Table>
+                            <Table bordered striped>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>{t('prediction.predictedwinner')}</strong></td>
+                                        <td>{getMaxProbabilityKey(prediction) == "draw" ? t("matchdetails.draw") : getWinnerName(getMaxProbabilityKey(prediction), match) + " " + t("matchdetails.wins")}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>{t('prediction.actualwinner')}</strong></td>
+                                        <td>{getMatchResult(match) == "draw" ? t("matchdetails.draw") : getWinnerName(getMatchResult(match), match) + " " + t("matchdetails.wins")}</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
 
-                        <div className="text-center my-4" style={{ fontSize: "1.15em" }}>
-                            <Badge pill bg={isPredictionCorrect(prediction, match) ? "success" : "danger"} className="p-2">
-                                {isPredictionCorrect(prediction, match) ? t("prediction.correct") : t("prediction.incorrect")}
-                            </Badge>
-                        </div>
-                    </Card>
-                </>
-            )}
+                            <div className="text-center my-4" style={{ fontSize: "1.15em" }}>
+                                <Badge pill bg={isPredictionCorrect(prediction, match) ? "success" : "danger"} className="p-2">
+                                    {isPredictionCorrect(prediction, match) ? t("prediction.correct") : t("prediction.incorrect")}
+                                </Badge>
+                            </div>
+                        </Card>
+                    </>
+                ) : (<></>)}
+
 
             <div className="text-center" style={{ marginBlock: "4em" }}>
                 <Link to="/gameday">
