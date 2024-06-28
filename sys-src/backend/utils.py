@@ -307,7 +307,7 @@ def sync_club_name(club, db):
 
     closest_team = difflib.get_close_matches(club, team_list, n=1, cutoff=0.0)
 
-    return team_list[closest_team[0]]
+    return closest_team[0]
 
 
 if __name__ == "__main__":
