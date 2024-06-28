@@ -9,6 +9,7 @@ from datetime import datetime
 import json
 import os
 
+
 bundesliga_1 = {
     "Bayer 04 Leverkusen": 15, "FC Bayern München": 27, "VfB Stuttgart": 79, "RasenBallsport Leipzig": 23826,
     "Borussia Mönchengladbach": 18, "Eintracht Frankfurt": 24, "SC Freiburg": 60, "FC Augsburg": 167,
@@ -297,6 +298,16 @@ def create_prediction(home, away, results):
             "away": results[2]
         }
     }
+
+# Snyc club names to model names
+def sync_club_name(club, db):
+
+    team_data = query_team_data(db)
+    team_list = [team["Team"] for team in team_data]
+
+    closest_team = difflib.get_close_matches(club, team_list, n=1, cutoff=0.0)
+
+    return team_list[closest_team[0]]
 
 
 if __name__ == "__main__":
