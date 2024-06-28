@@ -132,6 +132,8 @@ async def predict(home_team: str, away_team: str):
     logging.info(f"Received request for prediction: home_team={home_team}, away_team={away_team}")
     
     try:
+        home_team = utils.sync_club_name(home_team)
+        away_team = utils.sync_club_name(away_team)
         return model.predict(home_team, away_team)
     except Exception as e:
         logging.error(f"An error occurred in the /api/predict endpoint: {e}")
