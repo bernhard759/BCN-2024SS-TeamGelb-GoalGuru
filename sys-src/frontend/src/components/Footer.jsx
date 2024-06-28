@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { MdSportsSoccer } from "react-icons/md";
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
             <p>This is an app to predict the outcomes of soccer games developed in the context of the Cyberlytics project.</p>
           </Col>
           <Col md="4" className="d-flex justify-content-center align-items-center">
-            <h3>Goal<i>Guru</i></h3>
+            <h3><span>G</span><MdSportsSoccer/><span>al</span><i>Guru</i></h3>
           </Col>
           <Col md="4" className="text-center">
             <h5>Contact</h5>
