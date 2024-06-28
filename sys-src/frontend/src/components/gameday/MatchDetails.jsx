@@ -48,8 +48,6 @@ const MatchDetails = () => {
                     const homeTeam = match.team1.teamName;
                     const awayTeam = match.team2.teamName;
 
-                    // TODO: change team names to the transfermarkt names
-
                     // Mock data for demonstration
                     let mockData = {
                         teams: [homeTeam, awayTeam],
@@ -60,11 +58,10 @@ const MatchDetails = () => {
                         }
                     };
 
-                    await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
-                    setPrediction(mockData);
-                    console.log("setting prediction")
-                    // const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
-                    // setPrediction(response.data);
+                    //await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
+                    //setPrediction(mockData);
+                    const response = await axios.get(`/api/predict?home_team=${homeTeam}&away_team=${awayTeam}`);
+                    setPrediction(response.data);
                 }
             } catch (error) {
                 console.error('Error fetching prediction:', error);
