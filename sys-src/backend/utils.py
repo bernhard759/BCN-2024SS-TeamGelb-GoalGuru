@@ -33,6 +33,15 @@ Methods used in our ML models for receiving necessary input data and for our Fas
 #Returns the current table position of a given team
 #Fetching Data from openligadb-API
 def get_current_pos(team):
+    """
+    Returns the current table position of a given team by fetching data from the openligadb-API.
+
+    Parameters:
+    team (str): The name of the team.
+
+    Returns:
+    int: The current position of the team in the Bundesliga table.
+    """
 
     table_url = "https://api.openligadb.de/getbltable/bl1/2023"
     response = requests.get(table_url)
@@ -56,6 +65,15 @@ def get_current_pos(team):
 
 #Returns the market value of a given team from csv
 def get_market_value(team):
+    """
+    Returns the market value of a given team from the CSV file.
+
+    Parameters:
+    team (str): The name of the team.
+
+    Returns:
+    float: The market value of the team.
+    """
 
     data = pd.read_csv("csv-data/club_values.csv")
     df = pd.DataFrame(data)
@@ -69,6 +87,15 @@ def get_market_value(team):
 
 #Returns the market value of a given team from webscraping (transfermarkt)
 def get_market_value_web(team):
+    """
+    Returns the market value of a given team by web scraping the Transfermarkt website.
+
+    Parameters:
+    team (str): The name of the team.
+
+    Returns:
+    float: The market value of the team.
+    """
     team_id = bundesliga_1.get(team)
     if not team_id:
         print(f"Team {team} not found in the dictionary.")
@@ -100,6 +127,17 @@ def get_market_value_web(team):
 #Return last n_matches of two teams (transfermarkt)
 #[home, away, goal_home, goal_away, date]
 def get_last_matches_web(team_a, team_b,  n):
+    """
+    Returns the results of the last n matches between two teams from the Transfermarkt website.
+
+    Parameters:
+    team_a (str): The name of the first team.
+    team_b (str): The name of the second team.
+    n (int): The number of matches to retrieve.
+
+    Returns:
+    list: A list of results of the last n matches between the two teams.
+    """
     base_url = "https://www.transfermarkt.de/vergleich/bilanzdetail/verein/{}/gegner_id/{}"
 
     try:
@@ -146,6 +184,12 @@ def get_last_matches_web(team_a, team_b,  n):
 
 #list all teams of the first bl from csv
 def get_all_teams():
+    """
+    Returns a list of all teams in the first Bundesliga from the CSV file.
+
+    Returns:
+    list: A list of all the teams.
+    """
     data = pd.read_csv("csv-data/club_values.csv", index_col=0)
     df = pd.DataFrame(data)
     return df["Teams"].tolist()
@@ -153,6 +197,15 @@ def get_all_teams():
 
 #list all teams of the first bl (transfermarkt) as dict {teamName : teamID}
 def get_all_teams_from_web(season = 2023):
+    """
+    Returns a dictionary of all teams in the first Bundesliga from the Transfermarkt website.
+
+    Parameters:
+    season (int): The season year.
+
+    Returns:
+    dict: A dictionary of team names and their IDs.
+    """
     url = f"https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1?saison_id={season}"
     response = requests.get(url, headers=header)
     teams = dict()
@@ -180,6 +233,16 @@ def get_all_teams_from_web(season = 2023):
 
 #Load / Create the tinydb
 def load_db(file_paths = ["json-data/matchdata_2000-2024.json", "json-data/2023_teams.json"], db_path = "database/tinydb.json"):
+    """
+    Loads/creates the TinyDB database with match and team data.
+
+    Parameters:
+    file_paths (list): List of file paths to JSON data files.
+    db_path (str): Path to the TinyDB database file.
+
+    Returns:
+    TinyDB: The TinyDB instance.
+    """
 
     #check if the db-file already exists
     if(os.path.exists(db_path)):
@@ -208,11 +271,32 @@ def load_db(file_paths = ["json-data/matchdata_2000-2024.json", "json-data/2023_
 
 #parse string to datetime-object
 def parse_date(date_str):
+    """
+    Parses a string into a datetime object.
+
+    Parameters:
+    date_str (str): The date string to parse.
+
+    Returns:
+    datetime: The parsed datetime object.
+    """
     return datetime.strptime(date_str, '%d.%m.%y')
 
 
 #return the last n_games played between to teams
 def query_games(team_one, team_two, n_games, db):
+    """
+    Returns the last n games played between two teams from the TinyDB database.
+
+    Parameters:
+    team_one (str): The name of the first team.
+    team_two (str): The name of the second team.
+    n_games (int): The number of games to retrieve.
+    db (TinyDB): The TinyDB instance.
+
+    Returns:
+    list: A list of the last n games played between the two teams.
+    """
     
     matchdata_table = db.table("Matches")
 
@@ -239,6 +323,15 @@ def query_games(team_one, team_two, n_games, db):
 
 #returns informations about the bundesliga-clubs
 def query_team_data(db):
+    """
+    Returns information about the Bundesliga clubs from the TinyDB database.
+
+    Parameters:
+    db (TinyDB): The TinyDB instance.
+
+    Returns:
+    list: A list of dictionaries containing team data.
+    """
 
     team_table = db.table("Team")
 
@@ -249,6 +342,16 @@ def query_team_data(db):
 
 #returns the market_value of a bundesliga club from the db
 def query_market_values(team, db):
+    """
+    Returns the market value of a Bundesliga club from the TinyDB database.
+
+    Parameters:
+    team (str): The name of the team.
+    db (TinyDB): The TinyDB instance.
+
+    Returns:
+    float: The market value of the team.
+    """
 
     team_table = db.table("Team")
     MV = Query()
@@ -261,6 +364,15 @@ def query_market_values(team, db):
 #Train ModelTwo with given data
 #Returns the trained model
 def train_model_two(path = "csv-data/data_model_one.csv"):
+    """
+    Trains ModelTwo with the given data and returns the trained model.
+
+    Parameters:
+    path (str): The path to the CSV file containing the training data.
+
+    Returns:
+    ModelTwo: The trained ModelTwo instance.
+    """
     model_two = models.ModelTwo()
 
     data = pd.read_csv(path, index_col=0)
@@ -306,6 +418,18 @@ def init_model_two(path = "csv-data/data_model_one.csv"):
 
 #Create prediction 
 def create_prediction(home, away, results):
+    """
+    Creates a prediction dictionary with the given results.
+
+    Parameters:
+    home (str): The name of the home team.
+    away (str): The name of the away team.
+    results (list): A list containing the probabilities of home win, draw, and away win.
+
+    Returns:
+    dict: A dictionary containing the prediction results.
+    """
+    
     return {
         "teams": [home, away],
         "probabilities": {
@@ -317,6 +441,16 @@ def create_prediction(home, away, results):
 
 # Snyc club names to model names
 def sync_club_name(club, db):
+    """
+    Adjusts the club name to the corresponding model names using the TinyDB database.
+
+    Parameters:
+    club (str): The name of the club.
+    db (TinyDB): The TinyDB instance.
+
+    Returns:
+    str: The closest matching club name from the database.
+    """
 
     team_data = query_team_data(db)
     team_list = [team["Team"] for team in team_data]
