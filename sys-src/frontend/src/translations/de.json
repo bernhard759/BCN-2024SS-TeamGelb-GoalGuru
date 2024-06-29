@@ -60,5 +60,10 @@
   },
   "errorBoundary": {
     "message": "Da hat etwas nicht geklappt..."
+  },
+  "footer": {
+    "aboutheader": "Über uns",
+    "abouttext": "Dies ist eine App zur Vorhersage der Ergebnisse von Fußballspielen, die im Rahmen des Cyberlytics-Projekts entwickelt wurde.",
+    "contactheader": "Kontakt"
   }
 }

@@ -60,5 +60,10 @@
   },
   "errorBoundary": {
     "message": "Something went wrong..."
+  },
+  "footer": {
+    "aboutheader": "About us",
+    "abouttext": "This is an app to predict the outcomes of soccer games developed in the context of the Cyberlytics project.",
+    "contactheader": "Contact"
   }
 }
