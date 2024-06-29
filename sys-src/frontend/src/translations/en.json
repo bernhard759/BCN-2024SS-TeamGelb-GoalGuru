@@ -52,5 +52,13 @@
   "nav": {
     "predict": "Predict",
     "gameday": "Last Gameday"
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "backhome": "Back to Home"
+  },
+  "errorBoundary": {
+    "message": "Something went wrong..."
   }
 }

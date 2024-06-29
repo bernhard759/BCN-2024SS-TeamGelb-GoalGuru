@@ -52,5 +52,13 @@
   "nav": {
     "predict": "Vorhersagen",
     "gameday": "Letzter Spieltag"
+  },
+  "notfound": {
+    "title": "Seite nicht gefunden",
+    "message": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "backhome": "Zurück zur Startseite"
+  },
+  "errorBoundary": {
+    "message": "Da hat etwas nicht geklappt..."
   }
 }

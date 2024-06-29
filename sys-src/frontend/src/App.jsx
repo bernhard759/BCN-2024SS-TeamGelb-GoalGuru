@@ -13,6 +13,8 @@ import i18n from './i18n';
 import TeamMatches from './components/TeamMatches';
 import MatchesAgainst from './components/MatchesAgainst';
 import MatchDetails from './components/gameday/MatchDetails';
+import NotFound from './components/notfound/NotFound';
+import ErrorBoundary from './components/error/ErrorBoundary';
 
 function App() {
 
@@ -97,12 +99,13 @@ function App() {
 
         } />
         <Route path="/gameday" element={<GamedayInfos />} />
-        <Route path="/match/:matchId" element={<MatchDetails />} />
+        <Route path="/match/:matchId" element={
+          <ErrorBoundary>
+            <MatchDetails />
+          </ErrorBoundary>
+        } />
+        <Route path="*" element={<NotFound />} />
         </Routes>
-
-
-        
-
 
       </div>
       <Footer /> 

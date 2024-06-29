@@ -3,10 +3,9 @@ import { render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { describe, it, expect, beforeEach } from 'vitest';
 import MatchDetails from '../components/gameday/MatchDetails';
 import { I18nextProvider } from 'react-i18next';
-import i18n from '../i18n'; // Adjust the path to your i18n configuration
+import i18n from '../i18n';
 
 const mock = new MockAdapter(axios);
 

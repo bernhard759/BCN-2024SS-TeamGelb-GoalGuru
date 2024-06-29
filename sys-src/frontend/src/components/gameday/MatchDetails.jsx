@@ -5,6 +5,7 @@ import { Container, Card, ListGroup, Badge, Table, Button } from 'react-bootstra
 import Skeleton from 'react-loading-skeleton';
 import { useTranslation } from 'react-i18next';
 import 'react-loading-skeleton/dist/skeleton.css';
+import { MdErrorOutline, MdOutlineSearchOff } from "react-icons/md";
 
 const MatchDetails = () => {
 
@@ -29,10 +30,11 @@ const MatchDetails = () => {
             try {
                 setError(null);
                 const response = await axios.get(`https://api.openligadb.de/getmatchdata/${matchId}`);
+                console.warn(response.data)
                 setMatch(response.data);
-            } catch (error) {
+            } catch (error) { 
                 console.error('Error fetching match details:', error);
-                setError(t('matchdetails.error'));
+                (!error.response || typeof error.response.data !== 'string' || error.response.data == "") ? setError(t('matchdetails.error')) : undefined;
             } finally {
                 setLoading(false);
             }
@@ -166,9 +168,9 @@ const MatchDetails = () => {
     //-----------------------------------------------------------
 
     // Error and loading guard
-    if (loading) return <p className="text-center mt-5">{t('matchdetails.loading')}</p>;
-    if (error) return <p className="text-center mt-5 text-danger">{error}</p>;
-    if (!match) return <p className="text-center mt-5">{t('matchdetails.nomatch')}</p>;
+    if (loading) return <div className="d-flex flex-column justify-content-center align-items-center border-2 gap-2 text-secondary lead my-4 p-2"><p className="text-center mt-5">{t('matchdetails.loading')}</p></div>;
+    if (error) return <div className="d-flex flex-column justify-content-center align-items-center border-2 gap-2 lead text-danger my-5 p-2 border-bottom border-top"><MdErrorOutline className="display-5"/><p className="text-center text-danger fw-bold">{error}</p></div>;
+    if (!match) return <div className="d-flex flex-column justify-content-center align-items-center border-2 lead gap-2 text-warning my-5 p-2 border-bottom border-top"><MdOutlineSearchOff className="display-5"/><p className="text-center text-warning fw-bold">{t('matchdetails.nomatch')}</p></div>;
 
 
     // Markup
