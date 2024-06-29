@@ -177,7 +177,7 @@ const MatchDetails = () => {
     return (
         <Container className="my-5">
 
-            <Card className="mb-4 border-1" style={{background: "transparent"}}>
+            <Card className="mb-4 border-1 bg-transparent">
                 <Card.Body>
                     <Card.Title as="h2" className="mb-4 text-center">{match.team1.teamName} vs {match.team2.teamName}</Card.Title>
                     <div className="d-flex justify-content-center mb-3">
@@ -200,7 +200,7 @@ const MatchDetails = () => {
                     </div>
                 </Card>
             ) : (predictionLoading) ?
-                (<Card className="mb-4 border-1 p-3 text-center" style={{background: "transparent"}}>
+                (<Card className="mb-4 border-1 p-3 text-center bg-transparent">
                     <div data-testid="loadingskeleton1">
                         <Skeleton className="mb-2" count={1} height={15} style={{ width: "30%" }} />
                         <Skeleton className="mb-2" count={1} height={50} style={{ width: "100%" }} />
@@ -209,7 +209,7 @@ const MatchDetails = () => {
                     </div>
                 </Card>) : (prediction) ? (
                     <>
-                        <Card className="my-4 p-3 border-1" style={{background: "transparent"}}>
+                        <Card className="my-4 p-3 border-1 bg-transparent">
                             <Card.Body>
                                 <Card.Title className="text-center">{t('prediction.probabilities')}</Card.Title>
                                 {renderPredictionBar(prediction, getMatchResult(match))}
