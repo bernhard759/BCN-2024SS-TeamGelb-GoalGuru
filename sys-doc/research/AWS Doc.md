@@ -29,6 +29,11 @@ Created a new S3 bucket for our app, which stores the csv files.
 
 
 ## Possible future developments
+* **<u>Develop further the usage of the AWS S3 service</u>**  
+Move the frontend to a separate S3 bucket for optimized
+content delivery. This would decouple the frontend from
+the backend and thus favor the principle separation of
+concerns.
 * **<u>Integrate AWS CloudFront</u>**  
 Implementing  AWS CloudFront for our web app will improve performance by reducing latency through global content caching and enhance security with integrated DDoS protection.
 
