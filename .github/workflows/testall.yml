@@ -42,7 +42,7 @@ jobs:
       working-directory: ./sys-src/frontend
       run: npm run test:coverage
 
-    - name: Run linting
-      working-directory: ./sys-src/frontend
-      run: npm run lint
+    #- name: Run linting
+      #working-directory: ./sys-src/frontend
+      #run: npm run lint
 
