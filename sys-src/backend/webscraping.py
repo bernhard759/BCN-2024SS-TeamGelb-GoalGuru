@@ -28,7 +28,17 @@ bundesliga_1 = {"Bayer": 15, "Bayern": 27, "Stuttgart": 79, "Leipzig": 23826, "B
 #Returns all available matchday-results [home, draw, away] for a given season
 #For the parameter "season", the year in which the season started should be specified (e.g., for the 2019-2020 season, "season" is equal to 2019) 
 def get_matchday_results(season):
+    """
+    Returns all available matchday-results [home, draw, away] for a given season.
 
+    Parameters:
+        season (int): The year in which the season started (e.g., for the 2019-2020 season, "season" is equal to 2019).
+
+    Returns:
+        dict: A dictionary with matchday numbers as keys and lists of match results as values.
+            Each result is represented by a list [home_team, away_team, result].
+            Result can be 'home', 'draw', or 'away'.
+    """
     url = f"{matchday_url}?saison_id={season}"
 
     data = requests.get(url=url, headers=header)
@@ -83,7 +93,15 @@ def get_matchday_results(season):
 #Returns the market values of all 18 Bundesliga Clubs in a given season (returend as a dict)
 #For the parameter "season", the year in which the season started should be specified (e.g., for the 2019-2020 season, "season" is equal to 2019) 
 def get_market_values(season):
+    """
+    Returns the market values of all 18 Bundesliga Clubs in a given season.
 
+    Parameters:
+        season (int): The year in which the season started (e.g., for the 2019-2020 season, "season" is equal to 2019).
+
+    Returns:
+        dict: A dictionary with team names as keys and their market values as values.
+    """
     url = f"{market_value_url}/plus/?saison_id={season}"
 
     data = requests.get(url=url, headers=header)
@@ -106,7 +124,15 @@ def get_market_values(season):
 #Returns the transfermarkt ids of all 18 Bundesliga Clubs in a given season (returend as a dict)
 #For the parameter "season", the year in which the season started should be specified (e.g., for the 2019-2020 season, "season" is equal to 2019) 
 def get_transfermarkt_ids(season):
+    """
+    Returns the transfermarkt IDs of all 18 Bundesliga Clubs in a given season.
 
+    Parameters:
+        season (int): The year in which the season started (e.g., for the 2019-2020 season, "season" is equal to 2019).
+
+    Returns:
+        dict: A dictionary with team names as keys and their transfermarkt IDs as values.
+    """
     url = f"{market_value_url}/plus/?saison_id={season}"
 
     data = requests.get(url=url, headers=header)
@@ -130,7 +156,18 @@ def get_transfermarkt_ids(season):
 #For the parameter "season", the year in which the season started should be specified (e.g., for the 2019-2020 season, "season" is equal to 2019)
 #The parameter "spieltag" determines the number of matchdays displayed.
 def get_matchday_positions(season, spieltage = 34, delay=2):
+    """
+    Returns the position of each club BEFORE the given matchday takes place.
 
+    Parameters:
+        season (int): The year in which the season started (e.g., for the 2019-2020 season, "season" is equal to 2019).
+        spieltage (int): The number of matchdays displayed (default is 34).
+        delay (int): Delay between requests to avoid being blocked (default is 2 seconds).
+
+    Returns:
+        list of dict: A list of dictionaries with matchday positions of each club.
+                      Each dictionary corresponds to the position table before the matchday.
+    """
     matchday_tables = []
 
     #Read the data for each matchday
@@ -167,6 +204,17 @@ def get_matchday_positions(season, spieltage = 34, delay=2):
 #Parameter n: number of games
 #Parameter team_a, team_b = names of the teams
 def find_n_last_games(team_a, team_b, n):
+    """
+    Returns a list with the name of the winner from two selected teams of the last 'n' games between them.
+
+    Parameters:
+        team_a (str): Name of team A.
+        team_b (str): Name of team B.
+        n (int): Number of games to consider.
+
+    Returns:
+        list: A list of strings indicating the winner ('home', 'away', or 'draw') of each game.
+    """
     try:
         a = bundesliga_1[team_a]
         b = bundesliga_1[team_b]
@@ -210,6 +258,15 @@ def find_n_last_games(team_a, team_b, n):
 
 #Returns dictionary with the final position of the teams from last season
 def get_last_season_positions(season):
+    """
+    Retrieves the final league positions of all Bundesliga clubs from the previous season.
+
+    Parameters:
+        season (int): The year in which the season started (e.g., for the 2019-2020 season, "season" is equal to 2019).
+
+    Returns:
+        dict: A dictionary where the keys are the names of the teams and the values are their positions at the end of the previous season.
+    """
     last_season_tabelle_url = "https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1/saison_id/{}/plus/1"
     url = last_season_tabelle_url.format(season)
 
@@ -231,7 +288,21 @@ def get_last_season_positions(season):
 #Get all games played with results and date of a season
 #Parameter "season" determines the year / season 
 def get_complete_matchday_data(season):
+    """
+    Retrieves complete matchday data for all fixtures in a given Bundesliga season.
 
+    Parameters:
+        season (int): The year in which the season started (e.g., for the 2019-2020 season, "season" is equal to 2019).
+
+    Returns:
+        list: A list of lists where each sublist represents a match and contains the following information:
+            - Home team (str)
+            - Away team (str)
+            - Goals scored by the home team (str)
+            - Goals scored by the away team (str)
+            - Match date (str)
+        If the request fails, a string with the error message is returned.
+    """
     url = f"{matchday_url}?saison_id={season}"
 
     data = requests.get(url=url, headers=header)
@@ -279,6 +350,21 @@ def get_complete_matchday_data(season):
 #Save the data into a csv file
 #Parameter season_range: range of seasons "a-b", a inclusive, b exclusive  (e.g "2017-2024")
 def generate_matchdata_csv(season_range):
+    """
+    Generates a CSV file containing match data for a specified range of Bundesliga seasons.
+
+    Parameters:
+        season_range (str): A string representing the range of seasons in the format "YYYY-YYYY".
+                            The start year should not be earlier than 2000, and the end year should not exceed the current year.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the match data with the following columns:
+                      - Home_Team (str): The name of the home team.
+                      - Away_Team (str): The name of the away team.
+                      - Goals_Home (str): Goals scored by the home team.
+                      - Goals_Away (str): Goals scored by the away team.
+                      - Date (datetime): The date of the match.
+    """
     try:
         season_range = season_range.split("-")
         if(len(season_range) != 2):
@@ -310,6 +396,23 @@ def generate_matchdata_csv(season_range):
 #Save the data into a json file
 #Parameter season_range: range of seasons "a-b", a inclusive, b exclusive  (e.g "2017-2024")
 def generate_matchdata_json(season_range):
+    """
+    Generates a JSON file containing match data for a specified range of Bundesliga seasons.
+
+    Parameters:
+        season_range (str): A string representing the range of seasons in the format "YYYY-YYYY".
+                            The start year should not be earlier than 2000, and the end year should not exceed the current year.
+
+    Returns:
+        str: A JSON-formatted string containing the match data, where each match is represented as a dictionary with the following keys:
+             - "Home" (str): The name of the home team.
+             - "Away" (str): The name of the away team.
+             - "Goals_Home" (str): Goals scored by the home team.
+             - "Goals_Away" (str): Goals scored by the away team.
+             - "Date" (str): The date of the match.
+
+             If the input parameters are invalid or an exception occurs, the function will return None.
+    """
     try:
         season_range = season_range.split("-")
         if(len(season_range) != 2):
@@ -340,6 +443,20 @@ def generate_matchdata_json(season_range):
 #Create a dataframe out of all Bundesliga teams and their market values
 #Parameter "season" determines the year / season 
 def generate_mv_csv(season):
+    """
+    Generates a CSV file containing Bundesliga teams and their market values for a specified season.
+
+    Parameters:
+        season (int): The year representing the season for which the market values are to be fetched.
+                      The year should be greater than or equal to 2000 and less than or equal to the current year.
+
+    Returns:
+        pandas.DataFrame: A DataFrame containing two columns:
+                          - "Teams" (str): The names of the Bundesliga teams.
+                          - "MarketValues" (float): The market values of the teams.
+
+                          If the input parameter is invalid or an exception occurs, the function will return None.
+    """
     data = get_market_values(season)
     df = pd.DataFrame(columns=["Teams","MarketValues"])
     df["Teams"] = list(data.keys())
@@ -351,6 +468,21 @@ def generate_mv_csv(season):
 #Create a json file including all Bundesliga teams, their market values, and their transfermarkt ids
 #Parameter "season" determines the year / season
 def generate_team_json(season):
+    """
+    Generates a JSON file containing Bundesliga teams, their market values, and Transfermarkt IDs for a specified season.
+
+    Parameters:
+        season (int): The year representing the season for which the team data is to be fetched.
+                      The year should be greater than or equal to 2000 and less than or equal to the current year.
+
+    Returns:
+        str: A JSON formatted string containing the team data with the following structure:
+             - "Team" (str): The name of the Bundesliga team.
+             - "Market_Value" (float): The market value of the team.
+             - "ID" (int): The Transfermarkt ID of the team.
+
+             If the input parameter is invalid or an exception occurs, the function will return None.
+    """
     mv_data = get_market_values(season)
     id_data = get_transfermarkt_ids(season)
 
@@ -371,6 +503,22 @@ def generate_team_json(season):
 #Create a dataframe out of the scraped data for our first ml-model
 #Save the data as a csv (local or in s3-bucket)
 def create_dataframe_model_one(local:bool):
+    """
+    Creates a dataframe containing match results, market values, and positions of football teams from the seasons 2014-2024.
+
+    Args:
+        local (bool): If True, the dataframe will be saved locally as a CSV file. If False, the dataframe will be saved to an S3 bucket.
+
+    Returns:
+        pd.DataFrame: A dataframe containing the following columns:
+            - HT: Home team name
+            - AT: Away team name
+            - R: Result of the match
+            - MV_HT: Market value of the home team
+            - MV_AT: Market value of the away team
+            - POS_HT: Position of the home team in the league
+            - POS_AT: Position of the away team in the league.
+    """
     content = []
     for season in range(2014,2024):
         matches = get_matchday_results(season)
@@ -418,6 +566,27 @@ def save_df_in_s3():
 
 
 def create_dataframe_model_two(start_season, end_season):
+    """
+    Creates a pandas DataFrame containing match results, market values, and positions of football teams
+    across multiple seasons of Bundesliga matches.
+
+    Args:
+        start_season (int): The starting season (inclusive).
+        end_season (int): The ending season (inclusive).
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the following columns:
+            - Matchday: Matchday number.
+            - Home_Team: Name of the home team.
+            - Away_Team: Name of the away team.
+            - Result: Result of the match.
+            - Home_Market_Value: Market value of the home team.
+            - Away_Market_Value: Market value of the away team.
+            - Home_Position: Position of the home team in the league for the current season.
+            - Away_Position: Position of the away team in the league for the current season.
+            - Home_Position_Last_Season: Position of the home team in the league for the previous season.
+            - Away_Position_Last_Season: Position of the away team in the league for the previous season.
+    """
     all_data = []
 
     for season in range(start_season, end_season + 1):
@@ -481,4 +650,5 @@ if __name__ == "__main__":
 # Mögliche Erweiterungen:
 # 1) create_dataframe is slow (get_matchday_positions)
 # 2) add more features: billanz, last results
+
 
