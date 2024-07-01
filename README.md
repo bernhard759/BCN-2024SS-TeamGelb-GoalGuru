@@ -76,7 +76,7 @@ Go to the backend directory  with `cd sys-src/backend`
 | command  | description  |  
 |---|---| 
 | `python server.py`  | Start the FastAPI server  |   
-| `pytest tests/`  | Run the backend tests  |
+| `pytest`  | Run the backend tests  |
 
 #### Docker commands
 
