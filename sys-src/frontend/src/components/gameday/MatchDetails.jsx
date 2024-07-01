@@ -194,7 +194,7 @@ const MatchDetails = () => {
             </Card>
             {/* Prediction error, loading and success */}
             {predictionError ? (
-                <Card className="mb-4 border-0 p-3 text-center">
+                <Card className="mb-4 p-3 text-center border-1 bg-transparent">
                     <div role="alert" className="text-danger text-center my-4">
                         {t("prediction.fetcherror")}
                     </div>
