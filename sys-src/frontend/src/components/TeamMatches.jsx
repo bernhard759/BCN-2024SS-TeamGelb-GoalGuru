@@ -41,11 +41,11 @@ const LastFiveGames = ({ team1, team2 }) => {
     }
   };
 
-
+//captization of first word or letter.
   function CaptalizeFirstLetter(string){
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
-
+//function for getting the longest word.
   function getLongestWord(string){
     const words = string.trim().split(" ");
     return words.reduce((longest,current) => {
