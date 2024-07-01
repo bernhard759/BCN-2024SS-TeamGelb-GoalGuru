@@ -27,7 +27,7 @@ def test_get_market_value_typo_team(a, expected):
 
 
 @pytest.mark.parametrize("a, expected", [
-    ("FC Bayern München", 872.45)
+    ("FC Bayern München", 937.4)
 ])
 def test_get_market_value_from_web(a, expected):
     assert get_market_value_web(a) == expected
