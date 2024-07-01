@@ -1,7 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "sys-src"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
-}
