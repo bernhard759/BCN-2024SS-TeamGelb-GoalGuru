@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_26_06_2024_10_08_[Changes]1" date="1719389297564" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_06_2024_10_08_[Changes]1/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 26/06/2024 10:08 [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" value="sys-src/backend/models/model_two.joblib" />
-    <option name="AFTER_PATH" value="sys-src/backend/models/model_two.joblib" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_06_2024_10_08_[Changes]1/model_two.joblib" />
-  </binary>
-</changelist>
