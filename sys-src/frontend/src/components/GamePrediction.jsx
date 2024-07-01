@@ -156,13 +156,13 @@ export default function GamePrediction({ teams }) {
                                             : probability === 'draw'
                                                 ? 'bg-warning'
                                                 : 'bg-danger'
-                                        } text-light fw-bolder`) : (
+                                        } text-light fw-bolder opacity-75`) : (
                                         `${probability === 'home'
                                             ? styles["proba-bg-win"]
                                             : probability === 'draw'
                                                 ? styles["proba-bg-draw"]
                                                 : styles["proba-bg-lose"]
-                                        } text-secondary fw-normal`)}  
+                                        } text-secondary fw-normal opacity-50`)}  
                                      d-flex justify-content-center align-items-center`}
                                 style={{ width: `${value * 100}%` }}
                             >

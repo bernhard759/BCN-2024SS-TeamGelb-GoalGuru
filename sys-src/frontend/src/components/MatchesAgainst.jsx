@@ -5,7 +5,7 @@ import './MatchesAgainst.css';
 
 
 //components for showing matches between two teams
-function MatchInfo({ team1, team2 }) {
+function MatchesAgainst({ team1, team2 }) {
 
 //states hooks for error, loading, and match management.
   const [matches, setMatches] = useState([]);
@@ -71,4 +71,4 @@ function MatchInfo({ team1, team2 }) {
   );
 }
 
-export default MatchInfo;
+export default MatchesAgainst;

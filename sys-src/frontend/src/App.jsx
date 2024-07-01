@@ -8,10 +8,13 @@ import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
 import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import GamedayInfos from "./components/GamedayInfos"
+import GamedayInfos from "./components/gameday/GamedayInfos"
 import i18n from './i18n';
 import TeamMatches from './components/TeamMatches';
 import MatchesAgainst from './components/MatchesAgainst';
+import MatchDetails from './components/gameday/MatchDetails';
+import NotFound from './components/notfound/NotFound';
+import ErrorBoundary from './components/error/ErrorBoundary';
 
 function App() {
 
@@ -39,7 +42,7 @@ function App() {
 
       <AppNavbar />
 
-      <div id="content" style={{minHeight: "100vh"}}>
+      <div id="content" style={{minHeight: "100vh", paddingBottom: "3em"}}>
 
       <Routes>
           <Route path="/" element={
@@ -48,7 +51,7 @@ function App() {
       <SoccerIcon />
 
         {/* Header */}
-        <div className="header d-flex justify-content-center align-items-center flex-column" style={{marginTop: "4em", marginBottom: "3em"}}>
+        <div className="header d-flex justify-content-center align-items-center flex-column mb-4" style={{paddingTop: "4em", paddingBottom: "3em"}}>
           <h1 className="display-1 fw-bold" data-testid="header">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
           <h2 className="text-center" data-testid="predicting">{t("app.desctext")}</h2>
           <h5 style={{maxWidth: "800px"}} className="text-center my-2">{t("app.infotext")}</h5>
@@ -96,11 +99,13 @@ function App() {
 
         } />
         <Route path="/gameday" element={<GamedayInfos />} />
+        <Route path="/match/:matchId" element={
+          <ErrorBoundary>
+            <MatchDetails />
+          </ErrorBoundary>
+        } />
+        <Route path="*" element={<NotFound />} />
         </Routes>
-
-
-        
-
 
       </div>
       <Footer /> 

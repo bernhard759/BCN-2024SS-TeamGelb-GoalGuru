@@ -1,33 +1,69 @@
 {
-    "gameselect": {
-      "select": "Select a team",
-      "predict": "Predict"
-    },
-    "app":{
-        "desctext": "Predicting soccer games with AI",
-        "firstpred": "Make your first prediction",
-        "infotext": "Select your dream match and get an AI-powered prediction with additional information for both teams form and history against each other."
-    },
-    "prediction": {
-        "sentencewe": "We are",
-        "sentencesure": "sure that ",
-        "sentencewin": "wins the game.",
-        "sentencelose": "loses the game.",
-        "sentencedraw": "the game is a draw",
-        "win": "wins",
-        "loses": "loses",
-        "and": "and",
-        "share": "share points",
-        "fetcherror": "There was a problem fetching the prediction form the backend. Please try again."
-      },
-      "lastgameday": {
-        "nodata": "No match data available.",
-        "nodataalert": "We could not get the matchday info. Make sure you are online and try again.",
-        "matchdayresults": "Latest Matchday Results",
-        "matchday": "Matchday",
-        "season": "Season",
-        "result": "Result",
-        "winner": "Winner"
-      }
+  "gameselect": {
+    "select": "Select a team",
+    "predict": "Predict"
+  },
+  "app": {
+    "desctext": "Predicting soccer games with AI",
+    "firstpred": "Make your first prediction",
+    "infotext": "Select your dream match and get an AI-powered prediction with additional information for both teams form and history against each other."
+  },
+  "prediction": {
+    "sentencewe": "We are",
+    "sentencesure": "sure that ",
+    "sentencewin": "wins the game.",
+    "sentencelose": "loses the game.",
+    "sentencedraw": "the game is a draw",
+    "win": "wins",
+    "loses": "loses",
+    "and": "and",
+    "share": "share points",
+    "fetcherror": "There was a problem fetching the prediction form the backend. Please try again.",
+    "correct": "The prediction was correct!",
+    "incorrect": "The prediction was incorrect.",
+    "predictedwinner": "Predicted Result",
+    "actualwinner": "Actual Result",
+    "result": "Prediction Result",
+    "probabilities": "Predicted Probabilities"
+  },
+  "lastgameday": {
+    "nodata": "No match data available.",
+    "nodataalert": "We could not get the matchday info. Make sure you are online and try again.",
+    "matchdayresults": "Latest Matchday Results",
+    "matchday": "Matchday",
+    "season": "Season",
+    "result": "Result",
+    "winner": "Winner"
+  },
+  "matchdetails": {
+    "loading": "Loading match details...",
+    "error": "Error fetching match details.",
+    "nomatch": "No match details available.",
+    "date": "Date",
+    "result": "Result",
+    "location": "Location",
+    "unknown": "Unknown",
+    "league": "League",
+    "season": "Season",
+    "back": "Back to Matchday Results",
+    "wins": "is the winner",
+    "draw": "Draw"
+  },
+  "nav": {
+    "predict": "Predict",
+    "gameday": "Last Gameday"
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "backhome": "Back to Home"
+  },
+  "errorBoundary": {
+    "message": "Something went wrong..."
+  },
+  "footer": {
+    "aboutheader": "About us",
+    "abouttext": "This is an app to predict the outcomes of soccer games developed in the context of the Cyberlytics project.",
+    "contactheader": "Contact"
   }
-  
+}
