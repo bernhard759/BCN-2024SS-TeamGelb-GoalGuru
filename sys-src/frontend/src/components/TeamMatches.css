@@ -1,0 +1,60 @@
+
+/*layout for element in class lastfivegames */
+.last-five-games {
+ margin-block: 2em;
+}
+
+/*layout elements with class tables.container */
+.tables-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  margin-block: 4em;
+}
+
+@media (max-width: 1100px) {
+  .tables-container {
+    justify-content: center;
+  }
+}
+
+
+
+/* for element in games-tables */
+
+.games-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.games-table th, .games-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.games-table th {
+  background-color: #f4f4f4;
+}
+
+/*alingment of result circle*/
+.result-circles {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+/*size of result circle*/
+.circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+
+

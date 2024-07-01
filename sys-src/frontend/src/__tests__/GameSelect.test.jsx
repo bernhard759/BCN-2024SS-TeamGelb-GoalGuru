@@ -1,5 +1,7 @@
 import { render, screen, waitFor, act } from '@testing-library/react';
 import GameSelect from '../components/GameSelect';
+import { server } from './__mocks__/server';
+import { http, HttpResponse } from 'msw';
 
 // GameSelect test suite
 describe('GameSelect', () => {
@@ -54,6 +56,24 @@ describe('GameSelect', () => {
     expect(predictButton).toBeDisabled();
   });
 
+  // Error toast check
+  it('shows an error toast when team fetching fails', async () => {
+    // Override the handler just for this test
+    server.use(
+      http.get('/api/teams', () => {
+        return new HttpResponse(null, { status: 500 });
+      })
+    );
+
+    await act(async () => {
+      render(<GameSelect onTeamSelection={() => {}} />);
+    });
+
+    await waitFor(() => {
+      const errorToast = screen.getByTestId('error-toast');
+      expect(errorToast).toBeInTheDocument();
+    });
+  });
 
 });
 

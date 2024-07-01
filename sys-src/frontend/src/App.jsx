@@ -6,7 +6,12 @@ import AppNavbar from './components/AppNavBar';
 import GamePrediction from './components/GamePrediction';
 import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
+import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import GamedayInfos from "./components/GamedayInfos"
 import i18n from './i18n';
+import TeamMatches from './components/TeamMatches';
+import MatchesAgainst from './components/MatchesAgainst';
 
 function App() {
 
@@ -29,12 +34,17 @@ function App() {
 
   // Markup
   return (
+    <BrowserRouter>
     <div id="app">
 
       <AppNavbar />
 
-      <div id="content">
+      <div id="content" style={{minHeight: "100vh"}}>
 
+      <Routes>
+          <Route path="/" element={
+  
+      <>
       <SoccerIcon />
 
         {/* Header */}
@@ -63,27 +73,39 @@ function App() {
                 </div>
                 {/* Game Prediction Result*/}
                 <GamePrediction teams={selectedTeams}></GamePrediction>
+
+                {/* LastFiveGames */}
+                <TeamMatches team1={selectedTeams[0]} team2= {selectedTeams[1]}></TeamMatches>
+                {/* */}
+
+                {/* MatchInfo */}
+                <MatchesAgainst team1={selectedTeams[0]} team2= {selectedTeams[1]}> </MatchesAgainst>
+                {/* */}
+              
               </div>
 
-              {/* LastFiveGames */}
-              
-              {/* */}
-
-
-              {/* MatchInfo */}
-
-              {/* */}
-              
+             
 
             </div>
           ) : (
-            <h3 className="text-center m-5 text-secondary" data-testid="firstprediction">{t("app.firstpred")} &#9917;</h3>
+            <h3 className="text-center mx-3 text-secondary" data-testid="firstprediction" style={{marginTop: "2em", marginBottom: "8em"}}>{t("app.firstpred")} &#9917;</h3>
           )}
 
         </div>
+        </>
+
+        } />
+        <Route path="/gameday" element={<GamedayInfos />} />
+        </Routes>
+
+
+        
+
 
       </div>
+      <Footer /> 
     </div>
+    </BrowserRouter>
   )
 }
 
