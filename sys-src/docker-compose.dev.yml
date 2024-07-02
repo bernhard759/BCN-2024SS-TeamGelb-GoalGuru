@@ -1,13 +1,19 @@
 name: goalguruapp-dev
 
 services:
+# Goalguru app service
   app:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.dev # Dev Dockerfile
+    # DNS Server config
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     ports:
       - "8000:8000"  # FastAPI backend
       - "5173:5173"  # Vite frontend
+    # Volumes for reloading changes
     volumes:
       - ./backend:/app/backend
       - ./frontend:/app/frontend

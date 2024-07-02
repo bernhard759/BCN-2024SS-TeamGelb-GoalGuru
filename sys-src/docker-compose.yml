@@ -1,10 +1,18 @@
 name: goalguruapp
 services:
+  # GoalGuru app service
   app:
     build:
       context: .
       dockerfile: Dockerfile
+    # DNS Server config
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     ports:
       - "80:8000"
     environment:
       - FRONTEND_DIR=/app/frontend
+    # Database volume
+    volumes:
+      - ./backend/database:/app/backend/database
