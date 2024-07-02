@@ -88,6 +88,7 @@ Go to the source code directory  with `cd sys-src`
 | `docker compose up --build`  |  Build image and run the docker-compose.yml file that starts the container |   
 | `docker compose up`  |  Run the docker-compose.yml file that starts the container from the Docker image |  
 | `docker compose -f docker-compose.dev.yml up` | Run the dev docker compose file | 
+| `docker build -t goalguruapp-app .` | Build the Docker container without using Compose | 
 
 ### Git
 
