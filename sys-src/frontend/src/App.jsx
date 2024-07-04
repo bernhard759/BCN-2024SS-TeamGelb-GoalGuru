@@ -6,7 +6,15 @@ import AppNavbar from './components/AppNavBar';
 import GamePrediction from './components/GamePrediction';
 import SoccerIcon from './components/SoccerIcon';
 import { useTranslation } from 'react-i18next';
+import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import GamedayInfos from "./components/gameday/GamedayInfos"
 import i18n from './i18n';
+import TeamMatches from './components/TeamMatches';
+import MatchesAgainst from './components/MatchesAgainst';
+import MatchDetails from './components/gameday/MatchDetails';
+import NotFound from './components/notfound/NotFound';
+import ErrorBoundary from './components/error/ErrorBoundary';
 
 function App() {
 
@@ -29,16 +37,21 @@ function App() {
 
   // Markup
   return (
+    <BrowserRouter>
     <div id="app">
 
       <AppNavbar />
 
-      <div id="content">
+      <div id="content" style={{minHeight: "100vh", paddingBottom: "3em"}}>
 
+      <Routes>
+          <Route path="/" element={
+  
+      <>
       <SoccerIcon />
 
         {/* Header */}
-        <div className="header d-flex justify-content-center align-items-center flex-column" style={{marginTop: "4em", marginBottom: "3em"}}>
+        <div className="header d-flex justify-content-center align-items-center flex-column mb-4" style={{paddingTop: "4em", paddingBottom: "3em"}}>
           <h1 className="display-1 fw-bold" data-testid="header">G<MdSportsSoccer className="text-primary" />al<i className="text-primary">Guru</i></h1>
           <h2 className="text-center" data-testid="predicting">{t("app.desctext")}</h2>
           <h5 style={{maxWidth: "800px"}} className="text-center my-2">{t("app.infotext")}</h5>
@@ -63,27 +76,41 @@ function App() {
                 </div>
                 {/* Game Prediction Result*/}
                 <GamePrediction teams={selectedTeams}></GamePrediction>
+
+                {/* LastFiveGames */}
+                <TeamMatches team1={selectedTeams[0]} team2= {selectedTeams[1]}></TeamMatches>
+                {/* */}
+
+                {/* MatchInfo */}
+                <MatchesAgainst team1={selectedTeams[0]} team2= {selectedTeams[1]}> </MatchesAgainst>
+                {/* */}
+              
               </div>
 
-              {/* LastFiveGames */}
-              
-              {/* */}
-
-
-              {/* MatchInfo */}
-
-              {/* */}
-              
+             
 
             </div>
           ) : (
-            <h3 className="text-center m-5 text-secondary" data-testid="firstprediction">{t("app.firstpred")} &#9917;</h3>
+            <h3 className="text-center mx-3 text-secondary" data-testid="firstprediction" style={{marginTop: "2em", marginBottom: "8em"}}>{t("app.firstpred")} &#9917;</h3>
           )}
 
         </div>
+        </>
+
+        } />
+        <Route path="/gameday" element={<GamedayInfos />} />
+        <Route path="/match/:matchId" element={
+          <ErrorBoundary>
+            <MatchDetails />
+          </ErrorBoundary>
+        } />
+        <Route path="*" element={<NotFound />} />
+        </Routes>
 
       </div>
+      <Footer /> 
     </div>
+    </BrowserRouter>
   )
 }
 

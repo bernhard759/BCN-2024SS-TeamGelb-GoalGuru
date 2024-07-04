@@ -1,7 +1,12 @@
-
 body {
     background: var(--bs-gray-100) !important;
 }
+
 body[data-bs-theme="dark"] {
     background: var(--bs-gray-700) !important;
+}
+
+body[data-bs-theme="dark"] span.react-loading-skeleton {
+    --base-color: var(--bs-gray-600) !important;
+    --highlight-color: var(--bs-gray-500) !important;
 }

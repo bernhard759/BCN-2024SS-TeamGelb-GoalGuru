@@ -1,5 +1,6 @@
 name: goalguruapp
 services:
+  # GoalGuru app service
   app:
     build:
       context: .
@@ -8,3 +9,6 @@ services:
       - "80:8000"
     environment:
       - FRONTEND_DIR=/app/frontend
+    # Database volume
+    volumes:
+      - ./backend/database:/app/backend/database
