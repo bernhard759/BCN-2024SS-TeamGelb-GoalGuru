@@ -4,18 +4,22 @@ import { Table } from 'react-bootstrap';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import axios from 'axios';
-import './MatchesAgainst.css';
+import { useTranslation } from 'react-i18next';
 
-
-//components for showing matches between two teams
 function MatchesAgainst({ team1, team2 }) {
 
-  //states hooks for error, loading, and match management.
+  // Translation
+  const { t } = useTranslation();
+
+  // State
+  //------------------------------------------------------------
   const [matches, setMatches] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  //------------------------------------------------------------
 
-  //Fetching data whenever team1 or team2 props are modified
+  // Effects
+  //------------------------------------------------------------
   useEffect(() => {
     const fetchMatches = async () => {
       setLoading(true);
@@ -42,25 +46,29 @@ function MatchesAgainst({ team1, team2 }) {
 
     fetchMatches();
   }, [team1, team2]);
+  //------------------------------------------------------------
 
+  // Markup
+  //------------------------------------------------------------
+  // Error
   if (error) {
     return (
       <>
-      <h3 className="text-center">Last Matches Against Each Other</h3>
-      <Table striped bordered hover className="mt-4">
-         <thead>
-          <tr>
-            <th>Date</th>
-            <th>{team1}</th>
-            <th>{team2}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colSpan="3" className="text-center text-danger-emphasis">Error loading matches</td>
-          </tr>
-        </tbody>
-      </Table>
+        <h3 className="text-center">{t("matchesagainst.header")}</h3>
+        <Table striped bordered hover className="mt-4">
+          <thead>
+            <tr>
+              <th>{t("matchesagainst.date")}</th>
+              <th>{team1}</th>
+              <th>{team2}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colSpan="3" className="text-center text-danger-emphasis">{t("matchesagainst.error")}</td>
+            </tr>
+          </tbody>
+        </Table>
       </>
     )
   }
@@ -68,8 +76,8 @@ function MatchesAgainst({ team1, team2 }) {
   // Loading state
   if (loading) {
     return (
-      <div className="match-info">
-        <h3><Skeleton width={300} /></h3>
+      <div className="match-info" data-testid="matchloading">
+        <h3 className="text-center"><Skeleton width={300} /></h3>
         <Table striped bordered hover className="mt-4">
           <thead>
             <tr>
@@ -95,11 +103,11 @@ function MatchesAgainst({ team1, team2 }) {
   //Render the information once loading is finished
   return (
     <div className="match-info">
-      <h3>Last Matches Against Each Other</h3>
+      <h3 className="text-center">{t("matchesagainst.header")}</h3>
       <Table striped bordered hover className="mt-4">
         <thead>
           <tr>
-            <th>Date</th>
+            <th>{t("matchesagainst.date")}</th>
             <th>{team1}</th>
             <th>{team2}</th>
           </tr>
@@ -107,11 +115,9 @@ function MatchesAgainst({ team1, team2 }) {
         <tbody>
           {matches.slice(-5).map((match, index) => (
             <tr key={index}>
-
               <td>{match.Date}</td>
               <td>{match.Goals_Home}</td>
               <td>{match.Goals_Away}</td>
-
             </tr>
           ))}
         </tbody>

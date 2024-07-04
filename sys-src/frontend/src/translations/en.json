@@ -65,5 +65,18 @@
     "aboutheader": "About us",
     "abouttext": "This is an app to predict the outcomes of soccer games developed in the context of the Cyberlytics project.",
     "contactheader": "Contact"
+  },
+  "matchesagainst": {
+    "header": "Last Matches Against Each Other",
+    "date": "Date",
+    "error": "Error loading matches"
+  },
+  "teammatches": {
+    "header": "Last five games of",
+    "date": "Date",
+    "opp": "Opponent",
+    "result": "Result",
+    "error": "Error loading the last five games",
+    "notavailable": "No games available for"
   }
 }

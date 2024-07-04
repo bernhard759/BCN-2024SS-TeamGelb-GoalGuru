@@ -3,32 +3,40 @@ import { Table } from 'react-bootstrap';
 import { FaCheck, FaTimes, FaMinus } from 'react-icons/fa';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import { FaTable } from "react-icons/fa";
+import { stringSimilarity } from "string-similarity-js";
+import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import './TeamMatches.css';
 
-
-//components to show the two teams' last five games
 const TeamMatches = ({ team1, team2 }) => {
-  //states to hold games data.
+  // Translation
+  const { t } = useTranslation();
+
+  // State
+  //------------------------------------------------------------
   const [team1Games, setTeam1Games] = useState([]);
   const [team2Games, setTeam2Games] = useState([]);
+  const [availableTeams, setAvailableTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const team1Name = team1;
-  const team2Name = team2;
+  //------------------------------------------------------------
 
+  // Effects
+  //------------------------------------------------------------
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       setError(null);
       try {
-        await new Promise(resolve => setTimeout(resolve, 0));
-        if (team1Name) {
-          await fetchLastFiveGames(team1Name, setTeam1Games);
+        // Fetch available teams
+        const teamsResponse = await axios.get('https://api.openligadb.de/getavailableteams/bl1/2023');
+        const teamList = teamsResponse.data.map(team => team.teamName);
+        setAvailableTeams(teamList);
+        if (team1) {
+          await fetchLastFiveGames(team1, setTeam1Games, teamList);
         }
-        if (team2Name) {
-          await fetchLastFiveGames(team2Name, setTeam2Games);
+        if (team2) {
+          await fetchLastFiveGames(team2, setTeam2Games, teamList);
         }
       } catch (error) {
         console.error('Error fetching games:', error);
@@ -39,19 +47,42 @@ const TeamMatches = ({ team1, team2 }) => {
     };
 
     fetchData();
-  }, [team1Name, team2Name]);
+  }, [team1, team2]);
+  //------------------------------------------------------------
 
-  //function to retrieve the teams' latest five games.
-  const fetchLastFiveGames = async (teamName, setGames) => {
-    teamName = CaptalizeFirstLetter(getLongestWord(teamName));
+
+  // Funcs
+  //------------------------------------------------------------
+  // Find the most similar team from the available teams
+  const findMostSimilarTeam = (inputTeam, teamList) => {
+    let highestSimilarity = 0;
+    let mostSimilarTeam = '';
+
+    teamList.forEach(team => {
+      const similarity = stringSimilarity(inputTeam.toLowerCase(), team.toLowerCase());
+      if (similarity > highestSimilarity) {
+        highestSimilarity = similarity;
+        mostSimilarTeam = team;
+      }
+    });
+    return mostSimilarTeam;
+  };
+
+
+
+  /**
+   * Get the last five games for a team from openligadb
+   * @param {*} teamName 
+   * @param {*} setGames 
+   * @param {*} teamList 
+   */
+  const fetchLastFiveGames = async (teamName, setGames, teamList) => {
+    teamName = findMostSimilarTeam(teamName, teamList);
     try {
       const response = await axios.get(`https://api.openligadb.de/getmatchdata/bl1/2023/${teamName}`);
-      console.log(`API Response for ${teamName}:`, response.data);
-
-
+      //console.log(`API Response for ${teamName}:`, response.data);
       const teamGames = response.data.slice(-5).sort((a, b) => new Date(b.matchDateTime) - new Date(a.matchDateTime));
-
-      console.log(`Filtered games for team ${teamName}:`, teamGames);
+      //console.log(`Filtered games for team ${teamName}:`, teamGames);
       setGames(teamGames);
     } catch (error) {
       console.error('Error fetching last five games:', error);
@@ -60,25 +91,14 @@ const TeamMatches = ({ team1, team2 }) => {
     }
   };
 
-
-  function CaptalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1)
-  }
-
-  function getLongestWord(string) {
-    const words = string.trim().split(" ").filter(word => word.length > 3);
-    if (words.length > 1) {
-      words.shift();
-    }
-    return words.reduce((longest, current) => {
-      return current.length > longest.length ? current : longest;
-    }, '');
-  }
-
-
-  //use bootstrap to select the result color based on the game output.
+  /**
+   * Get the result color by using bootstrap classes
+   * @param {*} game 
+   * @param {*} teamName 
+   * @returns 
+   */
   const getResultColor = (game, teamName) => {
-    teamName = CaptalizeFirstLetter(getLongestWord(teamName))
+    teamName = findMostSimilarTeam(teamName, availableTeams);
     console.log("Game", game.team1, teamName)
 
     const result = game.matchResults.find(result => result.resultTypeID === 2);
@@ -95,7 +115,14 @@ const TeamMatches = ({ team1, team2 }) => {
     return 'bg-danger';
   };
 
+  /**
+   * Render the games table
+   * @param {*} games 
+   * @param {*} teamName 
+   * @returns 
+   */
   const renderGamesTable = (games, teamName) => {
+    // Loading
     if (loading) {
       return (
         <div className="table-container">
@@ -127,21 +154,22 @@ const TeamMatches = ({ team1, team2 }) => {
       );
     }
 
+    // Error
     if (error) {
       return (
         <div className="table-container">
-          <h4 className="text-center">Last Five Games for {teamName}</h4>
+          <h4 className="text-center">{t("teammatches.header")} {teamName}</h4>
           <Table striped bordered hover className="mt-4">
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Opponent</th>
-                <th>Result</th>
+                <th>{t("teammatches.date")}</th>
+                <th>{t("teammatches.opp")}</th>
+                <th>{t("teammatches.result")}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td colSpan="3" className="text-center text-danger-emphasis">Error loading last five games</td>
+                <td colSpan="3" className="text-center text-danger-emphasis">{t("teammatches.error")}</td>
               </tr>
             </tbody>
           </Table>
@@ -149,22 +177,22 @@ const TeamMatches = ({ team1, team2 }) => {
       )
     }
 
-
+    // No matches there
     if (!Array.isArray(games) || games.length === 0) {
       return (
         <div className="table-container">
-          <h4 className="text-center">Last Five Games for {teamName}</h4>
+          <h4 className="text-center">{t("teammatches.header")} {teamName}</h4>
           <Table striped bordered hover className="mt-4">
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Opponent</th>
-                <th>Result</th>
+                <th>{t("teammatches.date")}</th>
+                <th>{t("teammatches.opp")}</th>
+                <th>{t("teammatches.result")}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td colSpan="3" className="text-center text-warning-emphasis">No games available for Team {teamName}</td>
+                <td colSpan="3" className="text-center text-warning-emphasis">{t("teammatches.notavailable")} {teamName}</td>
               </tr>
             </tbody>
           </Table>
@@ -172,11 +200,10 @@ const TeamMatches = ({ team1, team2 }) => {
       )
     }
 
-    //render the tables for the last five games of the teams
+    // Render the tables for the last five games of the teams
     return (
       <div className="table-container">
-        <h4 className="text-center">Last Five Games for {teamName}</h4>
-
+        <h4 className="text-center">{t("teammatches.header")} {teamName}</h4>
         {/*Circles*/}
         <div className="result-circles d-flex justify-content-center align-item-center gap-1 my-3">
           {games.map((game, index) => {
@@ -198,37 +225,31 @@ const TeamMatches = ({ team1, team2 }) => {
               </span>
             )
           })}
-
         </div>
-
         <Table striped bordered hover>
           <thead>
             <tr>
               {/*column names of the table*/}
-              <th>Date</th>
-              <th>Opponent</th>
-              <th>Result</th>
+              <th>{t("teammatches.date")}</th>
+              <th>{t("teammatches.opp")}</th>
+              <th>{t("teammatches.result")}</th>
             </tr>
           </thead>
           <tbody>
             {games.map((match) => {
-
-              console.log("games", games);
+              //console.log("games", games);
               const result = match.matchResults.find(result => result.resultTypeID === 2);
-              const pointsTeam1 = result ? result.pointsTeam1 : 'N/A';
-              const pointsTeam2 = result ? result.pointsTeam2 : 'N/A';
-
-
+              const pointsTeam1 = result ? result.pointsTeam1 : '-';
+              const pointsTeam2 = result ? result.pointsTeam2 : '-';
               let opponent;
-              let theTeam = CaptalizeFirstLetter(getLongestWord(teamName))
-              if (match.team1.teamName.toLowerCase().includes(theTeam.toLowerCase())) {
+              let theTeam = findMostSimilarTeam(teamName, availableTeams);
+              if (match.team1.teamName.toLowerCase() == theTeam.toLowerCase()) {
                 opponent = match.team2;
-              } else if (match.team2.teamName.toLowerCase().includes(theTeam.toLowerCase())) {
+              } else if (match.team2.teamName.toLowerCase() == theTeam.toLowerCase()) {
                 opponent = match.team1;
               } else {
                 opponent = { teamName: "Unknown", teamIconUrl: "" };
               }
-
               return (
                 <tr key={match.matchID}>
                   <td>{new Date(match.matchDateTimeUTC).toLocaleString()}</td>
@@ -246,14 +267,15 @@ const TeamMatches = ({ team1, team2 }) => {
       </div>
     );
   };
+  //------------------------------------------------------------
 
-
+  // Markup
   return (
     //container for last five games.
     <div className="last-five-games">
       <div className="tables-container">
-        {renderGamesTable(team1Games, team1Name)}
-        {renderGamesTable(team2Games, team2Name)}
+        {renderGamesTable(team1Games, team1)}
+        {renderGamesTable(team2Games, team2)}
       </div>
     </div>
   );

@@ -1,9 +1,7 @@
-/*layout for element in class lastfivegames */
 .last-five-games {
  margin-block: 2em;
 }
 
-/*layout elements with class tables-container */
 .tables-container {
   display: flex;
   flex-direction: row; 
@@ -21,14 +19,12 @@
   }
 }
 
-/*alingment of result circle*/
 .result-circles {
   display: flex;
   justify-content: center;
   margin-right: 10px;
 }
 
-/*size of result circle*/
 .circle {
   display: inline-flex;
   justify-content: center;

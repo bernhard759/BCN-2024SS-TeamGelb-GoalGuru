@@ -69,7 +69,7 @@ function App() {
           {selectedTeams.every(team => team !== "") ? (
             <div>
               <div>
-                <div className="display-5 m-4 mt-5 mx-4 d-flex justify-content-between align-items-center">
+                <div className="display-5 m-4 mt-5 mx-4 d-flex justify-content-between flex-wrap align-items-center">
                   <p>{selectedTeams[0]}</p>
                   <p>vs.</p>
                   <p>{selectedTeams[1]}</p>
