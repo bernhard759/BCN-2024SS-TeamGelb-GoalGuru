@@ -1,10 +1,9 @@
-
 /*layout for element in class lastfivegames */
 .last-five-games {
  margin-block: 2em;
 }
 
-/*layout elements with class tables.container */
+/*layout elements with class tables-container */
 .tables-container {
   display: flex;
   flex-direction: row; 
@@ -22,24 +21,6 @@
   }
 }
 
-
-
-/* for element in games-tables */
-
-.games-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.games-table th, .games-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-.games-table th {
-  background-color: #f4f4f4;
-}
-
 /*alingment of result circle*/
 .result-circles {
   display: flex;
@@ -49,11 +30,14 @@
 
 /*size of result circle*/
 .circle {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   margin: 0 5px;
+  padding: 5px;
 }
 
 
