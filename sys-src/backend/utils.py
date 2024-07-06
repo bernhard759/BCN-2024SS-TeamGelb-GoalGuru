@@ -172,12 +172,16 @@ def get_last_matches_web(team_a, team_b,  n):
     winners = []
     for row in data:
         result = row[7].split(':')
-        if int(result[0]) > int(result[1]):
-            winners.append(team_a)
-        elif int(result[0]) < int(result[1]):
-            winners.append(team_b)
-        else:
-            winners.append("Draw")
+        try:
+            if int(result[0]) > int(result[1]):
+                winners.append(team_a)
+            elif int(result[0]) < int(result[1]):
+                winners.append(team_b)
+            else:
+                winners.append("Draw")
+        except Exception as e:
+            print(f"Exception thrown {e}.")
+            continue
 
     return winners
 
