@@ -6,7 +6,7 @@ import MockAdapter from 'axios-mock-adapter';
 import { describe, it, expect, beforeEach } from 'vitest';
 import GamedayInfos from '../components/gameday/GamedayInfos';
 import { I18nextProvider } from 'react-i18next';
-import i18n from '../i18n'; // Adjust the path to your i18n configuration
+import i18n from '../i18n';
 
 // Mock axios
 const mockAxios = new MockAdapter(axios);
