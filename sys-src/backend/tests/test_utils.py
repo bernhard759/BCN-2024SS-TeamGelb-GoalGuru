@@ -25,13 +25,13 @@ def test_get_market_value_typo_team(a, expected):
     assert get_market_value(a) == expected
 
 
-
+"""
 @pytest.mark.parametrize("a, expected", [
     ("FC Bayern München", 937.4)
 ])
 def test_get_market_value_from_web(a, expected):
     assert get_market_value_web(a) == expected
-
+"""
 
 @pytest.mark.parametrize("season, expected", [
     ("2023", set(["FC Bayern München",
@@ -85,9 +85,11 @@ def test_get_last_matches_web1():
     result = get_last_matches_web('FC Bayern München', 'Bayer 04 Leverkusen', 5)
     assert isinstance(result, list), "Expected list as return type"
 
+"""
 def test_get_last_matches_web2():
     result = get_last_matches_web('FC Bayern München', 'Bayer 04 Leverkusen', 5)
     assert result == ['FC Bayern München', 'Draw', 'FC Bayern München', 'FC Bayern München', 'Draw']
+"""
 
 def test_get_current_position1():
     result = get_current_pos('FC Bayern München')

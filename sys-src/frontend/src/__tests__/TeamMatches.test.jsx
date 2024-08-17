@@ -3,7 +3,8 @@ import { render, screen, waitFor, act } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import LastFiveGames from '../components/TeamMatches';
-
+import { I18nextProvider } from 'react-i18next';
+import i18n from '../i18n';
 
 const mock = new MockAdapter(axios);
 
@@ -23,20 +24,25 @@ describe('LastFiveGames', () => {
 
   // Test case:  API errors.
   it('handle API errors ', async () => {
+    mock.onGet("https://api.openligadb.de/getavailableteams/bl1/2023").reply(500);
     mock.onGet('https://api.openligadb.de/getmatchdata/bl1/2023/Bayern').reply(500);
 
     await act(async () => {
-      render(<LastFiveGames team1="Bayern" team2="Union Berlin" />);
+      render(<I18nextProvider i18n={i18n}><LastFiveGames team1="Bayern" team2="Union Berlin" /></I18nextProvider>);
     });
 
     await waitFor(() => {
-      expect(screen.getByText(/No games available for Team Bayern/i)).toBeInTheDocument();
-      expect(screen.getByText(/No games available for Team Union Berlin/i)).toBeInTheDocument();
+      expect(screen.getAllByText(/Error loading the last five games/i)[0]).toBeInTheDocument();
     });
   });
 
   // Test case: Displays the correct result colors
   it('displays correct result colors', async () => {
+    const mockTeams = [
+      { teamName: 'Bayern' },
+      { teamName: 'Dortmund' },
+      { teamName: 'Union' }
+    ]
     const mockResponse = [
       {
         //mock response with two match with bayern win
@@ -58,20 +64,21 @@ describe('LastFiveGames', () => {
         ]
       }
     ];
-   
-    
-    mock.onGet('https://api.openligadb.de/getmatchdata/bl1/2023/Bayern').reply(200, mockResponse);
+
+    // Mock get
+    mock.onGet("https://api.openligadb.de/getavailableteams/bl1/2023").reply(200, mockTeams);
+    mock.onGet("https://api.openligadb.de/getmatchdata/bl1/2023/Bayern").reply(200, mockResponse);
+    mock.onGet("https://api.openligadb.de/getmatchdata/bl1/2023/Union").reply(200, mockResponse);
 
     await act(async () => {
-      render(<LastFiveGames team1="Bayern" team2="Union Berlin" />);
+      render(<LastFiveGames team1="Bayern" team2="Union" />);
     });
 
     await waitFor(() => {
       // debug the render output
-      console.log(document.body.innerHTML);
-
-      const greenCircles = screen.getAllByText('', { selector: '.bg-success' });
-      console.log(greenCircles); // Log the win elements
+      //console.log(document.body.innerHTML);
+      const greenCircles = screen.getAllByText('', { selector: '.bg-success-subtle' });
+      //console.log(greenCircles); // Log the win elements
       expect(greenCircles).toHaveLength(2); // Two games, both wins for Bayern
     });
 
@@ -80,7 +87,7 @@ describe('LastFiveGames', () => {
     describe('getResultColor', () => {
       const teamName = 'Bayern';
       const opponentName = 'Dortmund';
-    
+
       // Test for Win
       it('returns bg-success when the team wins', () => {
         console.log(teamName, opponentName)
@@ -94,7 +101,7 @@ describe('LastFiveGames', () => {
         const result = getResultColor(game, teamName);
         expect(result).toEqual('bg-success');
       });
-    
+
       // Test for Loss
       it('returns bg-danger when the team loses', () => {
         const game = {
@@ -107,7 +114,7 @@ describe('LastFiveGames', () => {
         const result = getResultColor(game, teamName);
         expect(result).toEqual('bg-danger');
       });
-    
+
       // Test for Draw
       it('returns bg-warning when the game is a draw', () => {
         const game = {
@@ -120,7 +127,7 @@ describe('LastFiveGames', () => {
         const result = getResultColor(game, teamName);
         expect(result).toEqual('bg-warning');
       });
-    
+
       // Test for Missing Match Results
       it('returns bg-danger when no matching result type is found', () => {
         const game = {
@@ -133,7 +140,7 @@ describe('LastFiveGames', () => {
         expect(result).toEqual('bg-danger');
       });
     });
-    
+
 
 
   });

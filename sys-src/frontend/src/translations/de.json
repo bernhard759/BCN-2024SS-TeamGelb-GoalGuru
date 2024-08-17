@@ -65,5 +65,18 @@
     "aboutheader": "Über uns",
     "abouttext": "Dies ist eine App zur Vorhersage der Ergebnisse von Fußballspielen, die im Rahmen des Cyberlytics-Projekts entwickelt wurde.",
     "contactheader": "Kontakt"
+  },
+  "matchesagainst": {
+    "header": "Letzte Spiele gegeneinander",
+    "date": "Datum",
+    "error": "Fehler beim Abrufen der Spiele"
+  },
+  "teammatches": {
+    "header": "Letzte fünf Spiele von",
+    "date": "Datum",
+    "opp": "Gegner",
+    "result": "Ergebnis",
+    "error": "Fehler beim Abrufen der letzten fünf Spiele",
+    "notavailable": "Keine Spiele vorhanden für"
   }
 }
